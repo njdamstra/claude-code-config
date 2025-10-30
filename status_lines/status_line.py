@@ -153,6 +153,44 @@ def get_git_branch():
         return None
 
 
+def format_git_branch(branch):
+    """Format git branch name with color coding and icon."""
+    if not branch:
+        return None
+
+    # Truncate very long branch names
+    if len(branch) > 25:
+        branch = branch[:22] + "..."
+
+    # Color code by branch type
+    if branch == "main" or branch == "master":
+        # Green for main branches
+        color = "\033[92m"
+        icon = "🌳"
+    elif branch.startswith("feature/") or branch.startswith("feat/"):
+        # Blue for feature branches
+        color = "\033[94m"
+        icon = "✨"
+    elif branch.startswith("fix/") or branch.startswith("bugfix/"):
+        # Yellow for bugfix branches
+        color = "\033[93m"
+        icon = "🐛"
+    elif branch.startswith("hotfix/"):
+        # Red for hotfix branches
+        color = "\033[91m"
+        icon = "🚨"
+    elif branch.startswith("release/"):
+        # Magenta for release branches
+        color = "\033[95m"
+        icon = "🚀"
+    else:
+        # Cyan for other branches
+        color = "\033[96m"
+        icon = "🔀"
+
+    return f"{color}{icon} {branch}\033[0m"
+
+
 def calculate_token_usage(transcript_path):
     """Parse transcript and calculate cumulative token usage."""
     from pathlib import Path
