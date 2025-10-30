@@ -55,6 +55,43 @@ The script handles all validation, including:
 - Preset resolution to individual servers
 - Alias resolution (use short names like `gemini` instead of `gemini-cli`)
 
+## Environment Variable Setup (IMPORTANT!)
+
+**Critical:** Claude Code does not automatically source `~/.zshrc` or `~/.bashrc`. When adding servers that require environment variables:
+
+### Method 1: Add to Shell Profile (Recommended for Persistence)
+```bash
+# Add to ~/.zshrc (or ~/.bashrc)
+echo 'export API_KEY_NAME="your-api-key-here"' >> ~/.zshrc
+
+# Then FULLY RESTART Claude Code (Cmd+Q, then reopen)
+# This is required for Claude Code to pick up the new environment variable
+```
+
+### Method 2: Inline Export (Quick Testing)
+```bash
+# Use inline export for immediate testing without restart
+export API_KEY_NAME="your-key" && /mcps add server-name user
+```
+
+### Common Issues:
+- ❌ **Adding to `~/.zshrc` but not restarting Claude Code** → Script validation fails
+- ❌ **Restarting just the terminal session** → Not enough, need full app restart (Cmd+Q)
+- ✅ **Add to `~/.zshrc` + Full Claude Code restart** → Environment variable available
+- ✅ **Inline export before running `/mcps add`** → Works immediately for testing
+
+### Verify Environment Variables:
+```bash
+# Check if variable is set in current session
+echo $API_KEY_NAME
+
+# Check if variable is in your shell profile
+cat ~/.zshrc | grep API_KEY_NAME
+
+# Audit all MCP-related environment variables
+/mcps audit
+```
+
 ### Special Action: config
 
 When the user runs `/mcps config`, the script displays guidance and instructions. You should then:

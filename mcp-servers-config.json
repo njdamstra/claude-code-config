@@ -363,6 +363,24 @@
         "tav",
         "search"
       ]
+    },
+    "perplexity-mcp": {
+      "name": "perplexity-mcp",
+      "description": "Perplexity AI integration with Claude via MCP - web search and reasoning capabilities",
+      "command": "npx",
+      "args": [
+        "-y",
+        "perplexity-mcp"
+      ],
+      "env": {
+        "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
+      },
+      "notes": "Get API key from perplexity.ai/settings/api. Provides perplexity_ask (single questions) and perplexity_chat (multi-turn conversations) tools. Requires Perplexity Pro subscription.",
+      "aliases": [
+        "perplexity",
+        "pplx",
+        "perplex"
+      ]
     }
   },
   "environments": {
@@ -406,6 +424,13 @@
       "url": "https://tavily.com",
       "required_for": [
         "tavily"
+      ]
+    },
+    "PERPLEXITY_API_KEY": {
+      "description": "Perplexity AI API key (requires Pro subscription)",
+      "url": "https://www.perplexity.ai/settings/api",
+      "required_for": [
+        "perplexity-mcp"
       ]
     }
   }

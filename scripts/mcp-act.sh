@@ -158,7 +158,20 @@ validate_env_vars() {
         tip "$notes"
 
         echo ""
-        info "Set with: export ${missing_vars[0]}='your-value-here'"
+        echo -e "${MAGENTA}=== How to Fix ===${NC}"
+        echo ""
+        echo -e "${CYAN}Method 1: Persistent (Recommended)${NC}"
+        echo "  1. Add to shell profile:"
+        echo "     echo 'export ${missing_vars[0]}=\"your-key-here\"' >> ~/.zshrc"
+        echo ""
+        echo "  2. FULLY RESTART Claude Code (Cmd+Q, then reopen)"
+        echo "     Note: Just restarting the terminal is NOT enough!"
+        echo ""
+        echo -e "${CYAN}Method 2: Quick Testing${NC}"
+        echo "  Use inline export for immediate testing:"
+        echo "     export ${missing_vars[0]}=\"your-key\" && ~/.claude/scripts/mcp-act.sh add $server_name"
+        echo ""
+        tip "Claude Code does NOT automatically source ~/.zshrc. Full app restart required for persistent env vars."
         return 1
     fi
 
@@ -572,6 +585,21 @@ action_config() {
     "notes": "Get API key from https://example.com"
   }
 EOF
+    echo ""
+    echo -e "${MAGENTA}=== Environment Variable Setup ===${NC}"
+    echo ""
+    echo "IMPORTANT: Claude Code does NOT automatically source ~/.zshrc or ~/.bashrc"
+    echo ""
+    echo -e "${CYAN}Step 1: Add to Shell Profile${NC}"
+    echo "  echo 'export MY_API_KEY=\"your-api-key-here\"' >> ~/.zshrc"
+    echo ""
+    echo -e "${CYAN}Step 2: FULLY RESTART Claude Code${NC}"
+    echo "  - Quit completely (Cmd+Q)"
+    echo "  - Reopen Claude Code"
+    echo "  - Note: Just restarting the terminal session is NOT enough!"
+    echo ""
+    echo -e "${CYAN}Quick Testing (Without Restart)${NC}"
+    echo "  export MY_API_KEY=\"your-key\" && /mcps add my-server user"
     echo ""
     tip "After editing, run '/mcps validate' to check the configuration"
 }

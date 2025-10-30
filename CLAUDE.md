@@ -83,6 +83,17 @@ Use the `/mcps` slash command for preset-based MCP management with environment v
 - Run `/mcps audit` to detect hardcoded API keys
 - Required vars: `GEMINI_API_KEY`, `FIRECRAWL_API_KEY`, `FIGMA_API_KEY`, `GITHUB_TOKEN`
 
+### Active MCP Servers
+**Context7** - Library documentation with code examples
+- `resolve-library-id`: Find library IDs by name (vue → /vuejs/docs)
+- `get-library-docs`: Fetch docs with topic filter, token limits, code snippets
+
+**Tavily** - Real-time web research and content extraction
+- `tavily_search`: Web search (basic/advanced, news/general, domain filters, images)
+- `tavily_extract`: Extract content from URLs (markdown/text, multiple URLs)
+- `tavily_map`: Discover site structure (depth/breadth control, path filtering)
+- `tavily_crawl`: Multi-page crawling (limit pages, extract content, filter paths)
+
 ## Memory Management
 - Agent memory files track domain-specific learnings
 - Context bundles provide 60-70% session restoration capability

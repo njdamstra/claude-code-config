@@ -146,6 +146,19 @@ def get_git_branch():
         if result.returncode == 0 and result.stdout.strip():
             return result.stdout.strip()
 
+        # Check if we're in detached HEAD state
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=2,
+            cwd=os.getcwd()
+        )
+
+        if result.returncode == 0 and result.stdout.strip():
+            # Return detached HEAD indicator
+            return f"detached:{result.stdout.strip()[:7]}"
+
         return None
 
     except (subprocess.TimeoutExpired, FileNotFoundError, Exception):
@@ -157,6 +170,11 @@ def format_git_branch(branch):
     """Format git branch name with color coding and icon."""
     if not branch:
         return None
+
+    # Handle detached HEAD state
+    if branch.startswith("detached:"):
+        commit_hash = branch.split(":")[1]
+        return f"\033[90m⚠️  detached:{commit_hash}\033[0m"
 
     # Truncate very long branch names
     if len(branch) > 25:
@@ -191,14 +209,51 @@ def format_git_branch(branch):
     return f"{color}{icon} {branch}\033[0m"
 
 
+def calculate_weighted_tokens(usage):
+    """
+    Calculate weighted token count for context budget.
+
+    Claude's 200k context window applies to INPUT tokens only.
+    - cache_read_input_tokens: 0.1x weight (90% discount)
+    - cache_creation_input_tokens: 1x weight (full cost)
+    - input_tokens: 1x weight (full cost)
+    - output_tokens: IGNORED (not part of input context)
+
+    Args:
+        usage: Usage dict from Claude API response
+
+    Returns:
+        int: Weighted token count for context budget calculation
+    """
+    if not usage:
+        return 0
+
+    # Regular input tokens (full weight)
+    regular_input = usage.get('input_tokens', 0)
+
+    # Cache creation tokens (full weight - first time)
+    cache_creation = usage.get('cache_creation_input_tokens', 0)
+
+    # Cache read tokens (0.1x weight - 90% cheaper)
+    cache_reads = usage.get('cache_read_input_tokens', 0)
+    weighted_cache_reads = int(cache_reads * 0.1)
+
+    # Sum weighted tokens
+    weighted_total = regular_input + cache_creation + weighted_cache_reads
+
+    return weighted_total
+
+
 def calculate_token_usage(transcript_path):
-    """Parse transcript and calculate cumulative token usage."""
+    """Parse transcript and calculate cumulative weighted token usage."""
     from pathlib import Path
 
     if not transcript_path or not Path(transcript_path).exists():
         return None
 
-    total_tokens = 0
+    # Track seen message IDs to avoid counting duplicates
+    seen_message_ids = set()
+    cumulative_weighted_tokens = 0
 
     try:
         with open(transcript_path, 'r') as f:
@@ -210,26 +265,47 @@ def calculate_token_usage(transcript_path):
                     if entry.get('type') != 'assistant':
                         continue
 
+                    # Get message ID to deduplicate
+                    message_id = entry.get('message', {}).get('id')
+                    if not message_id:
+                        continue
+
+                    # Skip if we've already counted this message
+                    if message_id in seen_message_ids:
+                        continue
+
+                    seen_message_ids.add(message_id)
+
                     usage = entry.get('message', {}).get('usage', {})
                     if not usage:
                         continue
 
-                    # Sum all token types
-                    total_tokens += usage.get('input_tokens', 0)
-                    total_tokens += usage.get('cache_read_input_tokens', 0)
-                    total_tokens += usage.get('output_tokens', 0)
+                    # Calculate weighted tokens for this turn
+                    turn_weighted_tokens = calculate_weighted_tokens(usage)
+                    cumulative_weighted_tokens += turn_weighted_tokens
 
                 except json.JSONDecodeError:
                     continue
 
-        return total_tokens if total_tokens > 0 else None
+        return cumulative_weighted_tokens if cumulative_weighted_tokens > 0 else None
 
     except Exception:
         return None
 
 
 def format_token_display(tokens_used, token_budget=200000):
-    """Format token usage with color coding."""
+    """
+    Format token usage with color coding.
+
+    The token_budget (default 200k) is the Claude API INPUT context window.
+    tokens_used should be the weighted cumulative input tokens from the conversation.
+
+    Color coding:
+    - Green: <75% usage
+    - Yellow: 75-87.5% usage
+    - Orange: 87.5-95% usage
+    - Red: 95%+ usage
+    """
     if tokens_used is None:
         return None
 
@@ -253,6 +329,86 @@ def format_token_display(tokens_used, token_budget=200000):
     return f"{color}[{tokens_k}/{budget_k} ({percentage_str})]\033[0m"
 
 
+def get_usage_display(db_path: str) -> str:
+    """
+    Get formatted usage display for status line.
+
+    Args:
+        db_path: Path to usage tracking database
+
+    Returns:
+        Formatted usage string or None if no data
+    """
+    from pathlib import Path
+    import sys
+
+    # Add status_lines directory to path for imports
+    status_lines_dir = Path(__file__).parent
+    if str(status_lines_dir) not in sys.path:
+        sys.path.insert(0, str(status_lines_dir))
+
+    try:
+        from usage_db import UsageDatabase, get_cycle_boundaries
+        from tier_detector import detect_subscription_tier, SubscriptionTier
+        from usage_formatter import format_usage_display
+        import time
+
+        if not db_path or not Path(db_path).exists():
+            return None
+
+        db = UsageDatabase(db_path)
+
+        # Get current cycle usage
+        current_time = int(time.time())
+        cycle_start, cycle_end = get_cycle_boundaries(current_time)
+
+        cursor = db.conn.cursor()
+        cursor.execute("""
+            SELECT COALESCE(SUM(elapsed_seconds), 0)
+            FROM sessions
+            WHERE start_time >= ? AND start_time < ?
+        """, (cycle_start, cycle_end))
+
+        cycle_seconds = cursor.fetchone()[0]
+        cycle_hours = cycle_seconds / 3600
+
+        # Get weekly usage
+        week_start = current_time - (7 * 24 * 60 * 60)
+        cursor.execute("""
+            SELECT COALESCE(SUM(elapsed_seconds), 0)
+            FROM sessions
+            WHERE start_time >= ?
+        """, (week_start,))
+
+        weekly_seconds = cursor.fetchone()[0]
+        weekly_hours = weekly_seconds / 3600
+
+        db.close()
+
+        # No usage data
+        if weekly_hours == 0:
+            return None
+
+        # Detect tier (default to Pro if unknown)
+        tier = detect_subscription_tier(weekly_hours, hit_limit=False)
+
+        # Calculate time until reset
+        reset_seconds = cycle_end - current_time
+
+        # Format display
+        display = format_usage_display(
+            cycle_hours=cycle_hours,
+            weekly_hours=weekly_hours,
+            tier=tier,
+            reset_seconds=reset_seconds
+        )
+
+        return display
+
+    except Exception:
+        return None
+
+
 def generate_status_line(input_data):
     """Generate the status line with agent name, most recent prompt, and extras."""
     # Extract session ID from input data
@@ -266,11 +422,19 @@ def generate_status_line(input_data):
     output_style_data = input_data.get("output_style", {})
     output_style_name = output_style_data.get("name", None)
 
+    # Get git branch
+    git_branch = get_git_branch()
+    formatted_branch = format_git_branch(git_branch)
+
     # Get transcript path and calculate token usage
     transcript_path = input_data.get("transcript_path")
     tokens_used = None
     if transcript_path:
         tokens_used = calculate_token_usage(transcript_path)
+
+    # Get usage tracking display
+    db_path = os.path.expanduser("~/.claude/data/usage_tracking.db")
+    usage_display = get_usage_display(db_path)
 
     # Get session data
     session_data, error = get_session_data(session_id)
@@ -293,11 +457,19 @@ def generate_status_line(input_data):
     # Build status line components
     parts = []
 
+    # Usage tracking (if available)
+    if usage_display:
+        parts.append(usage_display)
+
     # Agent name - Bright Red
     parts.append(f"\033[91m[{agent_name}]\033[0m")
 
     # Model name - Blue
     parts.append(f"\033[34m[{model_name}]\033[0m")
+
+    # Git branch (if available)
+    if formatted_branch:
+        parts.append(formatted_branch)
 
     # Output style - Magenta
     if output_style_name:

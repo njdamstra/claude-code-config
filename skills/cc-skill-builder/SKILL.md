@@ -565,6 +565,327 @@ When skills generate outputs, use consistent timestamp format:
 YYYY-MM-DD_HH-MM-SS  # Example: 2025-10-29_19-30-45
 ```
 
+### Pattern 5: Documentation Patterns from Superpowers
+
+**Inspired by:** [obra/superpowers](https://github.com/obra/superpowers) - A comprehensive skills library with proven workflow enforcement patterns.
+
+These patterns make skills more prescriptive, preventing common shortcuts and rationalizations:
+
+#### 5.1: Iron Law Pattern
+
+**Purpose:** Non-negotiable rules that define skill boundaries
+
+**Structure:**
+```markdown
+## The Iron Law
+
+\`\`\`
+[CAPITALIZED DECLARATIVE STATEMENT OF CORE RULE]
+\`\`\`
+
+[Explanation of what violates this rule]
+
+**No exceptions:** [List specific scenarios where you might be tempted to skip]
+```
+
+**Example from test-driven-development:**
+```markdown
+## The Iron Law
+
+\`\`\`
+NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST
+\`\`\`
+
+Write code before the test? Delete it. Start over.
+
+**No exceptions:**
+- Don't keep it as "reference"
+- Don't "adapt" it while writing tests
+- Don't look at it
+- Delete means delete
+```
+
+**When to use:**
+- Skills with critical process requirements
+- Preventing dangerous shortcuts
+- Enforcing quality gates
+
+#### 5.2: Rationalization Prevention Tables
+
+**Purpose:** Pre-emptively address every excuse for skipping the process
+
+**Structure:**
+```markdown
+## Common Rationalizations
+
+| Excuse | Reality |
+|--------|---------|
+| "[Common excuse]" | [Why this thinking is flawed] |
+| "[Another excuse]" | [Counter-argument with evidence] |
+```
+
+**Example from systematic-debugging:**
+```markdown
+| Excuse | Reality |
+|--------|---------|
+| "Issue is simple, don't need process" | Simple issues have root causes too. Process is fast for simple bugs. |
+| "Emergency, no time for process" | Systematic debugging is FASTER than guess-and-check thrashing. |
+| "Just try this first, then investigate" | First fix sets the pattern. Do it right from the start. |
+```
+
+**When to use:**
+- Skills where shortcuts are tempting
+- Under time pressure scenarios
+- After seeing repeated violations
+
+#### 5.3: Red Flags - STOP Sections
+
+**Purpose:** Clear violation signals to catch yourself before mistakes
+
+**Structure:**
+```markdown
+## Red Flags - STOP and [Action]
+
+If you catch yourself thinking:
+- "[Thought pattern indicating violation]"
+- "[Another dangerous thought]"
+- "[Rationalization attempt]"
+
+**ALL of these mean: [Corrective action]**
+```
+
+**Example from test-driven-development:**
+```markdown
+## Red Flags - STOP and Start Over
+
+- Code before test
+- Test after implementation
+- Test passes immediately
+- Can't explain why test failed
+- "I already manually tested it"
+- "Tests after achieve the same purpose"
+- "Already spent X hours, deleting is wasteful"
+
+**All of these mean: Delete code. Start over with TDD.**
+```
+
+**When to use:**
+- Before point of no return
+- Catching early warning signs
+- Preventing sunk cost fallacy
+
+#### 5.4: Required Sub-Skill Annotations
+
+**Purpose:** Explicit skill composition and dependencies
+
+**Structure:**
+```markdown
+## Instructions
+
+### Step N: [Step Name]
+
+**REQUIRED SUB-SKILL:** Use [skill-name]
+
+[Brief explanation of what the sub-skill provides]
+```
+
+**Example from systematic-debugging:**
+```markdown
+### Phase 1: Root Cause Investigation
+
+5. **Trace Data Flow**
+
+   **WHEN error is deep in call stack:**
+
+   **REQUIRED SUB-SKILL:** Use superpowers:root-cause-tracing for backward tracing technique
+
+   **Quick version:**
+   - Where does bad value originate?
+   - What called this with bad value?
+   - Keep tracing up until you find the source
+```
+
+**When to use:**
+- Skills that depend on other skills
+- Complex workflows requiring specialized knowledge
+- Ensuring proper delegation to sub-skills
+
+#### 5.5: Checklist Progress Tracking
+
+**Purpose:** Copy-paste checklist for tracking progress through multi-phase workflows
+
+**Structure:**
+```markdown
+## The Process
+
+Copy this checklist to track progress:
+
+\`\`\`
+[Skill Name] Progress:
+- [ ] Phase 1: [Phase Name] ([key activities])
+- [ ] Phase 2: [Phase Name] ([key activities])
+- [ ] Phase 3: [Phase Name] ([key activities])
+\`\`\`
+```
+
+**Example from brainstorming:**
+```markdown
+Copy this checklist to track progress:
+
+\`\`\`
+Brainstorming Progress:
+- [ ] Prep: Autonomous Recon (repo/docs/commits reviewed, initial model shared)
+- [ ] Phase 1: Understanding (purpose, constraints, criteria gathered)
+- [ ] Phase 2: Exploration (2-3 approaches proposed and evaluated)
+- [ ] Phase 3: Design Presentation (design validated in sections)
+- [ ] Phase 4: Design Documentation (design written to docs/plans/)
+- [ ] Phase 5: Worktree Setup (if implementing)
+- [ ] Phase 6: Planning Handoff (if implementing)
+\`\`\`
+```
+
+**When to use:**
+- Multi-phase workflows (3+ steps)
+- Long-running tasks
+- When user needs visibility into progress
+
+#### 5.6: Quick Reference Tables
+
+**Purpose:** At-a-glance overview of phases with success criteria
+
+**Structure:**
+```markdown
+## Quick Reference
+
+| Phase | Key Activities | Success Criteria |
+|-------|---------------|------------------|
+| **1. [Phase]** | [Activities] | [What proves completion] |
+| **2. [Phase]** | [Activities] | [What proves completion] |
+```
+
+**Example from systematic-debugging:**
+```markdown
+| Phase | Key Activities | Success Criteria |
+|-------|---------------|------------------|
+| **1. Root Cause** | Read errors, reproduce, check changes, gather evidence | Understand WHAT and WHY |
+| **2. Pattern** | Find working examples, compare | Identify differences |
+| **3. Hypothesis** | Form theory, test minimally | Confirmed or new hypothesis |
+| **4. Implementation** | Create test, fix, verify | Bug resolved, tests pass |
+```
+
+**When to use:**
+- Beginning of skill (orientation)
+- Multi-phase processes
+- When phases have clear gates
+
+#### 5.7: "Announce Usage" Pattern
+
+**Purpose:** Make skill invocation explicit and transparent
+
+**Structure:**
+```markdown
+**Announce at start:** "I'm using the [skill-name] skill to [purpose]."
+```
+
+**Example from brainstorming:**
+```markdown
+**Core principle:** Research first, ask targeted questions to fill gaps, explore alternatives, present design incrementally for validation.
+
+**Announce at start:** "I'm using the brainstorming skill to refine your idea into a design."
+```
+
+**When to use:**
+- User-facing workflow skills
+- When skill changes interaction mode
+- Multi-phase processes where user should know what's happening
+
+#### 5.8: Real-World Impact Sections
+
+**Purpose:** Provide evidence of effectiveness, not just theory
+
+**Structure:**
+```markdown
+## Real-World Impact
+
+From [context/session date]:
+- [Metric/outcome 1]
+- [Metric/outcome 2]
+- [Comparison with alternative approach]
+```
+
+**Example from systematic-debugging:**
+```markdown
+## Real-World Impact
+
+From debugging sessions:
+- Systematic approach: 15-30 minutes to fix
+- Random fixes approach: 2-3 hours of thrashing
+- First-time fix rate: 95% vs 40%
+- New bugs introduced: Near zero vs common
+```
+
+**When to use:**
+- After using skill multiple times
+- When you have comparison data
+- To justify process overhead
+
+### When to Apply These Patterns
+
+| Pattern | Apply When | Impact |
+|---------|-----------|--------|
+| **Iron Law** | Critical process boundaries | Prevents dangerous shortcuts |
+| **Rationalization Tables** | Shortcuts are tempting | Pre-emptive defense against excuses |
+| **Red Flags** | Before point of no return | Early warning system |
+| **Sub-Skill Annotations** | Complex dependencies | Explicit composition |
+| **Checklist Tracking** | Multi-phase workflows (3+ steps) | Visibility and progress tracking |
+| **Quick Reference** | Orientation needed | Fast lookups during execution |
+| **Announce Usage** | User-facing workflows | Transparency and expectations |
+| **Real-World Impact** | After multiple uses | Evidence-based justification |
+
+### Integration Example
+
+Here's how a skill might combine multiple patterns:
+
+```markdown
+---
+name: Example Workflow Skill
+description: |
+  [Specific description with triggers]
+---
+
+# Example Workflow Skill
+
+## Quick Reference
+[Quick reference table]
+
+## The Iron Law
+[Non-negotiable rule]
+
+## The Process
+
+Copy this checklist to track progress:
+[Checklist]
+
+**Announce at start:** "I'm using the [skill-name] skill."
+
+### Phase 1: [Name]
+[Instructions]
+
+**REQUIRED SUB-SKILL:** Use [other-skill]
+
+### Phase 2: [Name]
+[Instructions]
+
+## Red Flags - STOP and [Action]
+[Warning signs]
+
+## Common Rationalizations
+[Table of excuses vs reality]
+
+## Real-World Impact
+[Evidence of effectiveness]
+```
+
 ## Skill Creation Workflow
 
 ### Step 1: Define Purpose
