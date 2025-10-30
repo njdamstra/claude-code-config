@@ -117,6 +117,42 @@ def format_extras(extras):
     return " ".join(pairs)
 
 
+def get_git_branch():
+    """Get the current git branch name."""
+    import subprocess
+
+    try:
+        # Try to get the current branch using git
+        result = subprocess.run(
+            ["git", "branch", "--show-current"],
+            capture_output=True,
+            text=True,
+            timeout=2,
+            cwd=os.getcwd()
+        )
+
+        if result.returncode == 0 and result.stdout.strip():
+            return result.stdout.strip()
+
+        # Fallback: try git symbolic-ref for older git versions
+        result = subprocess.run(
+            ["git", "symbolic-ref", "--short", "HEAD"],
+            capture_output=True,
+            text=True,
+            timeout=2,
+            cwd=os.getcwd()
+        )
+
+        if result.returncode == 0 and result.stdout.strip():
+            return result.stdout.strip()
+
+        return None
+
+    except (subprocess.TimeoutExpired, FileNotFoundError, Exception):
+        # Git not installed, not a git repo, or command timed out
+        return None
+
+
 def calculate_token_usage(transcript_path):
     """Parse transcript and calculate cumulative token usage."""
     from pathlib import Path
