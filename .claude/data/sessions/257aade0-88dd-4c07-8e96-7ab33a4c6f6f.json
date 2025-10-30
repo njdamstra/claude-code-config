@@ -1,0 +1,6 @@
+{
+  "session_id": "257aade0-88dd-4c07-8e96-7ab33a4c6f6f",
+  "prompts": [
+    "/meta commands \"I want to create a slash command that is called prompt.MD this/command should have a set of preset prompts that would be automatically injected into claude code. in the root of this directory i need a prompts.json that will have a list of prompt names, description, the actual prompt, number of times used, last time used, notes field. essentially ill be able to run /prompts doc-research \"fix this bug\" which is inject the doc-research prompt and the user message into claude. there should be a /prompts list which lists the available prompts, a /prompts store <name> <description> <prompt> to create a new prompt, a /prompts delete <name> to delete a prompt. this is rough but plan to make this solid\""
+  ]
+}

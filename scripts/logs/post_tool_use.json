@@ -1,0 +1,1777 @@
+[
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "default",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd ~/.claude/scripts && bash -c 'source mcp-act.sh 2>/dev/null; get_servers \"tav\"'",
+      "description": "Test get_servers function output"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Listing all configured MCP servers...\n\n\u001b[0;35m=== Presets ===\u001b[0m\nbrowser: Browser automation and debugging tools [playwright, chrome-devtools]\nresearch: Web research and search tools [tavily, firecrawl, context7]\nai: AI assistance and problem-solving tools [gemini-cli, sequential-thinking]\ndocs: Documentation and reference lookup [context7, astro-docs, appwrite-docs, tailwind-css, shadcn]\nwebdev: Web development essentials [firecrawl, playwright]\nastro-dev: Astro + Vue + Appwrite development stack [astro-docs, appwrite-docs, tailwind-css, shadcn-vue, context7]\nui: UI and component development [tailwind-css, shadcn-vue, shadcn-vue-smithery]\nui-react: UI and component development (React) [tailwind-css, shadcn]\nai-assist: AI collaboration tools [gemini-cli, sequential-thinking, context7]\n\n\u001b[0;35m=== Individual Servers ===\u001b[0m\ngemini-cli: Google Gemini CLI with large context window (2M tokens) [aliases: gemini, gem]\ngemini-cli-oauth: Google Gemini CLI with OAuth (no API key needed) [aliases: gemini-oauth]\nfirecrawl: Web scraping and content extraction [aliases: fc, crawl]\nplaywright: Browser automation for testing, screenshot capture, and visual regression testing. Optimized for Mac Pro 2019 with GPU acceleration disabled. [aliases: pw, browser]\ntailwind-css: Tailwind CSS utilities and documentation [aliases: tailwind, tw]\nshadcn: shadcn/ui component registry and documentation (React) [aliases: shadcn-react]\nshadcn-vue: shadcn-vue AI-powered component generation for Vue 3 [aliases: ui, shadcn-ui, vue-ui]\nshadcn-vue-smithery: shadcn-vue MCP via Smithery (AI component generation) [aliases: vue-ai, shadcn-ai]\nchrome-devtools: Chrome DevTools Protocol for browser debugging [aliases: chrome, devtools]\nfigma-to-react: Convert Figma designs to React components [aliases: figma]\nsequential-thinking: Break down complex problems into steps [aliases: thinking, seq]\ncontext7: Up-to-date library documentation and code examples [aliases: ctx7, docs]\nastro-docs: Official Astro documentation with real-time search via kapa.ai [aliases: astro, astro-doc]\nappwrite-docs: Official Appwrite documentation with real-time search [aliases: appwrite, appwrite-doc]\nmemory: Persistent knowledge storage across sessions [aliases: mem]\ngithub: GitHub integration for repositories, PRs, and issues [aliases: gh]\ntavily: Tavily AI-powered search API for real-time web research [aliases: tav, search]\n\n\u001b[0;34m\u2139\u001b[0m Active MCP servers:\n\n\u001b[0;36mUser-level (global):\u001b[0m\n  \u2022 gemini-cli: npx gemini-mcp-tool\n\ngemini-cli: npx gemini-mcp-tool - \u2713 Connected\ntavily\n\u001b[0;34m\u2139\u001b[0m Resolved alias 'tav' to 'tavily'",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "default",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat > /tmp/test-add.sh << 'EOF'\n#!/usr/bin/env bash\nsource ~/.claude/scripts/mcp-act.sh 2>/dev/null\n\n# Extract just the server name\nservers=$(get_servers \"tav\" 2>/dev/null)\necho \"Servers returned: '$servers'\"\nEOF\nchmod +x /tmp/test-add.sh\n/tmp/test-add.sh",
+      "description": "Test server name extraction"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Listing all configured MCP servers...\n\n\u001b[0;35m=== Presets ===\u001b[0m\nbrowser: Browser automation and debugging tools [playwright, chrome-devtools]\nresearch: Web research and search tools [tavily, firecrawl, context7]\nai: AI assistance and problem-solving tools [gemini-cli, sequential-thinking]\ndocs: Documentation and reference lookup [context7, astro-docs, appwrite-docs, tailwind-css, shadcn]\nwebdev: Web development essentials [firecrawl, playwright]\nastro-dev: Astro + Vue + Appwrite development stack [astro-docs, appwrite-docs, tailwind-css, shadcn-vue, context7]\nui: UI and component development [tailwind-css, shadcn-vue, shadcn-vue-smithery]\nui-react: UI and component development (React) [tailwind-css, shadcn]\nai-assist: AI collaboration tools [gemini-cli, sequential-thinking, context7]\n\n\u001b[0;35m=== Individual Servers ===\u001b[0m\ngemini-cli: Google Gemini CLI with large context window (2M tokens) [aliases: gemini, gem]\ngemini-cli-oauth: Google Gemini CLI with OAuth (no API key needed) [aliases: gemini-oauth]\nfirecrawl: Web scraping and content extraction [aliases: fc, crawl]\nplaywright: Browser automation for testing, screenshot capture, and visual regression testing. Optimized for Mac Pro 2019 with GPU acceleration disabled. [aliases: pw, browser]\ntailwind-css: Tailwind CSS utilities and documentation [aliases: tailwind, tw]\nshadcn: shadcn/ui component registry and documentation (React) [aliases: shadcn-react]\nshadcn-vue: shadcn-vue AI-powered component generation for Vue 3 [aliases: ui, shadcn-ui, vue-ui]\nshadcn-vue-smithery: shadcn-vue MCP via Smithery (AI component generation) [aliases: vue-ai, shadcn-ai]\nchrome-devtools: Chrome DevTools Protocol for browser debugging [aliases: chrome, devtools]\nfigma-to-react: Convert Figma designs to React components [aliases: figma]\nsequential-thinking: Break down complex problems into steps [aliases: thinking, seq]\ncontext7: Up-to-date library documentation and code examples [aliases: ctx7, docs]\nastro-docs: Official Astro documentation with real-time search via kapa.ai [aliases: astro, astro-doc]\nappwrite-docs: Official Appwrite documentation with real-time search [aliases: appwrite, appwrite-doc]\nmemory: Persistent knowledge storage across sessions [aliases: mem]\ngithub: GitHub integration for repositories, PRs, and issues [aliases: gh]\ntavily: Tavily AI-powered search API for real-time web research [aliases: tav, search]\n\n\u001b[0;34m\u2139\u001b[0m Active MCP servers:\n\n\u001b[0;36mUser-level (global):\u001b[0m\n  \u2022 gemini-cli: npx gemini-mcp-tool\n\ngemini-cli: npx gemini-mcp-tool - \u2713 Connected\nServers returned: 'tavily'",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "default",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Identify the root cause of the script parsing issue",
+          "status": "completed",
+          "activeForm": "Identifying the root cause of the script parsing issue"
+        },
+        {
+          "content": "Fix info messages to use stderr instead of stdout",
+          "status": "completed",
+          "activeForm": "Fixing info messages to use stderr instead of stdout"
+        },
+        {
+          "content": "Test the fixed script with an alias",
+          "status": "completed",
+          "activeForm": "Testing the fixed script with an alias"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Identify the root cause of the script parsing issue",
+          "status": "completed",
+          "activeForm": "Identifying the root cause of the script parsing issue"
+        },
+        {
+          "content": "Fix info messages to use stderr instead of stdout",
+          "status": "completed",
+          "activeForm": "Fixing info messages to use stderr instead of stdout"
+        },
+        {
+          "content": "Test the fixed script with an alias",
+          "status": "in_progress",
+          "activeForm": "Testing the fixed script with an alias"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Identify the root cause of the script parsing issue",
+          "status": "completed",
+          "activeForm": "Identifying the root cause of the script parsing issue"
+        },
+        {
+          "content": "Fix info messages to use stderr instead of stdout",
+          "status": "completed",
+          "activeForm": "Fixing info messages to use stderr instead of stdout"
+        },
+        {
+          "content": "Test the fixed script with an alias",
+          "status": "completed",
+          "activeForm": "Testing the fixed script with an alias"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "rm /tmp/test-add.sh",
+      "description": "Clean up test script"
+    },
+    "tool_response": {
+      "stdout": "",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh remove tav",
+      "description": "Remove Tavily MCP server using alias"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Removing servers...\n\n\u001b[0;34m\u2139\u001b[0m Removing: tavily\n\u001b[1;33m\u26a0\u001b[0m Failed to remove: tavily\n\u001b[0;36m\ud83d\udca1\u001b[0m Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Verify with: claude mcp list\n\u001b[0;34m\u2139\u001b[0m Resolved alias 'tav' to 'tavily'",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/.mcp.json"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/natedamstra/.claude/.mcp.json",
+        "content": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}\n",
+        "numLines": 25,
+        "startLine": 1,
+        "totalLines": 25
+      }
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/.mcp.json",
+      "old_string": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "new_string": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/.mcp.json",
+      "oldString": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "newString": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "originalFile": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}\n",
+      "structuredPatch": [
+        {
+          "oldStart": 9,
+          "oldLines": 16,
+          "newStart": 9,
+          "newLines": 6,
+          "lines": [
+            "         \"https://www.shadcn.io/api/mcp\"",
+            "       ],",
+            "       \"env\": {}",
+            "-    },",
+            "-    \"tavily\": {",
+            "-      \"type\": \"stdio\",",
+            "-      \"command\": \"npx\",",
+            "-      \"args\": [",
+            "-        \"-y\",",
+            "-        \"mcp-remote\",",
+            "-        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"",
+            "-      ],",
+            "-      \"env\": {}",
+            "     }",
+            "   }",
+            " }"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat /Users/natedamstra/.claude/.mcp.json | jq . > /dev/null && echo \"\u2705 Valid JSON - Tavily removed successfully\"",
+      "description": "Validate JSON after removal"
+    },
+    "tool_response": {
+      "stdout": "\u2705 Valid JSON - Tavily removed successfully",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "in_progress",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "pending",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "pending",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [],
+      "newTodos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "in_progress",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "pending",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "pending",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "claude mcp remove tavily 2>&1 || echo \"Exit code: $?\"",
+      "description": "Test claude mcp remove command"
+    },
+    "tool_response": {
+      "stdout": "No MCP server found with name: \"tavily\"\nExit code: 1",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "claude mcp list 2>&1 | head -20",
+      "description": "List currently connected MCP servers"
+    },
+    "tool_response": {
+      "stdout": "Checking MCP server health...\n\ngemini-cli: npx gemini-mcp-tool - \u2713 Connected",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "offset": 305,
+      "limit": 25
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+        "content": "# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n\n    for server in $servers; do\n        info \"Removing: $server\"\n        if claude mcp remove \"$server\" 2>/dev/null; then\n            success \"Removed: $server\"\n        else\n            warning \"Failed to remove: $server\"\n            tip \"Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\"\n        fi\n    done\n\n    echo \"\"\n    tip \"Verify with: claude mcp list\"\n}\n\n# Action: audit (NEW - security check)\naction_audit() {",
+        "numLines": 25,
+        "startLine": 305,
+        "totalLines": 514
+      }
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "completed",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "completed",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "in_progress",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "in_progress",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "pending",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "pending",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "completed",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "completed",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "in_progress",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "old_string": "# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n\n    for server in $servers; do\n        info \"Removing: $server\"\n        if claude mcp remove \"$server\" 2>/dev/null; then\n            success \"Removed: $server\"\n        else\n            warning \"Failed to remove: $server\"\n            tip \"Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\"\n        fi\n    done\n\n    echo \"\"\n    tip \"Verify with: claude mcp list\"\n}",
+      "new_string": "# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local removed_servers=()\n    local failed_servers=()\n\n    for server in $servers; do\n        info \"Removing: $server\"\n\n        local removed_from_any=false\n\n        # Try to remove from user-level config\n        if [ -f \"$CLAUDE_CONFIG\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then\n                # Server exists in user config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"\n                success \"Removed from user-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        fi\n\n        if [ -n \"$project_config\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then\n                # Server exists in project config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$project_config\"\n                success \"Removed from project-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        if [ \"$removed_from_any\" = true ]; then\n            removed_servers+=(\"$server\")\n        else\n            warning \"Server not found in any config: $server\"\n            failed_servers+=(\"$server\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#removed_servers[@]} -gt 0 ]; then\n        success \"Successfully removed ${#removed_servers[@]} server(s):\"\n        for server in \"${removed_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to remove ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server (not found in configs)\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "oldString": "# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n\n    for server in $servers; do\n        info \"Removing: $server\"\n        if claude mcp remove \"$server\" 2>/dev/null; then\n            success \"Removed: $server\"\n        else\n            warning \"Failed to remove: $server\"\n            tip \"Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\"\n        fi\n    done\n\n    echo \"\"\n    tip \"Verify with: claude mcp list\"\n}",
+      "newString": "# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local removed_servers=()\n    local failed_servers=()\n\n    for server in $servers; do\n        info \"Removing: $server\"\n\n        local removed_from_any=false\n\n        # Try to remove from user-level config\n        if [ -f \"$CLAUDE_CONFIG\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then\n                # Server exists in user config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"\n                success \"Removed from user-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        fi\n\n        if [ -n \"$project_config\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then\n                # Server exists in project config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$project_config\"\n                success \"Removed from project-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        if [ \"$removed_from_any\" = true ]; then\n            removed_servers+=(\"$server\")\n        else\n            warning \"Server not found in any config: $server\"\n            failed_servers+=(\"$server\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#removed_servers[@]} -gt 0 ]; then\n        success \"Successfully removed ${#removed_servers[@]} server(s):\"\n        for server in \"${removed_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to remove ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server (not found in configs)\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}",
+      "originalFile": "#!/usr/bin/env bash\n\n# MCP Act - MCP Server Management with Presets\n# Version: 2.0 (Improved with validation and security)\n# Usage: mcp-act <action> [server-name|preset-name] [scope]\n\nset -e\n\nCONFIG_FILE=\"$HOME/.claude/mcp-servers-config.json\"\nCLAUDE_CONFIG=\"$HOME/.claude.json\"\n\n# Colors for output\nRED='\\033[0;31m'\nGREEN='\\033[0;32m'\nYELLOW='\\033[1;33m'\nBLUE='\\033[0;34m'\nMAGENTA='\\033[0;35m'\nCYAN='\\033[0;36m'\nNC='\\033[0m' # No Color\n\n# Helper functions\ninfo() { echo -e \"${BLUE}\u2139${NC} $1\"; }\nsuccess() { echo -e \"${GREEN}\u2713${NC} $1\"; }\nwarning() { echo -e \"${YELLOW}\u26a0${NC} $1\"; }\nerror() { echo -e \"${RED}\u2717${NC} $1\"; exit 1; }\ntip() { echo -e \"${CYAN}\ud83d\udca1${NC} $1\"; }\n\n# Check if jq is available\nif ! command -v jq &> /dev/null; then\n    error \"jq is required but not installed. Install with: brew install jq (macOS) or apt-get install jq (Linux)\"\nfi\n\n# Check if config file exists\nif [ ! -f \"$CONFIG_FILE\" ]; then\n    error \"Configuration file not found: $CONFIG_FILE\"\nfi\n\n# Parse arguments\nACTION=\"${1:-list}\"\nTARGET=\"${2:-}\"\nSCOPE=\"${3:-project}\"\n\n# Resolve alias to actual server name\nresolve_alias() {\n    local input=\"$1\"\n\n    # First check if it's already a valid server name\n    if jq -e \".servers[\\\"$input\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n        echo \"$input\"\n        return 0\n    fi\n\n    # Check if it's an alias\n    local resolved=$(jq -r \".servers | to_entries[] | select(.value.aliases[]? == \\\"$input\\\") | .key\" \"$CONFIG_FILE\" 2>/dev/null | head -n1)\n\n    if [ -n \"$resolved\" ]; then\n        echo \"$resolved\"\n        return 0\n    fi\n\n    # Not found as server or alias\n    echo \"$input\"\n    return 1\n}\n\n# Get server list from preset or single server\nget_servers() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        # It's a preset\n        local preset_name=\"${target#preset:}\"\n        local servers=$(jq -r \".presets[\\\"$preset_name\\\"].servers[]\" \"$CONFIG_FILE\" 2>/dev/null)\n\n        if [ -z \"$servers\" ]; then\n            error \"Preset '$preset_name' not found\"\n        fi\n\n        echo \"$servers\"\n    else\n        # It's a single server - try to resolve alias first\n        local resolved=$(resolve_alias \"$target\")\n\n        if jq -e \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n            if [ \"$resolved\" != \"$target\" ]; then\n                info \"Resolved alias '$target' to '$resolved'\" >&2\n            fi\n            echo \"$resolved\"\n        else\n            error \"Server '$target' not found in configuration (checked aliases too)\"\n        fi\n    fi\n}\n\n# Get server config\nget_server_config() {\n    local server_name=\"$1\"\n    jq -r \".servers[\\\"$server_name\\\"]\" \"$CONFIG_FILE\"\n}\n\n# Validate environment variables for a server\nvalidate_env_vars() {\n    local server_name=\"$1\"\n    local config=$(get_server_config \"$server_name\")\n\n    # Extract env vars from config\n    local env_keys=$(echo \"$config\" | jq -r '.env | keys[]?' 2>/dev/null)\n\n    if [ -z \"$env_keys\" ]; then\n        # No env vars required\n        return 0\n    fi\n\n    local missing_vars=()\n\n    for var in $env_keys; do\n        local var_value=$(echo \"$config\" | jq -r \".env[\\\"$var\\\"]\")\n\n        # Check if it's a template variable (${VAR_NAME})\n        if [[ \"$var_value\" =~ ^\\$\\{([A-Z_]+)\\}$ ]]; then\n            local env_name=\"${BASH_REMATCH[1]}\"\n\n            if [ -z \"${!env_name}\" ]; then\n                missing_vars+=(\"$env_name\")\n            fi\n        fi\n    done\n\n    if [ ${#missing_vars[@]} -gt 0 ]; then\n        warning \"Server '$server_name' requires environment variables:\"\n        for missing_var in \"${missing_vars[@]}\"; do\n            echo -e \"  ${RED}\u2717${NC} $missing_var (not set)\"\n        done\n\n        local notes=$(echo \"$config\" | jq -r '.notes // \"No additional notes\"')\n        tip \"$notes\"\n\n        echo \"\"\n        info \"Set with: export ${missing_vars[0]}='your-value-here'\"\n        return 1\n    fi\n\n    success \"Environment variables validated for '$server_name'\"\n    return 0\n}\n\n# Action: list\naction_list() {\n    info \"Listing all configured MCP servers...\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Presets ===${NC}\"\n    jq -r '.presets | to_entries[] | \"\\(.key): \\(.value.description) [\\(.value.servers | join(\", \"))]\"' \"$CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Individual Servers ===${NC}\"\n    jq -r '.servers | to_entries[] | \"\\(.key): \\(.value.description)\" + (if .value.aliases then \" [aliases: \\(.value.aliases | join(\", \"))]\" else \"\" end)' \"$CONFIG_FILE\"\n    echo \"\"\n\n    # Show active MCP servers grouped by scope\n    info \"Active MCP servers:\"\n    echo \"\"\n\n    # Check user-level servers\n    if [ -f \"$CLAUDE_CONFIG\" ]; then\n        local user_servers=$(jq -r '.mcpServers | keys[]?' \"$CLAUDE_CONFIG\" 2>/dev/null)\n        if [ -n \"$user_servers\" ]; then\n            echo -e \"${CYAN}User-level (global):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$CLAUDE_CONFIG\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$CLAUDE_CONFIG\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$user_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    fi\n\n    if [ -n \"$project_config\" ]; then\n        local project_servers=$(jq -r '.mcpServers | keys[]?' \"$project_config\" 2>/dev/null)\n        if [ -n \"$project_servers\" ]; then\n            echo -e \"${CYAN}Project-level (local):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$project_config\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$project_config\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$project_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Show connection status\n    claude mcp list 2>/dev/null | grep -E \"\u2713 Connected|\u2717 \" || warning \"Could not check server connection status\"\n}\n\n# Action: info\naction_info() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        local preset_name=\"${target#preset:}\"\n        info \"Preset: $preset_name\"\n        echo \"\"\n        jq \".presets[\\\"$preset_name\\\"]\" \"$CONFIG_FILE\" || error \"Preset not found\"\n    else\n        # Resolve alias if necessary\n        local resolved=$(resolve_alias \"$target\")\n        if [ \"$resolved\" != \"$target\" ]; then\n            info \"Resolved alias '$target' to '$resolved'\"\n            echo \"\"\n        fi\n        info \"Server: $resolved\"\n        echo \"\"\n        jq \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" || error \"Server not found\"\n    fi\n}\n\n# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}\n\n# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n\n    for server in $servers; do\n        info \"Removing: $server\"\n        if claude mcp remove \"$server\" 2>/dev/null; then\n            success \"Removed: $server\"\n        else\n            warning \"Failed to remove: $server\"\n            tip \"Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\"\n        fi\n    done\n\n    echo \"\"\n    tip \"Verify with: claude mcp list\"\n}\n\n# Action: audit (NEW - security check)\naction_audit() {\n    info \"Auditing ~/.claude.json for security issues...\"\n    echo \"\"\n\n    if [ ! -f \"$CLAUDE_CONFIG\" ]; then\n        warning \"Claude config not found: $CLAUDE_CONFIG\"\n        return 1\n    fi\n\n    # Check for hardcoded secrets (long alphanumeric strings that aren't ${VAR})\n    local potential_secrets=$(jq -r '.mcpServers | to_entries[] | select(.value.env | to_entries[]? | .value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | \"\\(.key): \\(.value.env | to_entries[] | select(.value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | .key)\"' \"$CLAUDE_CONFIG\" 2>/dev/null)\n\n    if [ -n \"$potential_secrets\" ]; then\n        warning \"Potential hardcoded secrets detected:\"\n        echo \"$potential_secrets\"\n        echo \"\"\n        tip \"Replace hardcoded values with environment variable references: \\${VAR_NAME}\"\n        echo \"\"\n        info \"Example fix:\"\n        echo '  \"env\": { \"API_KEY\": \"${API_KEY}\" }  \u2190 Good'\n        echo '  \"env\": { \"API_KEY\": \"abc123...\" }   \u2190 Bad (hardcoded)'\n        return 1\n    else\n        success \"No hardcoded secrets detected!\"\n    fi\n\n    # Check for missing env vars in current shell\n    echo \"\"\n    info \"Checking environment variables...\"\n    local all_env_vars=$(jq -r '.mcpServers | to_entries[] | .value.env | to_entries[]? | .value | select(test(\"^\\\\$\\\\{\")) | gsub(\"\\\\$\\\\{|\\\\}\"; \"\")' \"$CLAUDE_CONFIG\" 2>/dev/null | sort -u)\n\n    if [ -n \"$all_env_vars\" ]; then\n        local missing_env=()\n        while IFS= read -r env_var; do\n            if [ -z \"${!env_var}\" ]; then\n                missing_env+=(\"$env_var\")\n            fi\n        done <<< \"$all_env_vars\"\n\n        if [ ${#missing_env[@]} -gt 0 ]; then\n            warning \"Environment variables not set in current shell:\"\n            for var in \"${missing_env[@]}\"; do\n                echo \"  \u2717 $var\"\n            done\n            echo \"\"\n            tip \"Set in ~/.zshrc or ~/.bashrc for persistence\"\n        else\n            success \"All required environment variables are set!\"\n        fi\n    fi\n}\n\n# Action: validate (NEW - validate config file)\naction_validate() {\n    info \"Validating configuration file...\"\n    echo \"\"\n\n    # Check JSON syntax\n    if ! jq empty \"$CONFIG_FILE\" 2>/dev/null; then\n        error \"Invalid JSON in $CONFIG_FILE\"\n    fi\n    success \"JSON syntax valid\"\n\n    # Check required fields in presets\n    local preset_count=$(jq '.presets | length' \"$CONFIG_FILE\")\n    success \"Found $preset_count preset(s)\"\n\n    # Check required fields in servers\n    local server_count=$(jq '.servers | length' \"$CONFIG_FILE\")\n    success \"Found $server_count server(s)\"\n\n    # Validate each server has required fields\n    local servers=$(jq -r '.servers | keys[]' \"$CONFIG_FILE\")\n    for server in $servers; do\n        local has_command=$(jq -e \".servers[\\\"$server\\\"].command\" \"$CONFIG_FILE\" &>/dev/null && echo \"yes\" || echo \"no\")\n        if [ \"$has_command\" = \"no\" ]; then\n            warning \"Server '$server' missing 'command' field\"\n        fi\n    done\n\n    echo \"\"\n    success \"Configuration file is valid!\"\n}\n\n# Action: config (NEW - edit MCP registry)\naction_config() {\n    info \"MCP Server Registry Configuration\"\n    echo \"\"\n    echo -e \"${CYAN}Location:${NC} $CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Instructions for Claude Code ===${NC}\"\n    echo \"\"\n    echo \"Please help me edit or add MCP servers to the registry at:\"\n    echo \"  $CONFIG_FILE\"\n    echo \"\"\n    echo \"The registry contains:\"\n    echo \"  \u2022 presets: Bundles of related servers\"\n    echo \"  \u2022 servers: Individual MCP server configurations\"\n    echo \"  \u2022 environments: Environment variable documentation\"\n    echo \"\"\n    echo \"Each server entry should have:\"\n    echo \"  - name: Server identifier\"\n    echo \"  - description: What the server does\"\n    echo \"  - command: Executable to run (e.g., 'npx', 'python3')\"\n    echo \"  - args: Array of arguments\"\n    echo \"  - env: Environment variables (use \\${VAR} references)\"\n    echo \"  - aliases: Array of shortcut names (optional)\"\n    echo \"  - notes: Additional information (optional)\"\n    echo \"\"\n    echo \"Example server entry:\"\n    cat << 'EOF'\n  \"my-server\": {\n    \"name\": \"my-server\",\n    \"description\": \"Brief description of what this server does\",\n    \"command\": \"npx\",\n    \"args\": [\"-y\", \"my-mcp-package\"],\n    \"env\": {\n      \"API_KEY\": \"${MY_API_KEY}\"\n    },\n    \"aliases\": [\"short\", \"alias\"],\n    \"notes\": \"Get API key from https://example.com\"\n  }\nEOF\n    echo \"\"\n    tip \"After editing, run '/mcps validate' to check the configuration\"\n}\n\n# Main execution\ncase \"$ACTION\" in\n    list)\n        action_list\n        ;;\n    info)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act info <server-name|preset-name>\"\n        action_info \"$TARGET\"\n        ;;\n    add)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act add <server-name|preset-name> [project|user]\"\n        action_add \"$TARGET\" \"$SCOPE\"\n        ;;\n    remove)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act remove <server-name|preset-name>\"\n        action_remove \"$TARGET\"\n        ;;\n    audit)\n        action_audit\n        ;;\n    validate)\n        action_validate\n        ;;\n    config)\n        action_config\n        ;;\n    help|--help|-h)\n        echo \"MCP Act - MCP Server Management with Presets\"\n        echo \"\"\n        echo \"Usage: mcp-act <action> [arguments]\"\n        echo \"\"\n        echo \"Actions:\"\n        echo \"  list                            List all configured servers and presets\"\n        echo \"  info <name>                     Show details about a server or preset\"\n        echo \"  add <name> [project|user]       Add server(s) to configuration\"\n        echo \"  remove <name>                   Remove server(s) from configuration\"\n        echo \"  config                          Edit MCP registry (opens guidance for Claude Code)\"\n        echo \"  audit                           Check for security issues\"\n        echo \"  validate                        Validate configuration file\"\n        echo \"  help                            Show this help message\"\n        echo \"\"\n        echo \"Examples:\"\n        echo \"  mcp-act list\"\n        echo \"  mcp-act add preset:webdev\"\n        echo \"  mcp-act add gemini-cli user\"\n        echo \"  mcp-act add gemini user          # Use alias (gemini \u2192 gemini-cli)\"\n        echo \"  mcp-act info chrome              # Use alias (chrome \u2192 chrome-devtools)\"\n        echo \"  mcp-act info preset:ui\"\n        echo \"  mcp-act config                   # Edit MCP registry with Claude Code\"\n        echo \"  mcp-act audit\"\n        echo \"  mcp-act validate\"\n        echo \"\"\n        echo \"Note: You can use server aliases as shortcuts. Run 'mcp-act list' to see available aliases.\"\n        ;;\n    *)\n        error \"Unknown action: $ACTION\\nRun 'mcp-act help' for usage\"\n        ;;\nesac\n",
+      "structuredPatch": [
+        {
+          "oldStart": 309,
+          "oldLines": 20,
+          "newStart": 309,
+          "newLines": 78,
+          "lines": [
+            "     info \"Removing servers...\"",
+            "     echo \"\"",
+            " ",
+            "-    local servers=$(get_servers \"$target\")",
+            "+    local servers=$(get_servers \"$target\" 2>/dev/null)",
+            " ",
+            "+    if [ -z \"$servers\" ]; then",
+            "+        error \"No servers found for: $target\"",
+            "+    fi",
+            "+",
+            "+    local removed_servers=()",
+            "+    local failed_servers=()",
+            "+",
+            "     for server in $servers; do",
+            "         info \"Removing: $server\"",
+            "-        if claude mcp remove \"$server\" 2>/dev/null; then",
+            "-            success \"Removed: $server\"",
+            "+",
+            "+        local removed_from_any=false",
+            "+",
+            "+        # Try to remove from user-level config",
+            "+        if [ -f \"$CLAUDE_CONFIG\" ]; then",
+            "+            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then",
+            "+                # Server exists in user config - remove it",
+            "+                local tmp_file=$(mktemp)",
+            "+                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"",
+            "+                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"",
+            "+                success \"Removed from user-level config: $server\"",
+            "+                removed_from_any=true",
+            "+            fi",
+            "+        fi",
+            "+",
+            "+        # Try to remove from project-level config",
+            "+        local project_config=\"\"",
+            "+        if [ -f \"./.mcp.json\" ]; then",
+            "+            project_config=\"./.mcp.json\"",
+            "+        elif [ -f \"./.claude/.mcp.json\" ]; then",
+            "+            project_config=\"./.claude/.mcp.json\"",
+            "+        fi",
+            "+",
+            "+        if [ -n \"$project_config\" ]; then",
+            "+            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then",
+            "+                # Server exists in project config - remove it",
+            "+                local tmp_file=$(mktemp)",
+            "+                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"",
+            "+                mv \"$tmp_file\" \"$project_config\"",
+            "+                success \"Removed from project-level config: $server\"",
+            "+                removed_from_any=true",
+            "+            fi",
+            "+        fi",
+            "+",
+            "+        if [ \"$removed_from_any\" = true ]; then",
+            "+            removed_servers+=(\"$server\")",
+            "         else",
+            "-            warning \"Failed to remove: $server\"",
+            "-            tip \"Known bug with 'claude mcp remove' - try manual edit of ~/.claude.json\"",
+            "+            warning \"Server not found in any config: $server\"",
+            "+            failed_servers+=(\"$server\")",
+            "         fi",
+            "+        echo \"\"",
+            "     done",
+            " ",
+            "+    # Summary",
+            "+    echo -e \"${MAGENTA}=== Summary ===${NC}\"",
+            "+    if [ ${#removed_servers[@]} -gt 0 ]; then",
+            "+        success \"Successfully removed ${#removed_servers[@]} server(s):\"",
+            "+        for server in \"${removed_servers[@]}\"; do",
+            "+            echo \"  \u2713 $server\"",
+            "+        done",
+            "+    fi",
+            "+",
+            "+    if [ ${#failed_servers[@]} -gt 0 ]; then",
+            "+        warning \"Failed to remove ${#failed_servers[@]} server(s):\"",
+            "+        for server in \"${failed_servers[@]}\"; do",
+            "+            echo \"  \u2717 $server (not found in configs)\"",
+            "+        done",
+            "+    fi",
+            "+",
+            "     echo \"\"",
+            "-    tip \"Verify with: claude mcp list\"",
+            "+    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"",
+            " }",
+            " ",
+            " # Action: audit (NEW - security check)"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/.mcp.json",
+      "old_string": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "new_string": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/.mcp.json",
+      "oldString": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "newString": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "originalFile": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}\n",
+      "structuredPatch": [
+        {
+          "oldStart": 9,
+          "oldLines": 6,
+          "newStart": 9,
+          "newLines": 16,
+          "lines": [
+            "         \"https://www.shadcn.io/api/mcp\"",
+            "       ],",
+            "       \"env\": {}",
+            "+    },",
+            "+    \"tavily\": {",
+            "+      \"type\": \"stdio\",",
+            "+      \"command\": \"npx\",",
+            "+      \"args\": [",
+            "+        \"-y\",",
+            "+        \"mcp-remote\",",
+            "+        \"https://mcp.tavily.com/mcp/?tavilyApiKey=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\"",
+            "+      ],",
+            "+      \"env\": {}",
+            "     }",
+            "   }",
+            " }"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh remove tav",
+      "description": "Test improved remove function with alias"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Removing servers...\n\n\u001b[0;34m\u2139\u001b[0m Removing: tavily\n\u001b[1;33m\u26a0\u001b[0m Server not found in any config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[1;33m\u26a0\u001b[0m Failed to remove 1 server(s):\n  \u2717 tavily (not found in configs)\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "old_string": "        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        fi",
+      "new_string": "        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            project_config=\"$HOME/.claude/.mcp.json\"\n        fi"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "oldString": "        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        fi",
+      "newString": "        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            project_config=\"$HOME/.claude/.mcp.json\"\n        fi",
+      "originalFile": "#!/usr/bin/env bash\n\n# MCP Act - MCP Server Management with Presets\n# Version: 2.0 (Improved with validation and security)\n# Usage: mcp-act <action> [server-name|preset-name] [scope]\n\nset -e\n\nCONFIG_FILE=\"$HOME/.claude/mcp-servers-config.json\"\nCLAUDE_CONFIG=\"$HOME/.claude.json\"\n\n# Colors for output\nRED='\\033[0;31m'\nGREEN='\\033[0;32m'\nYELLOW='\\033[1;33m'\nBLUE='\\033[0;34m'\nMAGENTA='\\033[0;35m'\nCYAN='\\033[0;36m'\nNC='\\033[0m' # No Color\n\n# Helper functions\ninfo() { echo -e \"${BLUE}\u2139${NC} $1\"; }\nsuccess() { echo -e \"${GREEN}\u2713${NC} $1\"; }\nwarning() { echo -e \"${YELLOW}\u26a0${NC} $1\"; }\nerror() { echo -e \"${RED}\u2717${NC} $1\"; exit 1; }\ntip() { echo -e \"${CYAN}\ud83d\udca1${NC} $1\"; }\n\n# Check if jq is available\nif ! command -v jq &> /dev/null; then\n    error \"jq is required but not installed. Install with: brew install jq (macOS) or apt-get install jq (Linux)\"\nfi\n\n# Check if config file exists\nif [ ! -f \"$CONFIG_FILE\" ]; then\n    error \"Configuration file not found: $CONFIG_FILE\"\nfi\n\n# Parse arguments\nACTION=\"${1:-list}\"\nTARGET=\"${2:-}\"\nSCOPE=\"${3:-project}\"\n\n# Resolve alias to actual server name\nresolve_alias() {\n    local input=\"$1\"\n\n    # First check if it's already a valid server name\n    if jq -e \".servers[\\\"$input\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n        echo \"$input\"\n        return 0\n    fi\n\n    # Check if it's an alias\n    local resolved=$(jq -r \".servers | to_entries[] | select(.value.aliases[]? == \\\"$input\\\") | .key\" \"$CONFIG_FILE\" 2>/dev/null | head -n1)\n\n    if [ -n \"$resolved\" ]; then\n        echo \"$resolved\"\n        return 0\n    fi\n\n    # Not found as server or alias\n    echo \"$input\"\n    return 1\n}\n\n# Get server list from preset or single server\nget_servers() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        # It's a preset\n        local preset_name=\"${target#preset:}\"\n        local servers=$(jq -r \".presets[\\\"$preset_name\\\"].servers[]\" \"$CONFIG_FILE\" 2>/dev/null)\n\n        if [ -z \"$servers\" ]; then\n            error \"Preset '$preset_name' not found\"\n        fi\n\n        echo \"$servers\"\n    else\n        # It's a single server - try to resolve alias first\n        local resolved=$(resolve_alias \"$target\")\n\n        if jq -e \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n            if [ \"$resolved\" != \"$target\" ]; then\n                info \"Resolved alias '$target' to '$resolved'\" >&2\n            fi\n            echo \"$resolved\"\n        else\n            error \"Server '$target' not found in configuration (checked aliases too)\"\n        fi\n    fi\n}\n\n# Get server config\nget_server_config() {\n    local server_name=\"$1\"\n    jq -r \".servers[\\\"$server_name\\\"]\" \"$CONFIG_FILE\"\n}\n\n# Validate environment variables for a server\nvalidate_env_vars() {\n    local server_name=\"$1\"\n    local config=$(get_server_config \"$server_name\")\n\n    # Extract env vars from config\n    local env_keys=$(echo \"$config\" | jq -r '.env | keys[]?' 2>/dev/null)\n\n    if [ -z \"$env_keys\" ]; then\n        # No env vars required\n        return 0\n    fi\n\n    local missing_vars=()\n\n    for var in $env_keys; do\n        local var_value=$(echo \"$config\" | jq -r \".env[\\\"$var\\\"]\")\n\n        # Check if it's a template variable (${VAR_NAME})\n        if [[ \"$var_value\" =~ ^\\$\\{([A-Z_]+)\\}$ ]]; then\n            local env_name=\"${BASH_REMATCH[1]}\"\n\n            if [ -z \"${!env_name}\" ]; then\n                missing_vars+=(\"$env_name\")\n            fi\n        fi\n    done\n\n    if [ ${#missing_vars[@]} -gt 0 ]; then\n        warning \"Server '$server_name' requires environment variables:\"\n        for missing_var in \"${missing_vars[@]}\"; do\n            echo -e \"  ${RED}\u2717${NC} $missing_var (not set)\"\n        done\n\n        local notes=$(echo \"$config\" | jq -r '.notes // \"No additional notes\"')\n        tip \"$notes\"\n\n        echo \"\"\n        info \"Set with: export ${missing_vars[0]}='your-value-here'\"\n        return 1\n    fi\n\n    success \"Environment variables validated for '$server_name'\"\n    return 0\n}\n\n# Action: list\naction_list() {\n    info \"Listing all configured MCP servers...\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Presets ===${NC}\"\n    jq -r '.presets | to_entries[] | \"\\(.key): \\(.value.description) [\\(.value.servers | join(\", \"))]\"' \"$CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Individual Servers ===${NC}\"\n    jq -r '.servers | to_entries[] | \"\\(.key): \\(.value.description)\" + (if .value.aliases then \" [aliases: \\(.value.aliases | join(\", \"))]\" else \"\" end)' \"$CONFIG_FILE\"\n    echo \"\"\n\n    # Show active MCP servers grouped by scope\n    info \"Active MCP servers:\"\n    echo \"\"\n\n    # Check user-level servers\n    if [ -f \"$CLAUDE_CONFIG\" ]; then\n        local user_servers=$(jq -r '.mcpServers | keys[]?' \"$CLAUDE_CONFIG\" 2>/dev/null)\n        if [ -n \"$user_servers\" ]; then\n            echo -e \"${CYAN}User-level (global):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$CLAUDE_CONFIG\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$CLAUDE_CONFIG\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$user_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    fi\n\n    if [ -n \"$project_config\" ]; then\n        local project_servers=$(jq -r '.mcpServers | keys[]?' \"$project_config\" 2>/dev/null)\n        if [ -n \"$project_servers\" ]; then\n            echo -e \"${CYAN}Project-level (local):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$project_config\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$project_config\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$project_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Show connection status\n    claude mcp list 2>/dev/null | grep -E \"\u2713 Connected|\u2717 \" || warning \"Could not check server connection status\"\n}\n\n# Action: info\naction_info() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        local preset_name=\"${target#preset:}\"\n        info \"Preset: $preset_name\"\n        echo \"\"\n        jq \".presets[\\\"$preset_name\\\"]\" \"$CONFIG_FILE\" || error \"Preset not found\"\n    else\n        # Resolve alias if necessary\n        local resolved=$(resolve_alias \"$target\")\n        if [ \"$resolved\" != \"$target\" ]; then\n            info \"Resolved alias '$target' to '$resolved'\"\n            echo \"\"\n        fi\n        info \"Server: $resolved\"\n        echo \"\"\n        jq \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" || error \"Server not found\"\n    fi\n}\n\n# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}\n\n# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local removed_servers=()\n    local failed_servers=()\n\n    for server in $servers; do\n        info \"Removing: $server\"\n\n        local removed_from_any=false\n\n        # Try to remove from user-level config\n        if [ -f \"$CLAUDE_CONFIG\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then\n                # Server exists in user config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"\n                success \"Removed from user-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        fi\n\n        if [ -n \"$project_config\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then\n                # Server exists in project config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$project_config\"\n                success \"Removed from project-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        if [ \"$removed_from_any\" = true ]; then\n            removed_servers+=(\"$server\")\n        else\n            warning \"Server not found in any config: $server\"\n            failed_servers+=(\"$server\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#removed_servers[@]} -gt 0 ]; then\n        success \"Successfully removed ${#removed_servers[@]} server(s):\"\n        for server in \"${removed_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to remove ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server (not found in configs)\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}\n\n# Action: audit (NEW - security check)\naction_audit() {\n    info \"Auditing ~/.claude.json for security issues...\"\n    echo \"\"\n\n    if [ ! -f \"$CLAUDE_CONFIG\" ]; then\n        warning \"Claude config not found: $CLAUDE_CONFIG\"\n        return 1\n    fi\n\n    # Check for hardcoded secrets (long alphanumeric strings that aren't ${VAR})\n    local potential_secrets=$(jq -r '.mcpServers | to_entries[] | select(.value.env | to_entries[]? | .value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | \"\\(.key): \\(.value.env | to_entries[] | select(.value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | .key)\"' \"$CLAUDE_CONFIG\" 2>/dev/null)\n\n    if [ -n \"$potential_secrets\" ]; then\n        warning \"Potential hardcoded secrets detected:\"\n        echo \"$potential_secrets\"\n        echo \"\"\n        tip \"Replace hardcoded values with environment variable references: \\${VAR_NAME}\"\n        echo \"\"\n        info \"Example fix:\"\n        echo '  \"env\": { \"API_KEY\": \"${API_KEY}\" }  \u2190 Good'\n        echo '  \"env\": { \"API_KEY\": \"abc123...\" }   \u2190 Bad (hardcoded)'\n        return 1\n    else\n        success \"No hardcoded secrets detected!\"\n    fi\n\n    # Check for missing env vars in current shell\n    echo \"\"\n    info \"Checking environment variables...\"\n    local all_env_vars=$(jq -r '.mcpServers | to_entries[] | .value.env | to_entries[]? | .value | select(test(\"^\\\\$\\\\{\")) | gsub(\"\\\\$\\\\{|\\\\}\"; \"\")' \"$CLAUDE_CONFIG\" 2>/dev/null | sort -u)\n\n    if [ -n \"$all_env_vars\" ]; then\n        local missing_env=()\n        while IFS= read -r env_var; do\n            if [ -z \"${!env_var}\" ]; then\n                missing_env+=(\"$env_var\")\n            fi\n        done <<< \"$all_env_vars\"\n\n        if [ ${#missing_env[@]} -gt 0 ]; then\n            warning \"Environment variables not set in current shell:\"\n            for var in \"${missing_env[@]}\"; do\n                echo \"  \u2717 $var\"\n            done\n            echo \"\"\n            tip \"Set in ~/.zshrc or ~/.bashrc for persistence\"\n        else\n            success \"All required environment variables are set!\"\n        fi\n    fi\n}\n\n# Action: validate (NEW - validate config file)\naction_validate() {\n    info \"Validating configuration file...\"\n    echo \"\"\n\n    # Check JSON syntax\n    if ! jq empty \"$CONFIG_FILE\" 2>/dev/null; then\n        error \"Invalid JSON in $CONFIG_FILE\"\n    fi\n    success \"JSON syntax valid\"\n\n    # Check required fields in presets\n    local preset_count=$(jq '.presets | length' \"$CONFIG_FILE\")\n    success \"Found $preset_count preset(s)\"\n\n    # Check required fields in servers\n    local server_count=$(jq '.servers | length' \"$CONFIG_FILE\")\n    success \"Found $server_count server(s)\"\n\n    # Validate each server has required fields\n    local servers=$(jq -r '.servers | keys[]' \"$CONFIG_FILE\")\n    for server in $servers; do\n        local has_command=$(jq -e \".servers[\\\"$server\\\"].command\" \"$CONFIG_FILE\" &>/dev/null && echo \"yes\" || echo \"no\")\n        if [ \"$has_command\" = \"no\" ]; then\n            warning \"Server '$server' missing 'command' field\"\n        fi\n    done\n\n    echo \"\"\n    success \"Configuration file is valid!\"\n}\n\n# Action: config (NEW - edit MCP registry)\naction_config() {\n    info \"MCP Server Registry Configuration\"\n    echo \"\"\n    echo -e \"${CYAN}Location:${NC} $CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Instructions for Claude Code ===${NC}\"\n    echo \"\"\n    echo \"Please help me edit or add MCP servers to the registry at:\"\n    echo \"  $CONFIG_FILE\"\n    echo \"\"\n    echo \"The registry contains:\"\n    echo \"  \u2022 presets: Bundles of related servers\"\n    echo \"  \u2022 servers: Individual MCP server configurations\"\n    echo \"  \u2022 environments: Environment variable documentation\"\n    echo \"\"\n    echo \"Each server entry should have:\"\n    echo \"  - name: Server identifier\"\n    echo \"  - description: What the server does\"\n    echo \"  - command: Executable to run (e.g., 'npx', 'python3')\"\n    echo \"  - args: Array of arguments\"\n    echo \"  - env: Environment variables (use \\${VAR} references)\"\n    echo \"  - aliases: Array of shortcut names (optional)\"\n    echo \"  - notes: Additional information (optional)\"\n    echo \"\"\n    echo \"Example server entry:\"\n    cat << 'EOF'\n  \"my-server\": {\n    \"name\": \"my-server\",\n    \"description\": \"Brief description of what this server does\",\n    \"command\": \"npx\",\n    \"args\": [\"-y\", \"my-mcp-package\"],\n    \"env\": {\n      \"API_KEY\": \"${MY_API_KEY}\"\n    },\n    \"aliases\": [\"short\", \"alias\"],\n    \"notes\": \"Get API key from https://example.com\"\n  }\nEOF\n    echo \"\"\n    tip \"After editing, run '/mcps validate' to check the configuration\"\n}\n\n# Main execution\ncase \"$ACTION\" in\n    list)\n        action_list\n        ;;\n    info)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act info <server-name|preset-name>\"\n        action_info \"$TARGET\"\n        ;;\n    add)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act add <server-name|preset-name> [project|user]\"\n        action_add \"$TARGET\" \"$SCOPE\"\n        ;;\n    remove)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act remove <server-name|preset-name>\"\n        action_remove \"$TARGET\"\n        ;;\n    audit)\n        action_audit\n        ;;\n    validate)\n        action_validate\n        ;;\n    config)\n        action_config\n        ;;\n    help|--help|-h)\n        echo \"MCP Act - MCP Server Management with Presets\"\n        echo \"\"\n        echo \"Usage: mcp-act <action> [arguments]\"\n        echo \"\"\n        echo \"Actions:\"\n        echo \"  list                            List all configured servers and presets\"\n        echo \"  info <name>                     Show details about a server or preset\"\n        echo \"  add <name> [project|user]       Add server(s) to configuration\"\n        echo \"  remove <name>                   Remove server(s) from configuration\"\n        echo \"  config                          Edit MCP registry (opens guidance for Claude Code)\"\n        echo \"  audit                           Check for security issues\"\n        echo \"  validate                        Validate configuration file\"\n        echo \"  help                            Show this help message\"\n        echo \"\"\n        echo \"Examples:\"\n        echo \"  mcp-act list\"\n        echo \"  mcp-act add preset:webdev\"\n        echo \"  mcp-act add gemini-cli user\"\n        echo \"  mcp-act add gemini user          # Use alias (gemini \u2192 gemini-cli)\"\n        echo \"  mcp-act info chrome              # Use alias (chrome \u2192 chrome-devtools)\"\n        echo \"  mcp-act info preset:ui\"\n        echo \"  mcp-act config                   # Edit MCP registry with Claude Code\"\n        echo \"  mcp-act audit\"\n        echo \"  mcp-act validate\"\n        echo \"\"\n        echo \"Note: You can use server aliases as shortcuts. Run 'mcp-act list' to see available aliases.\"\n        ;;\n    *)\n        error \"Unknown action: $ACTION\\nRun 'mcp-act help' for usage\"\n        ;;\nesac\n",
+      "structuredPatch": [
+        {
+          "oldStart": 341,
+          "oldLines": 6,
+          "newStart": 341,
+          "newLines": 8,
+          "lines": [
+            "             project_config=\"./.mcp.json\"",
+            "         elif [ -f \"./.claude/.mcp.json\" ]; then",
+            "             project_config=\"./.claude/.mcp.json\"",
+            "+        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then",
+            "+            project_config=\"$HOME/.claude/.mcp.json\"",
+            "         fi",
+            " ",
+            "         if [ -n \"$project_config\" ]; then"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh remove tav",
+      "description": "Test improved remove function with home directory fallback"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Removing servers...\n\n\u001b[0;34m\u2139\u001b[0m Removing: tavily\n\u001b[0;32m\u2713\u001b[0m Removed from project-level config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully removed 1 server(s):\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/.mcp.json"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/natedamstra/.claude/.mcp.json",
+        "content": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}\n",
+        "numLines": 15,
+        "startLine": 1,
+        "totalLines": 15
+      }
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "old_string": "    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    fi",
+      "new_string": "    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root), ./.claude/.mcp.json (claude dir), and ~/.claude/.mcp.json (home)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n        project_config=\"$HOME/.claude/.mcp.json\"\n    fi"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "oldString": "    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    fi",
+      "newString": "    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root), ./.claude/.mcp.json (claude dir), and ~/.claude/.mcp.json (home)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n        project_config=\"$HOME/.claude/.mcp.json\"\n    fi",
+      "originalFile": "#!/usr/bin/env bash\n\n# MCP Act - MCP Server Management with Presets\n# Version: 2.0 (Improved with validation and security)\n# Usage: mcp-act <action> [server-name|preset-name] [scope]\n\nset -e\n\nCONFIG_FILE=\"$HOME/.claude/mcp-servers-config.json\"\nCLAUDE_CONFIG=\"$HOME/.claude.json\"\n\n# Colors for output\nRED='\\033[0;31m'\nGREEN='\\033[0;32m'\nYELLOW='\\033[1;33m'\nBLUE='\\033[0;34m'\nMAGENTA='\\033[0;35m'\nCYAN='\\033[0;36m'\nNC='\\033[0m' # No Color\n\n# Helper functions\ninfo() { echo -e \"${BLUE}\u2139${NC} $1\"; }\nsuccess() { echo -e \"${GREEN}\u2713${NC} $1\"; }\nwarning() { echo -e \"${YELLOW}\u26a0${NC} $1\"; }\nerror() { echo -e \"${RED}\u2717${NC} $1\"; exit 1; }\ntip() { echo -e \"${CYAN}\ud83d\udca1${NC} $1\"; }\n\n# Check if jq is available\nif ! command -v jq &> /dev/null; then\n    error \"jq is required but not installed. Install with: brew install jq (macOS) or apt-get install jq (Linux)\"\nfi\n\n# Check if config file exists\nif [ ! -f \"$CONFIG_FILE\" ]; then\n    error \"Configuration file not found: $CONFIG_FILE\"\nfi\n\n# Parse arguments\nACTION=\"${1:-list}\"\nTARGET=\"${2:-}\"\nSCOPE=\"${3:-project}\"\n\n# Resolve alias to actual server name\nresolve_alias() {\n    local input=\"$1\"\n\n    # First check if it's already a valid server name\n    if jq -e \".servers[\\\"$input\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n        echo \"$input\"\n        return 0\n    fi\n\n    # Check if it's an alias\n    local resolved=$(jq -r \".servers | to_entries[] | select(.value.aliases[]? == \\\"$input\\\") | .key\" \"$CONFIG_FILE\" 2>/dev/null | head -n1)\n\n    if [ -n \"$resolved\" ]; then\n        echo \"$resolved\"\n        return 0\n    fi\n\n    # Not found as server or alias\n    echo \"$input\"\n    return 1\n}\n\n# Get server list from preset or single server\nget_servers() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        # It's a preset\n        local preset_name=\"${target#preset:}\"\n        local servers=$(jq -r \".presets[\\\"$preset_name\\\"].servers[]\" \"$CONFIG_FILE\" 2>/dev/null)\n\n        if [ -z \"$servers\" ]; then\n            error \"Preset '$preset_name' not found\"\n        fi\n\n        echo \"$servers\"\n    else\n        # It's a single server - try to resolve alias first\n        local resolved=$(resolve_alias \"$target\")\n\n        if jq -e \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n            if [ \"$resolved\" != \"$target\" ]; then\n                info \"Resolved alias '$target' to '$resolved'\" >&2\n            fi\n            echo \"$resolved\"\n        else\n            error \"Server '$target' not found in configuration (checked aliases too)\"\n        fi\n    fi\n}\n\n# Get server config\nget_server_config() {\n    local server_name=\"$1\"\n    jq -r \".servers[\\\"$server_name\\\"]\" \"$CONFIG_FILE\"\n}\n\n# Validate environment variables for a server\nvalidate_env_vars() {\n    local server_name=\"$1\"\n    local config=$(get_server_config \"$server_name\")\n\n    # Extract env vars from config\n    local env_keys=$(echo \"$config\" | jq -r '.env | keys[]?' 2>/dev/null)\n\n    if [ -z \"$env_keys\" ]; then\n        # No env vars required\n        return 0\n    fi\n\n    local missing_vars=()\n\n    for var in $env_keys; do\n        local var_value=$(echo \"$config\" | jq -r \".env[\\\"$var\\\"]\")\n\n        # Check if it's a template variable (${VAR_NAME})\n        if [[ \"$var_value\" =~ ^\\$\\{([A-Z_]+)\\}$ ]]; then\n            local env_name=\"${BASH_REMATCH[1]}\"\n\n            if [ -z \"${!env_name}\" ]; then\n                missing_vars+=(\"$env_name\")\n            fi\n        fi\n    done\n\n    if [ ${#missing_vars[@]} -gt 0 ]; then\n        warning \"Server '$server_name' requires environment variables:\"\n        for missing_var in \"${missing_vars[@]}\"; do\n            echo -e \"  ${RED}\u2717${NC} $missing_var (not set)\"\n        done\n\n        local notes=$(echo \"$config\" | jq -r '.notes // \"No additional notes\"')\n        tip \"$notes\"\n\n        echo \"\"\n        info \"Set with: export ${missing_vars[0]}='your-value-here'\"\n        return 1\n    fi\n\n    success \"Environment variables validated for '$server_name'\"\n    return 0\n}\n\n# Action: list\naction_list() {\n    info \"Listing all configured MCP servers...\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Presets ===${NC}\"\n    jq -r '.presets | to_entries[] | \"\\(.key): \\(.value.description) [\\(.value.servers | join(\", \"))]\"' \"$CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Individual Servers ===${NC}\"\n    jq -r '.servers | to_entries[] | \"\\(.key): \\(.value.description)\" + (if .value.aliases then \" [aliases: \\(.value.aliases | join(\", \"))]\" else \"\" end)' \"$CONFIG_FILE\"\n    echo \"\"\n\n    # Show active MCP servers grouped by scope\n    info \"Active MCP servers:\"\n    echo \"\"\n\n    # Check user-level servers\n    if [ -f \"$CLAUDE_CONFIG\" ]; then\n        local user_servers=$(jq -r '.mcpServers | keys[]?' \"$CLAUDE_CONFIG\" 2>/dev/null)\n        if [ -n \"$user_servers\" ]; then\n            echo -e \"${CYAN}User-level (global):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$CLAUDE_CONFIG\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$CLAUDE_CONFIG\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$user_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    fi\n\n    if [ -n \"$project_config\" ]; then\n        local project_servers=$(jq -r '.mcpServers | keys[]?' \"$project_config\" 2>/dev/null)\n        if [ -n \"$project_servers\" ]; then\n            echo -e \"${CYAN}Project-level (local):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$project_config\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$project_config\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$project_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Show connection status\n    claude mcp list 2>/dev/null | grep -E \"\u2713 Connected|\u2717 \" || warning \"Could not check server connection status\"\n}\n\n# Action: info\naction_info() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        local preset_name=\"${target#preset:}\"\n        info \"Preset: $preset_name\"\n        echo \"\"\n        jq \".presets[\\\"$preset_name\\\"]\" \"$CONFIG_FILE\" || error \"Preset not found\"\n    else\n        # Resolve alias if necessary\n        local resolved=$(resolve_alias \"$target\")\n        if [ \"$resolved\" != \"$target\" ]; then\n            info \"Resolved alias '$target' to '$resolved'\"\n            echo \"\"\n        fi\n        info \"Server: $resolved\"\n        echo \"\"\n        jq \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" || error \"Server not found\"\n    fi\n}\n\n# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}\n\n# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local removed_servers=()\n    local failed_servers=()\n\n    for server in $servers; do\n        info \"Removing: $server\"\n\n        local removed_from_any=false\n\n        # Try to remove from user-level config\n        if [ -f \"$CLAUDE_CONFIG\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then\n                # Server exists in user config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"\n                success \"Removed from user-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            project_config=\"$HOME/.claude/.mcp.json\"\n        fi\n\n        if [ -n \"$project_config\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then\n                # Server exists in project config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$project_config\"\n                success \"Removed from project-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        if [ \"$removed_from_any\" = true ]; then\n            removed_servers+=(\"$server\")\n        else\n            warning \"Server not found in any config: $server\"\n            failed_servers+=(\"$server\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#removed_servers[@]} -gt 0 ]; then\n        success \"Successfully removed ${#removed_servers[@]} server(s):\"\n        for server in \"${removed_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to remove ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server (not found in configs)\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}\n\n# Action: audit (NEW - security check)\naction_audit() {\n    info \"Auditing ~/.claude.json for security issues...\"\n    echo \"\"\n\n    if [ ! -f \"$CLAUDE_CONFIG\" ]; then\n        warning \"Claude config not found: $CLAUDE_CONFIG\"\n        return 1\n    fi\n\n    # Check for hardcoded secrets (long alphanumeric strings that aren't ${VAR})\n    local potential_secrets=$(jq -r '.mcpServers | to_entries[] | select(.value.env | to_entries[]? | .value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | \"\\(.key): \\(.value.env | to_entries[] | select(.value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | .key)\"' \"$CLAUDE_CONFIG\" 2>/dev/null)\n\n    if [ -n \"$potential_secrets\" ]; then\n        warning \"Potential hardcoded secrets detected:\"\n        echo \"$potential_secrets\"\n        echo \"\"\n        tip \"Replace hardcoded values with environment variable references: \\${VAR_NAME}\"\n        echo \"\"\n        info \"Example fix:\"\n        echo '  \"env\": { \"API_KEY\": \"${API_KEY}\" }  \u2190 Good'\n        echo '  \"env\": { \"API_KEY\": \"abc123...\" }   \u2190 Bad (hardcoded)'\n        return 1\n    else\n        success \"No hardcoded secrets detected!\"\n    fi\n\n    # Check for missing env vars in current shell\n    echo \"\"\n    info \"Checking environment variables...\"\n    local all_env_vars=$(jq -r '.mcpServers | to_entries[] | .value.env | to_entries[]? | .value | select(test(\"^\\\\$\\\\{\")) | gsub(\"\\\\$\\\\{|\\\\}\"; \"\")' \"$CLAUDE_CONFIG\" 2>/dev/null | sort -u)\n\n    if [ -n \"$all_env_vars\" ]; then\n        local missing_env=()\n        while IFS= read -r env_var; do\n            if [ -z \"${!env_var}\" ]; then\n                missing_env+=(\"$env_var\")\n            fi\n        done <<< \"$all_env_vars\"\n\n        if [ ${#missing_env[@]} -gt 0 ]; then\n            warning \"Environment variables not set in current shell:\"\n            for var in \"${missing_env[@]}\"; do\n                echo \"  \u2717 $var\"\n            done\n            echo \"\"\n            tip \"Set in ~/.zshrc or ~/.bashrc for persistence\"\n        else\n            success \"All required environment variables are set!\"\n        fi\n    fi\n}\n\n# Action: validate (NEW - validate config file)\naction_validate() {\n    info \"Validating configuration file...\"\n    echo \"\"\n\n    # Check JSON syntax\n    if ! jq empty \"$CONFIG_FILE\" 2>/dev/null; then\n        error \"Invalid JSON in $CONFIG_FILE\"\n    fi\n    success \"JSON syntax valid\"\n\n    # Check required fields in presets\n    local preset_count=$(jq '.presets | length' \"$CONFIG_FILE\")\n    success \"Found $preset_count preset(s)\"\n\n    # Check required fields in servers\n    local server_count=$(jq '.servers | length' \"$CONFIG_FILE\")\n    success \"Found $server_count server(s)\"\n\n    # Validate each server has required fields\n    local servers=$(jq -r '.servers | keys[]' \"$CONFIG_FILE\")\n    for server in $servers; do\n        local has_command=$(jq -e \".servers[\\\"$server\\\"].command\" \"$CONFIG_FILE\" &>/dev/null && echo \"yes\" || echo \"no\")\n        if [ \"$has_command\" = \"no\" ]; then\n            warning \"Server '$server' missing 'command' field\"\n        fi\n    done\n\n    echo \"\"\n    success \"Configuration file is valid!\"\n}\n\n# Action: config (NEW - edit MCP registry)\naction_config() {\n    info \"MCP Server Registry Configuration\"\n    echo \"\"\n    echo -e \"${CYAN}Location:${NC} $CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Instructions for Claude Code ===${NC}\"\n    echo \"\"\n    echo \"Please help me edit or add MCP servers to the registry at:\"\n    echo \"  $CONFIG_FILE\"\n    echo \"\"\n    echo \"The registry contains:\"\n    echo \"  \u2022 presets: Bundles of related servers\"\n    echo \"  \u2022 servers: Individual MCP server configurations\"\n    echo \"  \u2022 environments: Environment variable documentation\"\n    echo \"\"\n    echo \"Each server entry should have:\"\n    echo \"  - name: Server identifier\"\n    echo \"  - description: What the server does\"\n    echo \"  - command: Executable to run (e.g., 'npx', 'python3')\"\n    echo \"  - args: Array of arguments\"\n    echo \"  - env: Environment variables (use \\${VAR} references)\"\n    echo \"  - aliases: Array of shortcut names (optional)\"\n    echo \"  - notes: Additional information (optional)\"\n    echo \"\"\n    echo \"Example server entry:\"\n    cat << 'EOF'\n  \"my-server\": {\n    \"name\": \"my-server\",\n    \"description\": \"Brief description of what this server does\",\n    \"command\": \"npx\",\n    \"args\": [\"-y\", \"my-mcp-package\"],\n    \"env\": {\n      \"API_KEY\": \"${MY_API_KEY}\"\n    },\n    \"aliases\": [\"short\", \"alias\"],\n    \"notes\": \"Get API key from https://example.com\"\n  }\nEOF\n    echo \"\"\n    tip \"After editing, run '/mcps validate' to check the configuration\"\n}\n\n# Main execution\ncase \"$ACTION\" in\n    list)\n        action_list\n        ;;\n    info)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act info <server-name|preset-name>\"\n        action_info \"$TARGET\"\n        ;;\n    add)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act add <server-name|preset-name> [project|user]\"\n        action_add \"$TARGET\" \"$SCOPE\"\n        ;;\n    remove)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act remove <server-name|preset-name>\"\n        action_remove \"$TARGET\"\n        ;;\n    audit)\n        action_audit\n        ;;\n    validate)\n        action_validate\n        ;;\n    config)\n        action_config\n        ;;\n    help|--help|-h)\n        echo \"MCP Act - MCP Server Management with Presets\"\n        echo \"\"\n        echo \"Usage: mcp-act <action> [arguments]\"\n        echo \"\"\n        echo \"Actions:\"\n        echo \"  list                            List all configured servers and presets\"\n        echo \"  info <name>                     Show details about a server or preset\"\n        echo \"  add <name> [project|user]       Add server(s) to configuration\"\n        echo \"  remove <name>                   Remove server(s) from configuration\"\n        echo \"  config                          Edit MCP registry (opens guidance for Claude Code)\"\n        echo \"  audit                           Check for security issues\"\n        echo \"  validate                        Validate configuration file\"\n        echo \"  help                            Show this help message\"\n        echo \"\"\n        echo \"Examples:\"\n        echo \"  mcp-act list\"\n        echo \"  mcp-act add preset:webdev\"\n        echo \"  mcp-act add gemini-cli user\"\n        echo \"  mcp-act add gemini user          # Use alias (gemini \u2192 gemini-cli)\"\n        echo \"  mcp-act info chrome              # Use alias (chrome \u2192 chrome-devtools)\"\n        echo \"  mcp-act info preset:ui\"\n        echo \"  mcp-act config                   # Edit MCP registry with Claude Code\"\n        echo \"  mcp-act audit\"\n        echo \"  mcp-act validate\"\n        echo \"\"\n        echo \"Note: You can use server aliases as shortcuts. Run 'mcp-act list' to see available aliases.\"\n        ;;\n    *)\n        error \"Unknown action: $ACTION\\nRun 'mcp-act help' for usage\"\n        ;;\nesac\n",
+      "structuredPatch": [
+        {
+          "oldStart": 174,
+          "oldLines": 12,
+          "newStart": 174,
+          "newLines": 14,
+          "lines": [
+            "     fi",
+            " ",
+            "     # Check project-level servers (current working directory)",
+            "-    # Try both ./.mcp.json (root) and ./.claude/.mcp.json (claude dir)",
+            "+    # Try both ./.mcp.json (root), ./.claude/.mcp.json (claude dir), and ~/.claude/.mcp.json (home)",
+            "     local project_config=\"\"",
+            "     if [ -f \"./.mcp.json\" ]; then",
+            "         project_config=\"./.mcp.json\"",
+            "     elif [ -f \"./.claude/.mcp.json\" ]; then",
+            "         project_config=\"./.claude/.mcp.json\"",
+            "+    elif [ -f \"$HOME/.claude/.mcp.json\" ]; then",
+            "+        project_config=\"$HOME/.claude/.mcp.json\"",
+            "     fi",
+            " ",
+            "     if [ -n \"$project_config\" ]; then"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "completed",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "completed",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "completed",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "completed",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "completed",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "in_progress",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test the claude mcp remove command directly",
+          "status": "completed",
+          "activeForm": "Testing the claude mcp remove command directly"
+        },
+        {
+          "content": "Investigate why claude mcp remove fails",
+          "status": "completed",
+          "activeForm": "Investigating why claude mcp remove fails"
+        },
+        {
+          "content": "Implement a better remove function in the script",
+          "status": "completed",
+          "activeForm": "Implementing a better remove function in the script"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh list | grep -A 5 \"Project-level\"",
+      "description": "Verify list command shows correct project config"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;36mProject-level (local):\u001b[0m\n  \u2022 shadcn: npx -y mcp-remote https://www.shadcn.io/api/mcp\n\ngemini-cli: npx gemini-mcp-tool - \u2713 Connected",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh add tav project",
+      "description": "Add Tavily at project level using alias"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Adding servers (scope: project)...\n\n\u001b[0;34m\u2139\u001b[0m Processing: tavily\n\u001b[0;34m\u2139\u001b[0m Executing: claude mcp add tavily -s project -- npx -y mcp-remote https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}\nAdded stdio MCP server tavily with command: npx -y mcp-remote https://mcp.tavily.com/mcp/?tavilyApiKey= to project config\nFile modified: /Users/natedamstra/.claude/scripts/.mcp.json\n\u001b[0;32m\u2713\u001b[0m Added: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully added 1 server(s):\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Run 'claude mcp list' or '/mcp' to verify servers are connected\n\u001b[0;34m\u2139\u001b[0m Resolved alias 'tav' to 'tavily'",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la ~/.claude/scripts/.mcp.json && cat ~/.claude/scripts/.mcp.json",
+      "description": "Check where the config was created"
+    },
+    "tool_response": {
+      "stdout": "-rw-r--r--@ 1 natedamstra  staff  223 Oct 30 12:59 /Users/natedamstra/.claude/scripts/.mcp.json\n{\n  \"mcpServers\": {\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "offset": 224,
+      "limit": 80
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+        "content": "}\n\n# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"",
+        "numLines": 80,
+        "startLine": 224,
+        "totalLines": 576
+      }
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "rm ~/.claude/scripts/.mcp.json",
+      "description": "Remove test config from wrong location"
+    },
+    "tool_response": {
+      "stdout": "",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "old_string": "# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}",
+      "new_string": "# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local failed_servers=()\n    local added_servers=()\n\n    # Determine target config file based on scope\n    local target_config=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        target_config=\"$CLAUDE_CONFIG\"\n    else\n        # Project scope - check for existing project config or use home claude dir\n        if [ -f \"./.mcp.json\" ]; then\n            target_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            target_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            target_config=\"$HOME/.claude/.mcp.json\"\n        else\n            # Create in home claude dir if no project config exists\n            target_config=\"$HOME/.claude/.mcp.json\"\n            # Initialize with empty mcpServers object if file doesn't exist\n            if [ ! -f \"$target_config\" ]; then\n                echo '{\"mcpServers\":{}}' > \"$target_config\"\n            fi\n        fi\n    fi\n\n    # Ensure the config file has mcpServers object\n    if [ ! -f \"$target_config\" ]; then\n        echo '{\"mcpServers\":{}}' > \"$target_config\"\n    fi\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Check if server already exists\n        if jq -e \".mcpServers[\\\"$server\\\"]\" \"$target_config\" &>/dev/null; then\n            warning \"Server '$server' already exists in config, skipping\"\n            failed_servers+=(\"$server (already exists)\")\n            echo \"\"\n            continue\n        fi\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args')\n        local env=$(echo \"$config\" | jq -r '.env')\n\n        # Substitute environment variables in args\n        local substituted_args=$(echo \"$args\" | jq -r 'map(\n            gsub(\"\\\\$\\\\{(?<var>[A-Z_]+)\\\\}\"; env[\"\\(.var)\"] // \"${\\(.var)}\")\n        )')\n\n        # Build the server entry\n        local server_entry=$(jq -n \\\n            --arg cmd \"$command\" \\\n            --argjson args \"$substituted_args\" \\\n            --argjson env \"$env\" \\\n            '{\n                type: \"stdio\",\n                command: $cmd,\n                args: $args,\n                env: $env\n            }')\n\n        # Add server to config\n        local tmp_file=$(mktemp)\n        jq \".mcpServers[\\\"$server\\\"] = $server_entry\" \"$target_config\" > \"$tmp_file\"\n\n        if [ $? -eq 0 ]; then\n            mv \"$tmp_file\" \"$target_config\"\n            success \"Added to config: $server\"\n            added_servers+=(\"$server\")\n        else\n            rm -f \"$tmp_file\"\n            warning \"Failed to add: $server\"\n            failed_servers+=(\"$server (jq error)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s) to $target_config:\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}"
+    },
+    "tool_response": {
+      "filePath": "/Users/natedamstra/.claude/scripts/mcp-act.sh",
+      "oldString": "# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}",
+      "newString": "# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local failed_servers=()\n    local added_servers=()\n\n    # Determine target config file based on scope\n    local target_config=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        target_config=\"$CLAUDE_CONFIG\"\n    else\n        # Project scope - check for existing project config or use home claude dir\n        if [ -f \"./.mcp.json\" ]; then\n            target_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            target_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            target_config=\"$HOME/.claude/.mcp.json\"\n        else\n            # Create in home claude dir if no project config exists\n            target_config=\"$HOME/.claude/.mcp.json\"\n            # Initialize with empty mcpServers object if file doesn't exist\n            if [ ! -f \"$target_config\" ]; then\n                echo '{\"mcpServers\":{}}' > \"$target_config\"\n            fi\n        fi\n    fi\n\n    # Ensure the config file has mcpServers object\n    if [ ! -f \"$target_config\" ]; then\n        echo '{\"mcpServers\":{}}' > \"$target_config\"\n    fi\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Check if server already exists\n        if jq -e \".mcpServers[\\\"$server\\\"]\" \"$target_config\" &>/dev/null; then\n            warning \"Server '$server' already exists in config, skipping\"\n            failed_servers+=(\"$server (already exists)\")\n            echo \"\"\n            continue\n        fi\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args')\n        local env=$(echo \"$config\" | jq -r '.env')\n\n        # Substitute environment variables in args\n        local substituted_args=$(echo \"$args\" | jq -r 'map(\n            gsub(\"\\\\$\\\\{(?<var>[A-Z_]+)\\\\}\"; env[\"\\(.var)\"] // \"${\\(.var)}\")\n        )')\n\n        # Build the server entry\n        local server_entry=$(jq -n \\\n            --arg cmd \"$command\" \\\n            --argjson args \"$substituted_args\" \\\n            --argjson env \"$env\" \\\n            '{\n                type: \"stdio\",\n                command: $cmd,\n                args: $args,\n                env: $env\n            }')\n\n        # Add server to config\n        local tmp_file=$(mktemp)\n        jq \".mcpServers[\\\"$server\\\"] = $server_entry\" \"$target_config\" > \"$tmp_file\"\n\n        if [ $? -eq 0 ]; then\n            mv \"$tmp_file\" \"$target_config\"\n            success \"Added to config: $server\"\n            added_servers+=(\"$server\")\n        else\n            rm -f \"$tmp_file\"\n            warning \"Failed to add: $server\"\n            failed_servers+=(\"$server (jq error)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s) to $target_config:\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}",
+      "originalFile": "#!/usr/bin/env bash\n\n# MCP Act - MCP Server Management with Presets\n# Version: 2.0 (Improved with validation and security)\n# Usage: mcp-act <action> [server-name|preset-name] [scope]\n\nset -e\n\nCONFIG_FILE=\"$HOME/.claude/mcp-servers-config.json\"\nCLAUDE_CONFIG=\"$HOME/.claude.json\"\n\n# Colors for output\nRED='\\033[0;31m'\nGREEN='\\033[0;32m'\nYELLOW='\\033[1;33m'\nBLUE='\\033[0;34m'\nMAGENTA='\\033[0;35m'\nCYAN='\\033[0;36m'\nNC='\\033[0m' # No Color\n\n# Helper functions\ninfo() { echo -e \"${BLUE}\u2139${NC} $1\"; }\nsuccess() { echo -e \"${GREEN}\u2713${NC} $1\"; }\nwarning() { echo -e \"${YELLOW}\u26a0${NC} $1\"; }\nerror() { echo -e \"${RED}\u2717${NC} $1\"; exit 1; }\ntip() { echo -e \"${CYAN}\ud83d\udca1${NC} $1\"; }\n\n# Check if jq is available\nif ! command -v jq &> /dev/null; then\n    error \"jq is required but not installed. Install with: brew install jq (macOS) or apt-get install jq (Linux)\"\nfi\n\n# Check if config file exists\nif [ ! -f \"$CONFIG_FILE\" ]; then\n    error \"Configuration file not found: $CONFIG_FILE\"\nfi\n\n# Parse arguments\nACTION=\"${1:-list}\"\nTARGET=\"${2:-}\"\nSCOPE=\"${3:-project}\"\n\n# Resolve alias to actual server name\nresolve_alias() {\n    local input=\"$1\"\n\n    # First check if it's already a valid server name\n    if jq -e \".servers[\\\"$input\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n        echo \"$input\"\n        return 0\n    fi\n\n    # Check if it's an alias\n    local resolved=$(jq -r \".servers | to_entries[] | select(.value.aliases[]? == \\\"$input\\\") | .key\" \"$CONFIG_FILE\" 2>/dev/null | head -n1)\n\n    if [ -n \"$resolved\" ]; then\n        echo \"$resolved\"\n        return 0\n    fi\n\n    # Not found as server or alias\n    echo \"$input\"\n    return 1\n}\n\n# Get server list from preset or single server\nget_servers() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        # It's a preset\n        local preset_name=\"${target#preset:}\"\n        local servers=$(jq -r \".presets[\\\"$preset_name\\\"].servers[]\" \"$CONFIG_FILE\" 2>/dev/null)\n\n        if [ -z \"$servers\" ]; then\n            error \"Preset '$preset_name' not found\"\n        fi\n\n        echo \"$servers\"\n    else\n        # It's a single server - try to resolve alias first\n        local resolved=$(resolve_alias \"$target\")\n\n        if jq -e \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" &>/dev/null; then\n            if [ \"$resolved\" != \"$target\" ]; then\n                info \"Resolved alias '$target' to '$resolved'\" >&2\n            fi\n            echo \"$resolved\"\n        else\n            error \"Server '$target' not found in configuration (checked aliases too)\"\n        fi\n    fi\n}\n\n# Get server config\nget_server_config() {\n    local server_name=\"$1\"\n    jq -r \".servers[\\\"$server_name\\\"]\" \"$CONFIG_FILE\"\n}\n\n# Validate environment variables for a server\nvalidate_env_vars() {\n    local server_name=\"$1\"\n    local config=$(get_server_config \"$server_name\")\n\n    # Extract env vars from config\n    local env_keys=$(echo \"$config\" | jq -r '.env | keys[]?' 2>/dev/null)\n\n    if [ -z \"$env_keys\" ]; then\n        # No env vars required\n        return 0\n    fi\n\n    local missing_vars=()\n\n    for var in $env_keys; do\n        local var_value=$(echo \"$config\" | jq -r \".env[\\\"$var\\\"]\")\n\n        # Check if it's a template variable (${VAR_NAME})\n        if [[ \"$var_value\" =~ ^\\$\\{([A-Z_]+)\\}$ ]]; then\n            local env_name=\"${BASH_REMATCH[1]}\"\n\n            if [ -z \"${!env_name}\" ]; then\n                missing_vars+=(\"$env_name\")\n            fi\n        fi\n    done\n\n    if [ ${#missing_vars[@]} -gt 0 ]; then\n        warning \"Server '$server_name' requires environment variables:\"\n        for missing_var in \"${missing_vars[@]}\"; do\n            echo -e \"  ${RED}\u2717${NC} $missing_var (not set)\"\n        done\n\n        local notes=$(echo \"$config\" | jq -r '.notes // \"No additional notes\"')\n        tip \"$notes\"\n\n        echo \"\"\n        info \"Set with: export ${missing_vars[0]}='your-value-here'\"\n        return 1\n    fi\n\n    success \"Environment variables validated for '$server_name'\"\n    return 0\n}\n\n# Action: list\naction_list() {\n    info \"Listing all configured MCP servers...\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Presets ===${NC}\"\n    jq -r '.presets | to_entries[] | \"\\(.key): \\(.value.description) [\\(.value.servers | join(\", \"))]\"' \"$CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Individual Servers ===${NC}\"\n    jq -r '.servers | to_entries[] | \"\\(.key): \\(.value.description)\" + (if .value.aliases then \" [aliases: \\(.value.aliases | join(\", \"))]\" else \"\" end)' \"$CONFIG_FILE\"\n    echo \"\"\n\n    # Show active MCP servers grouped by scope\n    info \"Active MCP servers:\"\n    echo \"\"\n\n    # Check user-level servers\n    if [ -f \"$CLAUDE_CONFIG\" ]; then\n        local user_servers=$(jq -r '.mcpServers | keys[]?' \"$CLAUDE_CONFIG\" 2>/dev/null)\n        if [ -n \"$user_servers\" ]; then\n            echo -e \"${CYAN}User-level (global):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$CLAUDE_CONFIG\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$CLAUDE_CONFIG\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$user_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Check project-level servers (current working directory)\n    # Try both ./.mcp.json (root), ./.claude/.mcp.json (claude dir), and ~/.claude/.mcp.json (home)\n    local project_config=\"\"\n    if [ -f \"./.mcp.json\" ]; then\n        project_config=\"./.mcp.json\"\n    elif [ -f \"./.claude/.mcp.json\" ]; then\n        project_config=\"./.claude/.mcp.json\"\n    elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n        project_config=\"$HOME/.claude/.mcp.json\"\n    fi\n\n    if [ -n \"$project_config\" ]; then\n        local project_servers=$(jq -r '.mcpServers | keys[]?' \"$project_config\" 2>/dev/null)\n        if [ -n \"$project_servers\" ]; then\n            echo -e \"${CYAN}Project-level (local):${NC}\"\n            while IFS= read -r server; do\n                local cmd=$(jq -r \".mcpServers[\\\"$server\\\"].command\" \"$project_config\")\n                local args=$(jq -r \".mcpServers[\\\"$server\\\"].args | join(\\\" \\\")\" \"$project_config\")\n                echo \"  \u2022 $server: $cmd $args\"\n            done <<< \"$project_servers\"\n            echo \"\"\n        fi\n    fi\n\n    # Show connection status\n    claude mcp list 2>/dev/null | grep -E \"\u2713 Connected|\u2717 \" || warning \"Could not check server connection status\"\n}\n\n# Action: info\naction_info() {\n    local target=\"$1\"\n\n    if [[ \"$target\" == preset:* ]]; then\n        local preset_name=\"${target#preset:}\"\n        info \"Preset: $preset_name\"\n        echo \"\"\n        jq \".presets[\\\"$preset_name\\\"]\" \"$CONFIG_FILE\" || error \"Preset not found\"\n    else\n        # Resolve alias if necessary\n        local resolved=$(resolve_alias \"$target\")\n        if [ \"$resolved\" != \"$target\" ]; then\n            info \"Resolved alias '$target' to '$resolved'\"\n            echo \"\"\n        fi\n        info \"Server: $resolved\"\n        echo \"\"\n        jq \".servers[\\\"$resolved\\\"]\" \"$CONFIG_FILE\" || error \"Server not found\"\n    fi\n}\n\n# Action: add\naction_add() {\n    local target=\"$1\"\n    local scope=\"$2\"\n\n    local scope_flag=\"\"\n    if [ \"$scope\" = \"user\" ]; then\n        scope_flag=\"-s user\"\n    else\n        scope_flag=\"-s project\"\n    fi\n\n    info \"Adding servers (scope: $scope)...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\")\n    local failed_servers=()\n    local added_servers=()\n\n    for server in $servers; do\n        info \"Processing: $server\"\n\n        # Validate environment variables first\n        if ! validate_env_vars \"$server\"; then\n            failed_servers+=(\"$server (missing env vars)\")\n            echo \"\"\n            continue\n        fi\n\n        local config=$(get_server_config \"$server\")\n        local command=$(echo \"$config\" | jq -r '.command')\n        local args=$(echo \"$config\" | jq -r '.args[]')\n\n        # Build the full command\n        local add_cmd=\"claude mcp add $server $scope_flag\"\n\n        # Add environment variables if present\n        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')\n        if [ -n \"$env_vars\" ]; then\n            while IFS= read -r env_var; do\n                add_cmd=\"$add_cmd $env_var\"\n            done <<< \"$env_vars\"\n        fi\n\n        # Add -- separator before command and args (required for stdio transport)\n        add_cmd=\"$add_cmd -- $command\"\n        for arg in $args; do\n            add_cmd=\"$add_cmd $arg\"\n        done\n\n        info \"Executing: $add_cmd\"\n        if eval \"$add_cmd\" 2>/dev/null; then\n            success \"Added: $server\"\n            added_servers+=(\"$server\")\n        else\n            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"\n            failed_servers+=(\"$server (command failed)\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#added_servers[@]} -gt 0 ]; then\n        success \"Successfully added ${#added_servers[@]} server(s):\"\n        for server in \"${added_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to add ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"\n}\n\n# Action: remove\naction_remove() {\n    local target=\"$1\"\n\n    info \"Removing servers...\"\n    echo \"\"\n\n    local servers=$(get_servers \"$target\" 2>/dev/null)\n\n    if [ -z \"$servers\" ]; then\n        error \"No servers found for: $target\"\n    fi\n\n    local removed_servers=()\n    local failed_servers=()\n\n    for server in $servers; do\n        info \"Removing: $server\"\n\n        local removed_from_any=false\n\n        # Try to remove from user-level config\n        if [ -f \"$CLAUDE_CONFIG\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$CLAUDE_CONFIG\" &>/dev/null; then\n                # Server exists in user config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$CLAUDE_CONFIG\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$CLAUDE_CONFIG\"\n                success \"Removed from user-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        # Try to remove from project-level config\n        local project_config=\"\"\n        if [ -f \"./.mcp.json\" ]; then\n            project_config=\"./.mcp.json\"\n        elif [ -f \"./.claude/.mcp.json\" ]; then\n            project_config=\"./.claude/.mcp.json\"\n        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then\n            project_config=\"$HOME/.claude/.mcp.json\"\n        fi\n\n        if [ -n \"$project_config\" ]; then\n            if jq -e \".mcpServers[\\\"$server\\\"]\" \"$project_config\" &>/dev/null; then\n                # Server exists in project config - remove it\n                local tmp_file=$(mktemp)\n                jq \"del(.mcpServers[\\\"$server\\\"])\" \"$project_config\" > \"$tmp_file\"\n                mv \"$tmp_file\" \"$project_config\"\n                success \"Removed from project-level config: $server\"\n                removed_from_any=true\n            fi\n        fi\n\n        if [ \"$removed_from_any\" = true ]; then\n            removed_servers+=(\"$server\")\n        else\n            warning \"Server not found in any config: $server\"\n            failed_servers+=(\"$server\")\n        fi\n        echo \"\"\n    done\n\n    # Summary\n    echo -e \"${MAGENTA}=== Summary ===${NC}\"\n    if [ ${#removed_servers[@]} -gt 0 ]; then\n        success \"Successfully removed ${#removed_servers[@]} server(s):\"\n        for server in \"${removed_servers[@]}\"; do\n            echo \"  \u2713 $server\"\n        done\n    fi\n\n    if [ ${#failed_servers[@]} -gt 0 ]; then\n        warning \"Failed to remove ${#failed_servers[@]} server(s):\"\n        for server in \"${failed_servers[@]}\"; do\n            echo \"  \u2717 $server (not found in configs)\"\n        done\n    fi\n\n    echo \"\"\n    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"\n}\n\n# Action: audit (NEW - security check)\naction_audit() {\n    info \"Auditing ~/.claude.json for security issues...\"\n    echo \"\"\n\n    if [ ! -f \"$CLAUDE_CONFIG\" ]; then\n        warning \"Claude config not found: $CLAUDE_CONFIG\"\n        return 1\n    fi\n\n    # Check for hardcoded secrets (long alphanumeric strings that aren't ${VAR})\n    local potential_secrets=$(jq -r '.mcpServers | to_entries[] | select(.value.env | to_entries[]? | .value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | \"\\(.key): \\(.value.env | to_entries[] | select(.value | type == \"string\" and (test(\"^[A-Za-z0-9_-]{20,}$\") and (test(\"^\\\\$\\\\{\") | not))) | .key)\"' \"$CLAUDE_CONFIG\" 2>/dev/null)\n\n    if [ -n \"$potential_secrets\" ]; then\n        warning \"Potential hardcoded secrets detected:\"\n        echo \"$potential_secrets\"\n        echo \"\"\n        tip \"Replace hardcoded values with environment variable references: \\${VAR_NAME}\"\n        echo \"\"\n        info \"Example fix:\"\n        echo '  \"env\": { \"API_KEY\": \"${API_KEY}\" }  \u2190 Good'\n        echo '  \"env\": { \"API_KEY\": \"abc123...\" }   \u2190 Bad (hardcoded)'\n        return 1\n    else\n        success \"No hardcoded secrets detected!\"\n    fi\n\n    # Check for missing env vars in current shell\n    echo \"\"\n    info \"Checking environment variables...\"\n    local all_env_vars=$(jq -r '.mcpServers | to_entries[] | .value.env | to_entries[]? | .value | select(test(\"^\\\\$\\\\{\")) | gsub(\"\\\\$\\\\{|\\\\}\"; \"\")' \"$CLAUDE_CONFIG\" 2>/dev/null | sort -u)\n\n    if [ -n \"$all_env_vars\" ]; then\n        local missing_env=()\n        while IFS= read -r env_var; do\n            if [ -z \"${!env_var}\" ]; then\n                missing_env+=(\"$env_var\")\n            fi\n        done <<< \"$all_env_vars\"\n\n        if [ ${#missing_env[@]} -gt 0 ]; then\n            warning \"Environment variables not set in current shell:\"\n            for var in \"${missing_env[@]}\"; do\n                echo \"  \u2717 $var\"\n            done\n            echo \"\"\n            tip \"Set in ~/.zshrc or ~/.bashrc for persistence\"\n        else\n            success \"All required environment variables are set!\"\n        fi\n    fi\n}\n\n# Action: validate (NEW - validate config file)\naction_validate() {\n    info \"Validating configuration file...\"\n    echo \"\"\n\n    # Check JSON syntax\n    if ! jq empty \"$CONFIG_FILE\" 2>/dev/null; then\n        error \"Invalid JSON in $CONFIG_FILE\"\n    fi\n    success \"JSON syntax valid\"\n\n    # Check required fields in presets\n    local preset_count=$(jq '.presets | length' \"$CONFIG_FILE\")\n    success \"Found $preset_count preset(s)\"\n\n    # Check required fields in servers\n    local server_count=$(jq '.servers | length' \"$CONFIG_FILE\")\n    success \"Found $server_count server(s)\"\n\n    # Validate each server has required fields\n    local servers=$(jq -r '.servers | keys[]' \"$CONFIG_FILE\")\n    for server in $servers; do\n        local has_command=$(jq -e \".servers[\\\"$server\\\"].command\" \"$CONFIG_FILE\" &>/dev/null && echo \"yes\" || echo \"no\")\n        if [ \"$has_command\" = \"no\" ]; then\n            warning \"Server '$server' missing 'command' field\"\n        fi\n    done\n\n    echo \"\"\n    success \"Configuration file is valid!\"\n}\n\n# Action: config (NEW - edit MCP registry)\naction_config() {\n    info \"MCP Server Registry Configuration\"\n    echo \"\"\n    echo -e \"${CYAN}Location:${NC} $CONFIG_FILE\"\n    echo \"\"\n    echo -e \"${MAGENTA}=== Instructions for Claude Code ===${NC}\"\n    echo \"\"\n    echo \"Please help me edit or add MCP servers to the registry at:\"\n    echo \"  $CONFIG_FILE\"\n    echo \"\"\n    echo \"The registry contains:\"\n    echo \"  \u2022 presets: Bundles of related servers\"\n    echo \"  \u2022 servers: Individual MCP server configurations\"\n    echo \"  \u2022 environments: Environment variable documentation\"\n    echo \"\"\n    echo \"Each server entry should have:\"\n    echo \"  - name: Server identifier\"\n    echo \"  - description: What the server does\"\n    echo \"  - command: Executable to run (e.g., 'npx', 'python3')\"\n    echo \"  - args: Array of arguments\"\n    echo \"  - env: Environment variables (use \\${VAR} references)\"\n    echo \"  - aliases: Array of shortcut names (optional)\"\n    echo \"  - notes: Additional information (optional)\"\n    echo \"\"\n    echo \"Example server entry:\"\n    cat << 'EOF'\n  \"my-server\": {\n    \"name\": \"my-server\",\n    \"description\": \"Brief description of what this server does\",\n    \"command\": \"npx\",\n    \"args\": [\"-y\", \"my-mcp-package\"],\n    \"env\": {\n      \"API_KEY\": \"${MY_API_KEY}\"\n    },\n    \"aliases\": [\"short\", \"alias\"],\n    \"notes\": \"Get API key from https://example.com\"\n  }\nEOF\n    echo \"\"\n    tip \"After editing, run '/mcps validate' to check the configuration\"\n}\n\n# Main execution\ncase \"$ACTION\" in\n    list)\n        action_list\n        ;;\n    info)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act info <server-name|preset-name>\"\n        action_info \"$TARGET\"\n        ;;\n    add)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act add <server-name|preset-name> [project|user]\"\n        action_add \"$TARGET\" \"$SCOPE\"\n        ;;\n    remove)\n        [ -z \"$TARGET\" ] && error \"Usage: mcp-act remove <server-name|preset-name>\"\n        action_remove \"$TARGET\"\n        ;;\n    audit)\n        action_audit\n        ;;\n    validate)\n        action_validate\n        ;;\n    config)\n        action_config\n        ;;\n    help|--help|-h)\n        echo \"MCP Act - MCP Server Management with Presets\"\n        echo \"\"\n        echo \"Usage: mcp-act <action> [arguments]\"\n        echo \"\"\n        echo \"Actions:\"\n        echo \"  list                            List all configured servers and presets\"\n        echo \"  info <name>                     Show details about a server or preset\"\n        echo \"  add <name> [project|user]       Add server(s) to configuration\"\n        echo \"  remove <name>                   Remove server(s) from configuration\"\n        echo \"  config                          Edit MCP registry (opens guidance for Claude Code)\"\n        echo \"  audit                           Check for security issues\"\n        echo \"  validate                        Validate configuration file\"\n        echo \"  help                            Show this help message\"\n        echo \"\"\n        echo \"Examples:\"\n        echo \"  mcp-act list\"\n        echo \"  mcp-act add preset:webdev\"\n        echo \"  mcp-act add gemini-cli user\"\n        echo \"  mcp-act add gemini user          # Use alias (gemini \u2192 gemini-cli)\"\n        echo \"  mcp-act info chrome              # Use alias (chrome \u2192 chrome-devtools)\"\n        echo \"  mcp-act info preset:ui\"\n        echo \"  mcp-act config                   # Edit MCP registry with Claude Code\"\n        echo \"  mcp-act audit\"\n        echo \"  mcp-act validate\"\n        echo \"\"\n        echo \"Note: You can use server aliases as shortcuts. Run 'mcp-act list' to see available aliases.\"\n        ;;\n    *)\n        error \"Unknown action: $ACTION\\nRun 'mcp-act help' for usage\"\n        ;;\nesac\n",
+      "structuredPatch": [
+        {
+          "oldStart": 228,
+          "oldLines": 23,
+          "newStart": 228,
+          "newLines": 56,
+          "lines": [
+            "     local target=\"$1\"",
+            "     local scope=\"$2\"",
+            " ",
+            "-    local scope_flag=\"\"",
+            "-    if [ \"$scope\" = \"user\" ]; then",
+            "-        scope_flag=\"-s user\"",
+            "-    else",
+            "-        scope_flag=\"-s project\"",
+            "-    fi",
+            "-",
+            "     info \"Adding servers (scope: $scope)...\"",
+            "     echo \"\"",
+            " ",
+            "-    local servers=$(get_servers \"$target\")",
+            "+    local servers=$(get_servers \"$target\" 2>/dev/null)",
+            "+",
+            "+    if [ -z \"$servers\" ]; then",
+            "+        error \"No servers found for: $target\"",
+            "+    fi",
+            "+",
+            "     local failed_servers=()",
+            "     local added_servers=()",
+            " ",
+            "+    # Determine target config file based on scope",
+            "+    local target_config=\"\"",
+            "+    if [ \"$scope\" = \"user\" ]; then",
+            "+        target_config=\"$CLAUDE_CONFIG\"",
+            "+    else",
+            "+        # Project scope - check for existing project config or use home claude dir",
+            "+        if [ -f \"./.mcp.json\" ]; then",
+            "+            target_config=\"./.mcp.json\"",
+            "+        elif [ -f \"./.claude/.mcp.json\" ]; then",
+            "+            target_config=\"./.claude/.mcp.json\"",
+            "+        elif [ -f \"$HOME/.claude/.mcp.json\" ]; then",
+            "+            target_config=\"$HOME/.claude/.mcp.json\"",
+            "+        else",
+            "+            # Create in home claude dir if no project config exists",
+            "+            target_config=\"$HOME/.claude/.mcp.json\"",
+            "+            # Initialize with empty mcpServers object if file doesn't exist",
+            "+            if [ ! -f \"$target_config\" ]; then",
+            "+                echo '{\"mcpServers\":{}}' > \"$target_config\"",
+            "+            fi",
+            "+        fi",
+            "+    fi",
+            "+",
+            "+    # Ensure the config file has mcpServers object",
+            "+    if [ ! -f \"$target_config\" ]; then",
+            "+        echo '{\"mcpServers\":{}}' > \"$target_config\"",
+            "+    fi",
+            "+",
+            "     for server in $servers; do",
+            "         info \"Processing: $server\"",
+            " ",
+            "+        # Check if server already exists",
+            "+        if jq -e \".mcpServers[\\\"$server\\\"]\" \"$target_config\" &>/dev/null; then",
+            "+            warning \"Server '$server' already exists in config, skipping\"",
+            "+            failed_servers+=(\"$server (already exists)\")",
+            "+            echo \"\"",
+            "+            continue",
+            "+        fi",
+            "+",
+            "         # Validate environment variables first",
+            "         if ! validate_env_vars \"$server\"; then",
+            "             failed_servers+=(\"$server (missing env vars)\")"
+          ]
+        },
+        {
+          "oldStart": 254,
+          "oldLines": 32,
+          "newStart": 287,
+          "newLines": 38,
+          "lines": [
+            " ",
+            "         local config=$(get_server_config \"$server\")",
+            "         local command=$(echo \"$config\" | jq -r '.command')",
+            "-        local args=$(echo \"$config\" | jq -r '.args[]')",
+            "+        local args=$(echo \"$config\" | jq -r '.args')",
+            "+        local env=$(echo \"$config\" | jq -r '.env')",
+            " ",
+            "-        # Build the full command",
+            "-        local add_cmd=\"claude mcp add $server $scope_flag\"",
+            "+        # Substitute environment variables in args",
+            "+        local substituted_args=$(echo \"$args\" | jq -r 'map(",
+            "+            gsub(\"\\\\$\\\\{(?<var>[A-Z_]+)\\\\}\"; env[\"\\(.var)\"] // \"${\\(.var)}\")",
+            "+        )')",
+            " ",
+            "-        # Add environment variables if present",
+            "-        local env_vars=$(echo \"$config\" | jq -r '.env | to_entries[]? | \"-e \\(.key)=\\(.value)\"')",
+            "-        if [ -n \"$env_vars\" ]; then",
+            "-            while IFS= read -r env_var; do",
+            "-                add_cmd=\"$add_cmd $env_var\"",
+            "-            done <<< \"$env_vars\"",
+            "-        fi",
+            "+        # Build the server entry",
+            "+        local server_entry=$(jq -n \\",
+            "+            --arg cmd \"$command\" \\",
+            "+            --argjson args \"$substituted_args\" \\",
+            "+            --argjson env \"$env\" \\",
+            "+            '{",
+            "+                type: \"stdio\",",
+            "+                command: $cmd,",
+            "+                args: $args,",
+            "+                env: $env",
+            "+            }')",
+            " ",
+            "-        # Add -- separator before command and args (required for stdio transport)",
+            "-        add_cmd=\"$add_cmd -- $command\"",
+            "-        for arg in $args; do",
+            "-            add_cmd=\"$add_cmd $arg\"",
+            "-        done",
+            "+        # Add server to config",
+            "+        local tmp_file=$(mktemp)",
+            "+        jq \".mcpServers[\\\"$server\\\"] = $server_entry\" \"$target_config\" > \"$tmp_file\"",
+            " ",
+            "-        info \"Executing: $add_cmd\"",
+            "-        if eval \"$add_cmd\" 2>/dev/null; then",
+            "-            success \"Added: $server\"",
+            "+        if [ $? -eq 0 ]; then",
+            "+            mv \"$tmp_file\" \"$target_config\"",
+            "+            success \"Added to config: $server\"",
+            "             added_servers+=(\"$server\")",
+            "         else",
+            "-            warning \"Failed to add: $server (try manual edit of ~/.claude.json)\"",
+            "-            failed_servers+=(\"$server (command failed)\")",
+            "+            rm -f \"$tmp_file\"",
+            "+            warning \"Failed to add: $server\"",
+            "+            failed_servers+=(\"$server (jq error)\")",
+            "         fi",
+            "         echo \"\"",
+            "     done"
+          ]
+        },
+        {
+          "oldStart": 287,
+          "oldLines": 7,
+          "newStart": 326,
+          "newLines": 7,
+          "lines": [
+            "     # Summary",
+            "     echo -e \"${MAGENTA}=== Summary ===${NC}\"",
+            "     if [ ${#added_servers[@]} -gt 0 ]; then",
+            "-        success \"Successfully added ${#added_servers[@]} server(s):\"",
+            "+        success \"Successfully added ${#added_servers[@]} server(s) to $target_config:\"",
+            "         for server in \"${added_servers[@]}\"; do",
+            "             echo \"  \u2713 $server\"",
+            "         done"
+          ]
+        },
+        {
+          "oldStart": 301,
+          "oldLines": 7,
+          "newStart": 340,
+          "newLines": 7,
+          "lines": [
+            "     fi",
+            " ",
+            "     echo \"\"",
+            "-    tip \"Run 'claude mcp list' or '/mcp' to verify servers are connected\"",
+            "+    tip \"Restart Claude Code to apply changes. Verify with: claude mcp list\"",
+            " }",
+            " ",
+            " # Action: remove"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.claude/.mcp.json 2>/dev/null || echo \"File doesn't exist\"",
+      "description": "Check current project config"
+    },
+    "tool_response": {
+      "stdout": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh add tav project",
+      "description": "Test adding Tavily at project level"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Adding servers (scope: project)...\n\n\u001b[0;34m\u2139\u001b[0m Processing: tavily\n\u001b[0;32m\u2713\u001b[0m Added to config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully added 1 server(s) to /Users/natedamstra/.claude/.mcp.json:\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.claude/.mcp.json | jq .",
+      "description": "Verify Tavily was added to project config"
+    },
+    "tool_response": {
+      "stdout": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    },\n    \"tavily\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh remove tav",
+      "description": "Test removing Tavily from project level"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Removing servers...\n\n\u001b[0;34m\u2139\u001b[0m Removing: tavily\n\u001b[0;32m\u2713\u001b[0m Removed from project-level config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully removed 1 server(s):\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.claude/.mcp.json | jq .",
+      "description": "Verify Tavily was removed from project config"
+    },
+    "tool_response": {
+      "stdout": "{\n  \"mcpServers\": {\n    \"shadcn\": {\n      \"type\": \"stdio\",\n      \"command\": \"npx\",\n      \"args\": [\n        \"-y\",\n        \"mcp-remote\",\n        \"https://www.shadcn.io/api/mcp\"\n      ],\n      \"env\": {}\n    }\n  }\n}",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "pending",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh add tav user",
+      "description": "Test adding Tavily at user level"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Adding servers (scope: user)...\n\n\u001b[0;34m\u2139\u001b[0m Processing: tavily\n\u001b[0;32m\u2713\u001b[0m Added to config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully added 1 server(s) to /Users/natedamstra/.claude.json:\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.claude.json | jq '.mcpServers.tavily'",
+      "description": "Verify Tavily was added to user config"
+    },
+    "tool_response": {
+      "stdout": "{\n  \"type\": \"stdio\",\n  \"command\": \"npx\",\n  \"args\": [\n    \"-y\",\n    \"mcp-remote\",\n    \"https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}\"\n  ],\n  \"env\": {}\n}",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "in_progress",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "pending",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh remove tav",
+      "description": "Test removing Tavily from user level"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Removing servers...\n\n\u001b[0;34m\u2139\u001b[0m Removing: tavily\n\u001b[0;32m\u2713\u001b[0m Removed from user-level config: tavily\n\n\u001b[0;35m=== Summary ===\u001b[0m\n\u001b[0;32m\u2713\u001b[0m Successfully removed 1 server(s):\n  \u2713 tavily\n\n\u001b[0;36m\ud83d\udca1\u001b[0m Restart Claude Code to apply changes. Verify with: claude mcp list",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cat ~/.claude.json | jq '.mcpServers.tavily' 2>&1",
+      "description": "Verify Tavily was removed from user config"
+    },
+    "tool_response": {
+      "stdout": "null",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "in_progress",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "in_progress",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "pending",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "in_progress",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "echo \"=== User Config (~/. claude.json) ===\" && cat ~/.claude.json | jq '.mcpServers | keys' && echo \"\" && echo \"=== Project Config (~/.claude/.mcp.json) ===\" && cat ~/.claude/.mcp.json | jq '.mcpServers | keys'",
+      "description": "Verify both configs are clean"
+    },
+    "tool_response": {
+      "stdout": "=== User Config (~/. claude.json) ===\n[\n  \"gemini-cli\"\n]\n\n=== Project Config (~/.claude/.mcp.json) ===\n[\n  \"shadcn\"\n]",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "~/.claude/scripts/mcp-act.sh list | grep -A 15 \"Active MCP servers\"",
+      "description": "Show final MCP server status"
+    },
+    "tool_response": {
+      "stdout": "\u001b[0;34m\u2139\u001b[0m Active MCP servers:\n\n\u001b[0;36mUser-level (global):\u001b[0m\n  \u2022 gemini-cli: npx gemini-mcp-tool\n\n\u001b[0;36mProject-level (local):\u001b[0m\n  \u2022 shadcn: npx -y mcp-remote https://www.shadcn.io/api/mcp\n\ngemini-cli: npx gemini-mcp-tool - \u2713 Connected",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    }
+  },
+  {
+    "session_id": "35c91fda-2320-4d2c-83e6-69afa2c213b2",
+    "transcript_path": "/Users/natedamstra/.claude/projects/-Users-natedamstra--claude/35c91fda-2320-4d2c-83e6-69afa2c213b2.jsonl",
+    "cwd": "/Users/natedamstra/.claude/scripts",
+    "permission_mode": "acceptEdits",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "completed",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "in_progress",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Test adding tav at project level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at project level"
+        },
+        {
+          "content": "Test removing tav from project level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from project level"
+        },
+        {
+          "content": "Test adding tav at user level",
+          "status": "completed",
+          "activeForm": "Testing adding tav at user level"
+        },
+        {
+          "content": "Test removing tav from user level",
+          "status": "completed",
+          "activeForm": "Testing removing tav from user level"
+        },
+        {
+          "content": "Verify both configs are clean",
+          "status": "completed",
+          "activeForm": "Verifying both configs are clean"
+        }
+      ]
+    }
+  }
+]

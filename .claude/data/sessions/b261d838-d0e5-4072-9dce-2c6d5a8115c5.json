@@ -1,0 +1,7 @@
+{
+  "session_id": "b261d838-d0e5-4072-9dce-2c6d5a8115c5",
+  "prompts": [
+    "/mcps ",
+    "im getting this warning: [Contains warnings] User config (available in all your projects)\nLocation: /Users/natedamstra/.claude.json\n \u2514 [Warning] [tavily] mcpServers.tavily: Missing environment variables:\n TAVILY_API_KEY\n\n[Contains warnings] Project config (shared via .mcp.json)\nLocation: /Users/natedamstra/.claude/.mcp.json\n \u2514 [Warning] [tavily] mcpServers.tavily: Missing environment variables:\n TAVILY_API_KEY\n\nWe are storing the API key in ~/.zshrc/ . i configured the mcp using the /mcps slash command and script. to fix the root cause we need to fix the script or figure out if there's another issue with the api key causing this error. "
+  ]
+}

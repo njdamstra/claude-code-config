@@ -1,0 +1,90 @@
+{
+  "subagent_selection": {
+    "comprehensive": {
+      "discovery": {
+        "always": ["dependency-mapper", "file-scanner", "pattern-analyzer"],
+        "conditional": {
+          "--frontend": ["component-analyzer"],
+          "--backend": ["backend-analyzer"],
+          "--both": ["component-analyzer", "backend-analyzer"]
+        }
+      },
+      "analysis": {
+        "always": ["code-deepdive", "architecture-synthesizer", "usage-pattern-extractor"],
+        "conditional": {}
+      },
+      "verification": {
+        "always": ["accuracy-verifier", "completeness-checker"],
+        "conditional": {
+          "has_examples": ["example-validator"]
+        }
+      }
+    },
+
+    "how-to": {
+      "discovery": {
+        "always": ["file-scanner", "usage-pattern-extractor"],
+        "conditional": {
+          "--frontend": ["component-analyzer"],
+          "--backend": ["backend-analyzer"]
+        }
+      }
+    },
+
+    "quickref": {
+      "discovery": {
+        "always": ["file-scanner", "pattern-analyzer"],
+        "conditional": {}
+      }
+    },
+
+    "architecture": {
+      "discovery": {
+        "always": ["dependency-mapper", "file-scanner"],
+        "conditional": {
+          "--frontend": ["component-analyzer"],
+          "--backend": ["backend-analyzer"],
+          "--both": ["component-analyzer", "backend-analyzer"]
+        }
+      },
+      "analysis": {
+        "always": ["architecture-synthesizer", "code-deepdive"],
+        "conditional": {}
+      },
+      "verification": {
+        "always": [],
+        "conditional": {
+          "user_requested": ["accuracy-verifier"]
+        }
+      }
+    }
+  },
+
+  "subagent_locations": {
+    "dependency-mapper": "~/.claude/agents/docs/dependency-mapper.md",
+    "file-scanner": "~/.claude/agents/docs/file-scanner.md",
+    "pattern-analyzer": "~/.claude/agents/docs/pattern-analyzer.md",
+    "component-analyzer": "~/.claude/agents/docs/component-analyzer.md",
+    "backend-analyzer": "~/.claude/agents/docs/backend-analyzer.md",
+    "code-deepdive": "~/.claude/agents/docs/code-deepdive.md",
+    "architecture-synthesizer": "~/.claude/agents/docs/architecture-synthesizer.md",
+    "usage-pattern-extractor": "~/.claude/agents/docs/usage-pattern-extractor.md",
+    "accuracy-verifier": "~/.claude/agents/docs/accuracy-verifier.md",
+    "completeness-checker": "~/.claude/agents/docs/completeness-checker.md",
+    "example-validator": "~/.claude/agents/docs/example-validator.md"
+  },
+
+  "conditional_rules": {
+    "--frontend": "Spawn component-analyzer to analyze Vue components, composables, UI patterns",
+    "--backend": "Spawn backend-analyzer to analyze Appwrite functions, database schemas, API patterns",
+    "--both": "Spawn both component-analyzer and backend-analyzer for full-stack coverage",
+    "has_examples": "Spawn example-validator only if documentation contains code examples",
+    "user_requested": "Spawn verification subagents only if user explicitly requests verification"
+  },
+
+  "notes": {
+    "parallel_execution": "All subagents in a phase spawn simultaneously (3-5 max per phase)",
+    "conditional_detection": "Detect flags from command input or natural language description",
+    "default_flag": "If no flag specified, default to --frontend"
+  }
+}

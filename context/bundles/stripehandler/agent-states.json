@@ -1,0 +1,31 @@
+{
+  "agents_used": [],
+  "agent_results": [],
+  "available_agents": [
+    {
+      "type": "typescript-master",
+      "purpose": "TypeScript compilation errors, type safety",
+      "status": "available"
+    },
+    {
+      "type": "minimal-change-analyzer",
+      "purpose": "Surgical changes to existing codebases",
+      "status": "available"
+    },
+    {
+      "type": "problem-decomposer-orchestrator",
+      "purpose": "Complex multi-step implementations",
+      "status": "available"
+    },
+    {
+      "type": "astro-vue-architect",
+      "purpose": "SSR-compatible Vue components in Astro",
+      "status": "available"
+    }
+  ],
+  "recommended_agents_for_stripe": [
+    "typescript-master: For Stripe SDK type definitions and integration",
+    "minimal-change-analyzer: For surgical integration into existing payment flows",
+    "problem-decomposer-orchestrator: For complex payment workflow implementation"
+  ]
+}

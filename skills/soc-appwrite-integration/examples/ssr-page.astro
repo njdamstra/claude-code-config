@@ -1,0 +1,158 @@
+---
+// Example: Astro SSR Page with AppwriteServer
+
+import { AppwriteServer } from '@server/appwrite/AppwriteServer'
+import { Query } from 'appwrite'
+import { APPWRITE_COLL_POST_CONTAINER } from 'astro:env/client'
+import type { PostContainer } from '@appwrite/schemas/postContainer'
+
+// Initialize AppwriteServer with session from cookies
+const appwrite = AppwriteServer.withSessionToken(Astro.cookies)
+
+// Auth guard - check if user is authenticated
+let user
+try {
+  user = await appwrite.account.get()
+} catch (error) {
+  // Not authenticated - redirect to login
+  return Astro.redirect('/login')
+}
+
+// Fetch user's posts (server-side during SSR)
+const postsResult = await appwrite.listDocuments<PostContainer>({
+  databaseId: 'socialaize_data',
+  collectionId: APPWRITE_COLL_POST_CONTAINER,
+  queries: [
+    Query.equal('userId', user.$id),
+    Query.orderDesc('$createdAt'),
+    Query.limit(10)
+  ]
+})
+
+const posts = postsResult.documents
+
+// Fetch user's teams
+const teams = await appwrite.teams.list()
+
+// Count total posts
+const totalPosts = await appwrite.databases.listDocuments(
+  'socialaize_data',
+  APPWRITE_COLL_POST_CONTAINER,
+  [
+    Query.equal('userId', user.$id),
+    Query.limit(1)  // Only need count
+  ]
+)
+
+const postCount = totalPosts.total
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - {user.name}</title>
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-4">
+      <!-- Header -->
+      <header class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+          Welcome, {user.name}!
+        </h1>
+        <p class="text-gray-600 dark:text-gray-400">
+          {user.email}
+        </p>
+      </header>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+            Total Posts
+          </h3>
+          <p class="text-3xl font-bold text-gray-900 dark:text-white">
+            {postCount}
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+            Teams
+          </h3>
+          <p class="text-3xl font-bold text-gray-900 dark:text-white">
+            {teams.total}
+          </p>
+        </div>
+
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow">
+          <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
+            Recent Posts
+          </h3>
+          <p class="text-3xl font-bold text-gray-900 dark:text-white">
+            {posts.length}
+          </p>
+        </div>
+      </div>
+
+      <!-- Recent posts -->
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow">
+        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">
+            Recent Posts
+          </h2>
+        </div>
+
+        <div class="divide-y divide-gray-200 dark:divide-gray-700">
+          {posts.length === 0 ? (
+            <div class="p-6 text-center text-gray-500 dark:text-gray-400">
+              No posts yet. Create your first post to get started!
+            </div>
+          ) : (
+            posts.map(post => (
+              <article class="p-6 hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  {post.title}
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+                  {post.content}
+                </p>
+                <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                  <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded">
+                    {post.status}
+                  </span>
+                  <span>
+                    {new Date(post.$createdAt).toLocaleDateString()}
+                  </span>
+                </div>
+              </article>
+            ))
+          )}
+        </div>
+      </div>
+
+      <!-- Teams -->
+      <div class="mt-8 bg-white dark:bg-gray-800 rounded-lg shadow">
+        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">
+            Your Teams
+          </h2>
+        </div>
+
+        <div class="divide-y divide-gray-200 dark:divide-gray-700">
+          {teams.teams.map(team => (
+            <div class="p-6 hover:bg-gray-50 dark:hover:bg-gray-700 transition">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                {team.name}
+              </h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">
+                {team.total} members
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

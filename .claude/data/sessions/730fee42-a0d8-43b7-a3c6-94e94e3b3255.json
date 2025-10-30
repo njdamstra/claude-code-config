@@ -1,0 +1,10 @@
+{
+  "session_id": "730fee42-a0d8-43b7-a3c6-94e94e3b3255",
+  "prompts": [
+    "review our current hook setup @hooks/ . then review ~/socialaize/ codebase. what useful hooks should we add based on this codebase that we don't already have (if any)?",
+    "just add the typescript validation and zod schema validtion hooks",
+    "should we use pnpm instead?",
+    "the hooks shouldn't cd into socialaize, just call pnpm run typecheck or nsc --no emit whatever",
+    "no the uv run pattern was correct"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "Template Registry Schema v1.0",
+  "description": "Registry of all available templates for Claude Code workflows",
+  "categories": {
+    "documenting": {
+      "description": "Templates for documentation, notes, and knowledge capture",
+      "templates": [
+        {
+          "id": "feature-doc",
+          "name": "Feature Documentation",
+          "file": "documenting/feature-doc.md",
+          "description": "Document new feature implementation with API, usage examples, and edge cases",
+          "tags": ["documentation", "feature", "api"]
+        },
+        {
+          "id": "bug-report",
+          "name": "Bug Report",
+          "file": "documenting/bug-report.md",
+          "description": "Structured bug report with reproduction steps and root cause analysis",
+          "tags": ["documentation", "bug", "analysis"]
+        },
+        {
+          "id": "decision-log",
+          "name": "Technical Decision Log",
+          "file": "documenting/decision-log.md",
+          "description": "Record architectural decisions with context, alternatives, and consequences",
+          "tags": ["documentation", "architecture", "decision"]
+        }
+      ]
+    },
+    "planning": {
+      "description": "Templates for project planning, task breakdown, and workflow design",
+      "templates": [
+        {
+          "id": "feature-plan",
+          "name": "Feature Implementation Plan",
+          "file": "planning/feature-plan.md",
+          "description": "Comprehensive feature planning with phases, dependencies, and success criteria",
+          "tags": ["planning", "feature", "roadmap"]
+        },
+        {
+          "id": "refactor-plan",
+          "name": "Refactoring Plan",
+          "file": "planning/refactor-plan.md",
+          "description": "Systematic refactoring approach with impact analysis and rollback strategy",
+          "tags": ["planning", "refactor", "architecture"]
+        },
+        {
+          "id": "spike-investigation",
+          "name": "Spike Investigation",
+          "file": "planning/spike-investigation.md",
+          "description": "Time-boxed research template for exploring technical unknowns",
+          "tags": ["planning", "research", "investigation"]
+        }
+      ]
+    },
+    "components": {
+      "description": "Templates for building reusable components and patterns",
+      "templates": [
+        {
+          "id": "vue-component",
+          "name": "Vue 3 Component Template",
+          "file": "components/vue-component.vue",
+          "description": "Starter template for Vue 3 SFC with TypeScript, Tailwind, and accessibility",
+          "tags": ["component", "vue", "typescript"]
+        },
+        {
+          "id": "composable",
+          "name": "Vue Composable Template",
+          "file": "components/composable.ts",
+          "description": "Composable pattern with SSR safety, lifecycle management, and cleanup",
+          "tags": ["component", "composable", "typescript"]
+        },
+        {
+          "id": "base-store",
+          "name": "Nanostore BaseStore Template",
+          "file": "components/base-store.ts",
+          "description": "BaseStore extension for Appwrite collections with type safety and Zod validation",
+          "tags": ["component", "store", "appwrite"]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-10-23",
+    "totalTemplates": 9
+  }
+}

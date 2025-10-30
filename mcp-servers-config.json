@@ -1,0 +1,412 @@
+{
+  "presets": {
+    "browser": {
+      "description": "Browser automation and debugging tools",
+      "servers": [
+        "playwright",
+        "chrome-devtools"
+      ]
+    },
+    "research": {
+      "description": "Web research and search tools",
+      "servers": [
+        "tavily",
+        "firecrawl",
+        "context7"
+      ]
+    },
+    "ai": {
+      "description": "AI assistance and problem-solving tools",
+      "servers": [
+        "gemini-cli",
+        "sequential-thinking"
+      ]
+    },
+    "docs": {
+      "description": "Documentation and reference lookup",
+      "servers": [
+        "context7",
+        "astro-docs",
+        "appwrite-docs",
+        "tailwind-css",
+        "shadcn"
+      ]
+    },
+    "webdev": {
+      "description": "Web development essentials",
+      "servers": [
+        "firecrawl",
+        "playwright"
+      ]
+    },
+    "astro-dev": {
+      "description": "Astro + Vue + Appwrite development stack",
+      "servers": [
+        "astro-docs",
+        "appwrite-docs",
+        "tailwind-css",
+        "shadcn-vue",
+        "context7"
+      ]
+    },
+    "ui": {
+      "description": "UI and component development",
+      "servers": [
+        "tailwind-css",
+        "shadcn-vue",
+        "shadcn-vue-smithery"
+      ]
+    },
+    "ui-react": {
+      "description": "UI and component development (React)",
+      "servers": [
+        "tailwind-css",
+        "shadcn"
+      ]
+    },
+    "ai-assist": {
+      "description": "AI collaboration tools",
+      "servers": [
+        "gemini-cli",
+        "sequential-thinking",
+        "context7"
+      ]
+    }
+  },
+  "servers": {
+    "gemini-cli": {
+      "name": "gemini-cli",
+      "description": "Google Gemini CLI with large context window (2M tokens)",
+      "command": "npx",
+      "args": [
+        "gemini-mcp-tool"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      },
+      "notes": "Get API key from https://aistudio.google.com/app/apikey",
+      "aliases": [
+        "gemini",
+        "gem"
+      ]
+    },
+    "gemini-cli-oauth": {
+      "name": "gemini-cli-oauth",
+      "description": "Google Gemini CLI with OAuth (no API key needed)",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@jacob/gemini-cli-mcp"
+      ],
+      "env": {
+        "GEMINI_MODEL": "gemini-2.5-pro",
+        "GEMINI_TIMEOUT": "30000",
+        "GEMINI_AUTO_LOGIN": "true",
+        "GEMINI_THINKING_ENABLED": "true"
+      },
+      "notes": "OAuth authentication, 60 req/min free tier. No API key needed.",
+      "aliases": [
+        "gemini-oauth"
+      ]
+    },
+    "firecrawl": {
+      "name": "firecrawl",
+      "description": "Web scraping and content extraction",
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      },
+      "notes": "Get API key from https://firecrawl.dev",
+      "aliases": [
+        "fc",
+        "crawl"
+      ]
+    },
+    "playwright": {
+      "name": "playwright",
+      "description": "Browser automation for testing, screenshot capture, and visual regression testing. Optimized for Mac Pro 2019 with GPU acceleration disabled.",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+        "PLAYWRIGHT_LAUNCH_OPTIONS": "{\"args\":[\"--disable-gpu\",\"--disable-dev-shm-usage\"],\"slowMo\":50}",
+        "PLAYWRIGHT_TIMEOUT": "30000"
+      },
+      "notes": "No API key required. Auto-installs browsers on first use. Mac Pro 2019 optimizations: GPU disabled, single worker mode, increased timeouts. For visual testing: use with viewport 1280x720. Supports screenshot capture, visual regression, and accessibility audits.",
+      "config_hints": {
+        "mac_pro_2019": {
+          "launchOptions": {
+            "args": ["--disable-gpu", "--disable-dev-shm-usage", "--no-sandbox"],
+            "slowMo": 50
+          },
+          "actionTimeout": 10000,
+          "navigationTimeout": 30000,
+          "workers": 1,
+          "retries": 2
+        },
+        "visual_testing": {
+          "viewport": { "width": 1280, "height": 720 },
+          "screenshot": "only-on-failure",
+          "video": "on-first-retry"
+        }
+      },
+      "aliases": [
+        "pw",
+        "browser"
+      ]
+    },
+    "tailwind-css": {
+      "name": "tailwind-css",
+      "description": "Tailwind CSS utilities and documentation",
+      "command": "npx",
+      "args": [
+        "-y",
+        "tailwindcss-mcp-server"
+      ],
+      "env": {},
+      "notes": "Provides CSS conversion, color palettes, and component templates",
+      "aliases": [
+        "tailwind",
+        "tw"
+      ]
+    },
+    "shadcn": {
+      "name": "shadcn",
+      "description": "shadcn/ui component registry and documentation (React)",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://www.shadcn.io/api/mcp"
+      ],
+      "env": {},
+      "notes": "Official shadcn MCP with community registry access for React components",
+      "aliases": [
+        "shadcn-react"
+      ]
+    },
+    "shadcn-vue": {
+      "name": "shadcn-vue",
+      "description": "shadcn-vue AI-powered component generation for Vue 3",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@jpisnice/shadcn-ui-mcp-server",
+        "--framework",
+        "vue"
+      ],
+      "env": {},
+      "notes": "Access shadcn-vue repository components, demos, blocks, and metadata. GitHub: https://github.com/Jpisnice/shadcn-ui-mcp-server",
+      "aliases": [
+        "ui",
+        "shadcn-ui",
+        "vue-ui"
+      ]
+    },
+    "shadcn-vue-smithery": {
+      "name": "shadcn-vue-smithery",
+      "description": "shadcn-vue MCP via Smithery (AI component generation)",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://server.smithery.ai/@HelloGGX/shadcn-vue-mcp/mcp?api_key=b9979058-8139-4165-adeb-115311af41eb&profile=surprising-pike-0jJC8d"
+      ],
+      "env": {},
+      "notes": "Smithery-hosted shadcn-vue MCP. Provides: component-builder, components-filter, component-usage-doc, component-quality-check, requirement-structuring. GitHub: https://github.com/HelloGGX/shadcn-vue-mcp",
+      "aliases": [
+        "vue-ai",
+        "shadcn-ai"
+      ]
+    },
+    "chrome-devtools": {
+      "name": "chrome-devtools",
+      "description": "Chrome DevTools Protocol for browser debugging",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "env": {},
+      "notes": "Starts Chrome automatically with remote debugging",
+      "aliases": [
+        "chrome",
+        "devtools"
+      ]
+    },
+    "figma-to-react": {
+      "name": "figma-to-react",
+      "description": "Convert Figma designs to React components",
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-mcp"
+      ],
+      "env": {
+        "FIGMA_API_KEY": "${FIGMA_API_KEY}"
+      },
+      "notes": "Get API key from figma.com > Settings > Security",
+      "aliases": [
+        "figma"
+      ]
+    },
+    "sequential-thinking": {
+      "name": "sequential-thinking",
+      "description": "Break down complex problems into steps",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {},
+      "notes": "No API key required",
+      "aliases": [
+        "thinking",
+        "seq"
+      ]
+    },
+    "context7": {
+      "name": "context7",
+      "description": "Up-to-date library documentation and code examples",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ],
+      "env": {},
+      "notes": "Provides current version-specific docs for Vue3, Astro, React, etc.",
+      "aliases": [
+        "ctx7",
+        "docs"
+      ]
+    },
+    "astro-docs": {
+      "name": "astro-docs",
+      "description": "Official Astro documentation with real-time search via kapa.ai",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.docs.astro.build/mcp"
+      ],
+      "env": {},
+      "notes": "Official Astro Docs MCP server. Provides search_astro_docs command for real-time documentation queries. Powered by kapa.ai vector search. No API key required. Zero-install remote configuration.",
+      "aliases": [
+        "astro",
+        "astro-doc"
+      ]
+    },
+    "appwrite-docs": {
+      "name": "appwrite-docs",
+      "description": "Official Appwrite documentation with real-time search",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp-for-docs.appwrite.io"
+      ],
+      "env": {},
+      "notes": "Official Appwrite Docs MCP server. Provides real-time documentation queries for Appwrite backend services, databases, authentication, storage, and functions. No API key required. HTTP transport.",
+      "aliases": [
+        "appwrite",
+        "appwrite-doc"
+      ]
+    },
+    "memory": {
+      "name": "memory",
+      "description": "Persistent knowledge storage across sessions",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {},
+      "notes": "Stores facts and context between Claude sessions",
+      "aliases": [
+        "mem"
+      ]
+    },
+    "github": {
+      "name": "github",
+      "description": "GitHub integration for repositories, PRs, and issues",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "notes": "Get token from github.com > Settings > Developer settings > Personal access tokens (classic). Needs repo scope.",
+      "aliases": [
+        "gh"
+      ]
+    },
+    "tavily": {
+      "name": "tavily",
+      "description": "Tavily AI-powered search API for real-time web research",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}"
+      ],
+      "env": {},
+      "notes": "Get API key from tavily.com. Provides AI-powered search with summaries, citations, and context extraction.",
+      "aliases": [
+        "tav",
+        "search"
+      ]
+    }
+  },
+  "environments": {
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key",
+      "url": "https://aistudio.google.com/app/apikey",
+      "required_for": [
+        "gemini-cli"
+      ]
+    },
+    "FIRECRAWL_API_KEY": {
+      "description": "Firecrawl web scraping API key",
+      "url": "https://firecrawl.dev",
+      "required_for": [
+        "firecrawl"
+      ]
+    },
+    "FIGMA_API_KEY": {
+      "description": "Figma personal access token",
+      "url": "https://figma.com/settings/account",
+      "required_for": [
+        "figma-to-react"
+      ]
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub personal access token (classic)",
+      "url": "https://github.com/settings/tokens",
+      "required_for": [
+        "github"
+      ]
+    },
+    "SMITHERY_SHADCN_VUE_URL": {
+      "description": "Smithery API URL for shadcn-vue MCP server (includes API key)",
+      "url": "https://smithery.ai/@HelloGGX/shadcn-vue-mcp",
+      "required_for": [
+        "shadcn-vue-smithery"
+      ]
+    },
+    "TAVILY_API_KEY": {
+      "description": "Tavily AI search API key",
+      "url": "https://tavily.com",
+      "required_for": [
+        "tavily"
+      ]
+    }
+  }
+}

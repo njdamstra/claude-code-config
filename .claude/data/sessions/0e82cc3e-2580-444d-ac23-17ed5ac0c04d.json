@@ -1,0 +1,6 @@
+{
+  "session_id": "0e82cc3e-2580-444d-ac23-17ed5ac0c04d",
+  "prompts": [
+    "I want a meta slash command that takes in these args: /meta <area:skills|agents|commands|documentation|scripts|status_line|hooks|CLAUDE|settings|mcps|...> <description> and these flags: --ask (readonly) --user-level|--project-level (default to user level). pretty much all this command should do is give relevant info for editing the .claude configuration (note for mcps and some settings we have the ~/claude.json ). for these areas it should invoke the relevant skills: commands --> cc-slash-command-builder (you map the rest). this is an example of how i want to use it: /meta skills \"i want you to add instructions for creating slash commands that invoke skills to cc-slash-command-builder\"."
+  ]
+}

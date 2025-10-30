@@ -1,0 +1,68 @@
+{
+  "workflows": {
+    "new-feature": {
+      "name": "New Feature Planning",
+      "description": "Comprehensive feature planning with PRD generation (40/60 planning-to-coding ratio)",
+      "phases": ["plan", "discovery", "requirements", "design", "synthesis", "validation", "finalize"],
+      "template": "new-feature.md",
+      "typical_duration_minutes": "30-90",
+      "token_estimate": "30-100K",
+      "quality_gates": 3,
+      "research_basis": "40/60 planning ratio, INVEST principles, developer-led planning"
+    },
+    "debugging": {
+      "name": "Debugging Planning",
+      "description": "Systematic bug investigation and resolution planning",
+      "phases": ["plan", "reproduction", "root-cause", "solution", "synthesis", "validation", "finalize"],
+      "template": "debugging.md",
+      "typical_duration_minutes": "20-60",
+      "token_estimate": "20-80K",
+      "quality_gates": 2,
+      "research_basis": "Systematic debugging: reproduce → observe → hypothesize → test → fix"
+    },
+    "refactoring": {
+      "name": "Refactoring Planning",
+      "description": "Controlled code improvement planning (small-step, behavior-preserving)",
+      "phases": ["plan", "analysis", "planning", "synthesis", "validation", "finalize"],
+      "template": "refactoring.md",
+      "typical_duration_minutes": "15-45",
+      "token_estimate": "15-60K",
+      "quality_gates": 2,
+      "research_basis": "Martin Fowler's refactoring workflows, Red-Green-Refactor TDD cycle"
+    },
+    "improving": {
+      "name": "Improvement Planning",
+      "description": "Targeted code/UX optimization planning (quality-driven enhancements)",
+      "phases": ["plan", "assessment", "planning", "synthesis", "validation", "finalize"],
+      "template": "improving.md",
+      "typical_duration_minutes": "15-45",
+      "token_estimate": "15-60K",
+      "quality_gates": 2,
+      "research_basis": "Workflow optimization, quality-driven improvements, continuous improvement"
+    },
+    "quick": {
+      "name": "Quick Planning",
+      "description": "Rapid sprint-style planning for quick tasks (15-minute planning)",
+      "phases": ["plan", "discovery", "synthesis", "finalize"],
+      "template": "quick.md",
+      "typical_duration_minutes": "5-15",
+      "token_estimate": "5-20K",
+      "quality_gates": 0,
+      "research_basis": "Sprint planning timeboxing, capacity-based commitment"
+    }
+  },
+
+  "default": "new-feature",
+
+  "notes": {
+    "workflow_selection": {
+      "new-feature": "Building new features or major functionality from scratch",
+      "debugging": "Investigating bugs or unexpected behavior systematically",
+      "refactoring": "Improving existing code structure before adding features",
+      "improving": "Optimizing performance, quality, or UX of existing code",
+      "quick": "Small features, bug fixes, or well-understood tasks"
+    },
+    "conditional_subagents": "Subagents are selected based on workflow phase and flags (--frontend, --backend, --both)",
+    "research_foundation": "All workflows based on industry-standard methodologies with verified sources"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "session_id": "58097973-9370-4744-91ce-c3db414d10e2",
+  "prompts": [
+    "review @PLANNING_WORKFLOW_SYSTEM_ARCHITECTURE.md indepth. review how the agents are created in @agents/ . first thing i want you to do is to add the agents specified from the plan to agents/plans/ directory. spawn multiple @agent-general-purpose agents to do this efficiency (ik there's a lot). ",
+    "review @PLANNING_WORKFLOW_SYSTEM_ARCHITECTURE.md indepth. review our current implementation of @skills/planner/ and @commands/plans.md . our goal isn't to change the underlying architecture since it works, but to add the workflows and subagents properly similar to how we did the @skills/codebase-documenation/ . review how the agents are created in @agents/ . first thing i want you to do is to add the agents specified from the plan to agents/plans/ directory. spawn multiple @agent-general-purpose agents to do this efficiency (ik there's a lot), do not give them tools in there frontmatter since it'll just default but do decide on the model (either haiku or sonnet). after you do this, update the skill workflows / templates/ registries / etc. and then update the plans.md command accordingly. ",
+    "for the selection-matrix and phase registry we want to keep the current architecture in tact, we just have to morph the workflows to follow the plan. like i said, our goal isn't to change the architecture, but rather update to workflows according to the plan. ",
+    "okay for the phase registry and selection matrix and templates, we want to delete ALL the old phases and workflows and templates, and instead use the new ones while keeping the architecture intact. make sure all the templates are good according to the plan",
+    "now update the slash command so that it only has the workflows available"
+  ]
+}

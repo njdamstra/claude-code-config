@@ -1,0 +1,164 @@
+{
+  "phases": {
+    "plan": {
+      "name": "Strategic Planning",
+      "purpose": "Extended thinking about approach",
+      "required_for": ["all"],
+      "gap_check": false,
+      "outputs": [".temp/plan.md"]
+    },
+    "discovery": {
+      "name": "Discovery",
+      "purpose": "Gather codebase context",
+      "required_for": ["new-feature", "quick"],
+      "gap_check": true,
+      "outputs": [".temp/phase1-discovery/*.json"],
+      "gap_check_criteria": [
+        "Coverage adequate? (related components identified)",
+        "Patterns documented? (conventions clear)",
+        "Dependencies mapped? (integration points known)"
+      ]
+    },
+    "requirements": {
+      "name": "Requirements Analysis",
+      "purpose": "Define user stories and requirements",
+      "required_for": ["new-feature"],
+      "gap_check": true,
+      "outputs": [".temp/phase2-requirements/*.{json,md}"],
+      "gap_check_criteria": [
+        "User stories complete? (INVEST criteria met)",
+        "Technical requirements clear? (constraints documented)",
+        "Edge cases covered? (error handling planned)"
+      ]
+    },
+    "design": {
+      "name": "Technical Design",
+      "purpose": "Create implementation plan",
+      "required_for": ["new-feature"],
+      "gap_check": true,
+      "outputs": [".temp/phase3-design/*.{json,md}"],
+      "gap_check_criteria": [
+        "Architecture viable? (design patterns appropriate)",
+        "Implementation steps clear? (actionable sequence)",
+        "Testing planned? (verification strategy defined)"
+      ]
+    },
+    "reproduction": {
+      "name": "Reproduction",
+      "purpose": "Reproduce bug and gather context",
+      "required_for": ["debugging"],
+      "gap_check": true,
+      "outputs": [".temp/phase1-reproduction/*.{json,md}"],
+      "gap_check_criteria": [
+        "Bug reproducible? (consistent reproduction steps)",
+        "Environment documented? (config captured)",
+        "Logs analyzed? (error messages parsed)"
+      ]
+    },
+    "root-cause": {
+      "name": "Root Cause Analysis",
+      "purpose": "Identify bug root cause",
+      "required_for": ["debugging"],
+      "gap_check": true,
+      "outputs": [".temp/phase2-root-cause/*.{json,md}"],
+      "gap_check_criteria": [
+        "Root cause identified? (hypothesis validated)",
+        "Code location found? (suspect code isolated)",
+        "Dependencies verified? (versions correct)"
+      ]
+    },
+    "solution": {
+      "name": "Solution Design",
+      "purpose": "Plan fix implementation",
+      "required_for": ["debugging"],
+      "gap_check": false,
+      "outputs": [".temp/phase3-solution/*.md"],
+      "gap_check_criteria": [
+        "Fix approach clear? (implementation steps defined)",
+        "Regressions considered? (testing planned)"
+      ]
+    },
+    "analysis": {
+      "name": "Code Analysis",
+      "purpose": "Assess current code state",
+      "required_for": ["refactoring"],
+      "gap_check": true,
+      "outputs": [".temp/phase1-analysis/*.json"],
+      "gap_check_criteria": [
+        "Code smells identified? (issues documented)",
+        "Complexity measured? (metrics captured)",
+        "Tests exist? (safety net available)"
+      ]
+    },
+    "planning": {
+      "name": "Planning",
+      "purpose": "Design strategy",
+      "required_for": ["refactoring", "improving"],
+      "gap_check": true,
+      "outputs": [".temp/phase2-planning/*.{json,md}"],
+      "gap_check_criteria": {
+        "refactoring": [
+          "Steps small enough? (incremental approach)",
+          "Tests planned? (verification strategy)",
+          "Risks identified? (mitigation planned)"
+        ],
+        "improving": [
+          "Approach clear? (steps defined)",
+          "Impact estimated? (ROI calculated)",
+          "Verification planned? (success measurable)"
+        ]
+      }
+    },
+    "assessment": {
+      "name": "Assessment",
+      "purpose": "Measure current state",
+      "required_for": ["improving"],
+      "gap_check": true,
+      "outputs": [".temp/phase1-assessment/*.json"],
+      "gap_check_criteria": [
+        "Baseline measured? (current state documented)",
+        "Opportunities identified? (improvements prioritized)"
+      ]
+    },
+    "synthesis": {
+      "name": "Synthesis",
+      "purpose": "Generate plan document",
+      "required_for": ["all"],
+      "gap_check": false,
+      "outputs": ["main.md"]
+    },
+    "validation": {
+      "name": "Validation",
+      "purpose": "Verify plan quality",
+      "required_for": ["new-feature", "debugging", "refactoring", "improving"],
+      "gap_check": true,
+      "outputs": [".temp/phase-validation/*.json"],
+      "gap_check_criteria": {
+        "new-feature": [
+          "Critical issues? (blockers identified)",
+          "Plan complete? (all sections populated)",
+          "Feasible? (implementation realistic)"
+        ],
+        "debugging": [
+          "Fix approach sound? (addresses root cause)",
+          "Risks acceptable? (side effects manageable)"
+        ],
+        "refactoring": [
+          "Safe approach? (tests provide safety net)",
+          "Scope reasonable? (not too large)"
+        ],
+        "improving": [
+          "ROI positive? (improvement worthwhile)",
+          "Risks acceptable? (manageable complexity)"
+        ]
+      }
+    },
+    "finalize": {
+      "name": "Finalization",
+      "purpose": "Create metadata and archive",
+      "required_for": ["all"],
+      "gap_check": false,
+      "outputs": ["metadata.json", "archives/"]
+    }
+  }
+}

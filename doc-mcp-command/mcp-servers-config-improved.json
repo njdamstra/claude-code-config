@@ -1,0 +1,161 @@
+{
+  "presets": {
+    "browser": {
+      "description": "Browser automation and debugging tools",
+      "servers": ["playwright", "chrome-devtools"]
+    },
+    "ai": {
+      "description": "AI assistance and problem-solving tools",
+      "servers": ["gemini-cli", "sequential-thinking"]
+    },
+    "docs": {
+      "description": "Documentation and reference lookup",
+      "servers": ["context7", "tailwind-css", "shadcn"]
+    },
+    "webdev": {
+      "description": "Web development essentials",
+      "servers": ["firecrawl", "playwright", "chrome-devtools"]
+    },
+    "ui": {
+      "description": "UI and component development",
+      "servers": ["tailwind-css", "shadcn", "figma-to-react"]
+    },
+    "ai-assist": {
+      "description": "AI collaboration tools",
+      "servers": ["gemini-cli", "sequential-thinking", "context7"]
+    }
+  },
+  "servers": {
+    "gemini-cli": {
+      "name": "gemini-cli",
+      "description": "Google Gemini CLI with large context window (2M tokens)",
+      "command": "npx",
+      "args": ["gemini-mcp-tool"],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      },
+      "notes": "Get API key from https://aistudio.google.com/app/apikey"
+    },
+    "gemini-cli-oauth": {
+      "name": "gemini-cli-oauth",
+      "description": "Google Gemini CLI with OAuth (no API key needed)",
+      "command": "npx",
+      "args": ["-y", "@jacob/gemini-cli-mcp"],
+      "env": {
+        "GEMINI_MODEL": "gemini-2.5-pro",
+        "GEMINI_TIMEOUT": "30000",
+        "GEMINI_AUTO_LOGIN": "true",
+        "GEMINI_THINKING_ENABLED": "true"
+      },
+      "notes": "OAuth authentication, 60 req/min free tier. No API key needed."
+    },
+    "firecrawl": {
+      "name": "firecrawl",
+      "description": "Web scraping and content extraction",
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "${FIRECRAWL_API_KEY}"
+      },
+      "notes": "Get API key from https://firecrawl.dev"
+    },
+    "playwright": {
+      "name": "playwright",
+      "description": "Browser automation for testing and interaction",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "env": {},
+      "notes": "No API key required. Auto-installs browsers on first use."
+    },
+    "tailwind-css": {
+      "name": "tailwind-css",
+      "description": "Tailwind CSS utilities and documentation",
+      "command": "npx",
+      "args": ["-y", "tailwindcss-mcp-server"],
+      "env": {},
+      "notes": "Provides CSS conversion, color palettes, and component templates"
+    },
+    "shadcn": {
+      "name": "shadcn",
+      "description": "shadcn/ui component registry and documentation",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://www.shadcn.io/api/mcp"],
+      "env": {},
+      "notes": "Official shadcn MCP with community registry access"
+    },
+    "chrome-devtools": {
+      "name": "chrome-devtools",
+      "description": "Chrome DevTools Protocol for browser debugging",
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"],
+      "env": {},
+      "notes": "Starts Chrome automatically with remote debugging"
+    },
+    "figma-to-react": {
+      "name": "figma-to-react",
+      "description": "Convert Figma designs to React components",
+      "command": "npx",
+      "args": ["-y", "figma-mcp"],
+      "env": {
+        "FIGMA_API_KEY": "${FIGMA_API_KEY}"
+      },
+      "notes": "Get API key from figma.com > Settings > Security"
+    },
+    "sequential-thinking": {
+      "name": "sequential-thinking",
+      "description": "Break down complex problems into steps",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {},
+      "notes": "No API key required"
+    },
+    "context7": {
+      "name": "context7",
+      "description": "Up-to-date library documentation and code examples",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "env": {},
+      "notes": "Provides current version-specific docs for Vue3, Astro, React, etc."
+    },
+    "memory": {
+      "name": "memory",
+      "description": "Persistent knowledge storage across sessions",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {},
+      "notes": "Stores facts and context between Claude sessions"
+    },
+    "github": {
+      "name": "github",
+      "description": "GitHub integration for repositories, PRs, and issues",
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "notes": "Get token from github.com > Settings > Developer settings > Personal access tokens (classic). Needs repo scope."
+    }
+  },
+  "environments": {
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key",
+      "url": "https://aistudio.google.com/app/apikey",
+      "required_for": ["gemini-cli"]
+    },
+    "FIRECRAWL_API_KEY": {
+      "description": "Firecrawl web scraping API key",
+      "url": "https://firecrawl.dev",
+      "required_for": ["firecrawl"]
+    },
+    "FIGMA_API_KEY": {
+      "description": "Figma personal access token",
+      "url": "https://figma.com/settings/account",
+      "required_for": ["figma-to-react"]
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub personal access token (classic)",
+      "url": "https://github.com/settings/tokens",
+      "required_for": ["github"]
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "prompts": [
+    {
+      "name": "doc-research",
+      "description": "Research documentation thoroughly with web fallback",
+      "prompt": "Research {{USER_MESSAGE}} using this systematic approach:\n\n1. **Local Documentation First**\n   - Search ~/.claude/documentation/ for relevant docs\n   - Check project-specific documentation\n   - Review any SKILL.md files related to the topic\n\n2. **Web Research (if needed)**\n   - Search official documentation\n   - Check recent GitHub discussions\n   - Review authoritative blog posts\n\n3. **Comprehensive Answer**\n   - Synthesize findings from all sources\n   - Provide code examples where applicable\n   - Include links to source documentation\n   - Flag any uncertainties or gaps\n\nProvide a clear, actionable answer with references.",
+      "tags": [
+        "research",
+        "documentation",
+        "learning"
+      ],
+      "notes": "Use for technical documentation questions and learning new concepts",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "bug-fix",
+      "description": "Systematic bug investigation and resolution workflow",
+      "prompt": "Investigate and fix: {{USER_MESSAGE}}\n\n**Systematic Debugging Process:**\n\n1. **Understand the Bug**\n   - What is the expected behavior?\n   - What is the actual behavior?\n   - When does it occur? (Always, intermittently, specific conditions?)\n   - Error messages or symptoms?\n\n2. **Reproduce the Issue**\n   - Create minimal reproduction steps\n   - Identify exact conditions that trigger the bug\n   - Note any error messages or console output\n\n3. **Trace the Root Cause**\n   - Work backwards from the error point\n   - Check recent changes (git log)\n   - Search codebase for similar resolved issues\n   - Examine data flow and state changes\n\n4. **Propose Solutions**\n   - Root cause fix (preferred)\n   - Quick fix / workaround (if root cause complex)\n   - Include tradeoffs for each approach\n\n5. **Implement & Verify**\n   - Apply the fix\n   - Run relevant tests\n   - Verify no regressions\n   - Update tests to prevent recurrence\n\nProvide: Root cause → Fix options → Recommended approach",
+      "tags": [
+        "debugging",
+        "troubleshooting",
+        "fixes"
+      ],
+      "notes": "Use for systematic bug investigation, not quick fixes",
+      "usageCount": 1,
+      "lastUsed": "2025-10-30T02:43:59Z",
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "refactor-safe",
+      "description": "Safe refactoring workflow with validation at each step",
+      "prompt": "Refactor: {{USER_MESSAGE}}\n\n**Safe Refactoring Process:**\n\n1. **Map Dependencies**\n   - Find all files that import/use the code being refactored\n   - Identify external dependencies\n   - Check for type dependencies\n   - Search for string references (dynamic imports, etc.)\n\n2. **Create Refactor Plan**\n   - Document current state\n   - Describe desired end state\n   - List all affected files\n   - Identify breaking changes\n   - Show before/after examples\n\n3. **Incremental Refactoring**\n   - Make small, verifiable changes\n   - Run `tsc --noEmit` after each change\n   - Test affected functionality\n   - Commit working states\n\n4. **Validation**\n   - All TypeScript errors resolved\n   - Tests pass\n   - No runtime errors\n   - Functionality unchanged (unless intentional)\n\n5. **Update Documentation**\n   - Update relevant comments\n   - Modify affected documentation\n   - Update usage examples\n\n**CRITICAL:** Prioritize REUSE over recreation. Search for existing patterns before creating new code.",
+      "tags": [
+        "refactoring",
+        "code-quality",
+        "safety"
+      ],
+      "notes": "Enforces incremental verification to prevent breaking changes",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "code-review",
+      "description": "Comprehensive code review checklist for quality assurance",
+      "prompt": "Review code for: {{USER_MESSAGE}}\n\n**Code Review Checklist:**\n\n**1. Functionality (Critical)**\n- [ ] Code does what it's supposed to do\n- [ ] Edge cases handled\n- [ ] Error handling implemented\n- [ ] No obvious bugs or logic errors\n\n**2. TypeScript Safety (Critical)**\n- [ ] No `any` types used\n- [ ] No type assertions without justification\n- [ ] Proper type inference\n- [ ] Zod schemas for runtime validation\n\n**3. Vue Components (if applicable)**\n- [ ] Composition API with `<script setup>`\n- [ ] Props validated with TypeScript + defaults\n- [ ] Emits properly typed\n- [ ] No scoped styles (Tailwind only)\n- [ ] Dark mode support (`dark:` classes)\n- [ ] SSR-safe (useMounted for browser APIs)\n\n**4. Accessibility (High)**\n- [ ] ARIA labels on interactive elements\n- [ ] Keyboard navigation works\n- [ ] Semantic HTML elements\n- [ ] Color contrast sufficient\n\n**5. Security (High)**\n- [ ] Input validation (Zod schemas)\n- [ ] No hardcoded secrets\n- [ ] Proper authentication checks\n- [ ] XSS prevention\n\n**6. Performance (Medium)**\n- [ ] No unnecessary re-renders\n- [ ] Computed values for derived state\n- [ ] Lazy loading where appropriate\n- [ ] No memory leaks\n\n**7. Code Quality (Medium)**\n- [ ] Follows project conventions\n- [ ] DRY - no duplication\n- [ ] Clear naming\n- [ ] Minimal complexity\n\n**8. Testing (Low)**\n- [ ] Tests updated for changes\n- [ ] New functionality covered\n\nProvide: Issues found (by severity) → Recommended fixes → Status (Ready/Not Ready)",
+      "tags": [
+        "review",
+        "quality",
+        "validation"
+      ],
+      "notes": "Use before creating PRs or merging to main",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "security-audit",
+      "description": "Security-focused code analysis and vulnerability detection",
+      "prompt": "Security audit for: {{USER_MESSAGE}}\n\n**Security Analysis:**\n\n**1. Input Validation (Critical)**\n- [ ] All user inputs validated with Zod schemas\n- [ ] File uploads have type/size restrictions\n- [ ] Query parameters sanitized\n- [ ] Form data validated on both client and server\n\n**2. Authentication & Authorization (Critical)**\n- [ ] Authentication required for protected routes\n- [ ] Authorization checks before sensitive operations\n- [ ] Session management secure\n- [ ] No authentication bypass vulnerabilities\n\n**3. Data Exposure (High)**\n- [ ] No PII in logs or error messages\n- [ ] API responses don't leak sensitive data\n- [ ] Proper error messages (no stack traces in prod)\n- [ ] Secrets not in code or version control\n\n**4. API Security (High)**\n- [ ] Rate limiting implemented\n- [ ] CORS configured properly\n- [ ] API endpoints require authentication\n- [ ] Input validation on all endpoints\n\n**5. Appwrite Security (if applicable)**\n- [ ] Permission checks before database queries\n- [ ] Collection-level permissions enforced\n- [ ] No permission escalation vulnerabilities\n- [ ] Team-based access control working\n\n**6. Dependencies (Medium)**\n- [ ] No known vulnerabilities (`npm audit`)\n- [ ] Dependencies up to date\n- [ ] Minimal dependency surface\n\n**7. SSR Security (Medium)**\n- [ ] No client secrets in server code\n- [ ] Environment variables handled securely\n- [ ] No XSS vulnerabilities in rendered HTML\n\nProvide: Vulnerabilities found (by severity) → Specific fixes → Threat level",
+      "tags": [
+        "security",
+        "audit",
+        "vulnerabilities"
+      ],
+      "notes": "Run before deploying to production or handling sensitive data",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "optimize",
+      "description": "Performance optimization workflow with measurement",
+      "prompt": "Optimize performance for: {{USER_MESSAGE}}\n\n**Performance Optimization Process:**\n\n**1. Measure Baseline**\n- Identify specific performance issue (slow render, large bundle, etc.)\n- Measure current metrics\n- Set target performance goals\n- Document user-facing impact\n\n**2. Identify Bottlenecks**\n- Profile application (browser dev tools)\n- Check bundle size analysis\n- Review network requests\n- Analyze render performance\n- Look for memory leaks\n\n**3. Optimization Strategies**\n\n**Vue/Frontend:**\n- Use computed values for derived state\n- Implement virtual scrolling for long lists\n- Lazy load components with defineAsyncComponent\n- Optimize re-renders with proper reactivity\n- Use Vue's built-in optimizations (v-once, v-memo)\n\n**Bundling:**\n- Code splitting at route level\n- Tree shaking unused code\n- Optimize dependencies (check bundle analyzer)\n- Use dynamic imports\n\n**Data Fetching:**\n- Implement caching strategies\n- Batch API requests\n- Use Appwrite realtime only when needed\n- Optimize database queries\n\n**Assets:**\n- Lazy load images\n- Use appropriate image formats\n- Implement responsive images\n- Minimize CSS/JS bundle size\n\n**4. Implement & Measure**\n- Apply optimizations incrementally\n- Measure impact after each change\n- Verify no regressions\n- Document performance improvements\n\n**5. Monitor**\n- Set up performance monitoring\n- Track metrics over time\n- Identify new bottlenecks\n\nProvide: Bottlenecks → Optimization strategies → Expected impact → Measurement plan",
+      "tags": [
+        "performance",
+        "optimization",
+        "speed"
+      ],
+      "notes": "Always measure before and after optimizations",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "learn-concept",
+      "description": "Structured learning workflow for new concepts or technologies",
+      "prompt": "Teach me about: {{USER_MESSAGE}}\n\n**Learning-Optimized Explanation:**\n\n**1. Mental Model (Start Here)**\n- What is it in simple terms?\n- What problem does it solve?\n- How does it relate to concepts I already know?\n- Key metaphor or analogy\n\n**2. Core Concepts**\n- Essential ideas to understand (3-5 key points)\n- How these concepts connect\n- Common misconceptions to avoid\n\n**3. Practical Example**\n- Real-world use case\n- Step-by-step walkthrough\n- Working code example\n- Expected output\n\n**4. Common Patterns**\n- How is this typically used?\n- Best practices\n- Anti-patterns to avoid\n- When NOT to use this\n\n**5. Integration with Current Stack**\n- How does this fit into Vue 3 + Astro + Appwrite?\n- Specific usage in our codebase\n- Related tools/libraries we already use\n\n**6. Next Steps**\n- What should I learn next?\n- Practice exercises\n- Additional resources\n- Related documentation\n\n**Style:**\n- Start simple, layer complexity\n- Use analogies and visual descriptions\n- Provide working code examples\n- Include common pitfalls\n- Encourage questions\n\nProvide: Clear explanation → Working example → Practice suggestions",
+      "tags": [
+        "learning",
+        "education",
+        "concepts"
+      ],
+      "notes": "Use when learning new technologies, frameworks, or patterns",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    },
+    {
+      "name": "plan-feature",
+      "description": "Strategic feature planning with architecture and implementation steps",
+      "prompt": "Plan implementation for: {{USER_MESSAGE}}\n\n**Feature Planning Framework:**\n\n**1. Requirements Analysis**\n- What exactly needs to be built?\n- Who are the users?\n- What are the acceptance criteria?\n- What are the constraints (time, resources, technical)?\n\n**2. Research Existing Code**\n- Search for similar features already implemented\n- Identify reusable components, composables, stores\n- Find relevant patterns in the codebase\n- REUSE > EXTEND > CREATE\n\n**3. Architecture Design**\n- Component structure (which .vue files)\n- State management (Nanostores, composables)\n- Data flow (props, emits, stores)\n- API integration (Appwrite collections, endpoints)\n- Routing (Astro pages, client-side navigation)\n\n**4. Technical Decisions**\n- Which libraries/tools to use?\n- SSR vs client-side rendering?\n- Real-time updates needed?\n- File storage requirements?\n- Authentication/authorization approach?\n\n**5. Implementation Plan**\nBreak down into sequential tasks:\n1. [Task] - Why this first\n2. [Task] - Dependencies\n3. [Task] - Validation\n\n**6. Testing Strategy**\n- Unit tests for business logic\n- Component tests for Vue components\n- Integration tests for data flow\n- Manual testing checklist\n\n**7. Rollout Plan**\n- Development → Staging → Production\n- Feature flags if needed\n- Monitoring and metrics\n- Rollback strategy\n\n**8. Documentation Needs**\n- User-facing documentation\n- Developer documentation\n- API documentation\n- Usage examples\n\nProvide: Requirements → Architecture → Implementation steps → Testing plan → Timeline estimate",
+      "tags": [
+        "planning",
+        "architecture",
+        "features"
+      ],
+      "notes": "Use before starting any medium-to-large feature development",
+      "usageCount": 0,
+      "lastUsed": null,
+      "variables": [
+        "USER_MESSAGE"
+      ],
+      "createdAt": "2025-10-29T19:30:00Z",
+      "updatedAt": "2025-10-29T19:30:00Z"
+    }
+  ]
+}

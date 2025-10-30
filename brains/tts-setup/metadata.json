@@ -1,0 +1,119 @@
+{
+  "topic": "tts-setup",
+  "created": "2025-10-29",
+  "files_analyzed": 29,
+  "complexity": "moderate",
+  "last_verified": "2025-10-29",
+  "subagents_used": 8,
+  "verification_status": "verified",
+  "verification_summary": {
+    "accuracy": "185/187 claims verified (99%)",
+    "completeness": "100% coverage across all categories",
+    "warnings": "1 medium-severity warning (clarified in documentation)",
+    "errors": "0 critical errors"
+  },
+  "related_topics": [
+    "hooks-system",
+    "slash-commands",
+    "claude-code-configuration",
+    "environment-setup"
+  ],
+  "stack": [
+    "Bash",
+    "Python 3.10+",
+    "UV (Python package manager)",
+    "JQ (JSON processor)",
+    "OpenAI TTS API",
+    "ElevenLabs TTS API",
+    "pyttsx3 (offline TTS)",
+    "OpenAI LLM API",
+    "Anthropic API",
+    "Ollama"
+  ],
+  "documentation_metrics": {
+    "total_lines": 2058,
+    "total_sections": 25,
+    "code_examples": 45,
+    "data_flow_diagrams": 7,
+    "troubleshooting_scenarios": 6,
+    "faq_entries": 10,
+    "extension_templates": 4
+  },
+  "phase_summary": {
+    "phase0_planning": {
+      "duration": "Strategic planning complete",
+      "output": ".temp/plan.md"
+    },
+    "phase1_discovery": {
+      "subagents": 3,
+      "outputs": [
+        "file-scanner: 29 files identified",
+        "dependency-mapper: Complete dependency graph",
+        "pattern-analyzer: 25+ patterns extracted"
+      ]
+    },
+    "phase2_analysis": {
+      "subagents": 3,
+      "outputs": [
+        "code-deepdive: Implementation details for 11 files",
+        "architecture-synthesizer: System architecture mapped",
+        "usage-pattern-extractor: Real-world usage examples"
+      ]
+    },
+    "phase3_synthesis": {
+      "documentation_created": "main.md",
+      "word_count": "~15000 words",
+      "completeness": "Comprehensive"
+    },
+    "phase4_verification": {
+      "subagents": 2,
+      "outputs": [
+        "accuracy-verifier: 99% accuracy (185/187 claims)",
+        "completeness-checker: 100% coverage"
+      ]
+    },
+    "phase5_finalization": {
+      "fixes_applied": 1,
+      "severity": "medium",
+      "description": "Clarified OpenAI requirement for transcript summarization"
+    }
+  },
+  "key_findings": {
+    "core_components": [
+      "tts-manage.sh management CLI",
+      "3 hooks with TTS integration",
+      "3 TTS providers (ElevenLabs, OpenAI, pyttsx3)",
+      "3 LLM providers (OpenAI, Anthropic, Ollama)"
+    ],
+    "architectural_patterns": [
+      "5-layer architecture (Management→Hook→Provider→Utility→Config)",
+      "Graceful degradation with provider fallback chains",
+      "Silent failure philosophy",
+      "Mode system (transcript vs static)"
+    ],
+    "integration_points": [
+      "Claude Code hook system",
+      "Slash command system (/tts)",
+      "Environment variable configuration",
+      "settings.json modifications via JQ"
+    ],
+    "performance": {
+      "static_mode_latency": "3-8 seconds",
+      "transcript_mode_latency": "5-17 seconds",
+      "cost_per_session": "$0.0005-$0.0025"
+    }
+  },
+  "warnings_and_limitations": [
+    {
+      "warning": "Transcript summarization requires OpenAI API key",
+      "reason": "Only oai.py implements --summarize flag",
+      "workaround": "Use static mode or add --summarize to anth.py/ollama.py"
+    }
+  ],
+  "future_improvements": [
+    "Implement --summarize in anth.py and ollama.py",
+    "Add configurable voice selection via environment variables",
+    "Add TTS duration/cost tracking",
+    "Support multi-language TTS configuration"
+  ]
+}

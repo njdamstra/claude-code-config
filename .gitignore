@@ -1,0 +1,45 @@
+# Sensitive files - NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Allow templates
+!.env.sample
+!.env.example
+
+# MCP config with potential secrets
+.mcp.json
+
+# Session data
+history.jsonl
+session-env/
+shell-snapshots/
+
+# Ephemeral data
+debug/
+file-history/
+todos/
+
+# Temporary files
+.temp/
+temp/
+*.tmp
+*.log
+
+# Cache
+cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+
+# Reports (can be generated)
+.reports/

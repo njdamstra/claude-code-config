@@ -1,0 +1,4 @@
+The page "Workers Binding API · Cloudflare Workers KV docs" provides an overview of the Workers Binding API for Cloudflare KV. It covers how to read, write, delete, and list key-value pairs.[1] The document also includes examples for various use cases such as storing static assets, building distributed configuration stores, caching data, and A/B testing.[1] Additionally, it references tutorials, demos, observability metrics, pricing, limits, and security information related to KV.[1]
+
+Sources:
+[1] Workers Binding API · Cloudflare Workers KV docs (https://developers.cloudflare.com/workers/runtime-apis/kv/)

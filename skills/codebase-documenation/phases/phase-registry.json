@@ -1,0 +1,118 @@
+{
+  "phases": {
+    "plan": {
+      "name": "Strategic Planning",
+      "description": "Deep planning using extended thinking to analyze scope, complexity, and strategy",
+      "required_for": ["comprehensive", "architecture"],
+      "optional_for": ["how-to"],
+      "skipped_for": ["quickref"],
+      "uses_extended_thinking": true,
+      "outputs": [".temp/plan.md"],
+      "duration_estimate": "5-10 minutes",
+      "gap_check": false
+    },
+
+    "discovery": {
+      "name": "Parallel Discovery",
+      "description": "Spawn 2-5 subagents to gather foundational information (files, dependencies, patterns)",
+      "required_for": ["comprehensive", "architecture", "how-to", "quickref"],
+      "skipped_for": [],
+      "subagent_count": {
+        "comprehensive": "3-5",
+        "architecture": "3-4",
+        "how-to": "2",
+        "quickref": "2"
+      },
+      "outputs": [".temp/phase1-discovery/*"],
+      "duration_estimate": "10-20 minutes",
+      "gap_check": true,
+      "gap_check_criteria": [
+        "File coverage adequate?",
+        "High-confidence files (>0.8) missing?",
+        "Dependencies complete?",
+        "Patterns identified?"
+      ]
+    },
+
+    "analysis": {
+      "name": "Parallel Analysis",
+      "description": "Spawn 2-5 subagents for deep code analysis, architecture synthesis, and usage extraction",
+      "required_for": ["comprehensive", "architecture"],
+      "optional_for": [],
+      "skipped_for": ["quickref", "how-to"],
+      "subagent_count": {
+        "comprehensive": "3-5",
+        "architecture": "2-3"
+      },
+      "outputs": [".temp/phase2-analysis/*"],
+      "duration_estimate": "15-30 minutes",
+      "gap_check": true,
+      "gap_check_criteria": [
+        "Architecture clarity achieved?",
+        "Implementation details documented?",
+        "Usage patterns captured?",
+        "Edge cases identified?"
+      ]
+    },
+
+    "synthesis": {
+      "name": "Documentation Synthesis",
+      "description": "Lead agent synthesizes all research into final documentation using workflow-specific template",
+      "required_for": ["comprehensive", "architecture", "how-to", "quickref"],
+      "skipped_for": [],
+      "uses_template": true,
+      "outputs": ["main.md"],
+      "duration_estimate": "10-15 minutes",
+      "gap_check": false,
+      "agent": "lead",
+      "instructions": "Read all .temp/ research, load workflow template, synthesize comprehensive documentation"
+    },
+
+    "verification": {
+      "name": "Parallel Verification",
+      "description": "Spawn 1-3 subagents to verify accuracy, completeness, and code examples",
+      "required_for": ["comprehensive"],
+      "optional_for": ["architecture"],
+      "skipped_for": ["quickref", "how-to"],
+      "subagent_count": {
+        "comprehensive": "2-3",
+        "architecture": "1-2"
+      },
+      "outputs": [".temp/phase4-verification/*"],
+      "duration_estimate": "10-20 minutes",
+      "gap_check": true,
+      "gap_check_criteria": [
+        "Critical issues found? (Fix immediately)",
+        "Warnings acceptable? (<5)",
+        "File coverage >80%?",
+        "Pattern coverage >90%?",
+        "Examples validated?"
+      ],
+      "critical_check": true
+    },
+
+    "finalize": {
+      "name": "Finalization",
+      "description": "Apply fixes, create metadata, archive previous versions, report completion",
+      "required_for": ["comprehensive", "architecture", "how-to", "quickref"],
+      "skipped_for": [],
+      "outputs": ["metadata.json", "archives/"],
+      "duration_estimate": "2-5 minutes",
+      "gap_check": false,
+      "agent": "lead",
+      "actions": [
+        "Apply critical fixes from verification",
+        "Create metadata.json",
+        "Create archives/ directory",
+        "Report completion to user"
+      ]
+    }
+  },
+
+  "notes": {
+    "phase_execution": "Phases run sequentially. Required phases must complete successfully. Optional phases run if workflow config specifies them.",
+    "gap_checks": "After phases with gap_check=true, lead agent must THINK and assess quality before proceeding",
+    "extended_thinking": "Use 'think hard' for strategic planning phases",
+    "conditional_logic": "Check workflow registry to determine which phases run"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "topic": "codebase-docs",
+  "workflow": "architecture",
+  "created": "2025-10-29",
+  "files_analyzed": 23,
+  "complexity": "complex",
+  "last_verified": "not-verified",
+  "subagents_used": 5,
+  "verification_status": "not-verified",
+  "verification_summary": {
+    "accuracy": "not-verified (architecture workflow skips verification by default)",
+    "completeness": "not-verified",
+    "examples": "not-applicable"
+  },
+  "related_topics": [],
+  "stack": ["Claude Code CLI", "Multi-agent orchestration", "Configuration-driven design"],
+  "phases_executed": [
+    "plan",
+    "discovery",
+    "analysis",
+    "synthesis",
+    "finalize"
+  ],
+  "discovery_subagents": [
+    "dependency-mapper",
+    "file-scanner",
+    "pattern-analyzer"
+  ],
+  "analysis_subagents": [
+    "architecture-synthesizer",
+    "code-deepdive"
+  ],
+  "components_documented": [
+    "Command Interface (/commands/docs.md)",
+    "Orchestration Skill (/skills/codebase-documentation/)",
+    "11 Specialized Subagents (/agents/docs/)",
+    "Configuration System (workflows, phases, subagents registries)",
+    "Template System (4 workflow-specific templates)"
+  ],
+  "integration_points_documented": 6,
+  "data_flows_documented": 2,
+  "design_decisions_documented": 4,
+  "architecture_patterns_identified": 10,
+  "token_usage_estimate": "70-120K",
+  "time_taken_estimate": "15-30 minutes"
+}

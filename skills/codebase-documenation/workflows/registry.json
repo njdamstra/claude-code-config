@@ -1,0 +1,96 @@
+{
+  "workflows": {
+    "comprehensive": {
+      "name": "Comprehensive Documentation",
+      "description": "Full multi-agent research with verification",
+      "phases": ["plan", "discovery", "analysis", "synthesis", "verification", "finalize"],
+      "subagents": {
+        "discovery": ["dependency-mapper", "file-scanner", "pattern-analyzer", "component-analyzer?", "backend-analyzer?"],
+        "analysis": ["code-deepdive", "architecture-synthesizer", "usage-pattern-extractor"],
+        "verification": ["accuracy-verifier", "completeness-checker", "example-validator?"]
+      },
+      "template": "comprehensive.md",
+      "quality_target": {
+        "file_coverage": 0.80,
+        "pattern_coverage": 0.90,
+        "verification": "required"
+      },
+      "estimated_tokens": {
+        "simple": "50-80K",
+        "moderate": "120-200K",
+        "complex": "250-350K"
+      }
+    },
+
+    "how-to": {
+      "name": "How-To Guide",
+      "description": "Task-focused tutorial with step-by-step instructions",
+      "phases": ["plan", "discovery", "synthesis", "finalize"],
+      "subagents": {
+        "discovery": ["file-scanner", "usage-pattern-extractor"]
+      },
+      "template": "how-to.md",
+      "quality_target": {
+        "example_count": 3,
+        "verification": "optional"
+      },
+      "estimated_tokens": {
+        "simple": "15-25K",
+        "moderate": "30-50K"
+      }
+    },
+
+    "quickref": {
+      "name": "Quick Reference",
+      "description": "Concise cheat sheet with common patterns",
+      "phases": ["discovery", "synthesis", "finalize"],
+      "subagents": {
+        "discovery": ["file-scanner", "pattern-analyzer"]
+      },
+      "template": "quickref.md",
+      "quality_target": {
+        "sections": ["syntax", "examples", "common-patterns"],
+        "verification": "none"
+      },
+      "estimated_tokens": {
+        "simple": "10-20K",
+        "moderate": "20-35K"
+      }
+    },
+
+    "architecture": {
+      "name": "Architecture Documentation",
+      "description": "System design and component relationships",
+      "phases": ["plan", "discovery", "analysis", "synthesis", "finalize"],
+      "subagents": {
+        "discovery": ["dependency-mapper", "file-scanner", "component-analyzer?", "backend-analyzer?"],
+        "analysis": ["architecture-synthesizer", "code-deepdive"]
+      },
+      "template": "architecture.md",
+      "quality_target": {
+        "diagrams": "required",
+        "integration_points": "required",
+        "verification": "optional"
+      },
+      "estimated_tokens": {
+        "simple": "30-60K",
+        "moderate": "70-120K",
+        "complex": "150-250K"
+      }
+    }
+  },
+
+  "default": "comprehensive",
+
+  "notes": {
+    "conditional_subagents": "Subagents with '?' suffix are conditional based on flags (--frontend, --backend, --both) or context (example-validator only if examples present)",
+    "phase_names": {
+      "plan": "Phase 0: Strategic Planning",
+      "discovery": "Phase 1: Parallel Discovery",
+      "analysis": "Phase 2: Parallel Analysis",
+      "synthesis": "Phase 3: Documentation Synthesis",
+      "verification": "Phase 4: Parallel Verification",
+      "finalize": "Phase 5: Finalization"
+    }
+  }
+}
