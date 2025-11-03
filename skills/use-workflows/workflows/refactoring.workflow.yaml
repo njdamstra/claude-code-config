@@ -1,0 +1,118 @@
+name: refactoring
+description: Controlled code improvement planning (small-step, behavior-preserving)
+execution_mode: strict
+
+phases:
+  - id: plan
+    name: Strategic Planning
+    description: Plan refactoring approach
+    behavior: main-only
+    main_agent:
+      script: |
+        const planContent = `# Refactoring Plan: ${context.feature.name}\n\n` +
+          `## Approach\n` +
+          `1. Analyze current code state\n` +
+          `2. Identify refactoring opportunities\n` +
+          `3. Plan incremental, safe improvements\n\n` +
+          `## Principles\n` +
+          `- Behavior-preserving changes only\n` +
+          `- Small, testable steps\n` +
+          `- Maintain test coverage\n`;
+
+        writeFile('plan.md', planContent);
+        return { status: 'complete' };
+
+  - id: analysis
+    name: Code Analysis
+    description: Assess current code state and identify issues
+    behavior: parallel
+    subagents:
+      - type: code-smell-detector
+        config:
+          output_path: "phase1-analysis/code-smells.json"
+      - type: complexity-analyzer
+        config:
+          output_path: "phase1-analysis/complexity-metrics.json"
+      - type: duplication-finder
+        config:
+          output_path: "phase1-analysis/duplications.json"
+      - type: test-coverage-checker
+        config:
+          output_path: "phase1-analysis/test-coverage.json"
+    gap_check:
+      enabled: true
+      criteria:
+        - name: "Code smells identified"
+          check: "files_exist(['phase1-analysis/code-smells.json'])"
+        - name: "Complexity measured"
+          check: "files_exist(['phase1-analysis/complexity-metrics.json'])"
+        - name: "Tests exist"
+          check: "files_exist(['phase1-analysis/test-coverage.json'])"
+      on_failure:
+        action: retry
+      max_iterations: 2
+
+  - id: planning
+    name: Refactoring Planning
+    description: Design refactoring sequence and techniques
+    behavior: parallel
+    subagents:
+      - type: refactoring-sequencer
+        config:
+          output_path: "phase2-planning/refactoring-sequence.md"
+      - type: technique-selector
+        config:
+          output_path: "phase2-planning/techniques.json"
+      - type: test-planner
+        config:
+          output_path: "phase2-planning/test-plan.md"
+
+  - id: synthesis
+    name: Synthesis
+    description: Create comprehensive refactoring plan
+    behavior: main-only
+    main_agent:
+      script: |
+        const analysis = readFiles([
+          'phase1-analysis/code-smells.json',
+          'phase1-analysis/complexity-metrics.json'
+        ]);
+
+        const planning = readFiles([
+          'phase2-planning/refactoring-sequence.md',
+          'phase2-planning/techniques.json'
+        ]);
+
+        writeFile('synthesis.md',
+          `# Refactoring Plan Synthesis\n\n` +
+          `Analysis complete. Refactoring sequence defined.\n` +
+          `Ready for safe, incremental improvements.`);
+
+        return { status: 'complete' };
+
+  - id: validation
+    name: Validation
+    description: Validate refactoring safety and scope
+    behavior: parallel
+    subagents:
+      - type: safety-validator
+        config:
+          output_path: "phase4-validation/safety.json"
+      - type: scope-reviewer
+        config:
+          output_path: "phase4-validation/scope.json"
+
+  - id: finalize
+    name: Finalization
+    description: Create final refactoring guide
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('REFACTORING_GUIDE.md',
+          `# Refactoring Guide: ${context.feature.name}\n\n` +
+          `Follow refactoring-sequence.md for safe, incremental improvements.`);
+        return { status: 'complete' };
+
+finalization:
+  template: templates/refactoring.md.tmpl
+  output: REFACTORING_PLAN.md

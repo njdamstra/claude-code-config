@@ -1,0 +1,23 @@
+Cloudflare Wrangler CLI configuration is primarily managed through a configuration file, which can be either `wrangler.toml` or `wrangler.json`/`wrangler.jsonc`[1]. As of Wrangler v3.91.0, both JSON and TOML formats are supported, though Cloudflare recommends using `wrangler.jsonc` for new projects, as some newer features may only be available with JSON configuration files[1]. The format of the configuration file is consistent across both languages, with only syntax differing[1].
+
+This configuration file is crucial for customizing the development and deployment setup for your Worker project and other Cloudflare Developer Platform products[2][1]. It acts as the source of truth for configuring a Worker[1].
+
+Key aspects of Wrangler configuration include:
+*   **File Types**: `wrangler.toml` was historically the sole configuration file, but `wrangler.json` and `wrangler.jsonc` are now also supported, with `wrangler.jsonc` being the recommended choice for new projects[1].
+*   **Environments**: You can define different configurations for the same Worker application using environments. These are typically defined under `[env.<name>]` keys (e.g., `[env.staging]`) and can be deployed using the `-e` or `--env` flag with Wrangler commands[2][1][3]. Most keys are inheritable, meaning top-level configurations can be used in environments, but bindings like `vars` or `kv_namespaces` need explicit definition per environment[1].
+*   **Global User Configuration**: Wrangler also has a global user configuration, stored in a `.wrangler` directory in your home directory. This configuration handles your Cloudflare user credentials (email and API key) for authentication across projects[4][5]. You can set this up using the `wrangler config` command[4][6][5].
+*   **Project-Specific Configuration**: The project-level configuration file (`wrangler.toml` or `wrangler.jsonc`) controls how your Worker is built, deployed, and where it runs[3]. It defines parameters such as the worker's name, entry point file location, compatibility date, Cloudflare account ID, and deployment settings[3].
+*   **Bindings**: The configuration file allows you to define various bindings, including D1 databases, KV namespaces, and dispatch namespace bindings[1].
+*   **Custom Builds**: You can customize how your code is compiled before being processed by Wrangler[2].
+*   **Local Development**: The Wrangler configuration file applies locally when using `wrangler pages dev`, allowing for quick testing of configuration changes without needing to log into the Cloudflare dashboard[7].
+
+Cloudflare recommends using `npx wrangler pages download config` to download your current project settings into a Wrangler file, rather than writing it by hand[7].
+
+Sources:
+[1] cloudflare.com (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFX-45Ydv-OkKr1eN_OSccbO4mAZyl7KriBNj1N8DyNDVug1F_2y3UylsPSgksRdQoWhzYnOV_j--RSi9F_B0Id__sdbMfIP2Vyeo8W7ioWnmBP1-eYmj51NbW75ViT1PsmEIcDSvZGL0X-PnuOGi0zzYHJrBe-D6MPS5I=)
+[2] cloudflare.com (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlp9vYSTABBNmYooJVp6MhS1M_PP0mmqZvYII1nqkNwKhnUQGfw02GZ__R03EoJFLXGOojMl5_llwEnCctzzyQBOOru0izMja1P2jVXXVVJKxdPQ-WEXjjlK855t9Ns41zsuiwVyxaANfs3Uu_)
+[3] studyraid.com (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZS1zi6HNAYXsBSBTiYpwG7bvxuktzTxxP5OzE7L334jYpxVa4KiwVLfzY-9GXmdzxSqkU-dPdM1z4yUuG7kRmbXTuZenbhOmD7UuhvMTdOrKwmzEKGEcGAkvjoovHmaS0BVLIw4bnER4RMKC_F2EpHVMwAdbxznjMz7IUVPebtTHcci1uOMAyMvk_ambRF0WIUy1NOgoRlw==)
+[4] docs.rs (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0l76A4q40YHu6hDaCZC_JQRTYCprH_6ssxtunzJ8LsPUYIlFzsZeISy90mtCjMiZ_UTlQff54ueU_DaeAsf_xyTmmQAWuquj8eAeHktHposhcRenijdm39oJFboSF)
+[5] github.com (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF8CSzCot2oMA05poX0VVibjv-AJw-tG8b_VKB7N_aD404q0pMN_aoUkc2adr44Mml-Y5pP1IYzhw2T_8yYFIvdTQx9BMJfr-KBaaB4aeLox5l-ZXwWAOPML9Ogr635)
+[6] fig.io (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzwp5OXxdnSQZZZq3K6cVVcrzgsuVAhrrrTbct2voPouaveKHPR8atDUbAYq801ZbrUA79JYZAySzLo9B0SqY7QElwOxn1jYp2yxiySs2SDSoLluT-tC5_KW5MiiiaFA==)
+[7] cloudflare.com (https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_HKt_BE-8Wc650JFlpFPt81Qa3CKDPjOQkllQ3MaoYZDWWrbdJMLzMK3XKCTZtcVqv2XzdNLXY9uJF0vaurdL48yOe2ByXI74w8Lcv-aA8IgFyV6EvIC-JQujNbbmJeJ2l0FixC8tG_ClpUGqACsmyy_kHazVeJ3TAcXsUJKfQDXonw==)

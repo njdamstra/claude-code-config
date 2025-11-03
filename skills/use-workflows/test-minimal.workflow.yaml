@@ -1,0 +1,37 @@
+name: test-minimal
+description: Minimal test workflow to validate workflow-runner.sh
+execution_mode: strict
+
+phases:
+  - id: phase1
+    name: Discovery Phase
+    description: Discover and analyze the codebase
+    behavior: parallel
+    subagents:
+      - type: code-scout
+        config:
+          output_path: "{{feature.name}}/discovery.md"
+      - type: pattern-analyzer
+        config:
+          output_path: "{{feature.name}}/patterns.md"
+
+  - id: phase2
+    name: Planning Phase
+    description: Create implementation plan
+    behavior: main-only
+    main_agent:
+      script: |
+        // Read previous phase outputs
+        const discovery = readFile('discovery.md');
+        const patterns = readFile('patterns.md');
+
+        // Create plan
+        const plan = `# Implementation Plan\n\nBased on:\n- Discovery: ${discovery.length} chars\n- Patterns: ${patterns.length} chars\n\n## Tasks\n- Task 1\n- Task 2\n- Task 3`;
+
+        writeFile('plan.md', plan);
+
+        return { status: 'complete', tasks_created: 3 };
+
+finalization:
+  template: templates/minimal-final.md.tmpl
+  output: final-plan.md

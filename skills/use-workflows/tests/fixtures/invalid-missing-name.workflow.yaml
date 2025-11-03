@@ -1,0 +1,13 @@
+description: "Missing name field"
+version: "1.0.0"
+
+execution_mode: strict
+
+phases:
+  - id: phase1
+    name: "Phase 1"
+    description: "Test"
+    behavior: main-only
+
+finalization:
+  template: "Test"

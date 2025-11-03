@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["workflow", "feature", "phases"],
+  "properties": {
+    "workflow": {
+      "type": "object",
+      "required": ["name", "started_at", "execution_mode"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "execution_mode": {
+          "type": "string",
+          "enum": ["strict", "loose", "adaptive"]
+        }
+      }
+    },
+    "feature": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "phases": {
+      "type": "object",
+      "required": ["current", "completed", "iteration_counts"],
+      "properties": {
+        "current": {
+          "type": "string"
+        },
+        "completed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "iteration_counts": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "subagents_spawned": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "deliverables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "path", "timestamp"],
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "subagent": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "checkpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "decision", "timestamp"],
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "decision": {
+            "type": "string",
+            "enum": ["continue", "repeat_phase", "skip_phases", "abort"]
+          },
+          "skipped": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "feedback": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "skip_phases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gap_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["phase", "iteration", "status"],
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "iteration": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": ["complete", "incomplete"]
+          },
+          "gaps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "action_taken": {
+            "type": "string",
+            "enum": ["retry", "spawn_additional", "escalate", "abort"]
+          },
+          "agents_spawned": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

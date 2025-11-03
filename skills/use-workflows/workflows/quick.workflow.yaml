@@ -1,0 +1,63 @@
+name: quick
+description: Rapid sprint-style planning for quick tasks (15-minute planning)
+execution_mode: strict
+
+phases:
+  - id: plan
+    name: Strategic Planning
+    description: Quick approach planning
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('plan.md',
+          `# Quick Plan: ${context.feature.name}\n\n` +
+          `## Approach\n` +
+          `- Rapid discovery\n` +
+          `- Direct synthesis\n` +
+          `- Immediate action plan\n`);
+        return { status: 'complete' };
+
+  - id: discovery
+    name: Quick Discovery
+    description: Fast codebase scan
+    behavior: parallel
+    subagents:
+      - type: file-locator
+        config:
+          output_path: "phase1-discovery/files.json"
+      - type: pattern-checker
+        config:
+          output_path: "phase1-discovery/patterns.json"
+
+  - id: synthesis
+    name: Synthesis
+    description: Create action plan
+    behavior: main-only
+    main_agent:
+      script: |
+        const discovery = readFiles([
+          'phase1-discovery/files.json',
+          'phase1-discovery/patterns.json'
+        ]);
+
+        writeFile('synthesis.md',
+          `# Quick Action Plan\n\n` +
+          `Files identified. Patterns checked.\n` +
+          `Ready for immediate implementation.`);
+
+        return { status: 'complete' };
+
+  - id: finalize
+    name: Finalization
+    description: Create quick action guide
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('QUICK_GUIDE.md',
+          `# Quick Guide: ${context.feature.name}\n\n` +
+          `Implementation ready. Follow synthesis.md.`);
+        return { status: 'complete' };
+
+finalization:
+  template: templates/quick.md.tmpl
+  output: QUICK_PLAN.md

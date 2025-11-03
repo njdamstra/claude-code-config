@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["name", "description", "execution_mode", "phases", "finalization"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z-]+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 10
+    },
+    "execution_mode": {
+      "type": "string",
+      "enum": ["strict", "loose", "adaptive"]
+    },
+    "phases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/phase"
+      }
+    },
+    "finalization": {
+      "type": "object",
+      "required": ["template", "output"],
+      "properties": {
+        "template": {
+          "type": "string"
+        },
+        "output": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "phase": {
+      "type": "object",
+      "required": ["id", "name", "description", "behavior"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z_]+$"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "execution_mode": {
+          "type": "string",
+          "enum": ["strict", "loose", "adaptive"],
+          "description": "Optional per-phase execution mode override"
+        },
+        "behavior": {
+          "type": "string",
+          "enum": ["parallel", "sequential", "main-only"]
+        },
+        "main_agent": {
+          "type": "object",
+          "required": ["script"],
+          "properties": {
+            "script": {
+              "type": "string"
+            }
+          }
+        },
+        "subagents": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/subagent_config"
+              }
+            },
+            {
+              "type": "object",
+              "properties": {
+                "always": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/subagent_config"
+                  }
+                },
+                "adaptive": {
+                  "type": "object",
+                  "required": ["script"],
+                  "properties": {
+                    "script": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "checkpoint": {
+          "oneOf": [
+            {
+              "type": "object",
+              "required": ["approval_required"],
+              "properties": {
+                "approval_required": {
+                  "type": "boolean"
+                }
+              }
+            },
+            {
+              "type": "object",
+              "required": ["prompt", "options"],
+              "properties": {
+                "condition": {
+                  "type": "string"
+                },
+                "prompt": {
+                  "type": "string"
+                },
+                "show_files": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/checkpoint_option"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "gap_check": {
+          "type": "object",
+          "required": ["enabled"],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "max_iterations": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "script": {
+              "type": "string"
+            },
+            "criteria": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["name", "check"],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "check": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "on_failure": {
+              "type": "object",
+              "required": ["action"],
+              "properties": {
+                "action": {
+                  "type": "string",
+                  "enum": ["retry", "escalate", "abort"]
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "skills": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "condition": {
+                "type": "string"
+              },
+              "args": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "subagent_config": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "output_path": {
+              "type": "string"
+            },
+            "max_tokens": {
+              "type": "integer"
+            },
+            "model": {
+              "type": "string",
+              "enum": ["haiku", "sonnet", "opus"]
+            },
+            "context": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "checkpoint_option": {
+      "type": "object",
+      "required": ["label", "on_select"],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "with_feedback": {
+          "type": "boolean"
+        },
+        "on_select": {
+          "type": "object",
+          "required": ["action"],
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": ["continue", "repeat_phase", "skip_phases", "abort"]
+            },
+            "target": {
+              "type": "string"
+            },
+            "phases": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

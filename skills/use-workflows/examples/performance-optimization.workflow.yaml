@@ -1,0 +1,142 @@
+name: performance-optimization
+description: Performance optimization with baseline measurement and adaptive improvements
+execution_mode: adaptive
+
+phases:
+  # Phase 1: Baseline Measurement
+  - id: baseline
+    name: Baseline Measurement
+    description: Establish performance baseline
+    behavior: parallel
+    execution_mode: strict
+    subagents:
+      - type: baseline-profiler
+        config:
+          output_path: "phase1-baseline/baseline.json"
+      - type: bottleneck-identifier
+        config:
+          output_path: "phase1-baseline/bottlenecks.json"
+    gap_check:
+      enabled: true
+      script: |
+        // Verify baseline was captured successfully
+        const baseline = readFile('phase1-baseline/baseline.json');
+        const bottlenecks = readFile('phase1-baseline/bottlenecks.json');
+
+        if (baseline.length < 100 || bottlenecks.length < 50) {
+          return {
+            status: 'incomplete',
+            gaps: ['Insufficient baseline data'],
+            action: 'retry',
+            message: 'Baseline measurement incomplete'
+          };
+        }
+
+        return { status: 'complete' };
+      max_iterations: 2
+
+  # Phase 2: Adaptive Optimization
+  - id: optimization
+    name: Adaptive Optimization
+    description: Adaptive optimization based on baseline findings
+    behavior: parallel
+    execution_mode: adaptive
+    subagents:
+      always:
+        - type: optimization-designer
+          config:
+            output_path: "phase2-optimization/design.md"
+      adaptive:
+        script: |
+          // Analyze baseline to determine which optimizations needed
+          const baselineData = readFile('phase1-baseline/baseline.json');
+          const bottlenecks = readFile('phase1-baseline/bottlenecks.json');
+
+          const optimizations = [];
+
+          // Parse findings (mock - real would parse JSON)
+          if (bottlenecks.includes('render') || bottlenecks.includes('component')) {
+            optimizations.push({
+              type: 'ux-analyzer',
+              config: { output_path: 'phase2-optimization/ux-improvements.json' }
+            });
+          }
+
+          if (bottlenecks.includes('api') || bottlenecks.includes('network')) {
+            optimizations.push({
+              type: 'impact-estimator',
+              config: { output_path: 'phase2-optimization/api-optimization.json' }
+            });
+          }
+
+          return optimizations;
+
+  # Phase 3: Validation Checkpoint
+  - id: validation
+    name: Validation
+    description: Review proposed optimizations
+    behavior: main-only
+    checkpoint:
+      approval_required: true
+      condition: "context.deliverables.length >= 2"
+      prompt: "Review optimization plan. Approve to proceed with implementation."
+      show_files:
+        - "{{output_dir}}/phase1-baseline/bottlenecks.json"
+        - "{{output_dir}}/phase2-optimization/design.md"
+      with_feedback: true
+      options:
+        - label: "Approve optimization plan"
+          on_select:
+            action: continue
+        - label: "Revise optimization strategy"
+          with_feedback: true
+          on_select:
+            action: repeat_phase
+            target: optimization
+        - label: "Abort - baseline acceptable"
+          on_select:
+            action: abort
+    main_agent:
+      script: |
+        writeFile('validation.md', 'Optimization plan validated.');
+        return { status: 'complete' };
+
+  # Phase 4: Implementation Plan
+  - id: implementation
+    name: Implementation Planning
+    description: Create detailed implementation plan
+    behavior: parallel
+    subagents:
+      - type: implementation-sequencer
+        config:
+          output_path: "phase4-implementation/sequence.md"
+      - type: verification-planner
+        config:
+          output_path: "phase4-implementation/verification.md"
+      - type: risk-assessor
+        config:
+          output_path: "phase4-implementation/risks.json"
+
+  # Phase 5: Finalize
+  - id: finalize
+    name: Finalization
+    description: Generate optimization guide
+    behavior: main-only
+    main_agent:
+      script: |
+        const baseline = readFile('phase1-baseline/baseline.json');
+        const design = readFile('phase2-optimization/design.md');
+        const sequence = readFile('phase4-implementation/sequence.md');
+
+        writeFile('OPTIMIZATION_GUIDE.md',
+          `# Performance Optimization Guide\n\n` +
+          `## Baseline\n[See baseline.json]\n\n` +
+          `## Optimization Plan\n[See design.md]\n\n` +
+          `## Implementation\n[See sequence.md]\n\n` +
+          `Ready for implementation.`);
+
+        return { status: 'complete', ready_to_optimize: true };
+
+finalization:
+  template: templates/performance-optimization.md.tmpl
+  output: PERFORMANCE_PLAN.md

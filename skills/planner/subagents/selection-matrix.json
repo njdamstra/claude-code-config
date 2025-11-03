@@ -1,27 +1,13 @@
 {
   "subagent_selection": {
     "new-feature": {
-      "discovery": {
-        "always": ["codebase-scanner", "dependency-mapper", "pattern-analyzer"],
-        "conditional": {
-          "--frontend": ["frontend-scanner"],
-          "--backend": ["backend-scanner"],
-          "--both": ["frontend-scanner", "backend-scanner"]
-        }
-      },
-      "requirements": {
-        "always": ["user-story-writer", "technical-requirements-analyzer", "edge-case-identifier"],
-        "conditional": {
-          "multi_component": ["integration-planner"]
-        }
+      "research": {
+        "always": ["code-researcher"],
+        "conditional": {}
       },
       "design": {
-        "always": ["architecture-designer", "implementation-sequencer", "test-strategy-planner"],
-        "conditional": {
-          "--frontend": ["ui-designer"],
-          "--backend": ["api-designer"],
-          "--both": ["ui-designer", "api-designer"]
-        }
+        "always": ["requirements-specialist", "architecture-specialist"],
+        "conditional": {}
       },
       "validation": {
         "always": ["feasibility-validator", "completeness-checker"],
@@ -31,21 +17,19 @@
       }
     },
     "debugging": {
-      "reproduction": {
-        "always": ["bug-reproducer", "environment-analyzer", "log-analyzer"],
-        "conditional": {
-          "stateful_bug": ["state-inspector"]
-        }
+      "investigation": {
+        "always": ["bug-investigator"],
+        "conditional": {}
       },
-      "root-cause": {
-        "always": ["hypothesis-generator", "code-tracer", "dependency-checker"],
+      "analysis": {
+        "always": ["root-cause-tracer"],
         "conditional": {
           "data_bug": ["data-flow-analyzer"],
           "timing_bug": ["timing-analyzer"]
         }
       },
       "solution": {
-        "always": ["fix-designer", "regression-checker"],
+        "always": ["fix-designer"],
         "conditional": {
           "multiple_approaches": ["alternative-evaluator"]
         }
@@ -57,9 +41,7 @@
     "refactoring": {
       "analysis": {
         "always": ["code-smell-detector", "complexity-analyzer", "duplication-finder", "test-coverage-checker"],
-        "conditional": {
-          "large_refactoring": ["dependency-mapper"]
-        }
+        "conditional": {}
       },
       "planning": {
         "always": ["refactoring-sequencer", "technique-selector", "test-planner"],
@@ -93,43 +75,25 @@
       "discovery": {
         "always": ["file-locator", "pattern-checker"],
         "conditional": {
-          "integration_needed": ["dependency-mapper"]
+          "integration_needed": ["code-researcher"]
         }
       }
     }
   },
 
   "subagent_locations": {
-    "codebase-scanner": "~/.claude/agents/plans/codebase-scanner.md",
-    "pattern-analyzer": "~/.claude/agents/plans/pattern-analyzer.md",
-    "dependency-mapper": "~/.claude/agents/plans/dependency-mapper.md",
-    "frontend-scanner": "~/.claude/agents/plans/frontend-scanner.md",
-    "backend-scanner": "~/.claude/agents/plans/backend-scanner.md",
+    "code-researcher": "~/.claude/agents/plans/code-researcher.md",
+    "requirements-specialist": "~/.claude/agents/plans/requirements-specialist.md",
+    "architecture-specialist": "~/.claude/agents/plans/architecture-specialist.md",
+    "bug-investigator": "~/.claude/agents/plans/bug-investigator.md",
+    "root-cause-tracer": "~/.claude/agents/plans/root-cause-tracer.md",
+    "fix-designer": "~/.claude/agents/plans/fix-designer.md",
     "file-locator": "~/.claude/agents/plans/file-locator.md",
     "pattern-checker": "~/.claude/agents/plans/pattern-checker.md",
-    "user-story-writer": "~/.claude/agents/plans/user-story-writer.md",
-    "technical-requirements-analyzer": "~/.claude/agents/plans/technical-requirements-analyzer.md",
-    "edge-case-identifier": "~/.claude/agents/plans/edge-case-identifier.md",
-    "integration-planner": "~/.claude/agents/plans/integration-planner.md",
     "code-smell-detector": "~/.claude/agents/plans/code-smell-detector.md",
     "complexity-analyzer": "~/.claude/agents/plans/complexity-analyzer.md",
     "duplication-finder": "~/.claude/agents/plans/duplication-finder.md",
     "test-coverage-checker": "~/.claude/agents/plans/test-coverage-checker.md",
-    "architecture-designer": "~/.claude/agents/plans/architecture-designer.md",
-    "implementation-sequencer": "~/.claude/agents/plans/implementation-sequencer.md",
-    "test-strategy-planner": "~/.claude/agents/plans/test-strategy-planner.md",
-    "ui-designer": "~/.claude/agents/plans/ui-designer.md",
-    "api-designer": "~/.claude/agents/plans/api-designer.md",
-    "bug-reproducer": "~/.claude/agents/plans/bug-reproducer.md",
-    "environment-analyzer": "~/.claude/agents/plans/environment-analyzer.md",
-    "log-analyzer": "~/.claude/agents/plans/log-analyzer.md",
-    "state-inspector": "~/.claude/agents/plans/state-inspector.md",
-    "hypothesis-generator": "~/.claude/agents/plans/hypothesis-generator.md",
-    "code-tracer": "~/.claude/agents/plans/code-tracer.md",
-    "dependency-checker": "~/.claude/agents/plans/dependency-checker.md",
-    "data-flow-analyzer": "~/.claude/agents/plans/data-flow-analyzer.md",
-    "timing-analyzer": "~/.claude/agents/plans/timing-analyzer.md",
-    "fix-designer": "~/.claude/agents/plans/fix-designer.md",
     "refactoring-sequencer": "~/.claude/agents/plans/refactoring-sequencer.md",
     "technique-selector": "~/.claude/agents/plans/technique-selector.md",
     "test-planner": "~/.claude/agents/plans/test-planner.md",
@@ -148,34 +112,90 @@
     "safety-validator": "~/.claude/agents/plans/safety-validator.md",
     "scope-reviewer": "~/.claude/agents/plans/scope-reviewer.md",
     "roi-validator": "~/.claude/agents/plans/roi-validator.md",
-    "regression-checker": "~/.claude/agents/plans/regression-checker.md",
     "alternative-evaluator": "~/.claude/agents/plans/alternative-evaluator.md",
     "verification-planner": "~/.claude/agents/plans/verification-planner.md",
     "rollout-planner": "~/.claude/agents/plans/rollout-planner.md",
-    "risk-mapper": "~/.claude/agents/plans/risk-mapper.md"
+    "risk-mapper": "~/.claude/agents/plans/risk-mapper.md",
+    "data-flow-analyzer": "~/.claude/agents/plans/data-flow-analyzer.md",
+    "timing-analyzer": "~/.claude/agents/plans/timing-analyzer.md"
+  },
+
+  "workflow_notes": {
+    "new-feature": {
+      "agents_before": 10,
+      "agents_after": 3,
+      "improvement": "70% reduction",
+      "phases": ["research", "design", "validation"]
+    },
+    "debugging": {
+      "agents_before": 8,
+      "agents_after": 3,
+      "improvement": "62% reduction",
+      "phases": ["investigation", "analysis", "solution", "validation"]
+    },
+    "refactoring": {
+      "agents_before": 8,
+      "agents_after": 7,
+      "improvement": "12% reduction (kept specialized for quality)",
+      "phases": ["analysis", "planning", "validation"]
+    },
+    "improving": {
+      "agents_before": 8,
+      "agents_after": 6,
+      "improvement": "25% reduction",
+      "phases": ["assessment", "planning", "validation"]
+    },
+    "quick": {
+      "agents_before": 2,
+      "agents_after": 2,
+      "improvement": "No change (already minimal)",
+      "phases": ["discovery"]
+    }
   },
 
   "conditional_rules": {
-    "--frontend": "Spawn frontend-scanner and ui-designer for frontend-focused planning",
-    "--backend": "Spawn backend-scanner and api-designer for backend-focused planning",
-    "--both": "Spawn both frontend and backend specialist subagents for full-stack planning",
-    "multi_component": "Spawn integration-planner when feature affects 3+ components",
-    "large_refactoring": "Spawn dependency-mapper for large refactorings (10+ files)",
+    "--estimate": "Spawn estimate-reviewer to validate effort estimates",
+    "multi_component": "Deprecated - code-researcher handles integration discovery",
+    "large_refactoring": "Deprecated - code-researcher handles dependency mapping",
     "high_risk": "Spawn risk-mapper for high-risk refactorings",
-    "stateful_bug": "Spawn state-inspector for bugs involving reactive state or stores",
+    "stateful_bug": "Deprecated - bug-investigator handles state inspection conditionally",
     "data_bug": "Spawn data-flow-analyzer for bugs involving data transformations",
     "timing_bug": "Spawn timing-analyzer for race conditions or async bugs",
     "multiple_approaches": "Spawn alternative-evaluator when multiple fix options exist",
     "ux_improvement": "Spawn ux-analyzer for UX-focused improvements",
     "quality_improvement": "Spawn code-quality-checker for code quality improvements",
     "user_facing": "Spawn rollout-planner for user-facing changes requiring gradual rollout",
-    "integration_needed": "Spawn dependency-mapper for quick tasks with integration complexity",
-    "--estimate": "Spawn estimate-reviewer to validate effort estimates"
+    "integration_needed": "Spawn code-researcher for quick tasks with integration complexity"
+  },
+
+  "migration_notes": {
+    "deprecated_agents": [
+      "codebase-scanner → code-researcher",
+      "pattern-analyzer → code-researcher",
+      "dependency-mapper → code-researcher",
+      "frontend-scanner → code-researcher (conditional)",
+      "backend-scanner → code-researcher (conditional)",
+      "user-story-writer → requirements-specialist",
+      "technical-requirements-analyzer → requirements-specialist",
+      "edge-case-identifier → requirements-specialist",
+      "architecture-designer → architecture-specialist",
+      "implementation-sequencer → architecture-specialist",
+      "test-strategy-planner → architecture-specialist",
+      "bug-reproducer → bug-investigator",
+      "environment-analyzer → bug-investigator",
+      "log-analyzer → bug-investigator",
+      "hypothesis-generator → root-cause-tracer",
+      "code-tracer → root-cause-tracer",
+      "dependency-checker → root-cause-tracer"
+    ],
+    "archive_location": "~/.claude/.archives/agents/plans-deprecated-2025-10-31/",
+    "date": "2025-10-31"
   },
 
   "notes": {
-    "parallel_execution": "All subagents in a phase spawn simultaneously (2-5 max per phase)",
-    "conditional_detection": "Detect flags from command input or natural language description",
-    "default_flag": "If no flag specified, default to --frontend"
+    "parallel_execution": "All agents in a phase spawn simultaneously (max 5 per phase)",
+    "model_optimization": "Research agents use haiku, design/validation use sonnet",
+    "context_sharing": "Agents read from .temp/ to avoid redundant file scanning",
+    "default_flag": "If no flag specified, code-researcher handles both frontend and backend"
   }
 }

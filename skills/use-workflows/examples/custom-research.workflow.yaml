@@ -1,0 +1,144 @@
+name: custom-research
+description: Adaptive research workflow with human-in-loop review and flexible deep-dive
+execution_mode: adaptive
+
+phases:
+  # Phase 1: Initial Discovery (Adaptive)
+  - id: discovery
+    name: Initial Discovery
+    description: Adaptive discovery with always + conditional agents
+    behavior: parallel
+    execution_mode: adaptive
+    subagents:
+      always:
+        - type: web-researcher
+          config:
+            output_path: "phase1-discovery/web-research.md"
+        - type: doc-searcher
+          config:
+            output_path: "phase1-discovery/docs.md"
+      adaptive:
+        script: |
+          // Decide which additional agents to spawn based on initial findings
+          const webResearch = readFile('phase1-discovery/web-research.md');
+          const docs = readFile('phase1-discovery/docs.md');
+
+          const additionalAgents = [];
+
+          // If web research mentions codebase patterns, add code scout
+          if (webResearch.includes('code example') || webResearch.includes('implementation')) {
+            additionalAgents.push({
+              type: 'code-scout',
+              config: { output_path: 'phase1-discovery/code-scout.json' }
+            });
+          }
+
+          // If docs mention dependencies, add dependency mapper
+          if (docs.includes('dependency') || docs.includes('integration')) {
+            additionalAgents.push({
+              type: 'dependency-mapper',
+              config: { output_path: 'phase1-discovery/dependencies.json' }
+            });
+          }
+
+          return additionalAgents;
+
+  # Phase 2: Review Checkpoint
+  - id: review
+    name: Discovery Review
+    description: Human review of initial findings
+    behavior: main-only
+    checkpoint:
+      approval_required: false
+      condition: "context.deliverables.length > 0"
+      prompt: "Review discovery findings. Decide next steps."
+      show_files:
+        - "{{output_dir}}/phase1-discovery/"
+      with_feedback: true
+      options:
+        - label: "Proceed to deep-dive analysis"
+          with_feedback: true
+          on_select:
+            action: continue
+        - label: "Repeat discovery with different focus"
+          with_feedback: true
+          on_select:
+            action: repeat_phase
+            target: discovery
+        - label: "Skip deep-dive, go to synthesis"
+          on_select:
+            action: skip_phases
+            phases: ["deep-dive"]
+        - label: "Abort research"
+          on_select:
+            action: abort
+    main_agent:
+      script: |
+        // Log checkpoint decision
+        writeFile('review-decision.md',
+          `# Review Decision\n\nUser reviewed discovery findings.\n`);
+        return { status: 'complete' };
+
+  # Phase 3: Deep Dive (Loose Mode)
+  - id: deep-dive
+    name: Deep Dive Analysis
+    description: Flexible deep-dive with main agent control
+    behavior: main-only
+    execution_mode: loose
+    suggested_subagents:
+      - type: pattern-analyzer
+        config:
+          output_path: "phase3-deep-dive/patterns.json"
+      - type: codebase-scanner
+        config:
+          output_path: "phase3-deep-dive/codebase.json"
+    main_agent:
+      script: |
+        // Main agent has full control to decide investigation approach
+        const discoveryFiles = context.deliverables.filter(d => d.phase === 'discovery');
+
+        // Analyze what was found
+        const analysisNeeded = discoveryFiles.map(d => {
+          const content = readFile(d.path);
+          return {
+            file: d.path,
+            mentions_code: content.includes('code'),
+            mentions_api: content.includes('API'),
+            mentions_performance: content.includes('performance')
+          };
+        });
+
+        // Create deep-dive report based on findings
+        const report = `# Deep Dive Analysis\n\n` +
+          `Based on discovery findings:\n` +
+          analysisNeeded.map(a =>
+            `- ${a.file}: ${Object.keys(a).filter(k => a[k] && k !== 'file').join(', ')}`
+          ).join('\n') + '\n\n' +
+          `## Recommendations\n` +
+          `[Main agent would perform detailed analysis here]\n`;
+
+        writeFile('phase3-deep-dive/analysis.md', report);
+
+        return { status: 'complete', deep_dive_completed: true };
+
+  # Phase 4: Synthesis
+  - id: synthesis
+    name: Synthesis
+    description: Synthesize all research findings
+    behavior: main-only
+    main_agent:
+      script: |
+        const allDeliverables = context.deliverables.map(d => d.path);
+
+        writeFile('synthesis.md',
+          `# Research Synthesis\n\n` +
+          `## Files Generated\n` +
+          allDeliverables.map(f => `- ${f}`).join('\n') + '\n\n' +
+          `## Key Findings\n` +
+          `[Synthesized from all phases]\n`);
+
+        return { status: 'complete' };
+
+finalization:
+  template: templates/custom-research.md.tmpl
+  output: RESEARCH_REPORT.md

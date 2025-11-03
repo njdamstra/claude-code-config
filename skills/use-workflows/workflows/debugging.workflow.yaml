@@ -1,0 +1,230 @@
+name: debugging
+description: Systematic bug investigation and resolution planning
+execution_mode: strict
+
+phases:
+  # Phase 0: Strategic Planning
+  - id: plan
+    name: Strategic Planning
+    description: Analyze bug report and plan investigation approach
+    behavior: main-only
+    main_agent:
+      script: |
+        const featureName = context.feature.name;
+
+        const planContent = `# Debugging Strategy: ${featureName}\n\n` +
+          `## Investigation Approach\n` +
+          `1. Reproduce the bug consistently\n` +
+          `2. Analyze root cause systematically\n` +
+          `3. Design solution with regression tests\n\n` +
+          `## Success Criteria\n` +
+          `- Bug reproduced reliably\n` +
+          `- Root cause identified\n` +
+          `- Fix planned with tests\n`;
+
+        writeFile('plan.md', planContent);
+
+        return { status: 'complete', approach: 'reproduce-first' };
+
+  # Phase 1: Reproduction
+  - id: reproduction
+    name: Reproduction
+    description: Reproduce bug and gather environmental context
+    behavior: parallel
+    subagents:
+      - type: bug-reproducer
+        config:
+          output_path: "phase1-reproduction/reproduction-steps.md"
+      - type: environment-analyzer
+        config:
+          output_path: "phase1-reproduction/environment.json"
+      - type: log-analyzer
+        config:
+          output_path: "phase1-reproduction/logs-analysis.json"
+    gap_check:
+      enabled: true
+      criteria:
+        - name: "Bug reproducible"
+          check: "files_exist(['phase1-reproduction/reproduction-steps.md'])"
+        - name: "Environment documented"
+          check: "files_exist(['phase1-reproduction/environment.json'])"
+        - name: "Logs analyzed"
+          check: "files_exist(['phase1-reproduction/logs-analysis.json'])"
+      on_failure:
+        action: retry
+      max_iterations: 3
+
+  # Phase 2: Root Cause Analysis
+  - id: root-cause
+    name: Root Cause Analysis
+    description: Identify the underlying cause of the bug
+    behavior: parallel
+    subagents:
+      - type: hypothesis-generator
+        config:
+          output_path: "phase2-root-cause/hypotheses.json"
+      - type: code-tracer
+        config:
+          output_path: "phase2-root-cause/code-trace.md"
+      - type: dependency-checker
+        config:
+          output_path: "phase2-root-cause/dependency-analysis.json"
+    gap_check:
+      enabled: true
+      script: |
+        const deliverables = context.deliverables;
+        const rootCauseFiles = deliverables.filter(d => d.phase === 'root-cause');
+
+        if (rootCauseFiles.length < 3) {
+          return {
+            status: 'incomplete',
+            gaps: ['Missing root cause analysis files'],
+            action: 'retry'
+          };
+        }
+
+        // Check for TODO markers indicating incomplete analysis
+        const gaps = [];
+        rootCauseFiles.forEach(d => {
+          try {
+            const content = readFile(d.path);
+            if (content.includes('TODO') || content.includes('UNKNOWN')) {
+              gaps.push(`${d.subagent} analysis incomplete`);
+            }
+          } catch (err) {
+            gaps.push(`Cannot read ${d.path}`);
+          }
+        });
+
+        if (gaps.length > 0) {
+          return {
+            status: 'incomplete',
+            gaps: gaps,
+            action: 'retry',
+            message: 'Root cause not clearly identified'
+          };
+        }
+
+        return { status: 'complete' };
+      max_iterations: 2
+
+  # Phase 3: Solution Design
+  - id: solution
+    name: Solution Design
+    description: Design fix with regression prevention
+    behavior: parallel
+    subagents:
+      - type: fix-designer
+        config:
+          output_path: "phase3-solution/fix-design.md"
+      - type: regression-checker
+        config:
+          output_path: "phase3-solution/regression-analysis.json"
+
+  # Phase 4: Synthesis
+  - id: synthesis
+    name: Synthesis
+    description: Create comprehensive debugging report
+    behavior: main-only
+    main_agent:
+      script: |
+        const reproduction = readFiles([
+          'phase1-reproduction/reproduction-steps.md',
+          'phase1-reproduction/environment.json',
+          'phase1-reproduction/logs-analysis.json'
+        ]);
+
+        const rootCause = readFiles([
+          'phase2-root-cause/hypotheses.json',
+          'phase2-root-cause/code-trace.md',
+          'phase2-root-cause/dependency-analysis.json'
+        ]);
+
+        const solution = readFiles([
+          'phase3-solution/fix-design.md',
+          'phase3-solution/regression-analysis.json'
+        ]);
+
+        const synthesis = `# Debugging Report: ${context.feature.name}\n\n` +
+          `## Bug Reproduction\n` +
+          `- Reproduction steps documented\n` +
+          `- Environment captured\n` +
+          `- Logs analyzed\n\n` +
+          `## Root Cause\n` +
+          `- Hypotheses generated and tested\n` +
+          `- Code execution traced\n` +
+          `- Dependencies verified\n\n` +
+          `## Solution\n` +
+          `- Fix designed\n` +
+          `- Regression tests planned\n\n` +
+          `## Implementation Ready\n` +
+          `All analysis complete, ready for fix implementation.\n`;
+
+        writeFile('synthesis.md', synthesis);
+
+        return { status: 'complete', bug_understood: true };
+
+  # Phase 5: Validation
+  - id: validation
+    name: Validation
+    description: Validate debugging approach and solution
+    behavior: parallel
+    subagents:
+      - type: approach-validator
+        config:
+          output_path: "phase5-validation/approach-validation.json"
+      - type: risk-assessor
+        config:
+          output_path: "phase5-validation/risk-assessment.json"
+    checkpoint:
+      approval_required: true
+      prompt: "Debugging analysis complete. Review root cause and proposed solution."
+      show_files:
+        - "{{output_dir}}/phase2-root-cause/hypotheses.json"
+        - "{{output_dir}}/phase3-solution/fix-design.md"
+        - "{{output_dir}}/synthesis.md"
+      options:
+        - label: "Proceed with solution"
+          on_select:
+            action: continue
+        - label: "Re-analyze root cause"
+          on_select:
+            action: repeat_phase
+            target: root-cause
+        - label: "Redesign solution"
+          on_select:
+            action: repeat_phase
+            target: solution
+        - label: "Abort"
+          on_select:
+            action: abort
+
+  # Phase 6: Finalize
+  - id: finalize
+    name: Finalization
+    description: Create final debugging report
+    behavior: main-only
+    main_agent:
+      script: |
+        const allFiles = context.deliverables.map(d => d.path);
+
+        const finalReport = `# Debugging Report Complete\n\n` +
+          `Bug: ${context.feature.name}\n` +
+          `Workflow: ${context.workflow.name}\n` +
+          `Completed: ${new Date().toISOString()}\n\n` +
+          `## Investigation Summary\n` +
+          `- Bug successfully reproduced\n` +
+          `- Root cause identified\n` +
+          `- Solution designed\n\n` +
+          `## Deliverables\n` +
+          allFiles.map(f => `- ${f}`).join('\n') + '\n\n' +
+          `## Ready for Implementation\n` +
+          `Follow fix-design.md for implementation steps.\n`;
+
+        writeFile('DEBUGGING_REPORT.md', finalReport);
+
+        return { status: 'complete', ready_to_fix: true };
+
+finalization:
+  template: templates/debugging.md.tmpl
+  output: BUG_FIX_PLAN.md

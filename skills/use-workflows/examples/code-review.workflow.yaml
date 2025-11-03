@@ -1,0 +1,134 @@
+name: code-review
+description: Comprehensive code review with multiple quality gates
+execution_mode: strict
+
+phases:
+  # Phase 1: Static Analysis
+  - id: static-analysis
+    name: Static Analysis
+    description: Automated code quality checks
+    behavior: parallel
+    subagents:
+      - type: code-quality-checker
+        config:
+          output_path: "phase1-static/quality.json"
+      - type: code-smell-detector
+        config:
+          output_path: "phase1-static/smells.json"
+      - type: complexity-analyzer
+        config:
+          output_path: "phase1-static/complexity.json"
+    checkpoint:
+      approval_required: false
+      prompt: "Static analysis complete. Review findings before proceeding."
+      show_files:
+        - "{{output_dir}}/phase1-static/quality.json"
+        - "{{output_dir}}/phase1-static/smells.json"
+      options:
+        - label: "Continue to security review"
+          on_select:
+            action: continue
+        - label: "Re-run analysis with different parameters"
+          on_select:
+            action: repeat_phase
+            target: static-analysis
+        - label: "Abort review"
+          on_select:
+            action: abort
+
+  # Phase 2: Security Review
+  - id: security
+    name: Security Review
+    description: Security vulnerability assessment
+    behavior: sequential
+    subagents:
+      - type: dependency-checker
+        config:
+          output_path: "phase2-security/dependencies.json"
+      - type: risk-assessor
+        config:
+          output_path: "phase2-security/risks.json"
+    gap_check:
+      enabled: true
+      criteria:
+        - name: "No critical vulnerabilities"
+          check: "!contains_todos(context.deliverables)"
+        - name: "Dependencies verified"
+          check: "files_exist(['phase2-security/dependencies.json'])"
+      on_failure:
+        action: escalate
+    checkpoint:
+      approval_required: true
+      prompt: "Security review complete. Critical issues must be addressed."
+      show_files:
+        - "{{output_dir}}/phase2-security/risks.json"
+      options:
+        - label: "Approve - no critical issues"
+          on_select:
+            action: continue
+        - label: "Request fixes and re-review"
+          on_select:
+            action: repeat_phase
+            target: security
+        - label: "Reject code review"
+          on_select:
+            action: abort
+
+  # Phase 3: Architecture Review
+  - id: architecture
+    name: Architecture Review
+    description: Assess architectural decisions
+    behavior: parallel
+    subagents:
+      - type: pattern-analyzer
+        config:
+          output_path: "phase3-architecture/patterns.json"
+      - type: duplication-finder
+        config:
+          output_path: "phase3-architecture/duplications.json"
+
+  # Phase 4: Final Approval
+  - id: final-approval
+    name: Final Approval
+    description: Comprehensive review checkpoint
+    behavior: main-only
+    checkpoint:
+      approval_required: true
+      prompt: "All automated checks complete. Final approval required."
+      show_files:
+        - "{{output_dir}}/phase1-static/"
+        - "{{output_dir}}/phase2-security/"
+        - "{{output_dir}}/phase3-architecture/"
+      options:
+        - label: "Approve for merge"
+          on_select:
+            action: continue
+        - label: "Request changes"
+          with_feedback: true
+          on_select:
+            action: abort
+    main_agent:
+      script: |
+        writeFile('APPROVAL.md',
+          `# Code Review Approved\n\n` +
+          `All quality gates passed.\n` +
+          `Ready for merge.`);
+        return { status: 'approved' };
+
+  # Phase 5: Finalize
+  - id: finalize
+    name: Finalization
+    description: Generate review report
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('REVIEW_REPORT.md',
+          `# Code Review Report\n\n` +
+          `Feature: ${context.feature.name}\n` +
+          `Status: APPROVED\n\n` +
+          `All phases completed successfully.`);
+        return { status: 'complete' };
+
+finalization:
+  template: templates/code-review.md.tmpl
+  output: CODE_REVIEW_FINAL.md

@@ -1,0 +1,99 @@
+# onKeyStroke
+
+Category: Sensors
+
+Export Size: 784 B
+
+Listen for keyboard keystrokes.
+
+## Usage
+
+```ts
+import { onKeyStroke } from '@vueuse/core'
+
+onKeyStroke('ArrowDown', (e) => {
+  e.preventDefault()
+})
+```
+
+See [this table](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values) for all key codes.
+
+### Listen To Multiple Keys
+
+```ts
+import { onKeyStroke } from '@vueuse/core'
+
+onKeyStroke(['s', 'S', 'ArrowDown'], (e) => {
+  e.preventDefault()
+})
+
+// listen to all keys by [true / skip the keyDefine]
+onKeyStroke(true, (e) => {
+  e.preventDefault()
+})
+
+onKeyStroke((e) => {
+  e.preventDefault()
+})
+```
+
+### Custom Event Target
+
+```ts
+onKeyStroke('A', (e) => {
+  console.log('Key A pressed on document')
+}, { target: document })
+```
+
+### Ignore Repeated Events
+
+The callback will trigger only once when pressing `A` and **hold down**.
+
+```ts
+// use `autoRepeat` option
+onKeyStroke('A', (e) => {
+  console.log('Key A pressed')
+}, { autoRepeat: true })
+```
+
+Reference: [KeyboardEvent.repeat](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/repeat)
+
+## Directive Usage
+
+> This function also provides a directive version via the `@vueuse/components` package.
+
+```vue
+<script setup lang="ts">
+import { vOnKeyStroke } from '@vueuse/components'
+
+function onKeyStroke(event: KeyboardEvent) {
+  // impl...
+}
+</script>
+
+<template>
+  <input v-on-key-stroke:a="onKeyStroke" type="text">
+  <!-- with options -->
+  <input v-on-key-stroke:a="[onKeyStroke, { eventName: 'keyup' }]" type="text">
+</template>
+```
+
+### Custom Keyboard Event
+
+```ts
+onKeyStroke('Shift', (e) => {
+  console.log('Shift key up')
+}, { eventName: 'keyup' })
+```
+
+Or
+
+```ts
+onKeyUp('Shift', () => console.log('Shift key up'))
+```
+
+## Shorthands
+
+- `onKeyDown` - alias for `onKeyStroke(key, handler, {eventName: 'keydown'})`
+- `onKeyPressed` - alias for `onKeyStroke(key, handler, {eventName: 'keypress'})`
+- `onKeyUp` - alias for `onKeyStroke(key, handler, {eventName: 'keyup'})`

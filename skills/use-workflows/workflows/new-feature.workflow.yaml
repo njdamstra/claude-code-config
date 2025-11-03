@@ -1,0 +1,256 @@
+name: new-feature
+description: Comprehensive feature planning with PRD generation (40/60 planning-to-coding ratio)
+execution_mode: strict
+
+phases:
+  # Phase 0: Strategic Planning
+  - id: plan
+    name: Strategic Planning
+    description: Extended thinking about approach and strategy
+    behavior: main-only
+    main_agent:
+      script: |
+        // Strategic planning phase
+        const featureName = context.feature.name;
+        const flags = context.feature.flags;
+
+        // Analyze the feature request
+        const planContent = `# Strategic Plan: ${featureName}\n\n` +
+          `## Scope\nFeature: ${featureName}\nFlags: ${flags.join(', ')}\n\n` +
+          `## Approach\n` +
+          `- Discovery-first strategy\n` +
+          `- Requirements gathering with INVEST criteria\n` +
+          `- Technical design with implementation sequencing\n\n` +
+          `## Success Criteria\n` +
+          `- Comprehensive requirements documented\n` +
+          `- Architecture designed and validated\n` +
+          `- Implementation plan with clear tasks\n`;
+
+        writeFile('plan.md', planContent);
+
+        return { status: 'complete', approach: 'discovery-first' };
+
+  # Phase 1: Discovery
+  - id: discovery
+    name: Discovery
+    description: Gather codebase context and identify existing patterns
+    behavior: parallel
+    subagents:
+      - type: codebase-scanner
+        config:
+          output_path: "phase1-discovery/codebase-scan.json"
+      - type: dependency-mapper
+        config:
+          output_path: "phase1-discovery/dependencies.json"
+      - type: pattern-analyzer
+        config:
+          output_path: "phase1-discovery/patterns.json"
+    gap_check:
+      enabled: true
+      script: |
+        // Check discovery coverage
+        const deliverables = context.deliverables;
+        const discoveryFiles = deliverables.filter(d => d.phase === 'discovery');
+
+        if (discoveryFiles.length < 3) {
+          return {
+            status: 'incomplete',
+            gaps: ['Missing expected discovery files'],
+            action: 'retry'
+          };
+        }
+
+        // Check if files have content
+        const gaps = [];
+        discoveryFiles.forEach(d => {
+          try {
+            const content = readFile(d.path);
+            if (content.length < 100) {
+              gaps.push(`${d.subagent} output too short`);
+            }
+          } catch (err) {
+            gaps.push(`Cannot read ${d.path}`);
+          }
+        });
+
+        if (gaps.length > 0) {
+          return {
+            status: 'incomplete',
+            gaps: gaps,
+            action: 'retry',
+            message: 'Discovery phase incomplete'
+          };
+        }
+
+        return { status: 'complete' };
+      max_iterations: 2
+
+  # Phase 2: Requirements Analysis
+  - id: requirements
+    name: Requirements Analysis
+    description: Define user stories and technical requirements
+    behavior: parallel
+    subagents:
+      - type: user-story-writer
+        config:
+          output_path: "phase2-requirements/user-stories.md"
+      - type: technical-requirements-analyzer
+        config:
+          output_path: "phase2-requirements/technical-requirements.json"
+      - type: edge-case-identifier
+        config:
+          output_path: "phase2-requirements/edge-cases.md"
+    gap_check:
+      enabled: true
+      criteria:
+        - name: "User stories complete"
+          check: "files_exist(['phase2-requirements/user-stories.md'])"
+        - name: "Technical requirements clear"
+          check: "files_exist(['phase2-requirements/technical-requirements.json'])"
+        - name: "Edge cases covered"
+          check: "files_exist(['phase2-requirements/edge-cases.md'])"
+      on_failure:
+        action: retry
+      max_iterations: 2
+
+  # Phase 3: Technical Design
+  - id: design
+    name: Technical Design
+    description: Create detailed implementation plan and architecture
+    behavior: parallel
+    subagents:
+      - type: architecture-designer
+        config:
+          output_path: "phase3-design/architecture.json"
+      - type: implementation-sequencer
+        config:
+          output_path: "phase3-design/implementation-sequence.md"
+      - type: test-strategy-planner
+        config:
+          output_path: "phase3-design/test-strategy.md"
+    gap_check:
+      enabled: true
+      criteria:
+        - name: "Architecture viable"
+          check: "files_exist(['phase3-design/architecture.json'])"
+        - name: "Implementation steps clear"
+          check: "files_exist(['phase3-design/implementation-sequence.md'])"
+        - name: "Testing planned"
+          check: "files_exist(['phase3-design/test-strategy.md'])"
+      on_failure:
+        action: retry
+      max_iterations: 2
+
+  # Phase 4: Synthesis
+  - id: synthesis
+    name: Synthesis
+    description: Synthesize all research into coherent plan
+    behavior: main-only
+    main_agent:
+      script: |
+        // Synthesize research from all previous phases
+        const discovery = readFiles([
+          'phase1-discovery/codebase-scan.json',
+          'phase1-discovery/dependencies.json',
+          'phase1-discovery/patterns.json'
+        ]);
+
+        const requirements = readFiles([
+          'phase2-requirements/user-stories.md',
+          'phase2-requirements/technical-requirements.json',
+          'phase2-requirements/edge-cases.md'
+        ]);
+
+        const design = readFiles([
+          'phase3-design/architecture.json',
+          'phase3-design/implementation-sequence.md',
+          'phase3-design/test-strategy.md'
+        ]);
+
+        // Create synthesis
+        const synthesis = `# Feature Implementation Plan: ${context.feature.name}\n\n` +
+          `## Discovery Summary\n` +
+          `- Codebase scan completed\n` +
+          `- Dependencies mapped\n` +
+          `- Patterns analyzed\n\n` +
+          `## Requirements Summary\n` +
+          `- User stories defined\n` +
+          `- Technical requirements documented\n` +
+          `- Edge cases identified\n\n` +
+          `## Design Summary\n` +
+          `- Architecture designed\n` +
+          `- Implementation sequence planned\n` +
+          `- Test strategy defined\n\n` +
+          `## Next Steps\n` +
+          `- Validation phase\n` +
+          `- Finalize plan\n`;
+
+        writeFile('synthesis.md', synthesis);
+
+        return { status: 'complete', phases_synthesized: 3 };
+
+  # Phase 5: Validation
+  - id: validation
+    name: Validation
+    description: Validate plan completeness and feasibility
+    behavior: parallel
+    subagents:
+      - type: feasibility-validator
+        config:
+          output_path: "phase5-validation/feasibility.json"
+      - type: completeness-checker
+        config:
+          output_path: "phase5-validation/completeness.json"
+    checkpoint:
+      approval_required: true
+      prompt: "Plan validation complete. Review feasibility and completeness reports."
+      show_files:
+        - "{{output_dir}}/phase5-validation/feasibility.json"
+        - "{{output_dir}}/phase5-validation/completeness.json"
+        - "{{output_dir}}/synthesis.md"
+      options:
+        - label: "Continue to finalization"
+          on_select:
+            action: continue
+        - label: "Repeat requirements phase"
+          on_select:
+            action: repeat_phase
+            target: requirements
+        - label: "Repeat design phase"
+          on_select:
+            action: repeat_phase
+            target: design
+        - label: "Abort workflow"
+          on_select:
+            action: abort
+
+  # Phase 6: Finalize
+  - id: finalize
+    name: Finalization
+    description: Create final implementation plan document
+    behavior: main-only
+    main_agent:
+      script: |
+        // Collect all deliverables
+        const allFiles = context.deliverables.map(d => d.path);
+
+        // Create final summary
+        const finalPlan = `# Final Implementation Plan\n\n` +
+          `Feature: ${context.feature.name}\n` +
+          `Workflow: ${context.workflow.name}\n` +
+          `Completed: ${new Date().toISOString()}\n\n` +
+          `## Deliverables\n` +
+          allFiles.map(f => `- ${f}`).join('\n') + '\n\n' +
+          `## Metrics\n` +
+          `- Phases completed: ${context.phases.completed.length}\n` +
+          `- Subagents spawned: ${context.subagents_spawned}\n` +
+          `- Total deliverables: ${context.deliverables.length}\n\n` +
+          `## Status\nReady for implementation\n`;
+
+        writeFile('FINAL_PLAN.md', finalPlan);
+
+        return { status: 'complete', ready_for_implementation: true };
+
+finalization:
+  template: templates/new-feature.md.tmpl
+  output: IMPLEMENTATION_PLAN.md

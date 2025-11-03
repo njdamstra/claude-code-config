@@ -1,0 +1,87 @@
+name: improving
+description: Targeted code/UX optimization planning (quality-driven enhancements)
+execution_mode: strict
+
+phases:
+  - id: plan
+    name: Strategic Planning
+    description: Plan improvement approach
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('plan.md',
+          `# Improvement Plan: ${context.feature.name}\n\n` +
+          `## Goals\n` +
+          `- Identify optimization opportunities\n` +
+          `- Measure current baseline\n` +
+          `- Design targeted improvements\n`);
+        return { status: 'complete' };
+
+  - id: assessment
+    name: Assessment
+    description: Assess current state and identify opportunities
+    behavior: parallel
+    subagents:
+      - type: baseline-profiler
+        config:
+          output_path: "phase1-assessment/baseline.json"
+      - type: bottleneck-identifier
+        config:
+          output_path: "phase1-assessment/bottlenecks.json"
+      - type: opportunity-scanner
+        config:
+          output_path: "phase1-assessment/opportunities.json"
+
+  - id: planning
+    name: Optimization Planning
+    description: Design optimization strategy
+    behavior: parallel
+    subagents:
+      - type: optimization-designer
+        config:
+          output_path: "phase2-planning/optimization-design.md"
+      - type: impact-estimator
+        config:
+          output_path: "phase2-planning/impact-estimates.json"
+      - type: verification-planner
+        config:
+          output_path: "phase2-planning/verification-plan.md"
+
+  - id: synthesis
+    name: Synthesis
+    description: Create comprehensive improvement plan
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('synthesis.md',
+          `# Improvement Plan Synthesis\n\n` +
+          `Baseline measured. Optimization opportunities identified.\n` +
+          `Impact estimated. Ready for targeted improvements.`);
+        return { status: 'complete' };
+
+  - id: validation
+    name: Validation
+    description: Validate improvement ROI and risks
+    behavior: parallel
+    subagents:
+      - type: roi-validator
+        config:
+          output_path: "phase4-validation/roi.json"
+      - type: risk-assessor
+        config:
+          output_path: "phase4-validation/risks.json"
+
+  - id: finalize
+    name: Finalization
+    description: Create final improvement guide
+    behavior: main-only
+    main_agent:
+      script: |
+        writeFile('IMPROVEMENT_GUIDE.md',
+          `# Improvement Guide: ${context.feature.name}\n\n` +
+          `Follow optimization-design.md for targeted enhancements.`);
+        return { status: 'complete' };
+
+finalization:
+  template: templates/improving.md.tmpl
+  output: IMPROVEMENT_PLAN.md

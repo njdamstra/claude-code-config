@@ -1,0 +1,21 @@
+name: "Simple Test Workflow"
+description: "A minimal workflow for testing"
+version: "1.0.0"
+
+execution_mode: strict
+
+phases:
+  - id: phase1
+    name: "Phase 1"
+    description: "First phase"
+    behavior: main-only
+    main_agent:
+      description: "Main agent task"
+      script: |
+        return { status: 'complete', output: 'Phase 1 done' };
+
+finalization:
+  template: |
+    # Test Complete
+    Phase 1 executed successfully.
+  output: "final-plan.md"

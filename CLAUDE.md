@@ -94,6 +94,19 @@ Use the `/mcps` slash command for preset-based MCP management with environment v
 - `tavily_map`: Discover site structure (depth/breadth control, path filtering)
 - `tavily_crawl`: Multi-page crawling (limit pages, extract content, filter paths)
 
+**Sequential-Thinking** - Advanced reasoning with step-by-step problem solving
+- `sequentialthinking`: Break down complex problems into sequential thought steps
+- **Features**: Progressive reasoning, hypothesis generation, verification, adaptive planning
+- **Supports**: Branching thoughts, revisions, multi-step analysis with context building
+- **Use for**: Complex calculations, debugging with hypothesis testing, problems requiring step-by-step breakdown
+- **Parameters**:
+  - `thought`: Current thinking step (can include analysis, revisions, questions, realizations)
+  - `thoughtNumber`: Current step in sequence
+  - `totalThoughts`: Estimated total (adjustable as you progress)
+  - `nextThoughtNeeded`: Continue reasoning or finish
+  - `isRevision`: Mark thoughts that revise previous thinking
+  - `branchFromThought`: Create alternative reasoning paths
+
 ## Memory Management
 - Agent memory files track domain-specific learnings
 - Context bundles provide 60-70% session restoration capability

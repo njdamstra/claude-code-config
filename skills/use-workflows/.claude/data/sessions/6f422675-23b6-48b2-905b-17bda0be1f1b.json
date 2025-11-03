@@ -1,0 +1,7 @@
+{
+  "session_id": "6f422675-23b6-48b2-905b-17bda0be1f1b",
+  "prompts": [
+    " - engine/script-interpreter.sh:37-88 \u2013 the helper writeFile only mutates the\n    in-memory context object inside Node and never persists the change back to\n    context.json. As a result, deliverables produced by main-agent scripts never\n    appear in our stored context/metadata, and gap checks that rely on tracked\n    deliverables won\u2019t see them. Please add a bridge (e.g., emit instructions for\n    the shell to append via context-manager.sh) so these writes are durable.\n  - engine/template-renderer.sh:14-67 \u2013 neither render_template nor its fallback\n    ensures the destination directory exists. A workflow whose finalization\n    output is outside .temp/<feature>/ (for example, plans/my-feature/plan.md)\n    will fail with \u201cNo such file or directory.\u201d Calling ensure_dir \"$(dirname\n    \"$output_file\")\" before writing solves it.",
+    "okay what's next according to the plan?"
+  ]
+}
