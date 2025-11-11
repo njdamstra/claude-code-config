@@ -1,0 +1,57 @@
+# Quick Plan Workflow (v5)
+# Fast planning workflow (5-15 min)
+
+name: quick-plan
+description: "Quick planning workflow for simple features"
+estimated_time: "5-15 minutes"
+estimated_tokens: "5K-15K"
+complexity: "simple"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Plan Init
+  - name: plan-init
+    scope: default
+    inputs: []
+
+  # Phase 2: Plan Generation
+  - name: plan-generation
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: plan-init
+        files: [plan-init.md]
+        context_description: "Plan context and initial requirements"
+
+  # Phase 3: Plan Review
+  - name: plan-review
+    scope: default
+    inputs:
+      - from: plan-generation
+        files: [plan.md]
+        context_description: "Generated plan to review"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: plan-review
+    prompt: "Review plan quality before proceeding"
+    show_files:
+      - "plan.md"
+      - "review.md"
+    options:
+      - "Accept plan"
+      - "Revise plan"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

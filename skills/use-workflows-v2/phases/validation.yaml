@@ -1,0 +1,131 @@
+# Phase: Validation (v5)
+# Validate plan feasibility, completeness, and estimates
+
+name: validation
+purpose: "Verify plan is feasible, complete, and estimates are realistic"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - feasibility-validator
+    - completeness-checker
+  conditional:
+    estimate:
+      - estimate-reviewer
+
+subagent_configs:
+  feasibility-validator:
+    task_agent_type: "feasibility-validator"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Validate technical feasibility and identify potential blockers.
+
+    instructions: |
+      1. Review technical approach for viability
+      2. Identify potential technical blockers
+      3. Check dependency availability
+      4. Verify assumptions are valid
+      5. Flag high-risk areas
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["synthesis.md", "architecture.md"]
+        description: "Plan and architecture documents"
+
+    outputs:
+      - file: feasibility.json
+        schema: output_templates/feasibility.json
+        required: true
+        description: "Feasibility assessment with blockers identified"
+
+  completeness-checker:
+    task_agent_type: "completeness-checker"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Check plan completeness and coverage.
+
+    instructions: |
+      1. Verify all requirements addressed
+      2. Check for missing implementation steps
+      3. Validate test coverage is sufficient
+      4. Identify gaps in documentation
+      5. Flag areas needing clarification
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["synthesis.md", "requirements.json"]
+        description: "Plan and requirements documents"
+
+    outputs:
+      - file: completeness.json
+        schema: output_templates/completeness.json
+        required: true
+        description: "Completeness assessment with gaps identified"
+
+  estimate-reviewer:
+    task_agent_type: "estimate-reviewer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Validate effort estimates and timeline.
+
+    instructions: |
+      1. Review time estimates for realism
+      2. Check complexity assessments
+      3. Validate resource requirements
+      4. Identify optimistic assumptions
+      5. Suggest timeline adjustments
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["synthesis.md"]
+        description: "Plan with estimates"
+
+    outputs:
+      - file: estimates.json
+        schema: output_templates/estimates.json
+        required: true
+        description: "Estimate review with adjustments"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "No critical feasibility blockers"
+    - "Plan completeness acceptable"
+    - "Estimates are realistic"
+
+  on_failure:
+    - "Revise plan based on validation feedback"
+    - "Continue with noted risks"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - feasibility_assessment
+  - completeness_report
+  - estimate_validation
+  - identified_risks
+  - recommended_adjustments
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

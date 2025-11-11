@@ -1,0 +1,231 @@
+# Workflow YAML Schema (v5)
+# This schema defines the structure for workflow configuration files in the v5 architecture.
+# Workflows coordinate phases without knowing their internal details.
+
+# Example usage: workflows-v5/investigation-workflow.yaml
+
+schema_version: "5.0"
+
+# ==============================================================================
+# REQUIRED FIELDS
+# ==============================================================================
+
+name: string
+# Unique identifier for this workflow (lowercase-hyphenated)
+# Example: "investigation-workflow", "new-feature-plan"
+
+description: string
+# Brief description of what this workflow accomplishes
+# Example: "Balanced investigation with codebase + external research"
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+estimated_time: string
+# Human-readable time estimate
+# Example: "20-40 minutes", "1-2 hours"
+
+estimated_tokens: string
+# Token usage estimate
+# Example: "20K-60K", "50K-100K"
+
+complexity: string  # Optional
+# Workflow complexity indicator
+# Values: "simple" | "moderate" | "complex"
+
+# ==============================================================================
+# OUTPUT CONFIGURATION
+# ==============================================================================
+
+base_dir: string
+# Base directory where all workflow outputs are stored
+# The final path will be: {base_dir}/{feature_name}/phase-{N}-{phase_name}/
+# Example: ".temp" → .temp/user-auth/phase-1-discovery/
+# Example: ".claude/plans" → .claude/plans/new-feature/phase-1-requirements/
+
+# ==============================================================================
+# PHASE SEQUENCE
+# ==============================================================================
+
+phases:
+  - name: string            # Phase identifier (references phases-v5/{name}.yaml)
+    scope: string          # Scope for this phase execution
+    inputs: [object]       # Files to pass from previous phases
+
+  # Scope options:
+  # - "default" → Use workflow's default_scope
+  # - "{{workflow_scope}}" → Use user-provided scope flag
+  # - "frontend" → Force frontend scope
+  # - "backend" → Force backend scope
+  # - "both" → Force full-stack scope
+
+  # Input wiring structure:
+  # inputs:
+  #   - from: previous-phase-name     # Phase that produced these files
+  #     files: [filename1, filename2]  # Files to pass (no paths, just names)
+  #     context_description: string   # What these files contain (for prompts)
+
+  # Example:
+  # - name: problem-understanding
+  #   scope: default
+  #   inputs: []  # First phase has no inputs
+  #
+  # - name: codebase-investigation
+  #   scope: "{{workflow_scope}}"  # Use --frontend/--backend/--both flag
+  #   inputs:
+  #     - from: problem-understanding
+  #       files: [problem.md, constraints.json]
+  #       context_description: "Problem definition to focus research"
+  #
+  # - name: synthesis
+  #   scope: default
+  #   inputs:
+  #     - from: problem-understanding
+  #       files: [problem.md]
+  #     - from: codebase-investigation
+  #       files: [codebase-analysis.json]
+  #       context_description: "All research to synthesize approaches"
+
+# ==============================================================================
+# USER APPROVAL GATES
+# ==============================================================================
+
+checkpoints:
+  - after: string        # Phase name after which to checkpoint
+    prompt: string       # Message to show user
+    show_files: [string] # Files to display (filenames only, not full paths)
+    options: [string]    # Options to present to user
+
+  # Example:
+  # - after: problem-understanding
+  #   prompt: "Confirm problem understanding before starting research"
+  #   show_files: []
+  #   options:
+  #     - "Proceed to research"
+  #     - "Refine problem statement"
+  #     - "Abort"
+  #
+  # - after: synthesis
+  #   prompt: "Review synthesized approaches"
+  #   show_files:
+  #     - "approaches.json"
+  #     - "best-practices.md"
+  #   options:
+  #     - "Continue to planning"
+  #     - "Refine approaches"
+  #     - "Abort"
+
+# ==============================================================================
+# SCOPE CONFIGURATION
+# ==============================================================================
+
+default_scope: string
+# Default scope when none specified by user
+# Template variable that gets replaced with --frontend/--backend/--both
+# Example: "{{user_provided_scope}}"
+
+# ==============================================================================
+# EXAMPLE WORKFLOW YAML
+# ==============================================================================
+
+# name: investigation-workflow
+# description: "Balanced investigation with codebase + external research"
+# estimated_time: 20-40 minutes
+# estimated_tokens: 20K-60K
+# complexity: moderate
+#
+# base_dir: ".temp"
+#
+# phases:
+#   - name: problem-understanding
+#     scope: default
+#     inputs: []
+#
+#   - name: codebase-investigation
+#     scope: "{{workflow_scope}}"
+#     inputs:
+#       - from: problem-understanding
+#         files: [problem.md, constraints.json]
+#         context_description: "Problem definition to focus research"
+#
+#   - name: external-research
+#     scope: default
+#     inputs:
+#       - from: problem-understanding
+#         files: [problem.md]
+#       - from: codebase-investigation
+#         files: [codebase-analysis.json]
+#         context_description: "Codebase patterns to compare against best practices"
+#
+#   - name: solution-synthesis
+#     scope: default
+#     inputs:
+#       - from: codebase-investigation
+#         files: [codebase-analysis.json]
+#       - from: external-research
+#         files: [best-practices.md]
+#         context_description: "All research to synthesize approaches"
+#
+#   - name: introspection
+#     scope: default
+#     inputs:
+#       - from: solution-synthesis
+#         files: [approaches.json]
+#         context_description: "Approaches with assumptions to validate"
+#
+#   - name: approach-refinement
+#     scope: default
+#     inputs:
+#       - from: introspection
+#         files: [assumptions-validated.json, approaches-revised.json]
+#
+# checkpoints:
+#   - after: problem-understanding
+#     prompt: "Confirm problem understanding before research"
+#     show_files: []
+#     options:
+#       - "Proceed to research"
+#       - "Refine problem statement"
+#       - "Abort"
+#
+#   - after: introspection
+#     prompt: "Review validated assumptions and revised approaches"
+#     show_files:
+#       - "approaches.json"
+#       - "assumptions-validated.json"
+#       - "approaches-revised.json"
+#     options:
+#       - "Continue with revised approach"
+#       - "Need more introspection"
+#       - "Abort"
+#
+#   - after: approach-refinement
+#     prompt: "Review refined approach before detailed planning"
+#     show_files:
+#       - "refined-approach.md"
+#     options:
+#       - "Continue to plan-writing-workflow"
+#       - "Refine further"
+#       - "Abort"
+#
+# default_scope: "{{user_provided_scope}}"
+
+# ==============================================================================
+# KEY DIFFERENCES FROM V4
+# ==============================================================================
+
+# REMOVED FROM V5:
+# ❌ subagent_matrix       → Moved to phase YAMLs
+# ❌ subagent_outputs      → Moved to phase YAMLs
+# ❌ gap_checks            → Moved to phase YAMLs
+# ❌ template              → Using generic phase-executor.md.tmpl
+
+# ADDED IN V5:
+# ✅ base_dir              → Workflow controls output location
+# ✅ inputs[]              → Explicit phase-to-phase wiring
+# ✅ scope per phase       → Fine-grained scope control
+
+# RESULT:
+# Workflow YAML shrinks from ~150 lines to ~50 lines
+# Focus is pure coordination, not configuration

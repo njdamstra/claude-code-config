@@ -1,0 +1,95 @@
+# Phase: Plan Review (v5)
+# Quick review of generated plan for quality
+
+name: plan-review
+purpose: "Quick review of plan for completeness and quality"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent reviews
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Plan is complete"
+    - "Steps are actionable"
+    - "No obvious issues"
+
+  on_failure:
+    - "Revise plan"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - review_results
+  - identified_issues
+  - plan_quality_score
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read plan.md
+
+  2. Check for:
+     - All steps actionable
+     - Dependencies make sense
+     - Estimates reasonable
+     - Success criteria clear
+     - No obvious gaps
+
+  3. Identify issues:
+     - Critical (must fix)
+     - Warning (should consider)
+     - Info (nice to have)
+
+  4. Create deliverable: `review.md`
+
+  **Example review.md:**
+  ```markdown
+  # Plan Review: [Name]
+
+  ## Overall Assessment
+  [GOOD / NEEDS WORK / MAJOR ISSUES]
+
+  ## Critical Issues
+  - [ ] Issue 1: [Description]
+
+  ## Warnings
+  - [ ] Warning 1: [Description]
+
+  ## Info
+  - Note 1: [Description]
+
+  ## Recommendations
+  - Recommendation 1
+  - Recommendation 2
+
+  ## Approval Status
+  [APPROVED / NEEDS REVISION]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "3-5 minutes"
+  complexity: "simple"
+  requires_user_input: false

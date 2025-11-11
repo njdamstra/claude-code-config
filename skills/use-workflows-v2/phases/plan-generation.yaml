@@ -1,0 +1,102 @@
+# Phase: Plan Generation (v5)
+# Generate quick implementation plan
+
+name: plan-generation
+purpose: "Generate quick implementation plan with basic steps and estimates"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent generates plan
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Plan has clear steps"
+    - "Dependencies identified"
+    - "Basic estimates provided"
+
+  on_failure:
+    - "Refine plan"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - implementation_plan
+  - step_breakdown
+  - basic_estimates
+  - dependencies
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read plan-init.md for context
+
+  2. Generate quick plan:
+     - Break down into 5-10 steps
+     - Identify dependencies
+     - Provide time estimates
+     - Define success criteria
+
+  3. Create deliverable: `plan.md`
+
+  **Example plan.md:**
+  ```markdown
+  # Quick Plan: [Name]
+
+  ## Steps
+
+  ### 1. [Step Name] (Est: Xh)
+  **Dependencies:** None
+  **Tasks:**
+  - Task 1
+  - Task 2
+
+  ### 2. [Step Name] (Est: Yh)
+  **Dependencies:** Step 1
+  **Tasks:**
+  - Task 1
+  - Task 2
+
+  ### 3. [Step Name] (Est: Zh)
+  **Dependencies:** Step 2
+  **Tasks:**
+  - Task 1
+  - Task 2
+
+  ## Total Estimate
+  X + Y + Z = [Total] hours
+
+  ## Success Criteria
+  - [ ] Criterion 1
+  - [ ] Criterion 2
+
+  ## Risks
+  - Risk 1
+  - Risk 2
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "5-10 minutes"
+  complexity: "simple"
+  requires_user_input: false

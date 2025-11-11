@@ -1,0 +1,116 @@
+# Phase: Quality Review (v5)
+# Review plan for quality, completeness, and best practices
+
+name: quality-review
+purpose: "Review plan quality, check completeness, and ensure best practices followed"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent performs review
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Plan follows best practices"
+    - "All sections complete and detailed"
+    - "No obvious gaps or issues"
+    - "Quality standards met"
+
+  on_failure:
+    - "Refine plan based on review"
+    - "Continue with noted issues"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - quality_assessment
+  - completeness_check
+  - best_practice_compliance
+  - identified_issues
+  - improvement_suggestions
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read all previous phase outputs
+
+  2. Check plan quality:
+     - Requirements are SMART (Specific, Measurable, Achievable, Relevant, Time-bound)
+     - Architecture follows project patterns
+     - Implementation steps are actionable
+     - Testing strategy is comprehensive
+     - Best practices followed
+
+  3. Check completeness:
+     - All requirements addressed
+     - No missing implementation steps
+     - Edge cases covered
+     - Error handling defined
+     - Documentation planned
+
+  4. Identify issues and improvements:
+     - Critical issues (must fix)
+     - Warnings (should consider)
+     - Suggestions (nice to have)
+
+  5. Create deliverable: `quality-review.md`
+
+  **Example quality-review.md:**
+  ```markdown
+  # Quality Review: [Plan Name]
+
+  ## Overall Assessment
+  [Summary of plan quality]
+
+  ## Critical Issues
+  - [ ] Issue 1: [Description and fix needed]
+  - [ ] Issue 2: [Description and fix needed]
+
+  ## Warnings
+  - [ ] Warning 1: [Description and recommendation]
+  - [ ] Warning 2: [Description and recommendation]
+
+  ## Suggestions
+  - Suggestion 1: [Description]
+  - Suggestion 2: [Description]
+
+  ## Best Practices Check
+  - [x] Follows project conventions
+  - [x] Error handling defined
+  - [ ] Performance considerations (missing)
+  - [x] Accessibility included
+
+  ## Completeness Check
+  - [x] All requirements addressed
+  - [x] Implementation steps complete
+  - [x] Testing strategy defined
+  - [ ] Documentation plan (needs detail)
+
+  ## Recommendation
+  [Ready to finalize / Needs refinement / Major issues]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

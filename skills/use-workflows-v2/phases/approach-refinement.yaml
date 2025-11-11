@@ -1,0 +1,175 @@
+# Phase: Approach Refinement (v5)
+# Refine the chosen approach with detailed implementation plan
+
+name: approach-refinement
+purpose: "Select the best approach based on validated assumptions and refine it with specific files, technical challenges, and validation strategy"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []
+  conditional:
+    complex:
+      - architecture-specialist
+
+subagent_configs:
+  architecture-specialist:
+    task_agent_type: "architecture-specialist"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Provide detailed architectural design and implementation sequencing for the chosen
+      approach, identifying specific files to modify/create, technical challenges, and
+      validation strategies.
+
+    instructions: |
+      1. Read the chosen approach from Task prompt
+      2. Identify specific files to modify or create
+      3. List technical challenges and solutions
+      4. Define validation strategy (tests, checks)
+      5. Sequence implementation steps with dependencies
+      6. Document in structured format
+
+    scope_specific:
+      frontend: |
+        **Focus on:**
+        - Vue component architecture
+        - State management with Nanostores
+        - Composable design
+        - Tailwind styling approach
+        - SSR considerations
+
+      backend: |
+        **Focus on:**
+        - Appwrite integration architecture
+        - API route design
+        - Database schema design
+        - Authentication flow
+        - Error handling strategy
+
+      both: |
+        **Focus on:**
+        - Full-stack integration architecture
+        - API contract design
+        - Type sharing strategy
+        - Data flow architecture
+        - Authentication coordination
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["approaches-revised.json"]
+        description: "Revised approaches after assumption validation"
+
+    outputs:
+      - file: refined-approach.md
+        schema: output_templates/architecture.md.tmpl
+        required: true
+        description: "Detailed implementation plan for chosen approach"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Specific files identified for chosen approach"
+    - "Technical challenges listed with solutions"
+    - "Validation strategy defined"
+    - "Implementation steps sequenced"
+
+  on_failure:
+    - "Add more detail to refinement"
+    - "Continue with current level"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - refined_implementation_plan
+  - specific_files_to_modify
+  - technical_challenges
+  - validation_strategy
+  - implementation_sequence
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read `approaches-revised.json` and `assumptions-validated.json`
+
+  2. Select the best approach based on:
+     - Validated assumptions
+     - Complexity vs benefit
+     - Leverage of existing code
+     - Risk assessment
+
+  3. If complexity is simple/moderate: Refine approach yourself
+     If complexity is complex: Spawn architecture-specialist subagent
+
+  4. Create detailed refinement including:
+     - **Chosen Approach:** Name and rationale
+     - **Specific Files:**
+       - Files to create (with purpose)
+       - Files to modify (with changes)
+       - Files to reuse (with how)
+     - **Technical Challenges:**
+       - Challenge description
+       - Proposed solution
+       - Risk level
+     - **Validation Strategy:**
+       - Tests to write
+       - Manual checks
+       - Integration points to verify
+     - **Implementation Sequence:**
+       - Step-by-step with dependencies
+       - Estimated time per step
+
+  5. Output to `refined-approach.md`
+
+  **Example structure:**
+  ```markdown
+  # Refined Approach: [Name]
+
+  ## Rationale
+  [Why this approach was chosen]
+
+  ## Files to Modify
+  - `src/components/Auth.vue` - Add OAuth button
+  - `src/stores/userStore.ts` - Add OAuth state
+
+  ## Files to Create
+  - `src/composables/useOAuth.ts` - OAuth integration logic
+
+  ## Technical Challenges
+  1. **Challenge:** OAuth redirect handling
+     **Solution:** Use Appwrite OAuth SDK
+     **Risk:** Medium
+
+  ## Validation Strategy
+  - [ ] Unit tests for useOAuth composable
+  - [ ] Integration test for full OAuth flow
+  - [ ] Manual test with Google OAuth
+
+  ## Implementation Sequence
+  1. Create useOAuth composable (30min)
+  2. Update userStore (15min)
+  3. Modify Auth component (20min)
+  4. Write tests (30min)
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

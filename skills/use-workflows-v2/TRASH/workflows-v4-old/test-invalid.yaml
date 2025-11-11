@@ -1,0 +1,29 @@
+name: test-invalid-workflow
+description: Test workflow with intentional errors for validation testing
+estimated_time: 30 minutes
+estimated_tokens: 10K
+
+phases:
+  - discovrey    # Typo - should be 'discovery'
+  - design
+  - validaton    # Typo - should be 'validation'
+
+subagent_matrix:
+  discovrey:
+    always:
+      - code-scoot     # Typo - should be 'code-scout'
+  design:
+    always:
+      - architecture-specialist
+  validaton:
+    always:
+      - feasibility-validator
+
+checkpoints:
+  - after: synthesis   # Invalid - phase doesn't exist in phases array
+    prompt: "Review synthesis"
+    options:
+      - "Continue"
+      - "Abort"
+
+template: templates/nonexistent.md.tmpl

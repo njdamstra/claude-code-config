@@ -1,0 +1,95 @@
+# Refactoring Plan Workflow (v5)
+# Systematic refactoring with safety validation
+
+name: refactoring-plan
+description: "Systematic refactoring including discovery, analysis, planning, synthesis, and validation"
+estimated_time: "20-60 minutes"
+estimated_tokens: "20K-80K"
+complexity: "moderate"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Discovery
+  - name: discovery
+    scope: "{{workflow_scope}}"
+    inputs: []
+
+  # Phase 2: Analysis
+  - name: analysis
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase context for refactoring analysis"
+
+  # Phase 3: Planning
+  - name: planning
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase patterns"
+      - from: analysis
+        files: [refactoring-analysis.json]
+        context_description: "Refactoring analysis findings"
+
+  # Phase 4: Synthesis
+  - name: synthesis
+    scope: default
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase context"
+      - from: analysis
+        files: [refactoring-analysis.json]
+        context_description: "Analysis findings"
+      - from: planning
+        files: [refactoring-plan.md]
+        context_description: "Execution plan"
+
+  # Phase 5: Validation
+  - name: validation
+    scope: default
+    inputs:
+      - from: synthesis
+        files: [synthesis.md]
+        context_description: "Consolidated plan"
+      - from: planning
+        files: [refactoring-plan.md]
+        context_description: "Refactoring plan to validate"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: analysis
+    prompt: "Review refactoring analysis before creating plan"
+    show_files:
+      - "refactoring-analysis.json"
+    options:
+      - "Continue to planning"
+      - "Refine analysis"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review refactoring plan before implementation"
+    show_files:
+      - "refactoring-plan.md"
+      - "safety.json"
+      - "scope.json"
+    options:
+      - "Finalize plan"
+      - "Revise plan"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

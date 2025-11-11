@@ -1,0 +1,133 @@
+# Plan Writing Workflow (v5)
+# Structured plan writing with requirements, design, implementation, testing, and quality review
+
+name: plan-writing-workflow
+description: "Comprehensive plan writing workflow from initialization through finalization"
+estimated_time: "30-60 minutes"
+estimated_tokens: "30K-80K"
+complexity: "moderate"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Plan Init
+  - name: plan-init
+    scope: default
+    inputs: []
+
+  # Phase 2: Requirements
+  - name: requirements
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: plan-init
+        files: [plan-init.md]
+        context_description: "Initial plan context and requirements"
+
+  # Phase 3: Design
+  - name: design
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements to design for"
+
+  # Phase 4: Implementation
+  - name: implementation
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: design
+        files: [architecture.md]
+        context_description: "Architecture to implement"
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements context"
+
+  # Phase 5: Testing
+  - name: testing
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements to test"
+      - from: design
+        files: [architecture.md]
+        context_description: "Architecture context"
+      - from: implementation
+        files: [implementation-sequence.md]
+        context_description: "Implementation details"
+
+  # Phase 6: Quality Review
+  - name: quality-review
+    scope: default
+    inputs:
+      - from: plan-init
+        files: [plan-init.md]
+        context_description: "Plan context"
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements"
+      - from: design
+        files: [architecture.md]
+        context_description: "Design"
+      - from: implementation
+        files: [implementation-sequence.md]
+        context_description: "Implementation plan"
+      - from: testing
+        files: [testing-strategy.md]
+        context_description: "Testing strategy"
+
+  # Phase 7: Finalization
+  - name: finalization
+    scope: default
+    inputs:
+      - from: plan-init
+        files: [plan-init.md]
+        context_description: "Plan context"
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements"
+      - from: design
+        files: [architecture.md]
+        context_description: "Design"
+      - from: implementation
+        files: [implementation-sequence.md]
+        context_description: "Implementation"
+      - from: testing
+        files: [testing-strategy.md]
+        context_description: "Testing"
+      - from: quality-review
+        files: [quality-review.md]
+        context_description: "Quality review results"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: design
+    prompt: "Review technical design before proceeding to implementation planning"
+    show_files:
+      - "architecture.md"
+    options:
+      - "Continue to implementation"
+      - "Refine design"
+      - "Abort"
+
+  - after: quality-review
+    prompt: "Review quality assessment before finalizing plan"
+    show_files:
+      - "quality-review.md"
+    options:
+      - "Continue to finalization"
+      - "Address issues first"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

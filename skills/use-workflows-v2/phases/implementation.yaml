@@ -1,0 +1,102 @@
+# Phase: Implementation (v5)
+# Define implementation approach and sequencing
+
+name: implementation
+purpose: "Define implementation approach, break down steps, and sequence with dependencies"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - implementation-sequencer
+  conditional: {}
+
+subagent_configs:
+  implementation-sequencer:
+    task_agent_type: "implementation-sequencer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Sequence implementation steps with dependencies and create detailed
+      execution plan.
+
+    instructions: |
+      1. Break down architecture into actionable steps
+      2. Identify dependencies between steps
+      3. Sequence steps for efficient execution
+      4. Define per-step acceptance criteria
+      5. Estimate effort for each step
+
+    scope_specific:
+      frontend: |
+        **Implementation sequencing:**
+        1. Core component development
+        2. Composable creation
+        3. State management integration
+        4. Routing and navigation
+        5. Styling and polish
+
+      backend: |
+        **Implementation sequencing:**
+        1. Database schema creation
+        2. Function development
+        3. API route implementation
+        4. Authentication integration
+        5. Testing and validation
+
+      both: |
+        **Full-stack sequencing:**
+        1. Backend foundation (schema, functions)
+        2. API routes and contracts
+        3. Frontend components
+        4. Integration and data flow
+        5. End-to-end testing
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["architecture.md", "requirements.json"]
+        description: "Architecture design and requirements"
+
+    outputs:
+      - file: implementation-sequence.md
+        schema: output_templates/implementation-sequence.md
+        required: true
+        description: "Sequenced implementation steps with dependencies"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Steps are actionable and well-defined"
+    - "Dependencies identified and sequenced"
+    - "Acceptance criteria per step"
+
+  on_failure:
+    - "Refine implementation sequence"
+    - "Continue with warnings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - implementation_steps
+  - step_dependencies
+  - execution_sequence
+  - acceptance_criteria
+  - effort_estimates
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

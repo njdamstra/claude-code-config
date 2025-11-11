@@ -1,6 +1,6 @@
 ---
 arguement-hint: [description]
-description: use doc-research skill to get answers from official docs
+description: use external-research skill to get answers from official docs
 ---
 
-Invoke the doc-research skill
+Invoke the external-research (External Research) skill

@@ -1,0 +1,188 @@
+# Task Context for architecture-specialist
+
+You are designing the technical architecture for **{{feature_name}}**.
+
+**Workflow:** plan-writing-workflow (design phase)
+**Scope:** {{scope}}
+
+## Your Task
+
+Design comprehensive technical architecture:
+1. Component architecture and hierarchy
+2. Data flow diagrams
+3. API contracts and interfaces
+4. State management strategy
+5. File organization plan
+
+## Input Context
+
+Read outputs from previous phases:
+- `.temp/{{output_dir}}/requirements.json` - Requirements and user stories
+
+And from investigation workflow (if available):
+- `.temp/{{feature_name}}-investigation/refined-approach.md` - Selected approach
+- `.temp/{{feature_name}}-investigation/codebase.json` - Codebase patterns
+
+Design an architecture that meets all requirements and follows codebase patterns.
+
+## Output Deliverable
+
+Write your findings to: `.temp/{{output_dir}}/architecture.json`
+
+### Expected Format
+
+```json
+{
+  "architecture_overview": {
+    "description": "High-level architecture explanation",
+    "diagram": "Text-based architecture diagram (ASCII or description)",
+    "design_decisions": [
+      {
+        "decision": "What was decided",
+        "rationale": "Why this decision was made",
+        "alternatives_considered": ["Alternative 1", "Alternative 2"]
+      }
+    ]
+  },
+  "component_hierarchy": {
+    "description": "How components are organized",
+    "components": [
+      {
+        "name": "ComponentName",
+        "type": "Page|Layout|Feature|UI|Utility",
+        "path": "src/components/ComponentName.vue",
+        "children": ["ChildComponent1", "ChildComponent2"],
+        "props": [
+          {
+            "name": "propName",
+            "type": "string|number|boolean|object|array",
+            "required": true,
+            "description": "Purpose of this prop"
+          }
+        ],
+        "emits": [
+          {
+            "event": "eventName",
+            "payload": "Type of payload",
+            "description": "When this is emitted"
+          }
+        ]
+      }
+    ]
+  },
+  "data_flow": {
+    "description": "Complete data flow explanation",
+    "flows": [
+      {
+        "name": "Flow name (e.g., 'User Login Flow')",
+        "steps": [
+          {
+            "step": 1,
+            "action": "What happens",
+            "component": "Where it happens",
+            "data_transformation": "How data changes"
+          }
+        ]
+      }
+    ]
+  },
+  "state_management": {
+    "approach": "Nanostore|Vue Reactive|Appwrite|Hybrid",
+    "rationale": "Why this approach was chosen",
+    "stores": [
+      {
+        "name": "StoreName",
+        "type": "atom|map|computed|persistent|BaseStore",
+        "purpose": "What state this manages",
+        "file_path": "src/stores/StoreName.ts",
+        "schema": "Zod schema or TypeScript type"
+      }
+    ],
+    "data_synchronization": "How state stays in sync across components"
+  },
+  "api_contracts": [
+    {
+      "endpoint": "/api/endpoint",
+      "method": "GET|POST|PUT|DELETE|PATCH",
+      "purpose": "What this API does",
+      "request": {
+        "schema": "Zod schema definition",
+        "example": {}
+      },
+      "response": {
+        "schema": "Zod schema definition",
+        "example": {}
+      },
+      "authentication": "required|optional|none",
+      "rate_limiting": "Rate limit rules if applicable"
+    }
+  ],
+  "file_organization": {
+    "structure": "Directory structure explanation",
+    "new_files": [
+      {
+        "path": "src/path/to/file.ts",
+        "type": "component|composable|store|utility|type|route",
+        "purpose": "Why this file exists",
+        "key_exports": ["export1", "export2"]
+      }
+    ],
+    "modified_files": [
+      {
+        "path": "src/path/to/existing.ts",
+        "modifications": "What changes are needed"
+      }
+    ]
+  },
+  "technical_design_notes": [
+    "Important design consideration or pattern to follow"
+  ]
+}
+```
+
+## Scope-Specific Focus
+
+{{#if_frontend}}
+Frontend design:
+- Vue 3 Composition API patterns
+- Component composition and slots
+- Composable design (VueUse patterns)
+- Nanostore integration
+- Tailwind CSS patterns
+- Responsive design approach
+- Accessibility considerations
+- Client directives for SSR (client:load, client:visible)
+{{/if_frontend}}
+
+{{#if_backend}}
+Backend design:
+- Appwrite serverless function structure
+- Database collection schemas
+- Permission rules
+- Authentication patterns
+- Server-side validation
+- Error handling patterns
+{{/if_backend}}
+
+{{#if_both}}
+Full-stack design:
+- API contracts between frontend/backend
+- Type sharing strategy
+- Data synchronization
+- SSR patterns
+- Authentication flow
+- Error handling end-to-end
+- Real-time updates (if applicable)
+{{/if_both}}
+
+## Success Criteria
+
+- Architecture is comprehensive and detailed
+- Component hierarchy is clear with props/emits
+- Data flow is documented with all transformations
+- State management approach is well-justified
+- API contracts are complete with schemas
+- File organization follows project conventions
+- All design decisions have rationale
+- JSON is valid and complete
+- No hallucinated file paths or components

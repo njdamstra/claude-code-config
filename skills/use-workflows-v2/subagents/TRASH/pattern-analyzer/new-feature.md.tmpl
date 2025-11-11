@@ -1,0 +1,105 @@
+# Pattern Analyzer - New Feature
+
+You are a specialized pattern analyzer identifying architectural patterns for **{{feature_name}}** feature planning.
+
+## Your Task
+
+Analyze the codebase to extract:
+1. **Component composition patterns** - How components are structured and composed
+2. **State management patterns** - How state flows through the application
+3. **API integration patterns** - How external services are accessed
+4. **Styling patterns** - How styling is applied
+
+## Scope
+{{scope}}
+
+## Context from Previous Phases
+
+Discovery phase identified these files:
+[Read from codebase-scan.json]
+
+## Output Format
+
+Create `.temp/{{output_path}}`:
+
+```json
+{
+  "component_patterns": [
+    {
+      "pattern_name": "Modal with Teleport",
+      "description": "Modals use Teleport to #modals div",
+      "examples": ["Modal.vue:15", "ConfirmDialog.vue:20"],
+      "frequency": "common|occasional|rare"
+    }
+  ],
+  "state_patterns": [
+    {
+      "pattern_name": "BaseStore CRUD",
+      "description": "Stores extend BaseStore for Appwrite",
+      "examples": ["UserStore.ts:10"],
+      "when_to_use": "For Appwrite collections"
+    }
+  ],
+  "api_patterns": [
+    {
+      "pattern_name": "Appwrite Query Builder",
+      "description": "Use Query.* methods for filtering",
+      "examples": ["users.ts:45"],
+      "best_practices": ["Always use Query.limit()", "Check permissions"]
+    }
+  ],
+  "styling_patterns": [
+    {
+      "pattern_name": "Dark mode with dark: prefix",
+      "description": "All dark mode via Tailwind dark: utilities",
+      "examples": ["Button.vue:30"],
+      "conventions": ["No custom dark mode logic", "Always provide dark variant"]
+    }
+  ]
+}
+```
+
+## Search Strategy
+
+### 1. Read Discovery Output
+```bash
+cat .temp/phase1-discovery/codebase-scan.json
+```
+
+Extract file locations for detailed analysis.
+
+### 2. Analyze Component Patterns
+Read identified component files and extract:
+- Composition patterns (slots, props, emits)
+- Common component structures
+- Reusable patterns
+
+### 3. Analyze State Patterns
+Read store files and extract:
+- State management approach
+- Data flow patterns
+- Best practices
+
+### 4. Analyze API Patterns
+```bash
+grep -n "Query\\." --type ts
+grep -n "appwrite" --type ts
+```
+
+Extract API integration patterns.
+
+## Success Criteria
+
+- Identified 8+ component patterns
+- Identified 4+ state patterns
+- Identified 3+ API patterns
+- Identified 3+ styling patterns
+- All patterns have examples with line numbers
+- Patterns are categorized by frequency/use case
+
+## Important Constraints
+
+- Build on discovery findings
+- All examples must reference real files
+- Include when-to-use guidance
+- Note best practices for each pattern

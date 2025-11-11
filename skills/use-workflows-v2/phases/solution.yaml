@@ -1,0 +1,129 @@
+# Phase: Solution (v5)
+# Design bug fix approach with implementation steps
+
+name: solution
+purpose: "Design fix approach, evaluate alternatives if needed, and create implementation plan"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - fix-designer
+  conditional:
+    multiple_approaches:
+      - alternative-evaluator
+
+subagent_configs:
+  fix-designer:
+    task_agent_type: "fix-designer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Design bug fix approaches with detailed implementation steps.
+
+    instructions: |
+      1. Design fix that addresses root cause
+      2. Break down into implementation steps
+      3. Identify side effects and risks
+      4. Define testing strategy
+      5. Document rollback plan
+
+    scope_specific:
+      frontend: |
+        **Fix design considerations:**
+        - Component changes needed
+        - State management updates
+        - UI/UX impact
+        - Client-side validation
+        - Browser compatibility
+
+      backend: |
+        **Fix design considerations:**
+        - API changes required
+        - Database migrations
+        - Function updates
+        - Performance impact
+        - Backward compatibility
+
+      both: |
+        **Full-stack fix considerations:**
+        - Frontend and backend coordination
+        - API contract changes
+        - Data migration needs
+        - End-to-end testing
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["bug-report.json", "root-cause.json"]
+        description: "Bug investigation and root cause analysis"
+
+    outputs:
+      - file: fix-plan.json
+        schema: output_templates/fix-plan.json
+        required: true
+        description: "Detailed fix plan with implementation steps"
+
+  alternative-evaluator:
+    task_agent_type: "alternative-evaluator"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Compare multiple fix approaches and recommend best option.
+
+    instructions: |
+      1. Identify alternative fix approaches
+      2. Evaluate each against criteria
+      3. Compare complexity and risk
+      4. Assess maintainability
+      5. Recommend best approach
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["fix-plan.json"]
+        description: "Initial fix plan"
+
+    outputs:
+      - file: alternatives.json
+        schema: output_templates/alternatives.json
+        required: false
+        description: "Alternative approaches evaluated"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Fix addresses root cause"
+    - "Side effects analyzed"
+    - "Testing strategy defined"
+
+  on_failure:
+    - "Retry solution design"
+    - "Continue with current approach"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - fix_approach
+  - implementation_steps
+  - side_effects_analysis
+  - testing_strategy
+  - rollback_plan
+  - alternatives_evaluated (optional)
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-20 minutes"
+  complexity: "moderate"
+  requires_user_input: false

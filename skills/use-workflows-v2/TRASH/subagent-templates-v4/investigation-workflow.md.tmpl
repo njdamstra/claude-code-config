@@ -1,0 +1,143 @@
+# Task Context for architecture-specialist
+
+You are creating a detailed implementation strategy for **{{feature_name}}**.
+
+**Workflow:** investigation-workflow (approach-refinement phase)
+**Scope:** {{scope}}
+
+## Your Task
+
+Design a detailed implementation strategy for the selected approach:
+1. Component architecture and structure
+2. Data flow and state management
+3. API contracts (if applicable)
+4. File organization strategy
+5. Technical challenges and solutions
+
+## Input Context
+
+Read outputs from previous phases:
+- `.temp/{{feature_name}}-investigation/problem.md` - Problem statement
+- `.temp/{{feature_name}}-investigation/codebase.json` - Codebase research
+- `.temp/{{feature_name}}-investigation/research.md` - External research
+- `.temp/{{feature_name}}-investigation/approaches.json` - Selected approach
+
+Focus on the approach the user selected for deep dive.
+
+## Output Deliverable
+
+Write your findings to: `.temp/{{output_dir}}/architecture.json`
+
+### Expected Format
+
+```json
+{
+  "architecture_overview": {
+    "description": "High-level architecture explanation",
+    "diagram": "Text-based architecture diagram or description",
+    "key_components": [
+      {
+        "name": "Component name",
+        "type": "Component|Composable|Store|Utility|Route|Page",
+        "responsibility": "What this component does",
+        "file_path": "src/path/to/component.ts"
+      }
+    ]
+  },
+  "data_flow": {
+    "description": "How data flows through the system",
+    "steps": [
+      {
+        "step": 1,
+        "action": "What happens",
+        "location": "Where it happens (component/file)"
+      }
+    ]
+  },
+  "state_management": {
+    "approach": "Nanostore|Vue Reactive|Appwrite|Hybrid",
+    "stores": [
+      {
+        "name": "StoreName",
+        "type": "atom|map|computed|persistent|BaseStore",
+        "purpose": "What state this manages",
+        "file_path": "src/stores/StoreName.ts"
+      }
+    ]
+  },
+  "api_contracts": [
+    {
+      "endpoint": "/api/endpoint",
+      "method": "GET|POST|PUT|DELETE",
+      "request_schema": "Zod schema or type",
+      "response_schema": "Zod schema or type",
+      "purpose": "What this API does"
+    }
+  ],
+  "file_organization": {
+    "new_files": [
+      {
+        "path": "src/path/to/file.ts",
+        "type": "component|composable|store|utility|type",
+        "purpose": "Why this file is needed"
+      }
+    ],
+    "modified_files": [
+      {
+        "path": "src/path/to/existing.ts",
+        "changes": "What needs to be modified"
+      }
+    ]
+  },
+  "technical_challenges": [
+    {
+      "challenge": "Description of challenge",
+      "complexity": "low|medium|high",
+      "solution_approach": "How to address this",
+      "fallback": "Alternative if primary approach fails"
+    }
+  ]
+}
+```
+
+## Scope-Specific Focus
+
+{{#if_frontend}}
+Frontend architecture:
+- Vue component structure and composition
+- Props/emits design
+- Composable usage (VueUse patterns)
+- State management with nanostores
+- Tailwind styling approach
+- Client-side routing
+{{/if_frontend}}
+
+{{#if_backend}}
+Backend architecture:
+- Appwrite function structure
+- Database collection design
+- API endpoint organization
+- Authentication/authorization flow
+- Server-side validation with Zod
+{{/if_backend}}
+
+{{#if_both}}
+Full-stack architecture:
+- Frontend/backend integration points
+- API contract definitions
+- Data synchronization patterns
+- SSR considerations
+- Authentication flow end-to-end
+- Type sharing between client/server
+{{/if_both}}
+
+## Success Criteria
+
+- Architecture is well-defined and detailed
+- Data flow is clearly documented with steps
+- State management approach is specific
+- API contracts are complete (if applicable)
+- File organization is clear and follows conventions
+- Technical challenges have solutions
+- All file paths are realistic (no hallucinations)
+- JSON is valid and complete

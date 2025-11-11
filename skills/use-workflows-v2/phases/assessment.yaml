@@ -1,0 +1,100 @@
+# Phase: Assessment (v5)
+# Assess current performance, quality, and identify improvement opportunities
+
+name: assessment
+purpose: "Assess current state including performance, quality, UX, and identify optimization opportunities"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - performance-assessor
+  conditional: {}
+
+subagent_configs:
+  performance-assessor:
+    task_agent_type: "performance-assessor"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Comprehensive performance and quality assessment including baseline
+      profiling, bottleneck identification, and opportunity scanning.
+
+    instructions: |
+      1. Establish performance baseline
+      2. Identify bottlenecks and hot paths
+      3. Scan for optimization opportunities
+      4. Analyze UX and user experience
+      5. Check code quality metrics
+
+    scope_specific:
+      frontend: |
+        **Assess:**
+        - Page load times
+        - Component render performance
+        - Bundle size and splitting
+        - Client-side caching
+        - Animation smoothness
+        - Accessibility issues
+
+      backend: |
+        **Assess:**
+        - API response times
+        - Database query performance
+        - Function execution duration
+        - Resource utilization
+        - Caching effectiveness
+        - Scalability concerns
+
+      both: |
+        **Full-stack assessment:**
+        - End-to-end request flow
+        - Data transfer efficiency
+        - State synchronization overhead
+        - Overall user experience
+
+    inputs_to_read: []  # First phase, no inputs
+
+    outputs:
+      - file: performance-assessment.json
+        schema: output_templates/performance-assessment.json
+        required: true
+        description: "Comprehensive performance and quality assessment"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Baseline metrics established"
+    - "Bottlenecks identified"
+    - "Opportunities documented"
+
+  on_failure:
+    - "Retry assessment with more depth"
+    - "Continue with partial data"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - baseline_metrics
+  - identified_bottlenecks
+  - optimization_opportunities
+  - ux_analysis
+  - quality_metrics
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-20 minutes"
+  complexity: "moderate"
+  requires_user_input: false

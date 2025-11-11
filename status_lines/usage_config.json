@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "database_path": "~/.claude/data/usage_tracking.db",
+  "subscription_tier": "auto",
+  "display_format": "full",
+  "color_coding": true,
+  "tier_limits": {
+    "pro": {
+      "weekly_hours_min": 40,
+      "weekly_hours_max": 80,
+      "display_limit": 40
+    },
+    "max_5x": {
+      "weekly_hours_min": 140,
+      "weekly_hours_max": 280,
+      "display_limit": 140
+    },
+    "max_20x": {
+      "weekly_hours_min": 400,
+      "weekly_hours_max": 800,
+      "display_limit": 400
+    }
+  },
+  "reset_cycles": {
+    "short_cycle_hours": 5,
+    "weekly_days": 7
+  }
+}

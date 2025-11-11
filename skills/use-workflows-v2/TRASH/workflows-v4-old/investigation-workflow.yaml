@@ -1,0 +1,149 @@
+name: investigation-workflow
+description: Balanced investigation with codebase + external research and user checkpoints
+estimated_time: 20-40 minutes
+estimated_tokens: 20K-60K
+complexity: moderate
+
+phases:
+  - problem-understanding
+  - codebase-investigation
+  - external-research
+  - solution-synthesis
+  - introspection
+  - approach-refinement
+
+subagent_matrix:
+  problem-understanding:
+    always: []  # Main agent conversation
+    conditional: {}
+
+  codebase-investigation:
+    always:
+      - code-researcher
+    conditional: {}
+
+  external-research:
+    always: []  # Main agent uses external-research skill
+    conditional: {}
+
+  solution-synthesis:
+    always: []  # Main agent synthesizes findings
+    conditional: {}
+
+  introspection:
+    always:
+      - code-qa
+    conditional: {}
+
+  approach-refinement:
+    always: []
+    conditional:
+      complex:
+        - architecture-specialist
+
+subagent_outputs:
+  codebase-investigation:
+    code-researcher: codebase-analysis.json
+  introspection:
+    code-qa: assumptions-validated.json
+  approach-refinement:
+    architecture-specialist: refined-approach.md
+
+gap_checks:
+  problem-understanding:
+    criteria:
+      - "Problem is clearly defined"
+      - "Success criteria are documented"
+      - "Constraints are understood"
+      - "User has confirmed understanding"
+    on_failure:
+      - "Refine problem statement"
+      - "Continue anyway"
+      - "Abort workflow"
+
+  codebase-investigation:
+    criteria:
+      - "At least 5 patterns identified"
+      - "Dependencies mapped"
+      - "Integration points documented"
+      - "All file paths are real (no hallucination)"
+    on_failure:
+      - "Retry codebase investigation with refined scope"
+      - "Continue with current findings"
+      - "Abort workflow"
+
+  external-research:
+    criteria:
+      - "Best practices documented"
+      - "Framework patterns identified"
+      - "At least 2 external sources consulted"
+      - "Research findings are relevant"
+    on_failure:
+      - "Do additional research"
+      - "Continue with current findings"
+      - "Abort workflow"
+
+  solution-synthesis:
+    criteria:
+      - "2-3 approaches presented"
+      - "Each approach has pros and cons"
+      - "Risk assessment included"
+      - "Complexity rating provided"
+    on_failure:
+      - "Generate additional approaches"
+      - "Continue with current approaches"
+      - "Abort workflow"
+
+  introspection:
+    criteria:
+      - "All assumptions explicitly identified"
+      - "code-qa answered all questions with file:line citations"
+      - "Confidence ratings provided (High/Medium/Low)"
+      - "At least one assumption validated or invalidated"
+      - "Reusable code identified where assumptions were wrong"
+    on_failure:
+      - "Retry introspection with more questions"
+      - "Continue with original approaches"
+      - "Abort workflow"
+
+  approach-refinement:
+    criteria:
+      - "Specific files identified for chosen approach"
+      - "Technical challenges listed"
+      - "Validation strategy defined"
+    on_failure:
+      - "Add more detail to refinement"
+      - "Continue with current level"
+      - "Abort workflow"
+
+checkpoints:
+  - after: problem-understanding
+    prompt: "Confirm problem understanding before starting research"
+    show_files: []
+    options:
+      - "Proceed to research"
+      - "Refine problem statement"
+      - "Abort"
+
+  - after: introspection
+    prompt: "Review assumption validation and revised approaches"
+    show_files:
+      - "{{output_dir}}/approaches.json"
+      - "{{output_dir}}/phase-introspection/assumptions.json"
+      - "{{output_dir}}/approaches-revised.json"
+    options:
+      - "Continue with revised approach"
+      - "Need more introspection"
+      - "Revert to original approaches"
+      - "Abort"
+
+  - after: approach-refinement
+    prompt: "Review refined approach before moving to detailed planning"
+    show_files:
+      - "{{output_dir}}/refined-approach.md"
+    options:
+      - "Continue to plan-writing-workflow"
+      - "Refine further"
+      - "Abort"
+
+template: templates/investigation-workflow.md.tmpl

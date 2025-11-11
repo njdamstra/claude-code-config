@@ -1,0 +1,55 @@
+# Subagent: approach-validator
+# Workflow: debugging
+# Phase: validation
+
+## Your Task
+
+Validate the debugging approach for: **{{feature_name}}**
+
+Ensure the proposed fix actually addresses the root cause and won't introduce new issues.
+
+## Context
+
+Review:
+- **Root Cause:** `.temp/{{output_dir}}/phase-analysis/root-cause.json`
+- **Fix Plan:** `.temp/{{output_dir}}/phase-solution/fix-plan.json`
+
+## Validation Checks
+
+### 1. Root Cause Alignment
+- Does fix address identified root cause?
+- Are symptoms vs cause clearly separated?
+
+### 2. Completeness
+- Are all aspects of the bug addressed?
+- Are edge cases handled?
+
+### 3. Safety
+- Will fix introduce new bugs?
+- Are side effects acceptable?
+
+## Output Format
+
+Write to: `.temp/{{output_dir}}/approach.json`
+
+```json
+{
+  "bug_name": "{{feature_name}}",
+  "validated_at": "YYYY-MM-DD HH:MM:SS",
+  "validation_result": "approved" | "approved_with_concerns" | "needs_revision",
+  "root_cause_alignment": {
+    "addresses_root_cause": true,
+    "concerns": []
+  },
+  "completeness_check": {
+    "all_aspects_covered": true,
+    "missing_aspects": []
+  },
+  "safety_check": {
+    "introduces_new_bugs": false,
+    "acceptable_side_effects": true,
+    "concerns": []
+  },
+  "recommendations": []
+}
+```

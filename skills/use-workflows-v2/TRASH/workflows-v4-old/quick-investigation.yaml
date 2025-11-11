@@ -1,0 +1,70 @@
+name: quick-investigation
+description: Fast investigation with minimal overhead for clear problems
+estimated_time: 10-15 minutes
+estimated_tokens: 5K-20K
+complexity: simple
+
+phases:
+  - problem-understanding
+  - quick-research
+  - decision-finalization
+
+subagent_matrix:
+  problem-understanding:
+    always: []  # Main agent interaction only
+    conditional: {}
+
+  quick-research:
+    always: []  # Main agent uses skills directly (code-researcher, external-research)
+    conditional: {}
+
+  decision-finalization:
+    always: []  # Interactive decision-making with user
+    conditional: {}
+
+gap_checks:
+  problem-understanding:
+    criteria:
+      - "Problem is clearly defined"
+      - "Success criteria are documented"
+      - "Constraints are understood"
+      - "User has confirmed understanding"
+    on_failure:
+      - "Refine problem statement"
+      - "Continue anyway"
+      - "Abort workflow"
+
+  quick-research:
+    criteria:
+      - "At least 2 approaches identified"
+      - "Each approach has basic pros/cons"
+      - "Approaches are technically feasible"
+      - "Key files identified for each approach"
+    on_failure:
+      - "Do additional quick research"
+      - "Continue with current findings"
+      - "Abort workflow"
+
+  decision-finalization:
+    criteria:
+      - "User has selected an approach"
+      - "Decision is documented"
+      - "Next steps are clear"
+    on_failure:
+      - "Revisit approaches"
+      - "Need more research"
+      - "Abort workflow"
+
+checkpoints:
+  - after: decision-finalization
+    prompt: "Review selected approach and confirm before moving to planning"
+    show_files:
+      - "{{output_dir}}/findings.md"
+      - "{{output_dir}}/decision.json"
+    options:
+      - "Continue to quick-plan workflow"
+      - "Reconsider approach"
+      - "Need more research"
+      - "Abort"
+
+template: templates/quick-investigation.md.tmpl

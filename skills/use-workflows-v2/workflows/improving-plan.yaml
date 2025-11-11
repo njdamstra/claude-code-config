@@ -1,0 +1,80 @@
+# Improving Plan Workflow (v5)
+# Performance optimization workflow with baseline metrics and improvement planning
+
+name: improving-plan
+description: "Performance optimization including assessment, planning, synthesis, and validation"
+estimated_time: "20-60 minutes"
+estimated_tokens: "20K-80K"
+complexity: "moderate"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Assessment
+  - name: assessment
+    scope: "{{workflow_scope}}"
+    inputs: []
+
+  # Phase 2: Planning
+  - name: planning
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: assessment
+        files: [performance-assessment.json]
+        context_description: "Performance assessment findings for optimization planning"
+
+  # Phase 3: Synthesis
+  - name: synthesis
+    scope: default
+    inputs:
+      - from: assessment
+        files: [performance-assessment.json]
+        context_description: "Performance baseline and bottlenecks"
+      - from: planning
+        files: [optimization-plan.md]
+        context_description: "Optimization execution plan"
+
+  # Phase 4: Validation
+  - name: validation
+    scope: default
+    inputs:
+      - from: synthesis
+        files: [synthesis.md]
+        context_description: "Consolidated optimization plan"
+      - from: planning
+        files: [optimization-plan.md]
+        context_description: "Optimization plan to validate"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: assessment
+    prompt: "Review performance assessment before planning optimizations"
+    show_files:
+      - "performance-assessment.json"
+    options:
+      - "Continue to planning"
+      - "Refine assessment"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review optimization plan before implementation"
+    show_files:
+      - "optimization-plan.md"
+      - "roi.json"
+    options:
+      - "Finalize plan"
+      - "Revise plan"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

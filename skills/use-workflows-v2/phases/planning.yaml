@@ -1,0 +1,108 @@
+# Phase: Planning (v5)
+# Create detailed refactoring or optimization execution plan
+
+name: planning
+purpose: "Create detailed execution plan with sequencing, techniques, and safety measures"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []
+  conditional:
+    refactoring:
+      - refactoring-planner
+    optimization:
+      - optimization-planner
+
+subagent_configs:
+  refactoring-planner:
+    task_agent_type: "refactoring-planner"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Complete refactoring execution planning including sequencing,
+      techniques, testing, and risk mapping.
+
+    instructions: |
+      1. Sequence refactoring steps with dependencies
+      2. Select appropriate refactoring techniques
+      3. Define test-driven approach
+      4. Map risks for each step
+      5. Create rollback strategy
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["codebase.json", "refactoring-analysis.json"]
+        description: "Codebase patterns and refactoring analysis"
+
+    outputs:
+      - file: refactoring-plan.md
+        schema: output_templates/refactoring-plan.md
+        required: true
+        description: "Detailed refactoring execution plan"
+
+  optimization-planner:
+    task_agent_type: "optimization-planner"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Complete optimization execution planning including impact estimation,
+      verification, and rollout strategy.
+
+    instructions: |
+      1. Design optimization approaches
+      2. Estimate performance impact
+      3. Plan verification strategy
+      4. Define rollout phases
+      5. Create monitoring plan
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["performance-assessment.json"]
+        description: "Performance assessment findings"
+
+    outputs:
+      - file: optimization-plan.md
+        schema: output_templates/optimization-plan.md
+        required: true
+        description: "Detailed optimization execution plan"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Plan is sequenced with dependencies"
+    - "Techniques are appropriate"
+    - "Safety measures defined"
+    - "Rollback strategy included"
+
+  on_failure:
+    - "Refine planning"
+    - "Continue with warnings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - execution_plan
+  - step_sequencing
+  - technique_selection
+  - safety_measures
+  - rollback_strategy
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-25 minutes"
+  complexity: "moderate"
+  requires_user_input: false

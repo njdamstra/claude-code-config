@@ -1,0 +1,90 @@
+# Phase: Quick Research (v5)
+# Fast codebase investigation for straightforward problems
+
+name: quick-research
+purpose: "Quick codebase investigation to gather essential context for simple problems"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - file-locator
+  conditional: {}
+
+subagent_configs:
+  file-locator:
+    task_agent_type: "file-locator"
+    model: "haiku"  # Fast model for quick tasks
+    thoroughness: "quick"
+
+    responsibility: |
+      Quick file discovery and pattern identification for rapid workflows.
+
+    instructions: |
+      1. Locate relevant files quickly
+      2. Identify basic patterns
+      3. Document key findings
+      4. Skip deep analysis
+
+    scope_specific:
+      frontend: |
+        **Quick search:**
+        - Components directory
+        - Related composables
+        - Immediate dependencies
+
+      backend: |
+        **Quick search:**
+        - API routes
+        - Related functions
+        - Database access patterns
+
+      both: |
+        **Quick trace:**
+        - Frontend → Backend connection
+        - Key integration points
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["problem.md"]
+        description: "Problem definition"
+
+    outputs:
+      - file: files.json
+        schema: output_templates/files.json
+        required: true
+        description: "Located files and basic patterns"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Relevant files located"
+    - "Basic patterns identified"
+
+  on_failure:
+    - "Expand search scope"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - located_files
+  - basic_patterns
+  - integration_points
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "3-5 minutes"
+  complexity: "simple"
+  requires_user_input: false

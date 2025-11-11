@@ -1,0 +1,104 @@
+# Phase: Decision Finalization (v5)
+# Make final decision and document approach
+
+name: decision-finalization
+purpose: "Make final decision on approach and document it clearly"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent makes decision
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Decision is clear and documented"
+    - "Rationale provided"
+    - "Next steps defined"
+
+  on_failure:
+    - "Reconsider decision"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - final_decision
+  - decision_rationale
+  - next_steps
+  - action_items
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read all previous phase outputs
+
+  2. Make decision based on:
+     - Problem understanding
+     - Research findings
+     - Constraints and requirements
+     - Best practices
+
+  3. Document decision:
+     - What approach to take
+     - Why this approach
+     - What to do next
+     - Action items
+
+  4. Create deliverable: `decision.md`
+
+  **Example decision.md:**
+  ```markdown
+  # Decision: [Problem Name]
+
+  ## Chosen Approach
+  [Clear statement of decision]
+
+  ## Rationale
+  [Why this approach was chosen]
+  - Reason 1
+  - Reason 2
+  - Reason 3
+
+  ## Alternatives Considered
+  - Alternative 1: [Why not chosen]
+  - Alternative 2: [Why not chosen]
+
+  ## Next Steps
+  1. Step 1
+  2. Step 2
+  3. Step 3
+
+  ## Action Items
+  - [ ] Action 1
+  - [ ] Action 2
+  - [ ] Action 3
+
+  ## Risks
+  - Risk 1: [Mitigation]
+  - Risk 2: [Mitigation]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "5-8 minutes"
+  complexity: "simple"
+  requires_user_input: false

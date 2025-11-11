@@ -1,0 +1,256 @@
+#!/usr/bin/env bash
+
+# ============================================================================
+# Smoke Tests for use-workflows-v2
+# ============================================================================
+# Purpose: Quick smoke tests to verify critical functionality
+# ============================================================================
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Colors for output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# Test counters
+TESTS_RUN=0
+TESTS_PASSED=0
+TESTS_FAILED=0
+
+# Test helper functions
+assert_equals() {
+  local expected="$1"
+  local actual="$2"
+  local test_name="$3"
+  
+  TESTS_RUN=$((TESTS_RUN + 1))
+  
+  if [[ "$expected" == "$actual" ]]; then
+    echo -e "${GREEN}✓${NC} $test_name"
+    TESTS_PASSED=$((TESTS_PASSED + 1))
+    return 0
+  else
+    echo -e "${RED}✗${NC} $test_name"
+    echo "  Expected: $expected"
+    echo "  Actual:   $actual"
+    TESTS_FAILED=$((TESTS_FAILED + 1))
+    return 1
+  fi
+}
+
+assert_contains() {
+  local haystack="$1"
+  local needle="$2"
+  local test_name="$3"
+  
+  TESTS_RUN=$((TESTS_RUN + 1))
+  
+  if echo "$haystack" | grep -q "$needle"; then
+    echo -e "${GREEN}✓${NC} $test_name"
+    TESTS_PASSED=$((TESTS_PASSED + 1))
+    return 0
+  else
+    echo -e "${RED}✗${NC} $test_name"
+    echo "  Expected to find: $needle"
+    echo "  In: ${haystack:0:100}..."
+    TESTS_FAILED=$((TESTS_FAILED + 1))
+    return 1
+  fi
+}
+
+assert_file_exists() {
+  local file_path="$1"
+  local test_name="$2"
+  
+  TESTS_RUN=$((TESTS_RUN + 1))
+  
+  if [[ -f "$file_path" ]]; then
+    echo -e "${GREEN}✓${NC} $test_name"
+    TESTS_PASSED=$((TESTS_PASSED + 1))
+    return 0
+  else
+    echo -e "${RED}✗${NC} $test_name"
+    echo "  File not found: $file_path"
+    TESTS_FAILED=$((TESTS_FAILED + 1))
+    return 1
+  fi
+}
+
+# ============================================================================
+# Test Suite
+# ============================================================================
+
+echo "========================================"
+echo "Smoke Tests: use-workflows-v2"
+echo "========================================"
+echo
+
+# Test 1: workflow-helpers.sh functions
+echo "Test Group 1: workflow-helpers.sh"
+echo "-----------------------------------"
+
+source "$PROJECT_ROOT/lib/workflow-helpers.sh"
+
+# Test normalize_base_dir
+result=$(normalize_base_dir ".temp")
+assert_equals ".temp" "$result" "normalize_base_dir with default"
+
+result=$(normalize_base_dir "~/projects")
+expected="$HOME/projects"
+assert_equals "$expected" "$result" "normalize_base_dir with tilde"
+
+result=$(normalize_base_dir "/tmp/test/")
+assert_equals "/tmp/test" "$result" "normalize_base_dir trims trailing slash"
+
+# Test calculate_output_dir
+result=$(calculate_output_dir 1 "discovery")
+assert_equals "phase-01-discovery" "$result" "calculate_output_dir phase 1"
+
+result=$(calculate_output_dir 12 "validation")
+assert_equals "phase-12-validation" "$result" "calculate_output_dir phase 12"
+
+# Test build_phase_dirs
+phases_json='["discovery","requirements","design"]'
+result=$(build_phase_dirs "$phases_json" 1)
+assert_contains "$result" "discovery" "build_phase_dirs includes discovery"
+assert_contains "$result" "phase-01-discovery" "build_phase_dirs has correct format"
+
+echo
+
+# Test 2: Workflow YAML loading
+echo "Test Group 2: Workflow Loading"
+echo "-----------------------------------"
+
+workflow_path="$PROJECT_ROOT/workflows/new-feature-plan.yaml"
+assert_file_exists "$workflow_path" "new-feature-plan.yaml exists"
+
+if [[ -f "$workflow_path" ]]; then
+  # Check for subagent_outputs section
+  assert_contains "$(cat $workflow_path)" "subagent_outputs:" "Workflow has subagent_outputs section"
+  
+  # Check for conditional support
+  assert_contains "$(cat $workflow_path)" "conditional:" "Workflow has conditional section"
+fi
+
+echo
+
+# Test 3: Output templates exist
+echo "Test Group 3: Output Templates"
+echo "-----------------------------------"
+
+templates_dir="$PROJECT_ROOT/output_templates"
+assert_file_exists "$templates_dir/codebase-analysis.json.tmpl" "codebase-analysis template exists"
+assert_file_exists "$templates_dir/architecture.md.tmpl" "architecture template exists"
+assert_file_exists "$templates_dir/safety-check.json.tmpl" "safety-check template exists"
+assert_file_exists "$templates_dir/scope-assessment.json.tmpl" "scope-assessment template exists"
+assert_file_exists "$templates_dir/timing-analysis.json.tmpl" "timing-analysis template exists"
+
+echo
+
+# Test 4: Phase templates have enriched deliverables
+echo "Test Group 4: Phase Templates"
+echo "-----------------------------------"
+
+discovery_template="$PROJECT_ROOT/phases/discovery.md"
+assert_file_exists "$discovery_template" "discovery.md exists"
+
+if [[ -f "$discovery_template" ]]; then
+  content=$(cat "$discovery_template")
+  assert_contains "$content" "{{full_path}}" "Discovery template has {{full_path}}"
+  assert_contains "$content" "{{#has_template}}" "Discovery template has {{#has_template}}"
+  assert_contains "$content" "{{template_content}}" "Discovery template has {{template_content}}"
+  assert_contains "$content" "{{template_extension}}" "Discovery template has {{template_extension}}"
+  
+  # Ensure no .temp hardcoded paths
+  if echo "$content" | grep -q "\.temp/phase"; then
+    echo -e "${RED}✗${NC} Discovery template has hard-coded .temp paths"
+    TESTS_RUN=$((TESTS_RUN + 1))
+    TESTS_FAILED=$((TESTS_FAILED + 1))
+  else
+    echo -e "${GREEN}✓${NC} Discovery template has no hard-coded .temp paths"
+    TESTS_RUN=$((TESTS_RUN + 1))
+    TESTS_PASSED=$((TESTS_PASSED + 1))
+  fi
+fi
+
+echo
+
+# Test 5: Documentation updates
+echo "Test Group 5: Documentation"
+echo "-----------------------------------"
+
+phase_design_doc="$PROJECT_ROOT/PHASE_MODULE_DESIGN.md"
+assert_file_exists "$phase_design_doc" "PHASE_MODULE_DESIGN.md exists"
+
+if [[ -f "$phase_design_doc" ]]; then
+  content=$(cat "$phase_design_doc")
+  assert_contains "$content" "{{phase_paths" "PHASE_MODULE_DESIGN has phase_paths documentation"
+  assert_contains "$content" "Cross-Phase Path References" "PHASE_MODULE_DESIGN has cross-phase section"
+fi
+
+script_arch_doc="$PROJECT_ROOT/SCRIPT_ARCHITECTURE.md"
+assert_file_exists "$script_arch_doc" "SCRIPT_ARCHITECTURE.md exists"
+
+if [[ -f "$script_arch_doc" ]]; then
+  content=$(cat "$script_arch_doc")
+  assert_contains "$content" "workflow-helpers.sh" "SCRIPT_ARCHITECTURE documents workflow-helpers"
+  assert_contains "$content" "normalize_base_dir" "SCRIPT_ARCHITECTURE documents normalize_base_dir"
+fi
+
+skill_doc="$PROJECT_ROOT/SKILL.md"
+assert_file_exists "$skill_doc" "SKILL.md exists"
+
+if [[ -f "$skill_doc" ]]; then
+  content=$(cat "$skill_doc")
+  assert_contains "$content" "base-dir=" "SKILL.md documents --base-dir flag"
+  assert_contains "$content" "complexity=" "SKILL.md documents custom condition flags"
+fi
+
+echo
+
+# Test 6: Workflow scripts exist and are executable
+echo "Test Group 6: Workflow Scripts"
+echo "-----------------------------------"
+
+main_script="$PROJECT_ROOT/generate-workflow-instructions.sh"
+assert_file_exists "$main_script" "generate-workflow-instructions.sh exists"
+
+if [[ -x "$main_script" ]]; then
+  echo -e "${GREEN}✓${NC} generate-workflow-instructions.sh is executable"
+  TESTS_RUN=$((TESTS_RUN + 1))
+  TESTS_PASSED=$((TESTS_PASSED + 1))
+else
+  echo -e "${RED}✗${NC} generate-workflow-instructions.sh is not executable"
+  TESTS_RUN=$((TESTS_RUN + 1))
+  TESTS_FAILED=$((TESTS_FAILED + 1))
+fi
+
+phase_script="$PROJECT_ROOT/fetch-phase-details.sh"
+assert_file_exists "$phase_script" "fetch-phase-details.sh exists"
+
+echo
+
+# ============================================================================
+# Summary
+# ============================================================================
+
+echo "========================================"
+echo "Test Summary"
+echo "========================================"
+echo "Tests Run:    $TESTS_RUN"
+echo -e "${GREEN}Tests Passed: $TESTS_PASSED${NC}"
+
+if [[ $TESTS_FAILED -gt 0 ]]; then
+  echo -e "${RED}Tests Failed: $TESTS_FAILED${NC}"
+  echo
+  echo "Some tests failed. Please review the output above."
+  exit 1
+else
+  echo -e "${GREEN}All tests passed!${NC}"
+  exit 0
+fi

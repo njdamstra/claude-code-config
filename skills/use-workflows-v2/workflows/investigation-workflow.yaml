@@ -1,0 +1,115 @@
+# Investigation Workflow (v5)
+# Balanced investigation with codebase research + external research and user checkpoints
+
+name: investigation-workflow
+description: "Balanced investigation combining codebase research with external best practices research, including assumption validation and approach refinement"
+estimated_time: 20-40 minutes
+estimated_tokens: 20K-60K
+complexity: moderate
+
+# ==============================================================================
+# OUTPUT CONFIGURATION
+# ==============================================================================
+
+base_dir: ".temp"
+# Final output path: .temp/{feature-name}/phase-{N}-{phase-name}/
+
+# ==============================================================================
+# PHASE SEQUENCE
+# ==============================================================================
+
+phases:
+  # Phase 1: Problem Understanding
+  - name: problem-understanding
+    scope: default
+    inputs: []  # First phase, no inputs
+
+  # Phase 2: Codebase Investigation
+  - name: codebase-investigation
+    scope: "{{workflow_scope}}"  # Use --frontend/--backend/--both flag
+    inputs:
+      - from: problem-understanding
+        files: [problem.md, constraints.json]
+        context_description: "Problem definition and constraints to focus codebase research on relevant areas"
+
+  # Phase 3: External Research
+  - name: external-research
+    scope: default
+    inputs:
+      - from: problem-understanding
+        files: [problem.md]
+        context_description: "Problem context for research focus"
+      - from: codebase-investigation
+        files: [codebase-analysis.json]
+        context_description: "Codebase patterns to compare against external best practices"
+
+  # Phase 4: Solution Synthesis
+  - name: solution-synthesis
+    scope: default
+    inputs:
+      - from: codebase-investigation
+        files: [codebase-analysis.json]
+        context_description: "Internal patterns and conventions to respect"
+      - from: external-research
+        files: [best-practices.md]
+        context_description: "External best practices to incorporate"
+
+  # Phase 5: Introspection
+  - name: introspection
+    scope: default
+    inputs:
+      - from: solution-synthesis
+        files: [approaches.json]
+        context_description: "Approaches with embedded assumptions to validate against codebase"
+
+  # Phase 6: Approach Refinement
+  - name: approach-refinement
+    scope: default
+    inputs:
+      - from: introspection
+        files: [assumptions-validated.json, approaches-revised.json]
+        context_description: "Validated assumptions and revised approaches for final refinement"
+
+# ==============================================================================
+# USER APPROVAL GATES
+# ==============================================================================
+
+checkpoints:
+  # Checkpoint 1: After Problem Understanding
+  - after: problem-understanding
+    prompt: "Confirm problem understanding before starting research"
+    show_files: []
+    options:
+      - "Proceed to research"
+      - "Refine problem statement"
+      - "Abort"
+
+  # Checkpoint 2: After Introspection
+  - after: introspection
+    prompt: "Review assumption validation and revised approaches"
+    show_files:
+      - "approaches.json"
+      - "assumptions-validated.json"
+      - "approaches-revised.json"
+    options:
+      - "Continue with revised approach"
+      - "Need more introspection"
+      - "Revert to original approaches"
+      - "Abort"
+
+  # Checkpoint 3: After Approach Refinement
+  - after: approach-refinement
+    prompt: "Review refined approach before moving to detailed planning"
+    show_files:
+      - "refined-approach.md"
+    options:
+      - "Continue to plan-writing-workflow"
+      - "Refine further"
+      - "Abort"
+
+# ==============================================================================
+# SCOPE CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"
+# Replaced at runtime with --frontend, --backend, or --both flag

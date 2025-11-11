@@ -1,0 +1,105 @@
+# Phase: Discovery (v5)
+# Gather codebase context and identify existing patterns
+
+name: discovery
+purpose: "Search codebase for existing patterns, components, utilities, and integration points relevant to the task"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - code-researcher
+  conditional: {}
+
+subagent_configs:
+  code-researcher:
+    task_agent_type: "code-researcher"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Comprehensive codebase research to identify existing patterns, components,
+      utilities, and integration points that can be reused or extended.
+
+    instructions: |
+      1. Search for similar features or components
+      2. Identify reusable patterns and utilities
+      3. Map integration points and dependencies
+      4. Document existing architecture patterns
+      5. Note frontend and backend separation of concerns
+
+    scope_specific:
+      frontend: |
+        **Search locations:**
+        - src/components/ (Vue components)
+        - src/composables/ (Vue composables)
+        - src/stores/ (Nanostore state)
+        - src/utils/ (Utility functions)
+
+        **Document:**
+        - Component patterns
+        - State management patterns
+        - API client usage
+        - Routing patterns
+
+      backend: |
+        **Search locations:**
+        - functions/ (Appwrite functions)
+        - src/pages/api/ (Astro API routes)
+
+        **Document:**
+        - API endpoint patterns
+        - Authentication patterns
+        - Database access patterns
+        - Function invocation patterns
+
+      both: |
+        **Trace full-stack:**
+        - Frontend components → API routes → Backend functions
+        - State management → Data fetching → Database queries
+        - Authentication flow across stack
+
+    inputs_to_read: []  # First phase, no inputs
+
+    outputs:
+      - file: codebase.json
+        schema: output_templates/codebase-analysis.json
+        required: true
+        description: "Comprehensive codebase analysis with patterns, components, and integration points"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Codebase analysis complete"
+    - "Patterns and dependencies identified"
+    - "Integration points documented"
+
+  on_failure:
+    - "Retry discovery with refined scope"
+    - "Continue with gaps noted"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - existing_patterns
+  - reusable_components
+  - integration_points
+  - architecture_overview
+  - dependencies
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-20 minutes"
+  complexity: "moderate"
+  requires_user_input: false

@@ -1,0 +1,42 @@
+# Subagent: duplication-finder
+# Workflow: refactoring
+# Phase: analysis
+
+## Your Task
+Find duplicate code blocks in: **{{feature_name}}**
+
+## Search Strategy
+- Look for similar function implementations
+- Identify repeated code patterns
+- Find copy-pasted code blocks
+- Note near-duplicates (>80% similar)
+
+## Output Format
+Write to: `.temp/{{output_dir}}/duplications.json`
+
+```json
+{
+  "feature_name": "{{feature_name}}",
+  "analyzed_at": "YYYY-MM-DD HH:MM:SS",
+  "duplications": [
+    {
+      "similarity": 95,
+      "locations": [
+        {"file": "a.ts", "lines": "45-60"},
+        {"file": "b.ts", "lines": "120-135"}
+      ],
+      "duplicated_code_sample": "First few lines...",
+      "extraction_opportunity": {
+        "suggested_name": "extractedFunction",
+        "location": "utils/common.ts",
+        "estimated_loc_reduction": 30
+      }
+    }
+  ],
+  "summary": {
+    "total_duplications": 8,
+    "total_duplicate_lines": 240,
+    "potential_loc_reduction": "15%"
+  }
+}
+```

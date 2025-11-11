@@ -1,0 +1,35 @@
+# Subagent: impact-estimator
+# Workflow: improving
+# Phase: planning
+
+## Your Task
+Estimate improvement impact for: **{{feature_name}}**
+
+## Context
+Review: `.temp/{{output_dir}}/phase-planning/optimization-plan.json`
+
+## Impact Estimation
+- Before/after metrics
+- User benefit
+- Business value
+- ROI calculation
+
+## Output Format
+Write to: `.temp/{{output_dir}}/impact-estimates.json`
+
+```json
+{
+  "feature_name": "{{feature_name}}",
+  "estimated_at": "YYYY-MM-DD HH:MM:SS",
+  "before_after": {
+    "load_time": {"before": "1200ms", "after": "600ms", "improvement": "50%"},
+    "bundle_size": {"before": "450kb", "after": "380kb", "improvement": "15%"}
+  },
+  "user_benefit": "Significantly faster experience",
+  "business_value": "Reduced bounce rate, improved conversions",
+  "roi": {
+    "implementation_cost_hours": 16,
+    "expected_benefit": "High user satisfaction improvement"
+  }
+}
+```

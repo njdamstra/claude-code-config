@@ -1,0 +1,85 @@
+name: improving-plan
+description: Performance and UX optimization with measurable improvements
+estimated_time: 20-60 minutes
+estimated_tokens: 20K-80K
+complexity: moderate
+
+phases:
+  - assessment
+  - planning
+  - synthesis
+  - validation
+
+subagent_matrix:
+  assessment:
+    always:
+      - performance-assessor
+    conditional: {}
+
+  planning:
+    always:
+      - optimization-planner
+    conditional: {}
+
+  synthesis:
+    always: []  # Main agent consolidates all findings
+
+  validation:
+    always:
+      - roi-validator
+      - feasibility-validator
+
+subagent_outputs:
+  assessment:
+    performance-assessor: baseline-metrics.json
+  planning:
+    optimization-planner: optimization-plan.json
+  validation:
+    roi-validator: roi-analysis.json
+    feasibility-validator: feasibility-check.json
+
+gap_checks:
+  assessment:
+    criteria:
+      - "Current metrics documented"
+      - "Bottlenecks identified and ranked"
+      - "Optimization opportunities quantified"
+    on_failure:
+      - "Gather more baseline data"
+      - "Continue with current findings"
+      - "Abort workflow"
+
+  planning:
+    criteria:
+      - "Optimizations have measurable targets"
+      - "Impact-effort ratio analyzed"
+      - "Implementation approach is clear"
+    on_failure:
+      - "Retry planning phase"
+      - "Continue with warnings"
+      - "Abort workflow"
+
+checkpoints:
+  - after: assessment
+    prompt: "Review optimization opportunities before planning approach"
+    show_files:
+      - "{{output_dir}}/phase-assessment/baseline.json"
+      - "{{output_dir}}/phase-assessment/bottlenecks.json"
+      - "{{output_dir}}/phase-assessment/opportunities.json"
+    options:
+      - "Continue to planning"
+      - "Re-assess with different focus"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review optimization plan before implementation"
+    show_files:
+      - "{{output_dir}}/phase-planning/optimization-plan.json"
+      - "{{output_dir}}/phase-validation/roi.json"
+      - "{{output_dir}}/phase-validation/risk-assessment.json"
+    options:
+      - "Finalize plan"
+      - "Revise approach"
+      - "Abort"
+
+template: templates/improving-plan.md.tmpl

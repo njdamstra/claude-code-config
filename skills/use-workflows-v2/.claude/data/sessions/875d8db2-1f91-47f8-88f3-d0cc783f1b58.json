@@ -1,0 +1,12 @@
+{
+  "session_id": "875d8db2-1f91-47f8-88f3-d0cc783f1b58",
+  "prompts": [
+    "bet, for the use-workflows-v2 do we call the actual subagents or do we call the general purpose and explore subagents with specific prompts?",
+    "i'd prefer to use actual subagents, but the purpose of the templates were to customize our prompt to the subagents. this is particularly useful for what deliverables we are requesting and where to write the deliverables too. think about it like this: we have specialized subagents that should be used by different workflows, different workflows may need / expect different outputs / different locations for where they expect there deliverables / slightly different tasks given to the subagent. the subagent still specialaizes in its topic, but the workflow specific info comes from the tempaltes. the subagent prompt templates should instructe the agent where to find context files from previous phases deliverables for context, its task in this workflow / phase, and what deliverables it should produce. does this make sense? how can we integrate this into the skill to work how its intended? ultrathink ",
+    "/sp:execute-plan ",
+    "we should create a formal plan. remember these templates will be read by the main agent and used by copying it with its own specifc instructions and call the subagent with this context",
+    "1. no the main agent shouldn't neeed to read the subagents system prompt. 2. let main agent infer what to but in the mustache, the purpose of the templates should be instructing the main agent how to prompt the subagent. 3. we should start with creating 3 base subagents and then we'll test.",
+    "did you update the skill to use these subagents and give them the templates? we should do this first before we test. also the frontmatter for subagents should be name, description, and model only.",
+    "bruh are you restarded. we are no longer use the general purpose agent that's why we're doing this. teh task_agent_type should be the subagents name"
+  ]
+}

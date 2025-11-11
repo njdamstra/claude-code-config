@@ -39,6 +39,112 @@ Token usage is color-coded based on consumption:
 
 Format: `[142k/200k (71%)]`
 
+## Weekly Usage Tracking
+
+### Overview
+
+The status line displays accurate weekly Claude Code usage alongside token counts, helping you stay within subscription tier limits and plan your work around 5-hour reset cycles.
+
+### Display Format
+
+**Full Display:**
+```
+[cycle: 2.3h | week: 18.5h/40h (46%) | reset: 2h15m] | [142k/200k (71%)] | main
+```
+
+**Components:**
+- `cycle: 2.3h` - Current 5-hour cycle usage
+- `week: 18.5h/40h (46%)` - Weekly total vs. limit with percentage
+- `reset: 2h15m` - Time until next 5-hour reset
+- Token display (from token accuracy fix)
+- Git branch
+
+### How It Works
+
+**Data Collection:**
+1. `session_usage_tracker.py` hook captures session metadata
+2. Calculates elapsed active time (assistant working time, not wall-clock)
+3. Records to SQLite database: `~/.claude/data/usage_tracking.db`
+4. Aggregates into 5-hour cycles and weekly windows
+
+**Subscription Tier Detection:**
+- **Auto-detection** based on usage patterns
+- Pro: 40-80 hours/week expected
+- Max (5x): 140-280 hours/week
+- Max (20x): Higher limits
+- Manual override via `usage_config.json`
+
+**Color Coding:**
+- 🟢 **Green** (<75%): Plenty of time remaining
+- 🟡 **Yellow** (75-87.5%): Moderate usage
+- 🟠 **Orange** (87.5-95%): High usage, plan accordingly
+- 🔴 **Red** (95%+): Critical - near weekly limit
+
+### Database Schema
+
+**Tables:**
+- `sessions` - Individual Claude Code sessions with elapsed time and tokens
+- `five_hour_cycles` - Aggregated usage per 5-hour window
+- `weekly_aggregates` - Rolling 7-day usage totals
+
+**Location:** `~/.claude/data/usage_tracking.db`
+
+### Configuration
+
+Edit `status_lines/usage_config.json` to customize:
+
+```json
+{
+  "subscription_tier": "auto",  // or "pro", "max_5x", "max_20x"
+  "display_format": "full",     // or "compact"
+  "color_coding": true,
+  "database_path": "~/.claude/data/usage_tracking.db"
+}
+```
+
+### Testing
+
+**Unit Tests:**
+```bash
+cd ~/.claude/status_lines
+python3 -m pytest test_usage_db.py -v
+python3 -m pytest test_tier_detector.py -v
+python3 -m pytest test_usage_formatter.py -v
+```
+
+**Manual Test:**
+```bash
+# View current usage
+python3 -c "
+import sys
+sys.path.insert(0, '/Users/natedamstra/.claude/status_lines')
+from status_line import get_usage_display
+print(get_usage_display('/Users/natedamstra/.claude/data/usage_tracking.db'))
+"
+```
+
+### Troubleshooting
+
+**No usage displayed:**
+- Check database exists: `ls -lh ~/.claude/data/usage_tracking.db`
+- Verify hook is recording: `tail ~/.claude/logs/usage_tracker_errors.json`
+- Database will be empty initially - wait for session activity
+
+**Incorrect tier detection:**
+- Override in `usage_config.json`: `"subscription_tier": "max_5x"`
+- Check usage patterns match expectations
+
+**Database issues:**
+- Backup: `cp ~/.claude/data/usage_tracking.db ~/.claude/data/usage_tracking.db.backup`
+- Reset: `rm ~/.claude/data/usage_tracking.db` (will recreate automatically)
+
+### References
+
+- Claude Code usage limits: 5-hour cycles + weekly cap
+- Pro plan: 40-80 hours/week expected
+- Max plans: 5x (140-280h), 20x (400-800h)
+- Research sources: GitHub issues #9094, #9424
+
 ## Token Calculation Methodology
 
 ### Understanding Claude's Token Budget

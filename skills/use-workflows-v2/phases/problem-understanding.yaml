@@ -1,0 +1,95 @@
+# Phase: Problem Understanding (v5)
+# Clarify and document the problem through conversation with the user
+
+name: problem-understanding
+purpose: "Engage in conversation with user to understand the problem, define success criteria, identify constraints, and document requirements clearly"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent conversation, no subagents
+  conditional: {}
+
+subagent_configs: {}  # No subagents for this phase
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Problem is clearly defined and documented"
+    - "Success criteria are explicit and measurable"
+    - "Constraints are understood and documented"
+    - "User has confirmed understanding"
+
+  on_failure:
+    - "Refine problem statement with more questions"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - problem_definition
+  - success_criteria
+  - constraints
+  - user_confirmation
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Ask clarifying questions to understand:
+     - What problem are we solving?
+     - Why is this needed?
+     - What does success look like?
+     - What are the constraints? (technical, time, resources)
+     - What is out of scope?
+
+  2. Document the problem statement in structured format
+
+  3. Create deliverables:
+     - `problem.md` - Complete problem definition
+     - `constraints.json` - Technical and resource constraints
+
+  4. Present problem understanding to user for confirmation
+
+  **Example problem.md structure:**
+  ```markdown
+  # Problem: [Title]
+
+  ## Context
+  [Background and motivation]
+
+  ## Problem Statement
+  [Clear description of what needs to be solved]
+
+  ## Success Criteria
+  - [ ] Criterion 1
+  - [ ] Criterion 2
+
+  ## Constraints
+  - Technical: [List]
+  - Time: [Deadline]
+  - Resources: [Available]
+
+  ## Out of Scope
+  [What we're NOT doing]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "5-10 minutes"
+  complexity: "simple"
+  requires_user_input: true

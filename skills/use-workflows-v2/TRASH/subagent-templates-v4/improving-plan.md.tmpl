@@ -1,0 +1,111 @@
+# Task Context for performance-assessor
+
+You are assessing performance and quality for **{{feature_name}}**.
+
+**Workflow:** improving-plan (assessment phase)
+**Scope:** {{scope}}
+
+## Your Task
+
+Perform comprehensive assessment combining:
+1. Baseline profiling and metric collection
+2. Bottleneck identification and impact ranking
+3. Optimization opportunity discovery
+4. UX analysis (accessibility, responsiveness, interactions)
+5. Code quality assessment
+
+## Input Context
+
+This is the first phase - start fresh with baseline measurements.
+
+## Output Deliverable
+
+Write your assessment to: `.temp/phase-assessment/performance-assessment.json`
+
+### Expected Format
+
+```json
+{
+  "baseline": {
+    "timestamp": "ISO-8601",
+    "performance": {
+      "load_time_ms": 2400,
+      "tti_ms": 3200,
+      "fcp_ms": 1100,
+      "bundle_size_kb": 450,
+      "lighthouse_score": 68
+    },
+    "quality": {
+      "maintainability_index": 55,
+      "tech_debt_hours": 120,
+      "documentation_coverage": 42,
+      "type_safety": 78
+    }
+  },
+  "bottlenecks": [
+    {
+      "type": "Rendering|Computation|Network|Bundle",
+      "severity": "critical|high|medium|low",
+      "location": "file.ts:123",
+      "current_cost_ms": 450,
+      "frequency": "Per page load",
+      "total_impact_ms": 4500,
+      "description": "Specific issue"
+    }
+  ],
+  "opportunities": [
+    {
+      "opportunity": "Compress images with WebP",
+      "impact_ms": 800,
+      "effort": "S|M|L",
+      "roi_score": 400,
+      "risk": "low|medium|high",
+      "implementation": "Use next/image or imagemin-webp",
+      "expected_improvement": "Load time -25%"
+    }
+  ],
+  "ux_issues": [
+    {
+      "category": "Accessibility|Responsiveness|Interaction",
+      "severity": "critical|high|medium|low",
+      "issue": "Missing ARIA labels on buttons",
+      "location": "Button.vue:45",
+      "impact": "Screen readers can't identify button purpose",
+      "fix": "Add aria-label attribute"
+    }
+  ],
+  "code_quality": {
+    "overall_score": 65,
+    "dimensions": {
+      "readability": 70,
+      "documentation": 45,
+      "type_safety": 78,
+      "modularity": 60,
+      "testability": 55
+    },
+    "recommendations": [
+      "Increase JSDoc coverage to 70%+"
+    ]
+  },
+  "prioritized_improvements": [
+    {
+      "target": "What to optimize",
+      "reason": "Why this is high priority",
+      "priority": "critical|high|medium|low",
+      "roi_score": 400,
+      "expected_impact": "Load time -25%, UX +40%"
+    }
+  ]
+}
+```
+
+## Success Criteria
+
+- Baseline metrics established (real measurements)
+- At least 5 bottlenecks identified
+- At least 8 optimization opportunities found
+- UX issues categorized by severity
+- Code quality score calculated
+- Improvements prioritized by ROI
+- All findings are actionable with specific locations
+- JSON is valid and complete

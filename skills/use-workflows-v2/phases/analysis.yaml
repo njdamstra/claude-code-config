@@ -1,0 +1,132 @@
+# Phase: Analysis (v5)
+# Trace root cause and analyze contributing factors
+
+name: analysis
+purpose: "Identify root cause through code tracing and data/timing analysis when needed"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - root-cause-tracer
+  conditional:
+    data_bug:
+      - data-flow-analyzer
+    timing_bug:
+      - timing-analyzer
+
+subagent_configs:
+  root-cause-tracer:
+    task_agent_type: "root-cause-tracer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Root cause identification through code tracing and hypothesis testing.
+
+    instructions: |
+      1. Trace code execution path
+      2. Identify where behavior diverges
+      3. Generate testable hypotheses
+      4. Analyze contributing factors
+      5. Pinpoint root cause location
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["bug-report.json"]
+        description: "Bug investigation findings"
+
+    outputs:
+      - file: root-cause.json
+        schema: output_templates/root-cause.json
+        required: true
+        description: "Root cause analysis with hypothesis"
+
+  data-flow-analyzer:
+    task_agent_type: "data-flow-analyzer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Trace data transformations for data corruption bugs.
+
+    instructions: |
+      1. Map data flow through system
+      2. Identify transformation points
+      3. Check validation at each step
+      4. Find where data becomes corrupted
+      5. Analyze sanitization/normalization
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["bug-report.json"]
+        description: "Bug investigation findings"
+
+    outputs:
+      - file: data-flow.json
+        schema: output_templates/data-flow.json
+        required: false
+        description: "Data flow analysis for corruption bugs"
+
+  timing-analyzer:
+    task_agent_type: "timing-analyzer"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Analyze async operations and race conditions.
+
+    instructions: |
+      1. Map async operation sequences
+      2. Identify race condition potential
+      3. Analyze timing dependencies
+      4. Check synchronization mechanisms
+      5. Evaluate event ordering
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["bug-report.json"]
+        description: "Bug investigation findings"
+
+    outputs:
+      - file: timing.json
+        schema: output_templates/timing.json
+        required: false
+        description: "Timing analysis for race conditions"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Root cause hypothesis is testable"
+    - "Code flow traced to source"
+    - "Contributing factors identified"
+
+  on_failure:
+    - "Retry root cause analysis"
+    - "Continue with best hypothesis"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - root_cause_hypothesis
+  - code_trace
+  - contributing_factors
+  - data_flow_analysis (optional)
+  - timing_analysis (optional)
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-25 minutes"
+  complexity: "complex"
+  requires_user_input: false

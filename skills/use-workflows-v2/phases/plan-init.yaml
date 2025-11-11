@@ -1,0 +1,89 @@
+# Phase: Plan Init (v5)
+# Initialize plan structure and gather initial context
+
+name: plan-init
+purpose: "Initialize plan workspace and gather initial context from user"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent conversation
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Plan name and scope defined"
+    - "Workspace created"
+    - "Initial context gathered"
+
+  on_failure:
+    - "Refine plan initialization"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - plan_name
+  - plan_scope
+  - workspace_path
+  - initial_context
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Ask user for plan details:
+     - What are we planning?
+     - What's the scope? (frontend/backend/both)
+     - What's the complexity? (simple/moderate/complex)
+     - Are there specific requirements?
+
+  2. Create workspace structure:
+     - .claude/plans/[plan-name]/
+     - Create plan-init.md with gathered information
+
+  3. Document initial context:
+     - Plan name
+     - Scope
+     - Complexity
+     - User requirements
+     - Success criteria
+
+  **Example plan-init.md:**
+  ```markdown
+  # Plan: [Name]
+
+  ## Scope
+  - Type: [frontend/backend/both]
+  - Complexity: [simple/moderate/complex]
+
+  ## Initial Requirements
+  [User provided requirements]
+
+  ## Success Criteria
+  - [ ] Criterion 1
+  - [ ] Criterion 2
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "3-5 minutes"
+  complexity: "simple"
+  requires_user_input: true

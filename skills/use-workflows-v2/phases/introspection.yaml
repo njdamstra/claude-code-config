@@ -1,0 +1,160 @@
+# Phase: Introspection (v5)
+# Validate assumptions by questioning the codebase
+
+name: introspection
+purpose: "Validate assumptions made during synthesis by using code-qa agent to answer detailed questions about the codebase with source verification"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - code-qa
+  conditional: {}
+
+subagent_configs:
+  code-qa:
+    task_agent_type: "code-qa"
+    model: "sonnet"
+    thoroughness: "very thorough"
+
+    responsibility: |
+      Answer detailed questions about the codebase to validate or invalidate assumptions
+      made during the solution synthesis phase. Provide file:line citations for all claims
+      and rate confidence for each answer.
+
+    instructions: |
+      1. The main agent will provide specific assumption questions in the Task prompt
+      2. For each question:
+         - Search exhaustively using multiple strategies (keyword, pattern, dependency tracing)
+         - Provide file:line citations for ALL claims
+         - Rate confidence (High/Medium/Low)
+         - Clearly state if assumption is CONFIRMED or INVALIDATED
+         - If invalidated, identify reusable code that makes assumption wrong
+      3. Document search strategies used for transparency
+      4. NEVER guess or hallucinate - if you can't find something, say "not found" explicitly
+      5. Distinguish between "not found" vs "doesn't exist"
+
+    scope_specific:
+      frontend: |
+        **Search locations:**
+        - src/components/ (Vue 3 components)
+        - src/composables/ (reusable composition functions)
+        - src/stores/ (Nanostores)
+        - src/utils/ (utilities)
+        - src/router/ (routing)
+
+        **Look for:**
+        - Vue component patterns and composition
+        - Nanostore usage and state patterns
+        - Composable hooks
+        - Tailwind patterns
+        - Client-side routing
+        - SSR-safe patterns
+
+      backend: |
+        **Search locations:**
+        - functions/ (Appwrite serverless functions)
+        - src/pages/api/ (Astro API routes)
+        - database/ (schemas)
+        - src/lib/server/ (server utilities)
+
+        **Look for:**
+        - Appwrite integration patterns
+        - Database schemas and queries
+        - Authentication and permissions
+        - API endpoint patterns
+        - Server-side validation
+
+      both: |
+        **Trace:**
+        - Full-stack data flows (frontend → API → Appwrite)
+        - Integration points between client and server
+        - Shared types and contracts
+        - Authentication flows
+        - Error propagation
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["approaches.json"]
+        description: "Approaches with embedded assumptions to validate"
+
+    outputs:
+      - file: assumptions-validated.json
+        schema: output_templates/assumptions-validated.json.tmpl
+        required: true
+        description: "Detailed answers with evidence, confidence ratings, and assumption validation"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "All assumptions explicitly identified"
+    - "code-qa answered all questions with file:line citations"
+    - "Confidence ratings provided (High/Medium/Low)"
+    - "At least one assumption validated or invalidated"
+    - "Reusable code identified where assumptions were wrong"
+
+  on_failure:
+    - "Retry introspection with more questions"
+    - "Continue with original approaches"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - validated_assumptions
+  - invalidated_assumptions
+  - reusable_code_discovered
+  - revised_approaches
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read `approaches.json` and identify all implicit assumptions
+     Common assumptions to check:
+     - "No existing solution for this problem"
+     - "Feature X doesn't exist in the codebase"
+     - "We need to build component Y from scratch"
+     - "Pattern Z isn't being used anywhere"
+     - "Integration with system A hasn't been done before"
+
+  2. Formulate specific, answerable questions for code-qa
+     Example questions:
+     - "Does an authentication composable already exist? If so, where?"
+     - "Are there any form validation utilities in the codebase?"
+     - "Has OAuth integration been implemented anywhere?"
+
+  3. Spawn code-qa subagent with these questions
+
+  4. Wait for code-qa completion
+
+  5. Review `assumptions-validated.json`
+
+  6. Revise approaches based on findings:
+     - If assumptions invalidated, leverage discovered code
+     - Update complexity and effort estimates
+     - Adjust implementation approaches
+
+  7. Output `approaches-revised.json` with:
+     - Updated approaches incorporating validated findings
+     - Identified reusable code
+     - Revised complexity/effort estimates
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

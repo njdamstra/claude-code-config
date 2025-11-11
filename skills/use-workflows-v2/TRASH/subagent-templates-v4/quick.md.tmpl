@@ -1,0 +1,150 @@
+# Subagent: implementation-sequencer
+# Workflow: quick
+# Phase: planning
+
+## Your Task
+
+Create a quick implementation sequence for: **{{feature_name}}**
+
+This is a rapid workflow, so create a concise, actionable list of steps. Focus on the essential tasks only.
+
+## Context
+
+Review the discovery phase outputs:
+- **Files:** `{{phase_paths.discovery}}/files.json`
+- **Patterns:** `{{phase_paths.discovery}}/patterns.json`
+
+Use these to inform your implementation sequence.
+
+## Sequencing Strategy
+
+### 1. Identify Core Tasks
+Break down the feature into 3-7 core tasks:
+- Create/modify components
+- Add data/state management
+- Implement API integration
+- Add styling
+- Test basic functionality
+
+### 2. Determine Dependencies
+Order tasks based on dependencies:
+- Foundation first (stores, utilities)
+- Core components next
+- Integration and polish last
+
+### 3. Estimate Effort
+For each task, provide a rough time estimate:
+- Quick (5-15 min)
+- Medium (15-30 min)
+- Long (30-60 min)
+
+### 4. Identify Risks
+Note any potential blockers or tricky parts.
+
+## Output Format
+
+Write your implementation sequence to: `.temp/{{output_dir}}/implementation-sequence.md`
+
+### Markdown Structure
+
+```markdown
+# Implementation Sequence: {{feature_name}}
+
+**Workflow:** quick
+**Scope:** {{scope}}
+**Total Estimated Time:** X-Y minutes
+
+---
+
+## Step 1: [Task Name]
+
+**Estimated Time:** 5-15 minutes
+**Difficulty:** Low | Medium | High
+**Dependencies:** None | Step X must be complete
+
+### What to Do
+- Specific action item
+- Another action item
+- One more action item
+
+### Files to Modify/Create
+- `path/to/file.vue` - Description of changes
+- `path/to/store.ts` - Description of changes
+
+### Expected Outcome
+Clear description of what should work after this step.
+
+### Risks
+- Potential blocker or tricky part
+- Another risk to be aware of
+
+---
+
+## Step 2: [Next Task Name]
+
+[Same structure as Step 1]
+
+---
+
+[... Continue for all steps ...]
+
+---
+
+## Final Validation
+
+After all steps are complete, verify:
+- [ ] Feature works as expected
+- [ ] No console errors
+- [ ] TypeScript compiles without errors
+- [ ] Styling looks correct (light + dark mode if applicable)
+- [ ] Basic edge cases handled
+
+---
+
+## Quick Reference
+
+### Files Created
+- List of new files
+
+### Files Modified
+- List of modified files
+
+### Key Decisions
+- Important architectural or implementation decisions made
+
+### Follow-up Tasks
+- Optional improvements or future work (not required for quick workflow)
+```
+
+## Success Criteria
+
+- ✓ 3-7 clear, actionable steps
+- ✓ Each step has time estimate
+- ✓ Dependencies between steps identified
+- ✓ Files to modify/create listed for each step
+- ✓ Expected outcomes clear
+- ✓ Potential risks noted
+- ✓ Final validation checklist included
+- ✓ Total time estimate reasonable (30-90 minutes)
+
+## Implementation Guidelines
+
+**Keep it simple:**
+- Don't over-engineer
+- Use existing patterns from pattern check
+- Reuse code where possible
+- Skip non-essential features
+
+**Be specific:**
+- Name actual files to modify
+- Describe concrete changes
+- Provide clear success criteria
+
+**Stay focused:**
+- This is a quick workflow
+- Avoid scope creep
+- Defer nice-to-haves to future work
+
+## Time Target
+
+Complete this sequencing in **3-5 minutes** maximum.

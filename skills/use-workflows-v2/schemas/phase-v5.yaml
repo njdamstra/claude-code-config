@@ -1,0 +1,213 @@
+# Phase YAML Schema (v5)
+# This schema defines the structure for phase configuration files in the v5 architecture.
+# Each phase is a self-contained, reusable module that can be composed into workflows.
+
+# Example usage: phases-v5/codebase-investigation.yaml
+
+schema_version: "5.0"
+
+# ==============================================================================
+# REQUIRED FIELDS
+# ==============================================================================
+
+name: string
+# Unique identifier for this phase (lowercase-hyphenated)
+# Example: "codebase-investigation", "requirements-gathering"
+
+purpose: string
+# Brief description of what this phase accomplishes
+# Example: "Scan codebase for patterns, dependencies, and integration points"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  # Subagents that ALWAYS run for this phase (regardless of scope)
+  always: [string]
+  # Example: ["code-researcher", "pattern-analyzer"]
+
+  # Subagents that run conditionally based on scope flags
+  conditional:
+    frontend: [string]    # Run only with --frontend flag
+    backend: [string]     # Run only with --backend flag
+    both: [string]        # Run only with --both flag
+    complex: [string]     # Run only for complex features
+  # Example:
+  # conditional:
+  #   frontend: ["component-scanner"]
+  #   backend: ["api-scanner"]
+
+# Subagent detailed configurations (replaces subagent template files)
+subagent_configs:
+  {subagent_name}:
+
+    # Task tool agent type (maps to Task subagent_type parameter)
+    task_agent_type: string
+    # Example: "code-researcher", "requirements-specialist"
+
+    # Optional: Model to use for this subagent
+    model: string  # "haiku" | "sonnet" | "opus"
+    # Default: inherits from parent
+
+    # Optional: Thoroughness level
+    thoroughness: string  # "quick" | "medium" | "very thorough"
+    # Default: "medium"
+
+    # Core task description (becomes prompt foundation)
+    responsibility: |
+      Multi-line string describing what this subagent does.
+      This is the primary task description that will be expanded into a full prompt.
+
+    # Step-by-step instructions for the subagent
+    instructions: |
+      Multi-line string with numbered steps or guidance.
+      Example:
+      1. Read context files
+      2. Search for patterns
+      3. Output findings in structured format
+
+    # Scope-specific guidance (replaces workflow-specific templates)
+    scope_specific:
+      frontend: |
+        Guidance when --frontend flag is used.
+        Example: "Search locations: src/components/, src/composables/"
+      backend: |
+        Guidance when --backend flag is used.
+        Example: "Search locations: functions/, src/pages/api/"
+      both: |
+        Guidance when --both flag is used.
+        Example: "Trace full-stack flows: frontend → API → Appwrite"
+
+    # Input files to read (from previous phases)
+    inputs_to_read:
+      - from_workflow: boolean  # If true, read files passed by workflow inputs[]
+        expected_files: [string]  # Optional: List expected filenames
+        description: string      # What these files contain
+    # Example:
+    # inputs_to_read:
+    #   - from_workflow: true
+    #     expected_files: ["problem.md"]
+    #     description: "Problem definition from previous phase"
+
+    # Output files this subagent produces
+    outputs:
+      - file: string           # Filename (not full path)
+        schema: string         # Path to output template (for validation)
+        required: boolean      # If true, phase fails if file missing
+        description: string    # What this output contains
+    # Example:
+    # outputs:
+    #   - file: codebase-analysis.json
+    #     schema: output_templates/codebase-analysis.json.tmpl
+    #     required: true
+    #     description: "Patterns, dependencies, and integration points"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  # Criteria to verify phase completed successfully
+  criteria: [string]
+  # Example:
+  # - "At least 5 patterns identified with file:line citations"
+  # - "All file paths verified to exist (no hallucination)"
+
+  # Options presented to user if criteria not met
+  on_failure: [string]
+  # Example:
+  # - "Retry with broader search scope"
+  # - "Continue with current findings"
+  # - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides: [string]
+# Data this phase makes available to subsequent phases
+# Used for workflow wiring and validation
+# Example: ["codebase_patterns", "dependency_map", "architectural_conventions"]
+
+# ==============================================================================
+# OPTIONAL FIELDS
+# ==============================================================================
+
+# Main agent responsibilities (if phase has work beyond subagents)
+execution_notes: |
+  Multi-line string describing what the main agent should do.
+  Example:
+  1. Review subagent outputs
+  2. Synthesize findings
+  3. Generate summary document
+
+# Phase-specific metadata
+metadata:
+  estimated_time: string    # "5-10 minutes"
+  complexity: string        # "simple" | "moderate" | "complex"
+  requires_user_input: boolean  # If true, phase needs user interaction
+
+# ==============================================================================
+# EXAMPLE PHASE YAML
+# ==============================================================================
+
+# name: codebase-investigation
+# purpose: "Scan codebase for patterns, dependencies, and integration points"
+#
+# subagents:
+#   always:
+#     - code-researcher
+#   conditional: {}
+#
+# subagent_configs:
+#   code-researcher:
+#     task_agent_type: "code-researcher"
+#     model: "sonnet"
+#     thoroughness: "medium"
+#
+#     responsibility: |
+#       Research the codebase to identify existing patterns, similar implementations,
+#       dependencies, and architectural conventions relevant to the problem.
+#
+#     instructions: |
+#       1. Read problem.md to understand what to search for
+#       2. Search for patterns using multiple strategies
+#       3. Identify similar implementations and rate reusability
+#       4. Map dependencies (internal and external)
+#       5. Document architectural conventions
+#       6. Output findings in structured JSON format
+#
+#     scope_specific:
+#       frontend: |
+#         Search: src/components/, src/composables/, src/stores/
+#         Look for: Vue patterns, Tailwind usage, Nanostore integration
+#       backend: |
+#         Search: functions/, src/pages/api/
+#         Look for: Appwrite integration, API patterns, auth flows
+#
+#     inputs_to_read:
+#       - from_workflow: true
+#         expected_files: ["problem.md"]
+#         description: "Problem definition from previous phase"
+#
+#     outputs:
+#       - file: codebase-analysis.json
+#         schema: output_templates/codebase-analysis.json.tmpl
+#         required: true
+#         description: "Comprehensive codebase analysis"
+#
+# gap_checks:
+#   criteria:
+#     - "At least 5 patterns identified"
+#     - "Dependencies mapped"
+#     - "All file paths verified"
+#   on_failure:
+#     - "Retry with broader scope"
+#     - "Continue anyway"
+#     - "Abort"
+#
+# provides:
+#   - codebase_patterns
+#   - dependency_map
+#   - architectural_conventions

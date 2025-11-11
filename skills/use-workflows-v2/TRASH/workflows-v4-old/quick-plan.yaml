@@ -1,0 +1,69 @@
+name: quick-plan
+description: Fast-track planning for simple tasks with minimal overhead
+estimated_time: 5-15 minutes
+estimated_tokens: 5K-20K
+complexity: simple
+
+phases:
+  - plan-init
+  - plan-generation
+  - plan-review
+
+subagent_matrix:
+  plan-init:
+    always: []  # Main agent conversation
+    conditional: {}
+
+  plan-generation:
+    always: []  # Main agent writes plan directly (NO SUBAGENT)
+    conditional: {}
+
+  plan-review:
+    always: []  # Interactive review with user
+    conditional: {}
+
+gap_checks:
+  plan-init:
+    criteria:
+      - "Investigation context loaded"
+      - "Approach is still valid"
+      - "Plan detail level selected"
+      - "File location confirmed"
+    on_failure:
+      - "Reload investigation context"
+      - "Continue anyway"
+      - "Abort workflow"
+
+  plan-generation:
+    criteria:
+      - "Implementation steps are clear and actionable"
+      - "Dependencies identified"
+      - "Testing approach defined"
+      - "File changes specified"
+    on_failure:
+      - "Add more detail to plan"
+      - "Continue with current level"
+      - "Abort workflow"
+
+  plan-review:
+    criteria:
+      - "User has reviewed plan"
+      - "User approves plan"
+      - "Ready for implementation"
+    on_failure:
+      - "Revise plan based on feedback"
+      - "Need more detail in specific area"
+      - "Abort workflow"
+
+checkpoints:
+  - after: plan-review
+    prompt: "Review complete quick plan before implementation"
+    show_files:
+      - "{{output_dir}}/quick-plan.md"
+    options:
+      - "Finalize and begin implementation"
+      - "Revise specific sections"
+      - "Add more detail"
+      - "Abort"
+
+template: templates/quick-plan.md.tmpl

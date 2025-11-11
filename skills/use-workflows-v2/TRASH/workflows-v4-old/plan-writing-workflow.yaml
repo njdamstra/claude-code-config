@@ -1,0 +1,160 @@
+name: plan-writing-workflow
+description: Structured plan writing with requirements, design, and quality checks
+estimated_time: 30-60 minutes
+estimated_tokens: 30K-80K
+complexity: moderate
+
+phases:
+  - plan-init
+  - requirements
+  - design
+  - implementation
+  - testing
+  - quality-review
+  - finalization
+
+subagent_matrix:
+  plan-init:
+    always: []  # Main agent conversation
+    conditional: {}
+
+  requirements:
+    always:
+      - requirements-specialist
+    conditional: {}
+
+  design:
+    always:
+      - architecture-specialist
+    conditional: {}
+
+  implementation:
+    always: []  # Main agent synthesizes
+    conditional: {}
+
+  testing:
+    always: []  # Main agent designs testing
+    conditional: {}
+
+  quality-review:
+    always: []  # Main agent creates checklist
+    conditional: {}
+
+  finalization:
+    always: []  # Main agent finalizes
+    conditional: {}
+
+subagent_outputs:
+  requirements:
+    requirements-specialist: requirements.json
+  design:
+    architecture-specialist: architecture.json
+
+gap_checks:
+  plan-init:
+    criteria:
+      - "Investigation context loaded"
+      - "Approach confirmed valid"
+      - "Plan detail level determined"
+      - "File location established"
+    on_failure:
+      - "Reload investigation context"
+      - "Continue anyway"
+      - "Abort workflow"
+
+  requirements:
+    criteria:
+      - "User stories follow INVEST criteria"
+      - "Technical requirements are specific"
+      - "Dependencies listed with versions"
+      - "Schema changes documented (if applicable)"
+    on_failure:
+      - "Retry requirements phase"
+      - "Continue with warnings"
+      - "Abort workflow"
+
+  design:
+    criteria:
+      - "Architecture is well-defined"
+      - "Data flow documented"
+      - "API contracts specified (if applicable)"
+      - "State management approach clear"
+    on_failure:
+      - "Retry design phase"
+      - "Continue with warnings"
+      - "Abort workflow"
+
+  implementation:
+    criteria:
+      - "File-by-file changes listed"
+      - "Function/component changes specific"
+      - "Import updates documented"
+    on_failure:
+      - "Add more detail to implementation"
+      - "Continue with current level"
+      - "Abort workflow"
+
+  testing:
+    criteria:
+      - "Unit test requirements defined"
+      - "Integration scenarios documented"
+      - "Edge cases covered"
+    on_failure:
+      - "Expand testing strategy"
+      - "Continue with current strategy"
+      - "Abort workflow"
+
+  quality-review:
+    criteria:
+      - "Quality checklist is comprehensive"
+      - "User has reviewed complete plan"
+      - "Feedback incorporated"
+      - "No blocking concerns"
+    on_failure:
+      - "Expand quality checklist"
+      - "Continue with current checklist"
+      - "Abort workflow"
+
+  finalization:
+    criteria:
+      - "Final plan document created"
+      - "All artifacts consolidated"
+      - "Metadata file created"
+      - "User approved final plan"
+    on_failure:
+      - "Revise final plan"
+      - "Continue anyway"
+      - "Abort workflow"
+
+checkpoints:
+  - after: plan-init
+    prompt: "Confirm plan structure and scope"
+    show_files: []
+    options:
+      - "Continue to requirements"
+      - "Adjust scope"
+      - "Abort"
+
+  - after: quality-review
+    prompt: "Review complete plan before finalizing"
+    show_files:
+      - "{{output_dir}}/requirements.json"
+      - "{{output_dir}}/architecture.json"
+      - "{{output_dir}}/implementation.md"
+      - "{{output_dir}}/testing.md"
+      - "{{output_dir}}/checklist.md"
+    options:
+      - "Finalize plan"
+      - "Revise requirements"
+      - "Revise design"
+      - "Abort"
+
+  - after: finalization
+    prompt: "Plan saved and ready for implementation"
+    show_files:
+      - "{{output_dir}}/PLAN.md"
+    options:
+      - "Begin implementation"
+      - "Archive for later"
+
+template: templates/plan-writing-workflow.md.tmpl

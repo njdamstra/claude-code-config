@@ -1,0 +1,96 @@
+# Debugging Plan Workflow (v5)
+# Systematic bug investigation with root cause analysis and solution design
+
+name: debugging-plan
+description: "Systematic bug investigation including root cause analysis, fix design, and validation"
+estimated_time: "20-60 minutes"
+estimated_tokens: "20K-80K"
+complexity: "moderate"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Investigation
+  - name: investigation
+    scope: "{{workflow_scope}}"
+    inputs: []
+
+  # Phase 2: Analysis
+  - name: analysis
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: investigation
+        files: [bug-report.json]
+        context_description: "Bug investigation findings for root cause analysis"
+
+  # Phase 3: Solution
+  - name: solution
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: investigation
+        files: [bug-report.json]
+        context_description: "Bug context"
+      - from: analysis
+        files: [root-cause.json]
+        context_description: "Root cause analysis for fix design"
+
+  # Phase 4: Synthesis
+  - name: synthesis
+    scope: default
+    inputs:
+      - from: investigation
+        files: [bug-report.json]
+        context_description: "Bug details"
+      - from: analysis
+        files: [root-cause.json]
+        context_description: "Root cause"
+      - from: solution
+        files: [fix-plan.json]
+        context_description: "Fix plan"
+
+  # Phase 5: Validation
+  - name: validation
+    scope: default
+    inputs:
+      - from: synthesis
+        files: [synthesis.md]
+        context_description: "Consolidated fix plan"
+      - from: solution
+        files: [fix-plan.json]
+        context_description: "Fix approach to validate"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: analysis
+    prompt: "Review root cause analysis before designing solution"
+    show_files:
+      - "bug-report.json"
+      - "root-cause.json"
+    options:
+      - "Continue to solution design"
+      - "Re-investigate root cause"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review proposed solution before implementation"
+    show_files:
+      - "fix-plan.json"
+      - "approach.json"
+      - "risk-assessment.json"
+    options:
+      - "Finalize solution"
+      - "Revise approach"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

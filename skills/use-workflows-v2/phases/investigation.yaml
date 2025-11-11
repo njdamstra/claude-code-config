@@ -1,0 +1,99 @@
+# Phase: Investigation (v5)
+# Gather bug context, reproduction steps, and environment details
+
+name: investigation
+purpose: "Investigate bug symptoms, gather reproduction steps, and collect environment context"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - bug-investigator
+  conditional: {}
+
+subagent_configs:
+  bug-investigator:
+    task_agent_type: "bug-investigator"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Bug investigation and context gathering including reproduction steps,
+      error messages, and environment details.
+
+    instructions: |
+      1. Document bug symptoms clearly
+      2. Create reproduction steps
+      3. Capture error messages and logs
+      4. Collect environment context
+      5. Identify affected components
+
+    scope_specific:
+      frontend: |
+        **Investigate:**
+        - Browser console errors
+        - Component rendering issues
+        - Client-side state problems
+        - Network requests/responses
+        - UI behavior anomalies
+
+      backend: |
+        **Investigate:**
+        - API endpoint failures
+        - Server logs and errors
+        - Database query issues
+        - Function execution logs
+        - Performance bottlenecks
+
+      both: |
+        **Full-stack investigation:**
+        - Request → Response flow
+        - Data transformation issues
+        - Integration point failures
+        - State synchronization problems
+
+    inputs_to_read: []  # First phase, no inputs
+
+    outputs:
+      - file: bug-report.json
+        schema: output_templates/bug-report.json
+        required: true
+        description: "Comprehensive bug report with reproduction steps"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Bug can be reproduced"
+    - "Steps to reproduce documented"
+    - "Error messages captured"
+    - "Environment context collected"
+
+  on_failure:
+    - "Gather more reproduction data"
+    - "Continue with partial reproduction"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - bug_description
+  - reproduction_steps
+  - error_messages
+  - environment_context
+  - affected_components
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

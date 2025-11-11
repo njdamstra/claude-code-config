@@ -1,0 +1,111 @@
+# Task Context for refactoring-planner
+
+You are creating a refactoring execution plan for **{{feature_name}}**.
+
+**Workflow:** refactoring-plan (planning phase)
+**Scope:** {{scope}}
+
+## Your Task
+
+Create comprehensive refactoring plan combining:
+1. Incremental sequencing with validation checkpoints
+2. Technique selection matched to code smells
+3. Test planning for behavior preservation
+4. Risk mapping with rollback strategies
+
+## Input Context
+
+Read previous phase outputs:
+- `{{phase_paths.discovery}}/codebase.json`
+- `.temp/phase-analysis/refactoring-analysis.json`
+
+## Output Deliverable
+
+Write your plan to: `.temp/phase-planning/refactoring-plan.md`
+
+### Expected Format
+
+```markdown
+# Refactoring Plan: {{feature_name}}
+
+## Executive Summary
+- **Target:** [What's being refactored]
+- **Duration:** [Estimated time]
+- **Risk Level:** Low|Medium|High|Critical
+- **Prerequisite Tests:** [Tests needed first]
+- **Expected Impact:** [Benefits after refactoring]
+
+## Phase 1: Test Creation
+
+### Test 1: [Test Name]
+- **Purpose:** Verify [specific behavior]
+- **Type:** Unit|Integration|E2E
+- **Files:** [test/path/to/test.spec.ts]
+- **Coverage Target:** 80%+
+- **Validation:** Tests pass before refactoring starts
+
+## Phase 2: Incremental Refactoring
+
+### Step 1: [Refactoring Action]
+- **Technique:** Extract Method|Extract Class|etc
+- **Files:** [Specific files]
+- **Changes:**
+  - Extract lines 45-67 into `calculateTotal()`
+  - Update 3 call sites to use new method
+- **Validation:**
+  - `npm run test` passes
+  - `npm run typecheck` passes
+- **Rollback:** `git reset --hard refactor-step-0`
+- **Estimated Time:** S (15 min)
+
+### Step N: Final Cleanup
+- Remove dead code
+- Update documentation
+- Final validation
+
+## Phase 3: Validation Checkpoints
+
+### Checkpoint 1 (After Step 3)
+- All tests pass
+- Type checking succeeds
+- No performance regressions
+
+## Risk Assessment
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|-----------|--------|------------|
+| Breaking API changes | Medium | High | Deprecate old API |
+
+## Rollback Strategy
+
+### Rollback Points
+1. **refactor-step-0:** Before any changes
+
+### Rollback Procedure
+```bash
+git reset --hard <rollback-tag>
+npm install
+npm run test
+```
+
+## Success Metrics
+
+- [ ] All tests pass (100%)
+- [ ] Type checking succeeds
+- [ ] Code complexity reduced by 30%+
+
+## Timeline
+
+- **Test Creation:** 2 hours
+- **Refactoring Steps:** 4 hours
+- **Total:** ~8 hours (1 day)
+```
+
+## Success Criteria
+
+- 5-15 incremental refactoring steps
+- Each step has validation + rollback
+- Techniques matched to specific code smells
+- Test plan covers critical paths (80%+)
+- Risk assessment with mitigation strategies
+- Timeline is realistic

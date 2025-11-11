@@ -1,0 +1,101 @@
+# Phase: Requirements (v5)
+# Document user stories, technical requirements, and edge cases
+
+name: requirements
+purpose: "Define complete requirements including user stories, technical specs, edge cases, and acceptance criteria"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - requirements-specialist
+  conditional: {}
+
+subagent_configs:
+  requirements-specialist:
+    task_agent_type: "requirements-specialist"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Complete requirements documentation including user stories, technical
+      requirements, edge cases, and acceptance criteria.
+
+    instructions: |
+      1. Write user stories following INVEST criteria
+      2. Define technical requirements with specific details
+      3. Identify edge cases and error scenarios
+      4. Document acceptance criteria
+      5. Define API contracts if applicable
+
+    scope_specific:
+      frontend: |
+        **Focus on:**
+        - User interactions and UI states
+        - Component requirements
+        - Accessibility requirements
+        - Responsive design needs
+        - Client-side validation
+
+      backend: |
+        **Focus on:**
+        - API endpoint specifications
+        - Data validation requirements
+        - Authentication/authorization needs
+        - Database schema requirements
+        - Performance requirements
+
+      both: |
+        **Full-stack considerations:**
+        - Frontend → Backend data flow
+        - API contracts between layers
+        - State synchronization requirements
+        - Error handling across stack
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["codebase.json"]
+        description: "Codebase patterns and existing architecture"
+
+    outputs:
+      - file: requirements.json
+        schema: output_templates/requirements.json
+        required: true
+        description: "Complete requirements specification"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "User stories follow INVEST criteria"
+    - "Technical requirements are specific"
+    - "Edge cases documented"
+
+  on_failure:
+    - "Retry requirements phase"
+    - "Continue with warnings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - user_stories
+  - technical_requirements
+  - edge_cases
+  - acceptance_criteria
+  - api_contracts
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-25 minutes"
+  complexity: "moderate"
+  requires_user_input: false

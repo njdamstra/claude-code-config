@@ -1,0 +1,96 @@
+# New Feature Plan Workflow (v5)
+# Comprehensive feature planning with PRD generation (40/60 planning-to-coding ratio)
+
+name: new-feature-plan
+description: "Comprehensive feature planning including discovery, requirements, design, synthesis, and validation"
+estimated_time: "30-90 minutes"
+estimated_tokens: "30K-100K"
+complexity: "moderate"
+
+base_dir: ".claude/plans"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Discovery
+  - name: discovery
+    scope: "{{workflow_scope}}"
+    inputs: []
+
+  # Phase 2: Requirements
+  - name: requirements
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase patterns and existing architecture"
+
+  # Phase 3: Design
+  - name: design
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase patterns to follow"
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements to implement"
+
+  # Phase 4: Synthesis
+  - name: synthesis
+    scope: default
+    inputs:
+      - from: discovery
+        files: [codebase.json]
+        context_description: "Codebase context"
+      - from: requirements
+        files: [requirements.json]
+        context_description: "Requirements specification"
+      - from: design
+        files: [architecture.md]
+        context_description: "Technical design"
+
+  # Phase 5: Validation
+  - name: validation
+    scope: default
+    inputs:
+      - from: synthesis
+        files: [synthesis.md]
+        context_description: "Consolidated plan"
+      - from: design
+        files: [architecture.md]
+        context_description: "Architecture to validate"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: discovery
+    prompt: "Review discovery findings before proceeding to requirements"
+    show_files:
+      - "codebase.json"
+    options:
+      - "Continue to requirements"
+      - "Repeat discovery"
+      - "Skip to design"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review validation results before finalizing plan"
+    show_files:
+      - "feasibility.json"
+      - "completeness.json"
+      - "synthesis.md"
+    options:
+      - "Finalize plan"
+      - "Repeat design phase"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

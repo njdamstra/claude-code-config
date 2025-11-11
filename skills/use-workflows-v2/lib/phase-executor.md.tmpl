@@ -1,0 +1,309 @@
+# Phase {{phase_number}}: {{phase_name}}
+
+## Purpose
+
+{{phase_purpose}}
+
+---
+
+## Available Context
+
+{{#has_inputs}}
+The following context files are available from previous phases:
+
+{{#phase_inputs}}
+### From Phase: {{from_phase}}
+
+{{#files}}
+- `{{filepath}}`
+{{/files}}
+
+{{#has_description}}
+**Purpose:** {{context_description}}
+{{/has_description}}
+
+{{/phase_inputs}}
+
+**Read these files** to understand the context before spawning subagents.
+
+{{/has_inputs}}
+
+{{^has_inputs}}
+**No input files from previous phases.**
+
+This is the first phase or requires no context from previous work.
+{{/has_inputs}}
+
+---
+
+## Execution Instructions
+
+{{#has_execution_notes}}
+### Main Agent Responsibilities
+
+{{execution_notes}}
+
+{{/has_execution_notes}}
+
+### Subagents to Spawn
+
+{{#has_subagents}}
+Use the **Task** tool to spawn these agents{{#spawn_parallel}} **in parallel**{{/spawn_parallel}}:
+
+{{#subagents}}
+#### {{index}}. {{subagent_name}}
+
+**Configuration:**
+- **Agent Type:** `{{task_agent_type}}`
+{{#has_model}}
+- **Model:** {{model}}
+{{/has_model}}
+{{#has_thoroughness}}
+- **Thoroughness:** {{thoroughness}}
+{{/has_thoroughness}}
+
+**Task:**
+
+{{responsibility}}
+
+**Context Files to Read:**
+{{#context_files}}
+- `{{filepath}}` - {{description}}
+{{/context_files}}
+{{^context_files}}
+No specific context files (may use workflow-provided inputs).
+{{/context_files}}
+
+**Expected Output:**
+- **File:** `{{output_dir}}/{{configured_filename}}`
+- **Description:** {{task_description}}
+
+**Scope-Specific Focus:**
+
+{{scope_guidance}}
+
+**Instructions:**
+
+{{instructions}}
+
+---
+
+**Task Tool Invocation:**
+
+```
+Task(
+  subagent_type="{{task_agent_type}}",
+  description="{{short_description}}",
+  prompt="""
+{{generated_prompt}}
+  """
+)
+```
+
+**Monitor for completion.** Expected output: `{{output_dir}}/{{configured_filename}}`
+
+---
+
+{{/subagents}}
+
+**Total Subagents:** {{subagent_count}}
+
+{{/has_subagents}}
+
+{{^has_subagents}}
+**No subagents configured for this phase.**
+
+The main agent handles all work for this phase.
+
+{{/has_subagents}}
+
+---
+
+## Wait for Completion
+
+{{#has_subagents}}
+All {{subagent_count}} subagent(s) must complete before proceeding.
+
+**Monitor Task tool status.** Once all agents finish executing, verify expected output files exist.
+
+{{/has_subagents}}
+
+{{^has_subagents}}
+Complete the main agent tasks outlined above.
+
+{{/has_subagents}}
+
+---
+
+## Read and Review Outputs
+
+{{#has_subagent_outputs}}
+Read all deliverables from `{{base_output_dir}}/`:
+
+{{#deliverables}}
+### {{filename}}
+
+**Path:** `{{filepath}}`
+
+**Purpose:** {{description}}
+
+**Validation:**
+{{#validation_checks}}
+- {{check}}
+{{/validation_checks}}
+
+{{#has_template}}
+**Expected Output Structure:**
+
+```{{template_extension}}
+{{template_content}}
+```
+
+{{/has_template}}
+Use Read tool to examine file and verify criteria above.
+
+{{/deliverables}}
+
+{{/has_subagent_outputs}}
+
+{{^has_subagent_outputs}}
+No subagent outputs to review.
+
+{{/has_subagent_outputs}}
+
+---
+
+## Gap Check
+
+{{#has_gap_checks}}
+Verify the following criteria have been met:
+
+{{#gap_criteria}}
+- [ ] {{criterion}}
+{{/gap_criteria}}
+
+### If Any Criteria Fail
+
+Present to user:
+
+```
+{{phase_name}} phase completed with gaps:
+
+[List specific unmet criteria]
+
+What would you like to do?
+{{#gap_options}}
+{{index}}. {{option}}
+{{/gap_options}}
+```
+
+**Wait for user selection** before proceeding.
+
+**Actions based on selection:**
+{{#gap_options}}
+- Option {{index}}: {{option}}
+{{/gap_options}}
+
+If user selects retry: Return to subagent spawning with refined scope.
+If user selects continue: Document gaps and proceed to next phase.
+If user selects abort: Stop workflow execution.
+
+{{/has_gap_checks}}
+
+{{^has_gap_checks}}
+**No gap checks defined for this phase.**
+
+Proceed directly to checkpoint (if configured) or next phase.
+
+{{/has_gap_checks}}
+
+---
+
+{{#has_checkpoint}}
+## Checkpoint Review
+
+**User Approval Required**
+
+{{checkpoint_prompt}}
+
+{{#has_checkpoint_files}}
+**Files for Review:**
+{{#checkpoint_files}}
+- `{{filepath}}`
+{{/checkpoint_files}}
+
+**Please review the files above** before making a selection.
+{{/has_checkpoint_files}}
+
+**Options:**
+{{#checkpoint_options}}
+{{index}}. {{option}}
+{{/checkpoint_options}}
+
+**Wait for user selection.**
+
+**Actions based on selection:**
+{{#checkpoint_options}}
+- Option {{index}}: {{option}}
+{{/checkpoint_options}}
+
+{{/has_checkpoint}}
+
+{{^has_checkpoint}}
+## Proceed to Next Phase
+
+**No checkpoint defined for this phase.**
+
+Gap check passed{{#has_gap_checks}} (or user approved gaps){{/has_gap_checks}}. Continue to next phase.
+
+{{/has_checkpoint}}
+
+---
+
+## Phase Complete
+
+**Deliverables:**
+{{#all_deliverables}}
+- `{{filepath}}` - {{description}}
+{{#has_template}}
+  - Schema: `{{template_name}}`
+{{/has_template}}
+{{/all_deliverables}}
+{{^all_deliverables}}
+No deliverable files (conversational phase or synthesis).
+{{/all_deliverables}}
+
+{{#has_provides}}
+**Provides for Next Phases:**
+{{#provides}}
+- {{data_item}}
+{{/provides}}
+
+These data items are now available for subsequent phases to consume.
+{{/has_provides}}
+
+---
+
+## Success Criteria
+
+- ✓ {{#has_subagents}}All {{subagent_count}} subagent(s) completed{{/has_subagents}}{{^has_subagents}}Main agent tasks completed{{/has_subagents}}
+{{#has_subagent_outputs}}
+- ✓ All deliverables exist and validated
+{{/has_subagent_outputs}}
+{{#has_gap_checks}}
+- ✓ Gap check passed{{#checkpoint_after_gap}} (or user approved gaps){{/checkpoint_after_gap}}
+{{/has_gap_checks}}
+{{#has_checkpoint}}
+- ✓ User approved checkpoint
+{{/has_checkpoint}}
+- ✓ Phase outputs available for next phase inputs
+
+**Phase {{phase_number}}: {{phase_name}} is now complete.**
+
+{{#has_next_phase}}
+Proceed to Phase {{next_phase_number}}: {{next_phase_name}}
+{{/has_next_phase}}
+
+{{^has_next_phase}}
+This is the final phase. Workflow complete.
+{{/has_next_phase}}

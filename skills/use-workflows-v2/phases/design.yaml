@@ -1,0 +1,114 @@
+# Phase: Design (v5)
+# Create technical design and implementation plan
+
+name: design
+purpose: "Design technical architecture, implementation steps, and test strategy"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - architecture-specialist
+  conditional: {}
+
+subagent_configs:
+  architecture-specialist:
+    task_agent_type: "architecture-specialist"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Technical design and implementation planning including architecture,
+      sequencing, testing strategy, and detailed specifications.
+
+    instructions: |
+      1. Design technical architecture
+      2. Break down into implementation steps
+      3. Sequence steps with dependencies
+      4. Define test strategy
+      5. Create detailed specifications
+
+    scope_specific:
+      frontend: |
+        **Design:**
+        - Component hierarchy
+        - State management approach
+        - Data fetching strategy
+        - Routing and navigation
+        - UI/UX patterns
+
+        **Implementation steps:**
+        - Component creation order
+        - Composable development
+        - Store integration
+        - Styling approach
+
+      backend: |
+        **Design:**
+        - API endpoint structure
+        - Database schema design
+        - Function architecture
+        - Authentication flow
+        - Data validation approach
+
+        **Implementation steps:**
+        - Schema creation
+        - Function development order
+        - API route implementation
+        - Integration points
+
+      both: |
+        **Full-stack design:**
+        - Frontend → Backend integration
+        - API contract specification
+        - State synchronization strategy
+        - Error handling approach
+        - Testing strategy across stack
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["codebase.json", "requirements.json"]
+        description: "Codebase patterns and requirements specification"
+
+    outputs:
+      - file: architecture.md
+        schema: output_templates/architecture.md
+        required: true
+        description: "Technical architecture and implementation plan"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Architecture is well-defined"
+    - "Implementation steps are actionable"
+    - "Test strategy is comprehensive"
+
+  on_failure:
+    - "Retry design phase"
+    - "Continue with warnings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - technical_architecture
+  - implementation_steps
+  - test_strategy
+  - dependencies_sequence
+  - detailed_specifications
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "20-30 minutes"
+  complexity: "moderate"
+  requires_user_input: false

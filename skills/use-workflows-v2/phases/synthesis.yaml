@@ -1,0 +1,107 @@
+# Phase: Synthesis (v5)
+# Consolidate findings and create unified plan document
+
+name: synthesis
+purpose: "Consolidate all phase findings into a unified, actionable implementation plan"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent consolidates findings
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "All previous phase outputs consolidated"
+    - "Plan is actionable and complete"
+    - "Timeline and estimates included"
+    - "Success criteria clearly defined"
+
+  on_failure:
+    - "Refine synthesis"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - unified_plan
+  - consolidated_findings
+  - implementation_roadmap
+  - timeline_estimates
+  - success_metrics
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read all previous phase outputs:
+     - discovery/codebase.json
+     - requirements/requirements.json
+     - design/architecture.md
+
+  2. Consolidate findings into unified plan:
+     - Executive summary
+     - Requirements overview
+     - Technical approach
+     - Implementation phases
+     - Testing strategy
+     - Timeline and estimates
+     - Success criteria
+     - Risk mitigation
+
+  3. Create deliverable: `synthesis.md`
+
+  **Example synthesis.md structure:**
+  ```markdown
+  # Implementation Plan: [Feature Name]
+
+  ## Executive Summary
+  [High-level overview]
+
+  ## Requirements
+  [Consolidated requirements]
+
+  ## Technical Approach
+  [Architecture and design decisions]
+
+  ## Implementation Phases
+  1. Phase 1: [Description]
+  2. Phase 2: [Description]
+
+  ## Testing Strategy
+  [Comprehensive test plan]
+
+  ## Timeline
+  - Phase 1: [Time estimate]
+  - Phase 2: [Time estimate]
+
+  ## Success Criteria
+  - [ ] Criterion 1
+  - [ ] Criterion 2
+
+  ## Risks and Mitigation
+  [Identified risks and how to address them]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-20 minutes"
+  complexity: "moderate"
+  requires_user_input: false

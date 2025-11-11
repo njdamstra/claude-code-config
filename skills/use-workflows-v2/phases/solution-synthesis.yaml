@@ -1,0 +1,110 @@
+# Phase: Solution Synthesis (v5)
+# Synthesize findings into 2-3 concrete approaches
+
+name: solution-synthesis
+purpose: "Synthesize codebase findings and external research into 2-3 concrete implementation approaches with pros, cons, and risk assessments"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent synthesizes findings
+  conditional: {}
+
+subagent_configs: {}  # No subagents - synthesis is main agent task
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "2-3 distinct approaches presented"
+    - "Each approach has clear pros and cons"
+    - "Risk assessment included for each approach"
+    - "Complexity rating provided (Simple/Moderate/Complex)"
+    - "Implementation effort estimated"
+    - "Approaches leverage codebase patterns identified"
+
+  on_failure:
+    - "Generate additional approaches"
+    - "Continue with current approaches"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - implementation_approaches
+  - pros_cons_analysis
+  - risk_assessments
+  - complexity_ratings
+  - effort_estimates
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read and analyze inputs:
+     - `codebase-analysis.json` - Internal patterns and conventions
+     - `best-practices.md` - External recommendations
+
+  2. Synthesize 2-3 distinct approaches that:
+     - Solve the problem defined in `problem.md`
+     - Leverage existing codebase patterns where possible
+     - Incorporate external best practices
+     - Differ meaningfully in implementation strategy
+
+  3. For each approach, document:
+     - **Name:** Descriptive title
+     - **Description:** High-level overview
+     - **Implementation:** Key steps and components
+     - **Pros:** Advantages of this approach
+     - **Cons:** Disadvantages and trade-offs
+     - **Risks:** Potential issues and mitigation
+     - **Complexity:** Simple/Moderate/Complex
+     - **Effort:** Time estimate
+     - **Reusability:** What existing code can be leveraged
+     - **Assumptions:** What we're assuming (will be validated in introspection)
+
+  4. Output structured JSON to `approaches.json`
+
+  **Approach spectrum examples:**
+  - **Approach 1:** Maximum reuse (extend existing patterns)
+  - **Approach 2:** Balanced (new + existing)
+  - **Approach 3:** Ground-up (new implementation following best practices)
+
+  **Output deliverable:**
+  - `approaches.json` - 2-3 approaches with complete analysis
+
+  **Example JSON structure:**
+  ```json
+  {
+    "approaches": [
+      {
+        "name": "Extend Existing Auth Pattern",
+        "description": "...",
+        "pros": ["...", "..."],
+        "cons": ["...", "..."],
+        "risks": ["...", "..."],
+        "complexity": "Moderate",
+        "effort": "2-3 hours",
+        "assumptions": ["Existing auth pattern supports X", "..."]
+      }
+    ]
+  }
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

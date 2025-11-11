@@ -1,0 +1,134 @@
+# Phase: Codebase Investigation (v5)
+# Scan codebase for patterns, dependencies, and integration points
+
+name: codebase-investigation
+purpose: "Research codebase to identify existing patterns, similar implementations, dependencies, architectural conventions, and reusable code relevant to the problem"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - code-researcher
+  conditional: {}
+
+subagent_configs:
+  code-researcher:
+    task_agent_type: "code-researcher"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Research the codebase to identify existing patterns, similar implementations,
+      dependencies, architectural conventions, and potential reusable code that
+      relates to the problem being investigated.
+
+    instructions: |
+      1. Read the problem statement to understand what to search for
+      2. Search for existing patterns that solve similar problems
+      3. Identify similar components or implementations
+      4. Map dependencies and integration points
+      5. Document architectural conventions to follow
+      6. Assess reusability for each pattern found (REUSE/EXTEND/CREATE)
+      7. Provide concrete file paths with line numbers where applicable
+      8. Output findings in structured JSON format with match percentages
+
+    scope_specific:
+      frontend: |
+        **Search locations:**
+        - src/components/ (Vue 3 components)
+        - src/composables/ (reusable composition functions)
+        - src/stores/ (Nanostores state management)
+        - src/utils/ (utility functions)
+        - src/router/ (client-side routing)
+
+        **Look for:**
+        - Vue 3 Composition API patterns
+        - Nanostore usage and patterns
+        - Composable hooks (useAuth, useForm, etc.)
+        - Tailwind CSS patterns and utility classes
+        - Component composition patterns (props, emits, slots)
+        - Client-side routing and navigation patterns
+        - SSR-safe patterns (useMounted checks)
+
+      backend: |
+        **Search locations:**
+        - functions/ (Appwrite serverless functions)
+        - src/pages/api/ (Astro API routes)
+        - database/ (schema definitions)
+        - src/lib/server/ (server-side utilities)
+
+        **Look for:**
+        - Appwrite API patterns (databases, auth, storage)
+        - Database schemas and collection patterns
+        - Authentication and permission check patterns
+        - Server-side utilities and helpers
+        - API endpoint patterns (.json.ts files)
+        - Data validation patterns (Zod schemas)
+        - Error handling patterns
+
+      both: |
+        **Search locations:**
+        - Full-stack: trace data flow from frontend → API → Appwrite
+        - Integration points between client and server
+
+        **Look for:**
+        - Full-stack integration patterns
+        - Data flow between frontend and backend
+        - API contracts and shared types
+        - SSR considerations and hydration patterns
+        - Authentication flows (client + server)
+        - Type sharing strategies
+        - Error propagation patterns
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: ["problem.md"]
+        description: "Problem definition and success criteria from previous phase to focus research"
+
+    outputs:
+      - file: codebase-analysis.json
+        schema: output_templates/codebase-analysis.json.tmpl
+        required: true
+        description: "Comprehensive codebase analysis with patterns, dependencies, and recommendations"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "At least 5 patterns identified with file:line citations"
+    - "Dependencies mapped (internal and external)"
+    - "Integration points documented with examples"
+    - "All file paths are real (no hallucination - verified to exist)"
+    - "Reusability ratings provided (REUSE/EXTEND/CREATE with match %)"
+    - "JSON is valid and matches expected schema"
+    - "Recommendations are actionable and specific"
+
+  on_failure:
+    - "Retry codebase investigation with refined scope"
+    - "Continue with current findings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - codebase_patterns
+  - similar_implementations
+  - dependency_map
+  - integration_points
+  - architectural_conventions
+  - reusability_assessments
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

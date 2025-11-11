@@ -1,0 +1,147 @@
+# Phase: Finalization (v5)
+# Consolidate all outputs into final implementation plan document
+
+name: finalization
+purpose: "Consolidate all phase outputs into final, polished implementation plan"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent consolidates
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "All phase outputs consolidated"
+    - "Final plan is cohesive and readable"
+    - "Ready for implementation"
+    - "Quality review issues addressed"
+
+  on_failure:
+    - "Refine final plan"
+    - "Continue anyway"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - final_plan_document
+  - executive_summary
+  - consolidated_deliverables
+  - implementation_roadmap
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read all previous phase outputs:
+     - plan-init.md
+     - requirements.json
+     - architecture.md
+     - implementation-sequence.md
+     - testing-strategy.md
+     - quality-review.md
+
+  2. Address quality review issues if any
+
+  3. Consolidate into final plan document:
+     - Executive summary
+     - Requirements overview
+     - Architecture and design
+     - Implementation roadmap
+     - Testing strategy
+     - Success criteria
+     - Timeline and estimates
+
+  4. Create deliverable: `IMPLEMENTATION_PLAN.md`
+
+  **Example IMPLEMENTATION_PLAN.md structure:**
+  ```markdown
+  # Implementation Plan: [Feature Name]
+
+  ## Executive Summary
+  [High-level overview of what, why, and how]
+
+  ## Requirements
+  ### Functional Requirements
+  - Requirement 1
+  - Requirement 2
+
+  ### Technical Requirements
+  - Requirement 1
+  - Requirement 2
+
+  ### Edge Cases
+  - Case 1
+  - Case 2
+
+  ## Architecture
+  ### Overview
+  [Architecture diagram and description]
+
+  ### Components
+  - Component 1: [Description]
+  - Component 2: [Description]
+
+  ### Data Flow
+  [How data flows through system]
+
+  ## Implementation Roadmap
+  ### Phase 1: [Name] (Est: X hours)
+  - Step 1: [Description]
+  - Step 2: [Description]
+
+  ### Phase 2: [Name] (Est: Y hours)
+  - Step 1: [Description]
+  - Step 2: [Description]
+
+  ## Testing Strategy
+  ### Unit Tests
+  - Test suite 1
+  - Test suite 2
+
+  ### Integration Tests
+  - Integration flow 1
+  - Integration flow 2
+
+  ### E2E Tests
+  - User workflow 1
+  - User workflow 2
+
+  ## Success Criteria
+  - [ ] Functional requirements met
+  - [ ] Performance targets achieved
+  - [ ] Test coverage adequate
+  - [ ] Documentation complete
+
+  ## Timeline
+  - Phase 1: [Estimate]
+  - Phase 2: [Estimate]
+  - Total: [Estimate]
+
+  ## Risks and Mitigation
+  - Risk 1: [Description and mitigation]
+  - Risk 2: [Description and mitigation]
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "15-20 minutes"
+  complexity: "moderate"
+  requires_user_input: false

@@ -1,0 +1,67 @@
+# Quick Investigation Workflow (v5)
+# Fast investigation for straightforward problems (10-15 min)
+
+name: quick-investigation
+description: "Quick investigation workflow for simple, well-defined problems"
+estimated_time: "10-15 minutes"
+estimated_tokens: "10K-20K"
+complexity: "simple"
+
+base_dir: ".temp"
+
+# ==============================================================================
+# PHASES
+# ==============================================================================
+
+phases:
+  # Phase 1: Problem Understanding
+  - name: problem-understanding
+    scope: default
+    inputs: []
+
+  # Phase 2: Quick Research
+  - name: quick-research
+    scope: "{{workflow_scope}}"
+    inputs:
+      - from: problem-understanding
+        files: [problem.md]
+        context_description: "Problem definition for focused research"
+
+  # Phase 3: Decision Finalization
+  - name: decision-finalization
+    scope: default
+    inputs:
+      - from: problem-understanding
+        files: [problem.md]
+        context_description: "Problem context"
+      - from: quick-research
+        files: [files.json]
+        context_description: "Research findings"
+
+# ==============================================================================
+# CHECKPOINTS
+# ==============================================================================
+
+checkpoints:
+  - after: problem-understanding
+    prompt: "Confirm problem understanding before research"
+    show_files: []
+    options:
+      - "Proceed to research"
+      - "Refine problem"
+      - "Abort"
+
+  - after: decision-finalization
+    prompt: "Review decision before proceeding"
+    show_files:
+      - "decision.md"
+    options:
+      - "Accept decision"
+      - "Reconsider"
+      - "Abort"
+
+# ==============================================================================
+# CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"

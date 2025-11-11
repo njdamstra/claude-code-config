@@ -1,0 +1,198 @@
+# Subagent Registry
+# Maps subagent types to Task tool agents and configuration
+# Updated to match planner skill consolidation patterns
+
+# === CONSOLIDATED AGENTS (New Feature Workflow) ===
+
+code-researcher:
+  subagent_file: "~/.claude/agents/workflows/code-researcher.md"
+  task_agent_type: "code-researcher"
+  description: "Comprehensive codebase research (replaces codebase-scanner, pattern-analyzer, dependency-mapper, frontend-scanner, backend-scanner)"
+  deliverable: "codebase.json"
+  template: "subagents/code-researcher/{workflow}.md.tmpl"
+
+requirements-specialist:
+  subagent_file: "~/.claude/agents/workflows/requirements-specialist.md"
+  task_agent_type: "requirements-specialist"
+  description: "Complete requirements documentation (replaces user-story-writer, technical-requirements-analyzer, edge-case-identifier)"
+  deliverable: "requirements.json"
+  template: "subagents/requirements-specialist/{workflow}.md.tmpl"
+
+architecture-specialist:
+  task_agent_type: "architecture-specialist"
+  thoroughness: "medium"
+  model: "sonnet"
+  description: "Technical design and implementation planning (replaces architecture-designer, implementation-sequencer, test-strategy-planner, ui-designer, api-designer)"
+  deliverable: "architecture.json"
+  template: "subagents/architecture-specialist/{workflow}.md.tmpl"
+
+# === VALIDATION AGENTS (Shared) ===
+
+feasibility-validator:
+  task_agent_type: "feasibility-validator"
+  thoroughness: "medium"
+  description: "Validate technical feasibility and identify blockers"
+  deliverable: "feasibility.json"
+  template: "subagents/feasibility-validator/{workflow}.md.tmpl"
+
+completeness-checker:
+  task_agent_type: "completeness-checker"
+  thoroughness: "medium"
+  description: "Check plan completeness and coverage"
+  deliverable: "completeness.json"
+  template: "subagents/completeness-checker/{workflow}.md.tmpl"
+
+estimate-reviewer:
+  task_agent_type: "estimate-reviewer"
+  thoroughness: "medium"
+  description: "Validate effort estimates and timeline"
+  deliverable: "estimates.json"
+  template: "subagents/estimate-reviewer/{workflow}.md.tmpl"
+
+code-qa:
+  task_agent_type: "code-qa"
+  thoroughness: "very thorough"
+  model: "sonnet"
+  description: "Answer detailed questions about codebase with source verification and confidence ratings"
+  deliverable: "assumptions.json"
+  template: "subagents/code-qa/{workflow}.md.tmpl"
+
+# === DEBUGGING WORKFLOW AGENTS ===
+
+bug-investigator:
+  subagent_file: "~/.claude/agents/workflows/bug-investigator.md"
+  task_agent_type: "bug-investigator"
+  description: "Bug investigation and context gathering (replaces bug-reproducer, environment-analyzer, log-analyzer)"
+  deliverable: "bug-report.json"
+  template: "subagents/bug-investigator/{workflow}.md.tmpl"
+
+root-cause-tracer:
+  task_agent_type: "root-cause-tracer"
+  thoroughness: "medium"
+  model: "sonnet"
+  description: "Root cause identification (replaces hypothesis-generator, code-tracer, dependency-checker)"
+  deliverable: "root-cause.json"
+  template: "subagents/root-cause-tracer/{workflow}.md.tmpl"
+
+fix-designer:
+  task_agent_type: "fix-designer"
+  thoroughness: "medium"
+  description: "Design bug fix approaches with implementation steps"
+  deliverable: "fix-plan.json"
+  template: "subagents/fix-designer/{workflow}.md.tmpl"
+
+alternative-evaluator:
+  task_agent_type: "alternative-evaluator"
+  thoroughness: "medium"
+  description: "Compare multiple fix approaches and recommend best option"
+  deliverable: "alternatives.json"
+  template: "subagents/alternative-evaluator/{workflow}.md.tmpl"
+
+approach-validator:
+  task_agent_type: "approach-validator"
+  thoroughness: "medium"
+  description: "Verify debugging approach addresses root cause"
+  deliverable: "approach.json"
+  template: "subagents/approach-validator/{workflow}.md.tmpl"
+
+risk-assessor:
+  task_agent_type: "risk-assessor"
+  thoroughness: "medium"
+  description: "Assess risks of proposed fixes and identify side effects"
+  deliverable: "risk-assessment.json"
+  template: "subagents/risk-assessor/{workflow}.md.tmpl"
+
+# === DEBUGGING CONDITIONAL AGENTS ===
+
+data-flow-analyzer:
+  task_agent_type: "data-flow-analyzer"
+  thoroughness: "medium"
+  description: "Trace data transformations for data corruption bugs"
+  deliverable: "data-flow.json"
+  template: "subagents/data-flow-analyzer/{workflow}.md.tmpl"
+
+timing-analyzer:
+  task_agent_type: "timing-analyzer"
+  thoroughness: "medium"
+  description: "Analyze async operations and race conditions"
+  deliverable: "timing.json"
+  template: "subagents/timing-analyzer/{workflow}.md.tmpl"
+
+# === REFACTORING WORKFLOW AGENTS (CONSOLIDATED) ===
+
+refactoring-analyzer:
+  subagent_file: "~/.claude/agents/workflows/refactoring-analyzer.md"
+  task_agent_type: "refactoring-analyzer"
+  model: "sonnet"
+  description: "Comprehensive refactoring analysis (replaces code-smell-detector, complexity-analyzer, duplication-finder, test-coverage-checker)"
+  deliverable: "refactoring-analysis.json"
+  template: "subagents/refactoring-analyzer/{workflow}.md.tmpl"
+
+refactoring-planner:
+  subagent_file: "~/.claude/agents/workflows/refactoring-planner.md"
+  task_agent_type: "refactoring-planner"
+  model: "sonnet"
+  description: "Complete refactoring execution planning (replaces refactoring-sequencer, technique-selector, test-planner, risk-mapper)"
+  deliverable: "refactoring-plan.md"
+  template: "subagents/refactoring-planner/{workflow}.md.tmpl"
+
+safety-validator:
+  task_agent_type: "safety-validator"
+  thoroughness: "medium"
+  description: "Verify refactoring preserves behavior and validate test coverage"
+  deliverable: "safety.json"
+  template: "subagents/safety-validator/{workflow}.md.tmpl"
+
+scope-reviewer:
+  task_agent_type: "scope-reviewer"
+  thoroughness: "medium"
+  description: "Check scope is manageable and timeline is realistic"
+  deliverable: "scope.json"
+  template: "subagents/scope-reviewer/{workflow}.md.tmpl"
+
+# === IMPROVING WORKFLOW AGENTS (CONSOLIDATED) ===
+
+performance-assessor:
+  subagent_file: "~/.claude/agents/workflows/performance-assessor.md"
+  task_agent_type: "performance-assessor"
+  model: "sonnet"
+  description: "Comprehensive performance and quality assessment (replaces baseline-profiler, bottleneck-identifier, opportunity-scanner, ux-analyzer, code-quality-checker)"
+  deliverable: "performance-assessment.json"
+  template: "subagents/performance-assessor/{workflow}.md.tmpl"
+
+optimization-planner:
+  subagent_file: "~/.claude/agents/workflows/optimization-planner.md"
+  task_agent_type: "optimization-planner"
+  model: "sonnet"
+  description: "Complete optimization execution planning (replaces optimization-designer, impact-estimator, verification-planner, rollout-planner)"
+  deliverable: "optimization-plan.md"
+  template: "subagents/optimization-planner/{workflow}.md.tmpl"
+
+roi-validator:
+  task_agent_type: "roi-validator"
+  thoroughness: "medium"
+  description: "Verify ROI estimates are realistic and effort is justified"
+  deliverable: "roi.json"
+  template: "subagents/roi-validator/{workflow}.md.tmpl"
+
+# === QUICK WORKFLOW AGENTS ===
+
+file-locator:
+  task_agent_type: "file-locator"
+  thoroughness: "medium"
+  description: "Quick file discovery for rapid workflows"
+  deliverable: "files.json"
+  template: "subagents/file-locator/{workflow}.md.tmpl"
+
+pattern-checker:
+  task_agent_type: "pattern-checker"
+  thoroughness: "medium"
+  description: "Quick pattern check for fast workflows"
+  deliverable: "patterns.json"
+  template: "subagents/pattern-checker/{workflow}.md.tmpl"
+
+implementation-sequencer:
+  task_agent_type: "implementation-sequencer"
+  thoroughness: "medium"
+  description: "Sequence implementation steps with dependencies"
+  deliverable: "implementation-sequence.md"

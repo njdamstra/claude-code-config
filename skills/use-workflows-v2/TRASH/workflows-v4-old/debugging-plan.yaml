@@ -1,0 +1,112 @@
+name: debugging-plan
+description: Systematic bug investigation with root cause analysis and solution design
+estimated_time: 20-60 minutes
+estimated_tokens: 20K-80K
+complexity: moderate
+
+phases:
+  - investigation
+  - analysis
+  - solution
+  - synthesis
+  - validation
+
+subagent_matrix:
+  investigation:
+    always:
+      - bug-investigator
+    conditional: {}
+
+  analysis:
+    always:
+      - root-cause-tracer
+    conditional:
+      data_bug:
+        - data-flow-analyzer
+      timing_bug:
+        - timing-analyzer
+
+  solution:
+    always:
+      - fix-designer
+    conditional:
+      multiple_approaches:
+        - alternative-evaluator
+
+  synthesis:
+    always: []  # Main agent consolidates all findings
+
+  validation:
+    always:
+      - approach-validator
+      - risk-assessor
+
+subagent_outputs:
+  investigation:
+    bug-investigator: bug-report.json
+  analysis:
+    root-cause-tracer: root-cause.json
+    data-flow-analyzer: data-flow-analysis.json
+    timing-analyzer: timing-analysis.json
+  solution:
+    fix-designer: fix-plan.json
+    alternative-evaluator: alternatives-evaluated.json
+  validation:
+    approach-validator: approach-validation.json
+    risk-assessor: risk-assessment.json
+
+gap_checks:
+  investigation:
+    criteria:
+      - "Bug can be reproduced"
+      - "Steps to reproduce documented"
+      - "Error messages captured"
+      - "Environment context collected"
+    on_failure:
+      - "Gather more reproduction data"
+      - "Continue with partial reproduction"
+      - "Abort workflow"
+
+  analysis:
+    criteria:
+      - "Root cause hypothesis is testable"
+      - "Code flow traced to source"
+      - "Contributing factors identified"
+    on_failure:
+      - "Retry root cause analysis"
+      - "Continue with best hypothesis"
+      - "Abort workflow"
+
+  solution:
+    criteria:
+      - "Fix addresses root cause"
+      - "Side effects analyzed"
+      - "Testing strategy defined"
+    on_failure:
+      - "Retry solution design"
+      - "Continue with current approach"
+      - "Abort workflow"
+
+checkpoints:
+  - after: analysis
+    prompt: "Review root cause analysis before designing solution"
+    show_files:
+      - "{{output_dir}}/phase-investigation/bug-report.json"
+      - "{{output_dir}}/phase-analysis/root-cause.json"
+    options:
+      - "Continue to solution design"
+      - "Re-investigate root cause"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review proposed solution before implementation"
+    show_files:
+      - "{{output_dir}}/phase-solution/fix-plan.json"
+      - "{{output_dir}}/phase-validation/approach.json"
+      - "{{output_dir}}/phase-validation/risk-assessment.json"
+    options:
+      - "Finalize solution"
+      - "Revise approach"
+      - "Abort"
+
+template: templates/debugging-plan.md.tmpl

@@ -1,0 +1,93 @@
+# Phase: External Research (v5)
+# Research external best practices and framework patterns
+
+name: external-research
+purpose: "Research external documentation, best practices, and framework patterns to complement codebase investigation with industry-standard approaches"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent uses external-research skill
+  conditional: {}
+
+subagent_configs: {}  # No subagents - main agent handles research
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Best practices documented from authoritative sources"
+    - "Framework patterns identified and explained"
+    - "At least 2 external sources consulted"
+    - "Research findings are relevant to the problem"
+    - "Recommendations are actionable"
+
+  on_failure:
+    - "Do additional research with refined focus"
+    - "Continue with current findings"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - external_best_practices
+  - framework_patterns
+  - industry_standards
+  - actionable_recommendations
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read `problem.md` to understand research focus
+
+  2. Read `codebase-analysis.json` to identify:
+     - Gaps in current implementation
+     - Patterns that need validation
+     - Areas where external guidance would help
+
+  3. Use the **external-research** skill or **web search** to research:
+     - Official framework documentation (Vue, Astro, Appwrite, etc.)
+     - Best practices for identified patterns
+     - Industry standards for the problem domain
+     - Common pitfalls and solutions
+
+  4. Document findings in `best-practices.md`:
+     - Source citations for all claims
+     - Relevance to our specific problem
+     - Comparison to current codebase patterns
+     - Recommendations for our approach
+
+  5. Focus research based on scope:
+     - **Frontend:** Vue 3 patterns, Tailwind best practices, state management
+     - **Backend:** Appwrite patterns, API design, serverless best practices
+     - **Both:** Full-stack integration, data flow, authentication patterns
+
+  **Example research areas:**
+  - Component composition patterns
+  - State management strategies
+  - Authentication flows
+  - Error handling approaches
+  - Performance optimization techniques
+  - Accessibility standards
+
+  **Output deliverable:**
+  - `best-practices.md` - Researched patterns with citations and recommendations
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

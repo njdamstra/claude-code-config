@@ -1,0 +1,28 @@
+name: test-plugin
+description: Test workflow for plugin system verification
+estimated_time: 15 minutes
+estimated_tokens: 5K
+complexity: low
+
+phases:
+  - discovery        # Built-in phase (should work)
+  - custom-test     # Custom phase (bundled with this workflow)
+
+subagent_matrix:
+  discovery:
+    always:
+      - code-researcher
+    conditional: {}
+
+  custom-test:
+    always:
+      - feasibility-validator
+    conditional: {}
+
+gap_checks:
+  discovery:
+    criteria:
+      - "Test discovery complete"
+    on_failure:
+      - "Retry"
+      - "Continue"

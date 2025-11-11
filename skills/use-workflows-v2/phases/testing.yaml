@@ -1,0 +1,108 @@
+# Phase: Testing (v5)
+# Define comprehensive testing strategy
+
+name: testing
+purpose: "Define testing strategy including unit, integration, and end-to-end tests"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent creates testing plan
+  conditional: {}
+
+subagent_configs: {}
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Test coverage strategy defined"
+    - "Test types specified (unit, integration, e2e)"
+    - "Test scenarios documented"
+    - "Success criteria clear"
+
+  on_failure:
+    - "Refine testing strategy"
+    - "Continue with basic strategy"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - testing_strategy
+  - test_scenarios
+  - coverage_targets
+  - test_types
+  - success_criteria
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read previous phase outputs (requirements, architecture, implementation)
+
+  2. Define testing strategy:
+     - Unit tests for components/functions
+     - Integration tests for data flow
+     - End-to-end tests for user workflows
+     - Edge case coverage
+
+  3. Document test scenarios:
+     - Happy path scenarios
+     - Error scenarios
+     - Edge cases
+     - Performance tests
+
+  4. Create deliverable: `testing-strategy.md`
+
+  **Example testing-strategy.md:**
+  ```markdown
+  # Testing Strategy: [Feature Name]
+
+  ## Coverage Targets
+  - Unit tests: 80%+
+  - Integration tests: Key flows
+  - E2E tests: Critical paths
+
+  ## Unit Tests
+  ### Component: [Name]
+  - Test 1: [Description]
+  - Test 2: [Description]
+
+  ## Integration Tests
+  ### Flow: [Name]
+  - Test 1: [Description]
+  - Test 2: [Description]
+
+  ## End-to-End Tests
+  ### Workflow: [Name]
+  - Test 1: [Description]
+  - Test 2: [Description]
+
+  ## Edge Cases
+  - Case 1: [Description]
+  - Case 2: [Description]
+
+  ## Success Criteria
+  - [ ] All tests passing
+  - [ ] Coverage targets met
+  - [ ] Edge cases covered
+  ```
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

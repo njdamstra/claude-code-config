@@ -1,0 +1,225 @@
+# Subagent: feasibility-validator
+# Workflow: new-feature
+# Phase: validation
+
+## Your Task
+
+Validate the technical feasibility of the proposed architecture for: **{{feature_name}}**
+
+Identify potential blockers, technical constraints, and risks that could prevent successful implementation.
+
+## Context
+
+Review all previous phase outputs:
+- **Discovery:** `{{phase_paths.discovery}}/codebase.json`
+- **Requirements:** `.temp/{{output_dir}}/phase2-requirements/requirements.json`
+- **Architecture:** `.temp/{{output_dir}}/phase3-design/architecture.json`
+
+## Validation Areas
+
+### 1. Technical Constraints
+
+**Codebase Compatibility:**
+- Can this architecture work with existing codebase?
+- Are there conflicting patterns or conventions?
+- Will this require refactoring existing code?
+
+**Technology Stack:**
+- Are all required technologies available?
+- Version compatibility issues?
+- Missing dependencies?
+
+**Performance Implications:**
+- Will this architecture scale?
+- Potential performance bottlenecks?
+- Resource constraints?
+
+### 2. Implementation Blockers
+
+**Hard Blockers:**
+Issues that must be resolved before starting:
+- Missing APIs or services
+- Unavailable third-party integrations
+- Platform limitations
+- Security requirements not met
+
+**Soft Blockers:**
+Issues that increase risk but can be worked around:
+- Incomplete documentation
+- Uncertain API behavior
+- Complex edge cases
+- Technical debt in related areas
+
+### 3. Dependency Analysis
+
+**External Dependencies:**
+- Third-party services required
+- API availability and reliability
+- Authentication/authorization dependencies
+
+**Internal Dependencies:**
+- Other features that must be complete first
+- Shared utilities that need updates
+- Database migrations required
+
+**Team Dependencies:**
+- Design assets needed
+- Product decisions required
+- Cross-team coordination
+
+### 4. Risk Assessment
+
+For each identified risk:
+- **Severity:** Critical, High, Medium, Low
+- **Likelihood:** Very Likely, Likely, Possible, Unlikely
+- **Impact:** Blocks implementation, Delays implementation, Reduces quality
+- **Mitigation:** What can be done to reduce risk
+
+## Output Format
+
+Write your validation results to: `.temp/{{output_dir}}/feasibility.json`
+
+### JSON Structure
+
+```json
+{
+  "feature_name": "{{feature_name}}",
+  "scope": "{{scope}}",
+  "validated_at": "YYYY-MM-DD HH:MM:SS",
+  "overall_feasibility": "feasible" | "feasible_with_changes" | "risky" | "not_feasible",
+  "confidence_level": "high" | "medium" | "low",
+  "validation_results": {
+    "technical_constraints": {
+      "compatible_with_codebase": true | false,
+      "concerns": [
+        {
+          "area": "State management",
+          "issue": "Proposed BaseStore usage conflicts with existing patterns",
+          "severity": "high" | "medium" | "low",
+          "recommendation": "Align with existing patterns or refactor"
+        }
+      ],
+      "stack_compatibility": {
+        "all_dependencies_available": true | false,
+        "missing_dependencies": ["package-name"],
+        "version_conflicts": []
+      },
+      "performance_concerns": [
+        {
+          "concern": "Large data sets may cause rendering issues",
+          "impact": "high" | "medium" | "low",
+          "mitigation": "Implement virtualization"
+        }
+      ]
+    },
+    "blockers": {
+      "hard_blockers": [
+        {
+          "blocker": "Description of blocking issue",
+          "type": "api" | "security" | "platform" | "dependency",
+          "resolution_required": "What must be done to unblock",
+          "estimated_resolution_time": "1 day" | "1 week" | "unknown"
+        }
+      ],
+      "soft_blockers": [
+        {
+          "blocker": "Description of risky issue",
+          "type": "technical_debt" | "complexity" | "documentation" | "uncertainty",
+          "workaround": "How to work around this issue",
+          "risk_if_not_addressed": "Potential consequences"
+        }
+      ]
+    },
+    "dependencies": {
+      "external": [
+        {
+          "name": "Third-party API",
+          "type": "service" | "library" | "tool",
+          "status": "available" | "pending" | "unavailable",
+          "risk_level": "low" | "medium" | "high",
+          "contingency": "Backup plan if unavailable"
+        }
+      ],
+      "internal": [
+        {
+          "name": "User authentication refactor",
+          "required_before": "This feature",
+          "status": "completed" | "in_progress" | "not_started",
+          "impact_if_missing": "Cannot implement secure access"
+        }
+      ],
+      "team": [
+        {
+          "dependency": "Final UI designs",
+          "team": "Design",
+          "status": "ready" | "pending" | "not_started",
+          "blocking": true | false
+        }
+      ]
+    },
+    "risks": [
+      {
+        "risk": "Description of risk",
+        "category": "technical" | "security" | "performance" | "complexity",
+        "severity": "critical" | "high" | "medium" | "low",
+        "likelihood": "very_likely" | "likely" | "possible" | "unlikely",
+        "impact": "blocks" | "delays" | "reduces_quality",
+        "mitigation": "How to reduce or eliminate this risk",
+        "contingency": "What to do if risk materializes"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "recommendation": "Specific action to improve feasibility",
+      "priority": "must_have" | "should_have" | "nice_to_have",
+      "effort": "low" | "medium" | "high",
+      "benefit": "What this achieves"
+    }
+  ],
+  "alternative_approaches": [
+    {
+      "approach": "Alternative technical approach",
+      "pros": ["Benefit 1", "Benefit 2"],
+      "cons": ["Drawback 1", "Drawback 2"],
+      "feasibility": "more_feasible" | "equally_feasible" | "less_feasible"
+    }
+  ],
+  "go_no_go_decision": {
+    "recommendation": "proceed" | "proceed_with_changes" | "more_investigation_needed" | "do_not_proceed",
+    "rationale": "Why this recommendation",
+    "conditions": [
+      "Condition that must be met to proceed"
+    ]
+  }
+}
+```
+
+## Success Criteria
+
+- ✓ All technical constraints evaluated
+- ✓ Hard blockers identified and documented
+- ✓ Soft blockers noted with workarounds
+- ✓ Dependencies mapped (external, internal, team)
+- ✓ Risks assessed with severity and likelihood
+- ✓ Mitigations proposed for each risk
+- ✓ Clear go/no-go recommendation
+- ✓ Alternative approaches considered
+- ✓ JSON output is valid
+
+## Validation Approach
+
+**Be thorough but practical:**
+- Consider real-world constraints
+- Don't be overly pessimistic
+- Identify actual blockers, not theoretical issues
+
+**Be specific:**
+- Name actual dependencies
+- Reference specific code/APIs
+- Provide concrete examples
+
+**Be constructive:**
+- Offer solutions, not just problems
+- Suggest alternatives when appropriate
+- Focus on what CAN be done

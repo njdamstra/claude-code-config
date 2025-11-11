@@ -1,0 +1,105 @@
+name: new-feature-plan
+description: Comprehensive feature planning with PRD generation (40/60 planning-to-coding ratio)
+estimated_time: 30-90 minutes
+estimated_tokens: 30K-100K
+complexity: moderate
+
+phases:
+  - discovery
+  - requirements
+  - design
+  - synthesis
+  - validation
+
+subagent_matrix:
+  discovery:
+    always:
+      - code-researcher
+    conditional: {}
+
+  requirements:
+    always:
+      - requirements-specialist
+    conditional: {}
+
+  design:
+    always:
+      - architecture-specialist
+    conditional: {}
+
+  validation:
+    always:
+      - feasibility-validator
+      - completeness-checker
+    conditional:
+      estimate:
+        - estimate-reviewer
+
+gap_checks:
+  discovery:
+    criteria:
+      - "Codebase analysis complete"
+      - "Patterns and dependencies identified"
+      - "Integration points documented"
+    on_failure:
+      - "Retry discovery with refined scope"
+      - "Continue with gaps noted"
+      - "Abort workflow"
+
+  requirements:
+    criteria:
+      - "User stories follow INVEST criteria"
+      - "Technical requirements are specific"
+      - "Edge cases documented"
+    on_failure:
+      - "Retry requirements phase"
+      - "Continue with warnings"
+      - "Abort workflow"
+
+  design:
+    criteria:
+      - "Architecture is well-defined"
+      - "Implementation steps are actionable"
+      - "Test strategy is comprehensive"
+    on_failure:
+      - "Retry design phase"
+      - "Continue with warnings"
+      - "Abort workflow"
+
+subagent_outputs:
+  discovery:
+    code-researcher: codebase-analysis.json
+  requirements:
+    requirements-specialist: requirements.json
+  design:
+    architecture-specialist: architecture.md
+    conditional:
+      complexity=high:
+        - architecture-specialist
+  validation:
+    feasibility-validator: feasibility-check.json
+    completeness-checker: completeness-check.json
+
+checkpoints:
+  - after: discovery
+    prompt: "Review discovery findings before proceeding to requirements"
+    show_files:
+      - "{{phase_dirs.discovery}}/codebase.json"
+    options:
+      - "Continue to requirements"
+      - "Repeat discovery"
+      - "Skip to design"
+      - "Abort"
+
+  - after: validation
+    prompt: "Review validation results before finalizing plan"
+    show_files:
+      - "{{phase_dirs.validation}}/feasibility.json"
+      - "{{phase_dirs.validation}}/completeness.json"
+      - "{{phase_dirs.synthesis}}/synthesis.md"
+    options:
+      - "Finalize plan"
+      - "Repeat design phase"
+      - "Abort"
+
+template: templates/new-feature-plan.md.tmpl
