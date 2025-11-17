@@ -196,3 +196,19 @@ implementation-sequencer:
   thoroughness: "medium"
   description: "Sequence implementation steps with dependencies"
   deliverable: "implementation-sequence.md"
+
+# === HOW-TO-GUIDE WORKFLOW AGENTS ===
+
+codebase-discovery-agent:
+  task_agent_type: "code-researcher"
+  model: "sonnet"
+  thoroughness: "medium"
+  description: "Comprehensive discovery of target feature/component/composable for tutorial generation (API surface, usage patterns, antipatterns)"
+  deliverable: "codebase-context.json"
+
+tutorial-example-generator:
+  task_agent_type: "code-researcher"  # Repurposed for example generation
+  model: "sonnet"
+  thoroughness: "high"
+  description: "Generate clean, pedagogically correct tutorial examples (not by copying codebase usage)"
+  deliverable: "tutorial-examples.json"

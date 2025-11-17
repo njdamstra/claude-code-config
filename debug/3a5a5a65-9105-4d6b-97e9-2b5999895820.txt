@@ -1,0 +1,1289 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/socialaize-worktrees/feature-onboarding-flow/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 8 allow rule(s) to destination 'localSettings': ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/socialaize-worktrees/feature-onboarding-flow/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760679265203-y0ojtd.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json.tmp.11610.1760679265205
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json.tmp.11610.1760679265205 to /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json
+[DEBUG] File /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265244
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385523 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265244 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/nanostore-state-architect.md has invalid model 'haiku-4.5'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265459
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385523 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265459 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265489
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385523 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265489 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 60000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265840
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385523 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265840 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265936
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385418 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265936 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679265965
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385418 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679265965 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679266034
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385523 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679266034 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "chrome-devtools" Server stderr: ERROR: `chrome-devtools-mcp` does not support Node v22.11.0. Please upgrade to Node 22.12.0 LTS or a newer LTS.
+[DEBUG] MCP server "chrome-devtools": Connection failed after 11224ms: MCP error -32000: Connection closed
+[ERROR] MCP server "chrome-devtools" Connection failed: MCP error -32000: Connection closed
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 11274ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Metadata string for frontend-add:
+[DEBUG] <command-message>frontend-add is running…</command-message>
+<command-name>/frontend-add</command-name>
+<command-args>onboarding-header-name "add users name to top of onboarding flow's navbar"</command
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 4 messages for frontend-add
+[DEBUG] Message 1: <command-message>frontend-add is running…</command-message>
+<command-name>/frontend-add</command-name>
+<command-args>onboarding-header-name "add users name to top of onboarding flow's navbar"</command
+[DEBUG] Message 2 [META]: [{"type":"text","text":"# Add to Existing Frontend Feature\n\n**Feature Name:** `$1`\n**What to Add:** `$2`\n\n## Phase 0: Initialization\n\n### Create Todo List\n\nClaude should initialize a TodoWrit
+[DEBUG] Message 3: [ATTACHMENT]
+[DEBUG] Message 4: [ATTACHMENT]
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for cc3341ba-1540-4538-8543-3dca6136efda, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>frontend-add is running…</command-message>
+<command-name>/frontend-add</command-nam...
+[DEBUG] UserCommandMessage rendering: "frontend-add is running…" (args: "onboarding-header-name "add users name to top of onboarding flow's navbar"")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json.tmp.11610.1760679283257
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 976 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json.tmp.11610.1760679283257 to /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json
+[DEBUG] File /Users/natedamstra/.claude/todos/3a5a5a65-9105-4d6b-97e9-2b5999895820-agent-3a5a5a65-9105-4d6b-97e9-2b5999895820.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at Yy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:356:3850)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at Yy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:356:3850)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679297725
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385124 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679297725 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 41481510-36ac-4225-a35c-a30cfb8295c6
+[DEBUG] FileHistory: Added snapshot for 41481510-36ac-4225-a35c-a30cfb8295c6, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at eRQ (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3522:968)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3354:895)
+    at call.next (<anonymous>)
+    at bC8 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2649:65320)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async uCQ (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2649:62374)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2649:61543
+    at async ob1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:724:1644)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at Yy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:356:3850)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760679355744
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384791 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760679355744 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 8 rule(s): ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760679265203-y0ojtd.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message c3723264-6af3-402b-8679-4e1d321ebb14
+[DEBUG] FileHistory: Added snapshot for c3723264-6af3-402b-8679-4e1d321ebb14, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760680704391
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384933 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760680704391 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": Cleanup timeout reached, stopping process monitoring
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.11610.1760680705159
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 385345 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.11610.1760680705159 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

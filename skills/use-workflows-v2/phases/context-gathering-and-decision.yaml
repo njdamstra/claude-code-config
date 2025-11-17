@@ -1,0 +1,72 @@
+name: context-gathering-and-decision
+purpose: "Gather conversational or implementation context and ask user if pre-codebase research is needed"
+
+subagents:
+  always: []
+  conditional: {}
+
+subagent_configs: {}
+
+gap_checks:
+  criteria:
+    - "Context type clearly identified (conversational vs implementation)"
+    - "Problem area described with sufficient detail"
+    - "User decision captured (research requested or skipped)"
+  on_failure:
+    - "Ask user for more context details"
+    - "Continue with available context"
+    - "Abort workflow"
+
+provides:
+  - context_type
+  - problem_description
+  - research_decision
+  - conversation_summary
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. **Analyze conversational context** to understand what assumptions might need validation:
+     - What has been discussed in prior messages?
+     - What decisions or implementations were made?
+     - What implicit beliefs or assumptions were stated?
+     - What might have been overlooked or misunderstood?
+
+  2. **Determine context type** by asking user (if unclear):
+     - **Conversational**: Validate assumptions made during our conversation (mental model checking)
+     - **Implementation**: Verify if something in the codebase is implemented correctly
+
+  3. **Use AskUserQuestion tool** to ask:
+     ```
+     "Do you want me to perform pre-codebase research before generating assumptions?"
+
+     Options:
+     - "Yes, explore the codebase first" → research_requested: true
+     - "No, generate assumptions directly" → research_requested: false
+     ```
+
+  4. **Document findings** in `context.json`:
+     ```json
+     {
+       "context_type": "conversational" | "implementation",
+       "problem_description": "Clear description of what needs validation",
+       "research_requested": true | false,
+       "conversation_summary": "Key points from prior conversation",
+       "problem_area": "Specific feature/component/pattern being examined",
+       "user_notes": "Any additional context provided by user"
+     }
+     ```
+
+  **Context Type Decision Guide:**
+  - **Conversational**: User wants to check if agent made wrong assumptions during prior work
+  - **Implementation**: User wants to validate if existing code is correct/complete
+
+  **Key considerations:**
+  - Be thorough in capturing conversational context - assumptions are often implicit
+  - For implementation mode, identify specific components/files to examine
+  - Research decision affects next phase (code-researcher spawns if true)
+
+metadata:
+  estimated_time: "3-5 minutes"
+  complexity: "simple"
+  requires_user_input: true

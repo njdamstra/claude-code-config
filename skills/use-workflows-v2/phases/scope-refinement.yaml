@@ -1,0 +1,164 @@
+# Phase: Scope Refinement (v5)
+# Main agent checkpoint to ask user 5-12 dynamic scope questions based on discovered context
+
+name: scope-refinement
+purpose: "Ask user dynamic scope questions (5-12) to refine tutorial focus, depth, audience, and content boundaries"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # No subagents - main agent user checkpoint
+  conditional: {}
+
+subagent_configs: {}  # Main agent handles question generation and collection
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read `codebase-context.json` from previous phase:
+     - API surface (composable/component/utility details)
+     - Complexity estimate (simple/moderate/complex)
+     - Pattern count and variety
+     - Antipattern count
+     - Dependencies
+
+  2. Generate **dynamic questions** based on discovered context:
+
+     **ALWAYS ASK (5 base questions):**
+
+     Q1. "What is the target audience level?"
+         Options: Beginner, Intermediate, Advanced, Mixed
+
+     Q2. "What depth of coverage is needed?"
+         Options: Quick-start (minimal), Comprehensive (detailed), Reference (exhaustive)
+
+     Q3. "Should we include edge cases and error handling?"
+         Options: Yes (detailed explanations), Yes (brief mentions), No (happy path only)
+
+     Q4. "How detailed should prerequisites be?"
+         Options: Assume knowledge, List briefly, Explain in detail
+
+     Q5. "Include testing examples?"
+         Options: Yes (for each step), Yes (final example only), No
+
+     **CONDITIONAL QUESTIONS (ask 0-7 additional based on context):**
+
+     IF complexity_estimate == "moderate" OR "complex":
+       Q. "Should we include decision trees for when to use different patterns?"
+
+     IF api_surface has multiple parameters (e.g., composable with options object):
+       Q. "Should we demonstrate all {{PARAM_COUNT}} parameters or focus on common use cases?"
+          Options: All parameters, Common use cases only, Progressive (basic then advanced)
+
+     IF antipattern_count > 0:
+       Q. "Include examples of antipatterns to avoid? ({{ANTIPATTERN_COUNT}} found in codebase)"
+          Options: Yes (show what NOT to do), No (positive examples only)
+
+     IF patterns include multiple usage scenarios:
+       Q. "Which usage scenarios should be covered?"
+          Options: [List discovered patterns as checkboxes]
+
+     IF target is composable:
+       Q. "Focus on composable internals or usage examples?"
+          Options: Usage only, Internals (how it works), Both
+
+     IF target involves animations (detected from topic name):
+       Q. "Which animation approaches to cover?"
+          Options: CSS only, Web Animations API only, Both, Framework-specific
+
+     IF file_count.components > 1:
+       Q. "Which components should be included in the tutorial?"
+          Options: All {{COMPONENT_COUNT}}, Specific list (specify), Most common only
+
+     IF dependencies include state management:
+       Q. "Cover state management patterns in detail?"
+          Options: Yes (detailed), Yes (brief), No (assume knowledge)
+
+     IF target has composition patterns:
+       Q. "Should tutorial include composition patterns or just standalone usage?"
+          Options: Composition patterns, Standalone usage, Both
+
+     IF complexity_estimate == "complex":
+       Q. "Include a complete working example at the end?"
+          Options: Yes (full production example), Yes (simplified demo), No
+
+     IF scope is frontend:
+       Q. "Should we cover SSR considerations and gotchas?"
+          Options: Yes (detailed), Yes (brief), No
+
+  3. Present questions to user using **AskUserQuestion** tool (or similar UI mechanism)
+
+  4. Collect user answers
+
+  5. Write answers to `scope-answers.json`:
+     ```json
+     {
+       "topic_name": "{{TOPIC_NAME}}",
+       "audience": "beginner|intermediate|advanced|mixed",
+       "depth": "quick-start|comprehensive|reference",
+       "include_edge_cases": boolean,
+       "prerequisites_detail": "assume|list|explain",
+       "testing_examples": "each-step|final-only|none",
+       "decision_trees": boolean,
+       "parameter_coverage": "all|common|progressive",
+       "include_antipatterns": boolean,
+       "antipattern_count": int,
+       "usage_scenarios": [string],
+       "composable_focus": "usage|internals|both",
+       "animation_approaches": [string],
+       "components_to_include": [string],
+       "state_management_detail": "detailed|brief|none",
+       "composition_patterns": boolean,
+       "complete_working_example": "production|simplified|none",
+       "ssr_considerations": "detailed|brief|none",
+       "question_count": int,
+       "complexity_informed": "simple|moderate|complex"
+     }
+     ```
+
+  6. Log question generation logic:
+     - How many questions were generated
+     - Which were base vs conditional
+     - Reasoning for conditional questions
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "5-12 questions generated (5 base + 0-7 conditional)"
+    - "Questions are specific to discovered context"
+    - "All user answers collected and validated"
+    - "scope-answers.json contains complete responses"
+    - "Conditional questions justified by codebase-context"
+
+  on_failure:
+    - "Allow user to revise answers"
+    - "Continue with current answers"
+    - "Abort workflow"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - user_scope_preferences    # Audience, depth, coverage choices
+  - content_boundaries        # What to include/exclude
+  - tutorial_focus            # Usage vs internals, patterns vs examples
+  - example_requirements      # Testing, antipatterns, edge cases
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "3-5 minutes (user interaction)"
+  complexity: "simple"
+  requires_user_input: true

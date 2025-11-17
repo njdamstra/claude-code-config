@@ -1,0 +1,466 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/socialaize-worktrees/feature-automation-imp/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 8 allow rule(s) to destination 'localSettings': ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760385119400-oab2ce.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/38d85b7e-aca2-4a78-8b11-3c13a07bd23c-agent-38d85b7e-aca2-4a78-8b11-3c13a07bd23c.json.tmp.88178.1760385119402
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/38d85b7e-aca2-4a78-8b11-3c13a07bd23c-agent-38d85b7e-aca2-4a78-8b11-3c13a07bd23c.json.tmp.88178.1760385119402 to /Users/natedamstra/.claude/todos/38d85b7e-aca2-4a78-8b11-3c13a07bd23c-agent-38d85b7e-aca2-4a78-8b11-3c13a07bd23c.json
+[DEBUG] File /Users/natedamstra/.claude/todos/38d85b7e-aca2-4a78-8b11-3c13a07bd23c-agent-38d85b7e-aca2-4a78-8b11-3c13a07bd23c.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385119430
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385119430 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/socialaize-worktrees/feature-automation-imp/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385119636
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385119636 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385119661
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385119661 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385120104
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385120104 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385120337
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164264 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385120337 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385120369
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164264 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385120369 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385120409
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 164369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385120409 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 8424ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for 8b2e1cdb-f9be-463b-87c9-0ab9e9c78c2f, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: SlashCommand
+[DEBUG] Executing hooks for PreToolUse:SlashCommand
+[DEBUG] Getting matching hook commands for PreToolUse with query: SlashCommand
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "SlashCommand" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for SlashCommand: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "SlashCommand",
+        "ruleContent": "/worktree-functions WorkflowManager"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  },
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "SlashCommand",
+        "ruleContent": "/worktree-functions:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for PostToolUse:SlashCommand
+[DEBUG] Getting matching hook commands for PostToolUse with query: SlashCommand
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "SlashCommand" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: SlashCommand
+[DEBUG] Executing hooks for PreToolUse:SlashCommand
+[DEBUG] Getting matching hook commands for PreToolUse with query: SlashCommand
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "SlashCommand" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for SlashCommand: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "SlashCommand",
+        "ruleContent": "/worktree-functions AI_API"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  },
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "SlashCommand",
+        "ruleContent": "/worktree-functions:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for PostToolUse:SlashCommand
+[DEBUG] Getting matching hook commands for PostToolUse with query: SlashCommand
+[DEBUG] Found 57 hook matchers in settings
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: Edit(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: mcp__claude-mcp-tools__easy_replace(**/yarn.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/bun.lockb)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Cargo.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/composer.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Gemfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.mod)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/go.sum)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package-lock.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/package.json)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/Pipfile)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pnpm-lock.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/poetry.lock)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pubspec.yaml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/pyproject.toml)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/requirements.txt)
+[DEBUG] Invalid regex pattern in hook matcher: MultiEdit(**/yarn.lock)
+[DEBUG] Matched 0 unique hooks for query "SlashCommand" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nL7oGJe2BAahAQNkdX"}
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nLAHb54pvSBE4PFofs"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nLAHb54pvSBE4PFofs"}
+    at N4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:428:21403)
+    at tS.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:2117)
+    at tS.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async KwQ.yD1.model (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19050)
+    at async yD1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:39781)
+    at async KwQ (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19204)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13417
+    at async sl0 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:4415)
+    at async wB1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13387)
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385190933
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162261 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385190933 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message ef86b439-0766-4f8b-9625-9cade57a9528
+[DEBUG] FileHistory: Added snapshot for ef86b439-0766-4f8b-9625-9cade57a9528, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nNHv2mhLGaewn78TPf"}
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nNL8EXzrVjxhzPqThW"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nNL8EXzrVjxhzPqThW"}
+    at N4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:428:21403)
+    at tS.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:2117)
+    at tS.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async KwQ.yD1.model (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19050)
+    at async yD1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:39781)
+    at async KwQ (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19204)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13417
+    at async sl0 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:4415)
+    at async wB1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13387)
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385220361
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162286 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385220361 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385245206
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162181 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385245206 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385245231
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162181 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385245231 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385245261
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162286 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385245261 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 43b19c7f-d734-42b7-97af-9e1fa4d31167
+[DEBUG] FileHistory: Added snapshot for 43b19c7f-d734-42b7-97af-9e1fa4d31167, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nQcJ8cs48yQgvyU95s"}
+[ERROR] Error in non-streaming fallback: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nQeU6ZxKfdjr3j6d2H"}
+[ERROR] Error: Error: 400 {"type":"error","error":{"type":"invalid_request_error","message":"messages.2: `tool_use` ids were found without `tool_result` blocks immediately after: toolu_01SvRzBe9wRYzd5EwFhwrLwQ. Each `tool_use` block must have a corresponding `tool_result` block in the next message."},"request_id":"req_011CU5nQeU6ZxKfdjr3j6d2H"}
+    at N4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:428:21403)
+    at tS.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:2117)
+    at tS.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:573:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async KwQ.yD1.model (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19050)
+    at async yD1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:39781)
+    at async KwQ (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:19204)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13417
+    at async sl0 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:4415)
+    at async wB1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3209:13387)
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385251757
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162042 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385251757 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: [Rewind] Rewinding to snapshot for 8b2e1cdb-f9be-463b-87c9-0ab9e9c78c2f
+[DEBUG] FileHistory: [Rewind] Finished rewinding to 8b2e1cdb-f9be-463b-87c9-0ab9e9c78c2f
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385265565
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 161937 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385265565 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385265589
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 161937 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385265589 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760385265670
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162042 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760385265670 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/socialaize-worktrees/feature-automation-imp/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 9 rule(s): ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)","Bash(~/.local/bin/socialaize-worktree/cleanup-functions-workspace.sh:*)"]
+[DEBUG] Detected change to /Users/natedamstra/socialaize-worktrees/feature-automation-imp/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 10 rule(s): ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)","Bash(~/.local/bin/socialaize-worktree/cleanup-functions-workspace.sh:*)","Bash(chmod:*)"]
+[DEBUG] Detected deletion of /Users/natedamstra/socialaize-worktrees/feature-automation-imp/.claude/settings.local.json
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760385119400-oab2ce.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message d1bbdb72-169e-4553-aa84-b88ca341de21
+[DEBUG] FileHistory: Added snapshot for d1bbdb72-169e-4553-aa84-b88ca341de21, tracking 0 files
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.88178.1760386678993
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 162631 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.88178.1760386678993 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

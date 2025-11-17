@@ -1,0 +1,115 @@
+# How-To-Guide Workflow (v5)
+# Generate comprehensive, step-by-step tutorial documentation with pedagogically correct examples
+
+name: how-to-guide-workflow
+description: "Create comprehensive how-to guides with generated examples (not copied from codebase), scope refinement questions, and external research integration"
+estimated_time: 20-40 minutes
+estimated_tokens: 25K-75K
+complexity: simple-to-moderate
+
+# ==============================================================================
+# OUTPUT CONFIGURATION
+# ==============================================================================
+
+base_dir: ".temp"
+# Final output path: .temp/{topic-name}/phase-{N}-{phase-name}/
+# Example: .temp/use-animation/phase-1-codebase-discovery/
+
+# ==============================================================================
+# PHASE SEQUENCE
+# ==============================================================================
+
+phases:
+  # Phase 1: Codebase Discovery (code-researcher - comprehensive)
+  - name: codebase-discovery
+    scope: "{{workflow_scope}}"  # Use --frontend/--backend/--both flag
+    inputs: []  # First phase, no inputs
+
+  # Phase 2: Scope Refinement Checkpoint (5-12 dynamic questions)
+  - name: scope-refinement
+    scope: default
+    inputs:
+      - from: codebase-discovery
+        files: [codebase-context.json]
+        context_description: "API surface, patterns, and complexity for generating scope questions"
+
+  # Phase 3: Example Generation (generate clean examples, don't copy)
+  - name: example-generation
+    scope: "{{workflow_scope}}"  # Use scope for targeted generation
+    inputs:
+      - from: codebase-discovery
+        files: [codebase-context.json]
+        context_description: "API surface and usage reference for example generation"
+      - from: scope-refinement
+        files: [scope-answers.json]
+        context_description: "User-defined scope to guide example creation"
+
+  # Phase 4: External Research (always included)
+  - name: external-research
+    scope: default
+    inputs:
+      - from: scope-refinement
+        files: [scope-answers.json]
+        context_description: "Tutorial scope to focus external research"
+      - from: codebase-discovery
+        files: [codebase-context.json]
+        context_description: "Internal patterns to compare with external best practices"
+
+  # Phase 5: Tutorial Synthesis (main agent consolidation)
+  - name: tutorial-synthesis
+    scope: default
+    inputs:
+      - from: codebase-discovery
+        files: [codebase-context.json]
+        context_description: "API surface for prerequisites and context"
+      - from: scope-refinement
+        files: [scope-answers.json]
+        context_description: "User preferences for tutorial structure"
+      - from: example-generation
+        files: [tutorial-examples.json]
+        context_description: "Generated examples for tutorial steps"
+      - from: external-research
+        files: [best-practices.md]
+        context_description: "External research to integrate"
+
+# ==============================================================================
+# USER APPROVAL GATES
+# ==============================================================================
+
+checkpoints:
+  # Checkpoint 1: After Scope Refinement
+  - after: scope-refinement
+    prompt: "Review scope questions and answers before generating examples"
+    show_files:
+      - "codebase-context.json"
+      - "scope-answers.json"
+    options:
+      - "Proceed to example generation"
+      - "Revise scope answers"
+      - "Abort workflow"
+
+  # Checkpoint 2: After Tutorial Synthesis
+  - after: tutorial-synthesis
+    prompt: "Review generated how-to guide before finalization"
+    show_files:
+      - "how-to-guide.md"
+    options:
+      - "Finalize tutorial (workflow complete)"
+      - "Revise tutorial"
+      - "Abort workflow"
+
+# TODO: Add validation-checkpoint and validation phases once created
+# These would be:
+#   - validation-checkpoint: Ask user if they want to validate examples
+#   - validation: Optional phase that validates code examples if user approves
+
+# ==============================================================================
+# SCOPE CONFIGURATION
+# ==============================================================================
+
+default_scope: "{{user_provided_scope}}"
+# Replaced at runtime with --frontend, --backend, or --both flag
+# Examples:
+#   bash generate-workflow.sh how-to-guide-workflow use-animation --frontend
+#   bash generate-workflow.sh how-to-guide-workflow appwrite-integration --backend
+#   bash generate-workflow.sh how-to-guide-workflow auth-flow --both

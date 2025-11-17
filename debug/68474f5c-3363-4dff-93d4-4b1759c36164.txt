@@ -1,0 +1,245 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 33 allow rule(s) to destination 'localSettings': ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/.claude/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760743240411-1tooka.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68474f5c-3363-4dff-93d4-4b1759c36164-agent-68474f5c-3363-4dff-93d4-4b1759c36164.json.tmp.68744.1760743240414
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68474f5c-3363-4dff-93d4-4b1759c36164-agent-68474f5c-3363-4dff-93d4-4b1759c36164.json.tmp.68744.1760743240414 to /Users/natedamstra/.claude/todos/68474f5c-3363-4dff-93d4-4b1759c36164-agent-68474f5c-3363-4dff-93d4-4b1759c36164.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68474f5c-3363-4dff-93d4-4b1759c36164-agent-68474f5c-3363-4dff-93d4-4b1759c36164.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743240457
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743240457 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 6 skills total (managed: 0, user: 6, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 6 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/nanostore-state-architect.md has invalid model 'haiku-4.5'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Summarizing last 3 of 26 messages (~93819 tokens)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743240935
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743240935 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743240971
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743240971 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPanYhsWx8LRqVa1m6"}
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743241486
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743241486 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPd3j1FwxRx6YyNDVg"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPd3j1FwxRx6YyNDVg"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 80 messages (~94933 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPesrxcQFUFsUMZxhf"}
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPfw7VoGWYXG7J5iPq"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPfw7VoGWYXG7J5iPq"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 5 of 84 messages (~99334 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPgnTXeTaxCEpi3cv3"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPhaq3DDdo53cyiNZe"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPhaq3DDdo53cyiNZe"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 85 messages (~85209 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPiSBEZ3y6soYxoK4Z"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPjCZmBEizmaMzGVNK"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPjCZmBEizmaMzGVNK"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 2 of 24 messages (~96909 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPkEaDyCEB5J8Z8F2M"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPmBNqLYDsHU5k1EmD"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPmBNqLYDsHU5k1EmD"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 86 messages (~94159 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPmzjyUF3nngTPAaWQ"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPnhuNK6qgka1raxmV"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPnhuNK6qgka1raxmV"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 90 messages (~83053 tokens)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 2429ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPoYWKBokyjXXM7oZ5"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPpK9BdUeyouTQzjNN"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPpK9BdUeyouTQzjNN"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 2 of 51 messages (~100106 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPpu7Px4BGwtfnyRjX"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPqPPHvPMCZGDbjHng"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDdPqPPHvPMCZGDbjHng"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] MCP server "chrome-devtools" Server stderr: chrome-devtools-mcp exposes content of the browser instance to the MCP clients allowing them to inspect,
+debug, and modify any data in the browser or DevTools.
+Avoid sharing sensitive or personal information that you do not want to share with MCP clients.
+[DEBUG] MCP server "chrome-devtools": Successfully connected to stdio server in 3612ms
+[DEBUG] MCP server "chrome-devtools": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"chrome_devtools","title":"Chrome DevTools MCP server","version":"0.8.1"}}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743254748
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743254748 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743254783
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743254783 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743254845
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743254845 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743266395
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743266395 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743266565
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743266565 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.68744.1760743266601
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.68744.1760743266601 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

@@ -1,0 +1,57 @@
+name: introspection
+description: "Validate assumptions through structured codebase analysis - supports conversational assumption checking or implementation correctness verification"
+estimated_time: "15-30 minutes"
+estimated_tokens: "15K-40K"
+complexity: moderate
+
+base_dir: ".temp"
+
+phases:
+  - name: context-gathering-and-decision
+    scope: default
+    inputs: []
+
+  - name: code-researcher-conditional
+    scope: default
+    inputs:
+      - from: context-gathering-and-decision
+        files: [context.json]
+        context_description: "Problem context and user research decision"
+
+  - name: assumption-generation
+    scope: default
+    inputs:
+      - from: context-gathering-and-decision
+        files: [context.json]
+        context_description: "Problem context and context type"
+      - from: code-researcher-conditional
+        files: [codebase-findings.json]
+        context_description: "Optional codebase exploration findings (may be placeholder if skipped)"
+
+  - name: assumption-validation
+    scope: default
+    inputs:
+      - from: assumption-generation
+        files: [assumptions.json]
+        context_description: "Generated assumptions with validation questions"
+
+checkpoints:
+  - after: assumption-generation
+    prompt: "Review generated assumptions before validation"
+    show_files:
+      - "assumptions.json"
+    options:
+      - "Proceed with validation"
+      - "Refine assumptions"
+      - "Abort"
+
+  - after: assumption-validation
+    prompt: "Review validation results"
+    show_files:
+      - "validation-results.json"
+    options:
+      - "Accept findings"
+      - "Re-validate with refinements"
+      - "Complete"
+
+default_scope: "default"

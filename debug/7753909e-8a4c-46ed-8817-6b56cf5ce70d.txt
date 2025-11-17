@@ -1,0 +1,594 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 49c6d0f7-7f88-4fca-9347-cf038ed65d86, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684367886
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 381674 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684367886 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684367925
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 381302 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684367925 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 5c3d0f60-af98-4066-8fcd-745b82b21938
+[DEBUG] FileHistory: Added snapshot for 5c3d0f60-af98-4066-8fcd-745b82b21938, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:5401
+    at Array.map (<anonymous>)
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:5372)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:5288
+    at Array.map (<anonymous>)
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:5277)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684614730
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 381331 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684614730 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684615014
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 381331 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684615014 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684615094
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 381617 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684615094 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message a5f18dd2-6de7-4071-9cac-f2229d7ab567
+[DEBUG] FileHistory: Added snapshot for a5f18dd2-6de7-4071-9cac-f2229d7ab567, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684760779
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384640 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684760779 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684760822
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384640 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684760822 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684760858
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384552 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684760858 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 61fdc3f4-8515-4567-b701-d751baa80ec7
+[DEBUG] FileHistory: Added snapshot for 61fdc3f4-8515-4567-b701-d751baa80ec7, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at mD (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4141
+    at Array.map (<anonymous>)
+    at WV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1140:4132)
+    at o5Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2202:17128)
+    at m$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at ps (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at y9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Dd (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at t$ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684995832
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384355 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684995832 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684995878
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384355 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684995878 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760684995915
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 384454 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760684995915 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 1e13d5d4-3210-44e6-ba62-ddbfa723c63d
+[DEBUG] FileHistory: Added snapshot for 1e13d5d4-3210-44e6-ba62-ddbfa723c63d, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool:
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[ERROR] SyntaxError: SyntaxError: Unexpected token '`', "```json
+{
+"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at Zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1056:20444)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760734895196
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363643 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760734895196 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760734895274
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363699 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760734895274 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760665338938-3mfu6j.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message 7d9cc446-9759-4601-bd1e-70fd4591a63b
+[DEBUG] FileHistory: Added snapshot for 7d9cc446-9759-4601-bd1e-70fd4591a63b, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760735058146
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363543 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760735058146 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760735058195
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363177 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760735058195 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.84877.1760735058301
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363621 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.84877.1760735058301 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

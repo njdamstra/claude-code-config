@@ -1,0 +1,1891 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1759962878776-6p5hz1.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759962878779
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759962878779 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962878826
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962878826 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/staryo/website/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879064
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879064 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879178
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879178 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879519
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879519 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879617
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116304 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879617 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879658
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116304 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879658 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=undefined
+[DEBUG] Skipping plugin installations - ENABLE_PLUGINS not set
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962879709
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962879709 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962880435
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962880435 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962883681
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116409 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962883681 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Added snapshot for 0335f098-8b05-4639-bbed-b700e5f415d4, tracking 0 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962911254
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116454 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962911254 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962911294
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962911294 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962911330
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962911330 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962913598
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962913598 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962987145
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962987145 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962989771
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962989771 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962997652
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962997652 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962998296
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962998296 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759962998364
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759962998364 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963000370
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963000370 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Making snapshot for message 4afdbeb4-d12c-448a-9d6b-8187411ea911
+[DEBUG] FileHistory: Added snapshot for 4afdbeb4-d12c-448a-9d6b-8187411ea911, tracking 0 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963002243
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963002243 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963004298
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 116536 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963004298 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 1be5a262-8c76-424d-952a-a22fbd7f40a6
+[DEBUG] FileHistory: Added snapshot for 1be5a262-8c76-424d-952a-a22fbd7f40a6, tracking 0 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963196579
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 117643 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963196579 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759963379422
+[DEBUG] Temp file written successfully, size: 10270 bytes
+[DEBUG] Renaming /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759963379422 to /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md
+[DEBUG] File /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/staryo/website/PLAN_GiftResize.md
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/PLAN_GiftResize.md.tmp.17905.1759963381505
+[DEBUG] Temp file written successfully, size: 9678 bytes
+[DEBUG] Renaming /Users/natedamstra/staryo/website/PLAN_GiftResize.md.tmp.17905.1759963381505 to /Users/natedamstra/staryo/website/PLAN_GiftResize.md
+[DEBUG] File /Users/natedamstra/staryo/website/PLAN_GiftResize.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963382498
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 118305 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963382498 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963384522
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 118305 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963384522 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963396899
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 118305 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963396899 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759963396938
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 118305 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759963396938 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message e6315d2f-cd5e-4409-b527-0116b7f9337c
+[DEBUG] FileHistory: Added snapshot for e6315d2f-cd5e-4409-b527-0116b7f9337c, tracking 2 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759964308732
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759964308732 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/PLAN_GiftResize.md.tmp.17905.1759964488521
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4479 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/PLAN_GiftResize.md.tmp.17905.1759964488521 to /Users/natedamstra/staryo/website/PLAN_GiftResize.md
+[DEBUG] File /Users/natedamstra/staryo/website/PLAN_GiftResize.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759964490441
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 19248 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759964490441 to /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md
+[DEBUG] File /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759964494656
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759964494656 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759964505529
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759964505529 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759964505574
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121965 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759964505574 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759965955789
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121150 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759965955789 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 6ed485bd-5ce5-4039-81a9-c5f5a0023337
+[DEBUG] FileHistory: Added snapshot for 6ed485bd-5ce5-4039-81a9-c5f5a0023337, tracking 2 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759965956130
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 124073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759965956130 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Executing hooks for PreToolUse:Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759966035998
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 14568 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md.tmp.17905.1759966035998 to /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md
+[DEBUG] File /Users/natedamstra/staryo/website/PLAN_StarBalanceCache.md written atomically
+[DEBUG] Executing hooks for PostToolUse:Write
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966048209
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 124073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966048209 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966048251
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 124073 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966048251 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966383756
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123370 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966383756 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 13a0b51b-b2ab-42a1-93f3-5fd29f877255
+[DEBUG] FileHistory: Added snapshot for 13a0b51b-b2ab-42a1-93f3-5fd29f877255, tracking 2 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966407286
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966407286 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966439721
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4352 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966439721 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966453708
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966453708 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966454087
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123558 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966454087 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 42b8c0ef-892a-44a6-9d1d-e4845bb15a64
+[DEBUG] FileHistory: Added snapshot for 42b8c0ef-892a-44a6-9d1d-e4845bb15a64, tracking 2 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759966564655
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123703 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759966564655 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966589876
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4356 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966589876 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966637125
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4358 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966637125 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966637661
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 21347 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966637661 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966666406
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4360 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966666406 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966666850
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20874 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966666850 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966690003
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4362 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966690003 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966690555
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20773 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966690555 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966715584
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4364 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966715584 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966716166
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20679 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966716166 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966745204
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4366 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966745204 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966745756
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20577 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966745756 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966775174
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4368 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966775174 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966775762
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20475 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966775762 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966811488
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4370 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966811488 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966811950
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20453 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966811950 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966840591
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4376 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966840591 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966858451
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 20519 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue.tmp.17905.1759966858451 to /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue
+[DEBUG] File /Users/natedamstra/staryo/website/src/components/vue/ui/StarBalance.vue written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966884400
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4378 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966884400 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Executing hooks for PreToolUse:Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/staryo/website/src/stores/starLocal.ts
+[DEBUG] Writing to temp file: /Users/natedamstra/staryo/website/src/stores/starLocal.ts.tmp.17905.1759966884950
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/staryo/website/src/stores/starLocal.ts.tmp.17905.1759966884950 to /Users/natedamstra/staryo/website/src/stores/starLocal.ts
+[DEBUG] File /Users/natedamstra/staryo/website/src/stores/starLocal.ts written atomically
+[DEBUG] Executing hooks for PostToolUse:Edit
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966905059
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4380 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966905059 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966930463
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4382 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966930463 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966969513
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4384 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759966969513 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pnpm run build:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: pnpm run build 2>&1 | head -100
+[DEBUG] Bash tool description: Run TypeScript build and check for errors
+[DEBUG] Bash tool timeout: 120000ms
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967043408
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123317 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967043408 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Executing hooks for PreToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759967081546
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 4382 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json.tmp.17905.1759967081546 to /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json
+[DEBUG] File /Users/natedamstra/.claude/todos/68f8539f-06a1-4db7-8f48-97d27597c35d-agent-68f8539f-06a1-4db7-8f48-97d27597c35d.json written atomically
+[DEBUG] Executing hooks for PostToolUse:TodoWrite
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967105548
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123317 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967105548 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967105938
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 123317 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967105938 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967234574
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 122061 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967234574 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967251056
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 122061 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967251056 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message 87b94755-b000-4a0b-896a-4a898b8b09ad
+[DEBUG] FileHistory: Added snapshot for 87b94755-b000-4a0b-896a-4a898b8b09ad, tracking 4 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967261013
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 122247 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967261013 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Executing hooks for PreToolUse:Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pnpm build:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: pnpm build 2>&1 | head -100
+[DEBUG] Bash tool description: Check if TypeScript build passes
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967426559
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121548 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967426559 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pnpm build:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: pnpm build 2>&1 | tail -50
+[DEBUG] Bash tool description: Check build completion
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967666853
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967666853 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Executing hooks for PreToolUse:Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Grep
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Executing hooks for PreToolUse:Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Glob
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967824857
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121684 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967824857 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967824883
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121684 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967824883 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967824910
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967824910 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967825033
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967825033 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for SubagentStop
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Task
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /cleanup-worktree, /test-args, /capture, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967870938
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967870938 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967870979
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967870979 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967913024
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121684 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967913024 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967913051
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121684 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967913051 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967913197
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967913197 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759967916796
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 121789 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759967916796 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1759969717873
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 120520 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1759969717873 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1760001889222
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 120506 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1760001889222 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.17905.1760004074709
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 120506 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.17905.1760004074709 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[ERROR] xk1: xk1: Another process is currently installing an update
+    at cG1 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1895:1779)
+    at Object.current (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2661:8320)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

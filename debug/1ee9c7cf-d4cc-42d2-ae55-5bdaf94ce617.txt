@@ -1,0 +1,69 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "clear" (1 before deduplication)
+[DEBUG] Hooks: Checking initial response for async: {"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "Session started at: 2025-11-02 15:31:03\nSession source: clear\nGit branch: main\nUncommitted changes: 115 files"}}
+[DEBUG] Hooks: Parsed initial response: {"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Session started at: 2025-11-02 15:31:03\nSession source: clear\nGit branch: main\nUncommitted changes: 115 files"}}
+[DEBUG] Hooks: Initial response is not async, continuing normal processing
+[DEBUG] Successfully parsed and validated hook JSON output
+[DEBUG] FileHistory: Added snapshot for 4e473644-938f-40b7-8838-73a8844403ed, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.46971.1762126263818
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63129 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.46971.1762126263818 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761958279557-4k6j46.sh
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tavily": Sending SIGINT to MCP server process
+[DEBUG] MCP server "sequential-thinking": Sending SIGINT to MCP server process
+[DEBUG] MCP server "astro-docs": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tailwind-css": Sending SIGINT to MCP server process
+[DEBUG] MCP server "shadcn": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message 3996cbe6-c4cd-4860-8c2a-992b73603063
+[DEBUG] FileHistory: Added snapshot for 3996cbe6-c4cd-4860-8c2a-992b73603063, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.46971.1762126267413
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63129 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.46971.1762126267413 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tavily": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "sequential-thinking": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "astro-docs": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tailwind-css": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "shadcn": SIGINT failed, sending SIGTERM to MCP server process
+[ERROR] MCP server "tavily" Server stderr: [47356] 
+Shutting down...
+[DEBUG] MCP server "sequential-thinking": MCP server process exited cleanly
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] MCP server "astro-docs": MCP server process exited cleanly
+[DEBUG] MCP server "tailwind-css": MCP server process exited cleanly
+[DEBUG] MCP server "shadcn": MCP server process exited cleanly
+[DEBUG] MCP server "tavily": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.46971.1762126267765
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63549 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.46971.1762126267765 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

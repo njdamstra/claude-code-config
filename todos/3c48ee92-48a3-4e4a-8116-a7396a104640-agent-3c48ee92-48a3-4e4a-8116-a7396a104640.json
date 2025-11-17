@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Step 1: Add userCache atom to authStore.ts",
+    "status": "completed",
+    "activeForm": "Adding userCache atom"
+  },
+  {
+    "content": "Step 2-4: Wrap currentUser() with cache deduplication logic",
+    "status": "completed",
+    "activeForm": "Wrapping currentUser() with cache logic"
+  },
+  {
+    "content": "Step 5: Add cache invalidation to clearCurUser()",
+    "status": "completed",
+    "activeForm": "Adding cache invalidation"
+  },
+  {
+    "content": "BONUS: Fix useUserState.ts to use cached currentUser()",
+    "status": "completed",
+    "activeForm": "Fixing useUserState.ts bypass"
+  },
+  {
+    "content": "Step 6: Optional - Add auth page detection to useAuth",
+    "status": "pending",
+    "activeForm": "Adding auth page detection"
+  },
+  {
+    "content": "Step 7: Manual testing with console verification",
+    "status": "pending",
+    "activeForm": "Testing implementation"
+  },
+  {
+    "content": "Step 8: Integration verification",
+    "status": "pending",
+    "activeForm": "Verifying integration"
+  }
+]

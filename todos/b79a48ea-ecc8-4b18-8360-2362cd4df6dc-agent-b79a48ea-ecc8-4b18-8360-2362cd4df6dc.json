@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Update SupportTicket.yaml - Add guestName, guestEmail, isGuest fields and change permissions",
+    "status": "completed",
+    "activeForm": "Updating SupportTicket.yaml schema"
+  },
+  {
+    "content": "Update supportTicket.ts Zod schema - Add guest fields and validation logic",
+    "status": "completed",
+    "activeForm": "Updating Zod schema validation"
+  },
+  {
+    "content": "Add createGuestSupportTicket() method to supportTicketStore.ts",
+    "status": "completed",
+    "activeForm": "Adding guest ticket store method"
+  },
+  {
+    "content": "Add createGuestTicket() to useSupportTickets.ts composable",
+    "status": "completed",
+    "activeForm": "Adding guest ticket composable"
+  },
+  {
+    "content": "Refactor ContactSupportModal to use BaseModal component",
+    "status": "completed",
+    "activeForm": "Refactoring to use BaseModal"
+  },
+  {
+    "content": "Add Contact Support button to landing page Navbar",
+    "status": "completed",
+    "activeForm": "Adding navbar support button"
+  },
+  {
+    "content": "Add Contact Support to Footer component",
+    "status": "completed",
+    "activeForm": "Adding footer support link"
+  },
+  {
+    "content": "Add Contact Support to CTA sections",
+    "status": "completed",
+    "activeForm": "Adding CTA support triggers"
+  },
+  {
+    "content": "Create/update admin dashboard view for guest tickets",
+    "status": "pending",
+    "activeForm": "Creating admin guest ticket view"
+  },
+  {
+    "content": "Implement email confirmation service for guest tickets",
+    "status": "pending",
+    "activeForm": "Implementing email confirmation"
+  },
+  {
+    "content": "Test guest ticket creation flow end-to-end",
+    "status": "pending",
+    "activeForm": "Testing guest ticket flow"
+  },
+  {
+    "content": "Verify backward compatibility with authenticated tickets",
+    "status": "pending",
+    "activeForm": "Verifying backward compatibility"
+  }
+]

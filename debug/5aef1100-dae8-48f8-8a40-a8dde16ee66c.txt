@@ -1,0 +1,17 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.89126.1760646573134
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 370855 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.89126.1760646573134 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 4713ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[ERROR] MCP server "chrome-devtools" Server stderr: ERROR: `chrome-devtools-mcp` does not support Node v22.11.0. Please upgrade to Node 22.12.0 LTS or a newer LTS.
+[DEBUG] MCP server "chrome-devtools": Connection failed after 4256ms: MCP error -32000: Connection closed
+[ERROR] MCP server "chrome-devtools" Connection failed: MCP error -32000: Connection closed

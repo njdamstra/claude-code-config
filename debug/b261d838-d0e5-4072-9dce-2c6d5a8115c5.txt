@@ -1,0 +1,644 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Applying permission update: Adding 89 allow rule(s) to destination 'localSettings': ["Bash(~/.claude/scripts/templates.sh:*)","Bash(while IFS='||' read -r id name desc)","Bash(do echo \"ID: [$id]\")","Bash(tree:*)","Bash(~/.claude/scripts/load-template.sh:*)","Bash(~/.claude/commands/frontend-analyze.md )","Bash(~/.claude/commands/frontend-fix.md )","Bash(~/.claude/commands/frontend-implement.md )","Bash(~/.claude/commands/frontend-improve.md )","Bash(~/.claude/commands/frontend-initiate.md )","Bash(~/.claude/commands/frontend-new.md )","Bash(~/.claude/commands/frontend-plan.md )","Bash(~/.claude/commands/frontend-quick-task.md )","Bash(~/.claude/commands/frontend-validate.md )","Bash(~/.claude/.archives/commands/frontend-deprecated-2025-10-23/)","SlashCommand(/strat:*)","Bash(~/.claude/scripts/list-tools.sh:*)","Bash(mkdir:*)","Bash(mv:*)","WebSearch","WebFetch(domain:www.vellum.ai)","SlashCommand(/plan:*)","Bash(awk:*)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Read(//Users/natedamstra/socialaize-worktrees/fullstack/**)","Read(//Users/natedamstra/socialaize-worktrees/**)","Read(//Users/natedamstra/socialaize-config/**)","Bash(readlink:*)","Bash(cat:*)","Bash(git -C ~/socialaize worktree list:*)","Read(//Users/natedamstra/socialaize/**)","Bash(ln:*)","Bash(git -C ~/socialaize-worktrees/fullstack/frontend branch --show-current)","Bash(~/.local/bin/socialaize-worktree/worktree-switch.sh:*)","Bash(git checkout:*)","Bash(git restore:*)","Bash(git add:*)","Bash(git commit:*)","Bash(then echo \"✅ CONFIRMED: Both point to exact same location\")","Bash(else echo \"❌ Different targets\")","Bash(fi)","WebFetch(domain:github.com)","Bash(git clone:*)","Read(//Users/natedamstra/claude-code-hooks-mastery/.claude/**)","Read(//Users/natedamstra/claude-code-hooks-mastery/**)","Read(//Users/natedamstra/**)","Bash(env)","Bash(source ~/.zshrc)","Bash(python3:*)","Bash(xargs:*)","Skill(cc-mastery)","Skill(cc-subagent-architect)","Skill(cc-slash-command-builder)","Bash(for file in /Users/natedamstra/.claude/agents/*.md)","Bash(head:*)","Bash(done)","Bash(/tmp/fix-docs-skill.sh:*)","Bash(/tmp/optimize-models.sh)","Read(//private/tmp/**)","Bash(echo:*)","Bash(test:*)","WebFetch(domain:mikhail.io)","Bash(bash ~/.claude/scripts/tts-manage.sh:*)","Read(///**)","Bash(for:*)","Skill(docs)","Bash(brew install:*)","Bash(curl:*)","Bash(unzip:*)","Bash(bash:*)","Skill(cc-skill-builder)","Bash(~/.claude/scripts/prompts-manager.sh:*)","Skill(docs-v2)","Bash(sed:*)","SlashCommand(/docs-v2:*)","Skill(codebase-documentation-v2)","Skill(codebase-documentation)","Bash(git -C /Users/natedamstra/socialaize log --oneline --no-merges -20)","Bash(git -C /Users/natedamstra/socialaize branch:*)","Bash(git -C /Users/natedamstra/socialaize config:*)","Skill(planner)","Bash(~/.claude/scripts/mcp-act.sh validate:*)","Bash(~/.claude/scripts/mcp-act.sh:*)","Bash(if [ -f ./.mcp.json ])","Bash(then echo \"Project config exists: ./.mcp.json\")","Bash(elif [ -f ./.claude/.mcp.json ])","Bash(then echo \"Project config exists: ./.claude/.mcp.json\")","Bash(else echo \"No project config found\")","Bash(claude mcp remove:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/.claude/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761854995095-lc9onw.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761854995097
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761854995097 to /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json
+[DEBUG] File /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854995132
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854995132 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 21 unique skills (managed: 0, user: 21, project: 0, duplicates removed: 0)
+[DEBUG] getSkillsIfEnabled returning: 21 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854995341
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854995341 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854995372
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854995372 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "tavily": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854996043
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854996043 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Hooks: Checking initial response for async: {"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "Session started at: 2025-10-30 13:09:56\nSession source: startup\nGit branch: unknown"}}
+[DEBUG] Hooks: Parsed initial response: {"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Session started at: 2025-10-30 13:09:56\nSession source: startup\nGit branch: unknown"}}
+[DEBUG] Hooks: Initial response is not async, continuing normal processing
+[DEBUG] Successfully parsed and validated hook JSON output
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854996623
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451849 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854996623 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854996660
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451849 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854996660 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761854996735
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761854996735 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Stream started - received first chunk
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 1664ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[ERROR] MCP server "tavily" Server stderr: [38953] Using automatically selected callback port: 9024
+[ERROR] MCP server "tavily" Server stderr: [38953] [38953] Connecting to remote server: https://mcp.tavily.com/mcp/?tavilyApiKey=${TAVILY_API_KEY}
+[ERROR] MCP server "tavily" Server stderr: [38953] Using transport strategy: http-first
+[ERROR] MCP server "tavily" Server stderr: [38953] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "tavily" Server stderr: [38953] Local STDIO server running
+[38953] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[38953] Press Ctrl+C to exit
+[ERROR] MCP server "tavily" Server stderr: [38953] [Local→Remote] initialize
+[ERROR] MCP server "tavily" Server stderr: [38953] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.29"
+    }
+  }
+}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[ERROR] MCP server "tavily" Server stderr: [38953] [Remote→Local] 0
+[DEBUG] MCP server "tavily": Successfully connected to stdio server in 2537ms
+[DEBUG] MCP server "tavily": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"tavily-mcp","version":"1.17.0"}}
+[ERROR] MCP server "tavily" Server stderr: [38953] [Local→Remote] notifications/initialized
+[38953] [Local→Remote] tools/list
+[ERROR] MCP server "tavily" Server stderr: [38953] [Local→Remote] prompts/list
+[38953] [Local→Remote] resources/list
+[DEBUG] Hook output does not start with {, treating as plain text
+[ERROR] MCP server "tavily" Server stderr: [38953] [Remote→Local] 2
+[ERROR] MCP server "tavily" Server stderr: [38953] [Remote→Local] 1
+[ERROR] MCP server "tavily" Server stderr: [38953] [Remote→Local] 3
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Metadata string for mcps:
+[DEBUG] <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 5 messages for mcps
+[DEBUG] Message 1: <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"# MCP Server Management\n\nManage your MCP servers using preset bundles or individual server controls.\n\n## Actions Available\n- **list** - Show all configured servers and pre
+[DEBUG] Message 3: [ATTACHMENT]
+[DEBUG] Message 4: [ATTACHMENT]
+[DEBUG] Message 5: [ATTACHMENT]
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] FileHistory: Added snapshot for 5b6c6068-c5ba-40ac-b4ef-15e8789692d2, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>...
+[DEBUG] UserCommandMessage rendering: "mcps is running…" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855004990
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855004990 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at uy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:3850)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855005051
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451954 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855005051 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855005087
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451878 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855005087 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855032361
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451878 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855032361 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855032438
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451878 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855032438 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] FileHistory: Making snapshot for message 0271a601-599f-49aa-8689-83323af09ae7
+[DEBUG] FileHistory: Added snapshot for 0271a601-599f-49aa-8689-83323af09ae7, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855150027
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 664 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855150027 to /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json
+[DEBUG] File /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] No hook environment files found
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855169412
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 668 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855169412 to /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json
+[DEBUG] File /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855181913
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 670 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855181913 to /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json
+[DEBUG] File /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/scripts/mcp-act.sh
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/scripts/mcp-act.sh.tmp.38585.1761855222531
+[DEBUG] Preserving file permissions: 100755
+[DEBUG] Temp file written successfully, size: 21132 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/scripts/mcp-act.sh.tmp.38585.1761855222531 to /Users/natedamstra/.claude/scripts/mcp-act.sh
+[DEBUG] File /Users/natedamstra/.claude/scripts/mcp-act.sh written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855240800
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json.tmp.38585.1761855240800 to /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json
+[DEBUG] File /Users/natedamstra/.claude/todos/b261d838-d0e5-4072-9dce-2c6d5a8115c5-agent-b261d838-d0e5-4072-9dce-2c6d5a8115c5.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855253875
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451878 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855253875 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Notification [uv run ~/.claude/hooks/notification.py --notify] completed with status 0
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855262195
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451878 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855262195 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855262288
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 452526 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855262288 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Notification [uv run ~/.claude/hooks/notification.py --notify] completed with status 0
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 12 rule(s): ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 90 rule(s): ["Bash(~/.claude/scripts/templates.sh:*)","Bash(while IFS='||' read -r id name desc)","Bash(do echo \"ID: [$id]\")","Bash(tree:*)","Bash(~/.claude/scripts/load-template.sh:*)","Bash(~/.claude/commands/frontend-analyze.md )","Bash(~/.claude/commands/frontend-fix.md )","Bash(~/.claude/commands/frontend-implement.md )","Bash(~/.claude/commands/frontend-improve.md )","Bash(~/.claude/commands/frontend-initiate.md )","Bash(~/.claude/commands/frontend-new.md )","Bash(~/.claude/commands/frontend-plan.md )","Bash(~/.claude/commands/frontend-quick-task.md )","Bash(~/.claude/commands/frontend-validate.md )","Bash(~/.claude/.archives/commands/frontend-deprecated-2025-10-23/)","SlashCommand(/strat:*)","Bash(~/.claude/scripts/list-tools.sh:*)","Bash(mkdir:*)","Bash(mv:*)","WebSearch","WebFetch(domain:www.vellum.ai)","SlashCommand(/plan:*)","Bash(awk:*)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Read(//Users/natedamstra/socialaize-worktrees/fullstack/**)","Read(//Users/natedamstra/socialaize-worktrees/**)","Read(//Users/natedamstra/socialaize-config/**)","Bash(readlink:*)","Bash(cat:*)","Bash(git -C ~/socialaize worktree list:*)","Read(//Users/natedamstra/socialaize/**)","Bash(ln:*)","Bash(git -C ~/socialaize-worktrees/fullstack/frontend branch --show-current)","Bash(~/.local/bin/socialaize-worktree/worktree-switch.sh:*)","Bash(git checkout:*)","Bash(git restore:*)","Bash(git add:*)","Bash(git commit:*)","Bash(then echo \"✅ CONFIRMED: Both point to exact same location\")","Bash(else echo \"❌ Different targets\")","Bash(fi)","WebFetch(domain:github.com)","Bash(git clone:*)","Read(//Users/natedamstra/claude-code-hooks-mastery/.claude/**)","Read(//Users/natedamstra/claude-code-hooks-mastery/**)","Read(//Users/natedamstra/**)","Bash(env)","Bash(source ~/.zshrc)","Bash(python3:*)","Bash(xargs:*)","Skill(cc-mastery)","Skill(cc-subagent-architect)","Skill(cc-slash-command-builder)","Bash(for file in /Users/natedamstra/.claude/agents/*.md)","Bash(head:*)","Bash(done)","Bash(/tmp/fix-docs-skill.sh:*)","Bash(/tmp/optimize-models.sh)","Read(//private/tmp/**)","Bash(echo:*)","Bash(test:*)","WebFetch(domain:mikhail.io)","Bash(bash ~/.claude/scripts/tts-manage.sh:*)","Read(///**)","Bash(for:*)","Skill(docs)","Bash(brew install:*)","Bash(curl:*)","Bash(unzip:*)","Bash(bash:*)","Skill(cc-skill-builder)","Bash(~/.claude/scripts/prompts-manager.sh:*)","Skill(docs-v2)","Bash(sed:*)","SlashCommand(/docs-v2:*)","Skill(codebase-documentation-v2)","Skill(codebase-documentation)","Bash(git -C /Users/natedamstra/socialaize log --oneline --no-merges -20)","Bash(git -C /Users/natedamstra/socialaize branch:*)","Bash(git -C /Users/natedamstra/socialaize config:*)","Skill(planner)","Bash(~/.claude/scripts/mcp-act.sh validate:*)","Bash(~/.claude/scripts/mcp-act.sh:*)","Bash(if [ -f ./.mcp.json ])","Bash(then echo \"Project config exists: ./.mcp.json\")","Bash(elif [ -f ./.claude/.mcp.json ])","Bash(then echo \"Project config exists: ./.claude/.mcp.json\")","Bash(else echo \"No project config found\")","Bash(claude mcp remove:*)","Bash(git init:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855498470
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 452325 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855498470 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "mcp" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855498542
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 452325 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855498542 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Metadata string for mcps:
+[DEBUG] <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>
+<command-args>remove tav user</command-args>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 4 messages for mcps
+[DEBUG] Message 1: <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>
+<command-args>remove tav user</command-args>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"# MCP Server Management\n\nManage your MCP servers using preset bundles or individual server controls.\n\n## Actions Available\n- **list** - Show all configured servers and pre
+[DEBUG] Message 3: [ATTACHMENT]
+[DEBUG] Message 4: [ATTACHMENT]
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] FileHistory: Making snapshot for message d3404a56-6086-4fe0-966c-4a0b19f923b6
+[DEBUG] FileHistory: Added snapshot for d3404a56-6086-4fe0-966c-4a0b19f923b6, tracking 1 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>mcps is running…</command-message>
+<command-name>/mcps</command-name>
+<command-args...
+[DEBUG] UserCommandMessage rendering: "mcps is running…" (args: "remove tav user")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, docs-deprecated, Nanostore Builder, planner, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /plans, /learn, /ui-refactor, /complete, /ui-review
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855525831
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 452109 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855525831 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855534038
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 452109 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855534038 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855534081
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451698 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855534081 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761854995095-lc9onw.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tavily": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message 0d6782cb-fdde-4eb9-bcd5-5de9f09a032b
+[DEBUG] FileHistory: Added snapshot for 0d6782cb-fdde-4eb9-bcd5-5de9f09a032b, tracking 1 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855615059
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451907 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855615059 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855615103
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 450614 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855615103 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tavily": SIGINT failed, sending SIGTERM to MCP server process
+[ERROR] MCP server "tavily" Server stderr: [38953] 
+Shutting down...
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] MCP server "tavily": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38585.1761855615208
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 451037 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38585.1761855615208 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

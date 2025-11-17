@@ -1,0 +1,63 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/.claude/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760655420598-cazezj.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced-agent-5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced.json.tmp.1935.1760655420601
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced-agent-5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced.json.tmp.1935.1760655420601 to /Users/natedamstra/.claude/todos/5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced-agent-5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced.json
+[DEBUG] File /Users/natedamstra/.claude/todos/5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced-agent-5aae2cbc-6ed9-4a80-bfa7-34cff31c1ced.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.1935.1760655420869
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 373335 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.1935.1760655420869 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.1935.1760655420904
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 373335 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.1935.1760655420904 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (132773 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "chrome-devtools" Server stderr: chrome-devtools-mcp exposes content of the browser instance to the MCP clients allowing them to inspect,
+debug, and modify any data in the browser or DevTools.
+Avoid sharing sensitive or personal information that you do want to share with MCP clients.
+[DEBUG] MCP server "chrome-devtools": Successfully connected to stdio server in 5270ms
+[DEBUG] MCP server "chrome-devtools": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"chrome_devtools","title":"Chrome DevTools MCP server","version":"0.2.6"}}
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760655420598-cazezj.sh
+[DEBUG] MCP server "chrome-devtools": Sending SIGINT to MCP server process
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] MCP server "chrome-devtools": Sending SIGINT to MCP server process
+[DEBUG] MCP server "chrome-devtools": STDIO connection closed after 0s (cleanly)
+[DEBUG] MCP server "chrome-devtools": MCP server process exited cleanly
+[DEBUG] MCP server "chrome-devtools": MCP server process exited cleanly

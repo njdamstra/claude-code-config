@@ -1,0 +1,1419 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761190595000-rxfnf0.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761190595004
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761190595004 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 17 skills total (managed: 0, user: 17, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 17 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/nanostore-state-architect.md has invalid model 'haiku-4.5'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/nanostore-state-architect.md has invalid model 'haiku-4.5'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Summarizing all 2 messages (~4247 tokens)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761190595261
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 359493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761190595261 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761190595292
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 359493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761190595292 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761190595739
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 359493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761190595739 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761190595855
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 359493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761190595855 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761190595891
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 359493 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761190595891 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Summarizing last 2 of 9 messages (~124782 tokens)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 7412ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] No hook environment files found
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 6c7c93b0-fc94-4334-a63d-2765eb1570e0, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at TfQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3567:967)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3399:947)
+    at call.next (<anonymous>)
+    at FS8 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:65601)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BNQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:62655)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:61824
+    at async Oh1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at TfQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3567:967)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3399:947)
+    at call.next (<anonymous>)
+    at FS8 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:65601)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BNQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:62655)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:61824
+    at async Oh1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at TfQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3567:967)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3399:947)
+    at call.next (<anonymous>)
+    at FS8 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:65601)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BNQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:62655)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:61824
+    at async Oh1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at TfQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3567:967)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3399:947)
+    at call.next (<anonymous>)
+    at FS8 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:65601)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BNQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:62655)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2692:61824
+    at async Oh1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/SOC_UI_INTEGRATION.md
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/SOC_UI_INTEGRATION.md.tmp.38320.1761191606038
+[DEBUG] Temp file written successfully, size: 37654 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/SOC_UI_INTEGRATION.md.tmp.38320.1761191606038 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/SOC_UI_INTEGRATION.md
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/SOC_UI_INTEGRATION.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761191624189
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 360566 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761191624189 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761191624233
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 360566 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761191624233 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761191624268
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361637 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761191624268 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 43819e83-bc9e-43eb-91e5-6b137ccb8516
+[DEBUG] FileHistory: Added snapshot for 43819e83-bc9e-43eb-91e5-6b137ccb8516, tracking 1 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191890100
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2085 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191890100 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191898175
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2089 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191898175 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs.tmp.38320.1761191945442
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 10992 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs.tmp.38320.1761191945442 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191960251
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2097 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761191960251 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/component-base.js
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/component-base.js.tmp.38320.1761191997164
+[DEBUG] Temp file written successfully, size: 7800 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/component-base.js.tmp.38320.1761191997164 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/component-base.js
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/component-base.js written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192009342
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2098 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192009342 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/glass.js
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/glass.js.tmp.38320.1761192032448
+[DEBUG] Temp file written successfully, size: 5227 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/glass.js.tmp.38320.1761192032448 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/glass.js
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/glass.js written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192048912
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2099 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192048912 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/focus-ring.js
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/focus-ring.js.tmp.38320.1761192073568
+[DEBUG] Temp file written successfully, size: 6074 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/focus-ring.js.tmp.38320.1761192073568 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/focus-ring.js
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind-plugins/focus-ring.js written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192088488
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2100 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192088488 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs.tmp.38320.1761192094905
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 11264 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs.tmp.38320.1761192094905 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/tailwind.config.mjs written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192102969
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2101 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192102969 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Grep
+[DEBUG] Getting matching hook commands for PreToolUse with query: Grep
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Grep
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Grep" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css.tmp.38320.1761192123081
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 33901 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css.tmp.38320.1761192123081 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css.tmp.38320.1761192141378
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 33956 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css.tmp.38320.1761192141378 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/src/styles/design-system.css written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192154970
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2102 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192154970 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "npm run build:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: BashOutput
+[DEBUG] Getting matching hook commands for PreToolUse with query: BashOutput
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "BashOutput" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: BashOutput
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "BashOutput" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: BashOutput
+[DEBUG] Getting matching hook commands for PreToolUse with query: BashOutput
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "BashOutput" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: BashOutput
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "BashOutput" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192332490
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json.tmp.38320.1761192332490 to /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json
+[DEBUG] File /Users/natedamstra/.claude/todos/409005ad-d705-4eb8-93e2-530a4dc5aeee-agent-409005ad-d705-4eb8-93e2-530a4dc5aeee.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART1_IMPLEMENTATION_SUMMARY.md
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART1_IMPLEMENTATION_SUMMARY.md.tmp.38320.1761192416805
+[DEBUG] Temp file written successfully, size: 14641 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART1_IMPLEMENTATION_SUMMARY.md.tmp.38320.1761192416805 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART1_IMPLEMENTATION_SUMMARY.md
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART1_IMPLEMENTATION_SUMMARY.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192441723
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361637 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192441723 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192441800
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361637 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192441800 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192441838
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361775 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192441838 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message b4b838d9-2266-4fd5-a19f-d5d6b28bed03
+[DEBUG] FileHistory: Added snapshot for b4b838d9-2266-4fd5-a19f-d5d6b28bed03, tracking 7 files
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at by.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:3850)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:520:9)
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART2_PLAN.md
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART2_PLAN.md.tmp.38320.1761192780603
+[DEBUG] Temp file written successfully, size: 22725 bytes
+[DEBUG] Renaming /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART2_PLAN.md.tmp.38320.1761192780603 to /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART2_PLAN.md
+[DEBUG] File /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/PART2_PLAN.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /deprecated:cleanup-functions-workspace, /deprecated:worktree-functions, /deprecated:worktree-fullstack, /deprecated:cleanup-fullstack-workspace, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at yTB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at dr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192797239
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361710 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192797239 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192797291
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 361710 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192797291 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.38320.1761192797326
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362029 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.38320.1761192797326 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

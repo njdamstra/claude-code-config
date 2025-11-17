@@ -1,0 +1,563 @@
+[DEBUG] Executing hooks for SessionStart:clear
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Added snapshot for a0a91c64-32ef-4e95-87ae-4f0169b2d107, tracking 0 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467615650
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171578 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467615650 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467615701
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467615701 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467620028
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467620028 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467634165
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467634165 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Executing hooks for UserPromptSubmit
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Making snapshot for message ff5ea774-b6c3-4f88-b350-69b02bab8793
+[DEBUG] FileHistory: Added snapshot for ff5ea774-b6c3-4f88-b350-69b02bab8793, tracking 0 files
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467740647
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467740647 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: mcp__gemini-cli__ask-gemini
+[DEBUG] Executing hooks for PreToolUse:mcp__gemini-cli__ask-gemini
+[DEBUG] Getting matching hook commands for PreToolUse with query: mcp__gemini-cli__ask-gemini
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__gemini-cli__ask-gemini" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467754064
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 165 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467754064 to /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["mcp__gemini-cli__ask-gemini"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] MCP server "gemini-cli": Calling MCP tool: ask-gemini
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Raw:
+ {
+  "prompt": "Search my computer's file system for Claude Code MCP configuration files. Look for:\n1. Files named claude_desktop_config.json or similar MCP config files\n2. Directories like ~/.config/claude or ~/Library/Application Support/Claude\n3. Any .json files containing \"mcpServers\" or MCP configuration\n4. Configuration files in /Users/natedamstra related to Claude or Anthropic\n\nReturn the full paths of any configuration files found and their locations."
+}
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] [1760467754279] Starting: gemini "-p" "Search my computer's file system for Claude Code MCP configuration files. Look for:
+1. Files named claude_desktop_config.json or similar MCP config files
+2. Directories like ~/.config/claude or ~/Library/Application Support/Claude
+3. Any .json files containing "mcpServers" or MCP configuration
+4. Configuration files in /Users/natedamstra related to Claude or Anthropic
+
+Return the full paths of any configuration files found and their locations."
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467757162
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467757162 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": Tool 'ask-gemini' still running (30s elapsed)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Gemini Quota Error: {
+  "error": {
+    "code": 429,
+    "message": "GMCPT: --> Quota exceeded for Unknown Model",
+    "details": {
+      "model": "Unknown Model",
+      "reason": "rateLimitExceeded",
+      "statusText": "Too Many Requests -- > try using gemini-2.5-flash by asking"
+    }
+  }
+}
+[DEBUG] MCP server "gemini-cli": Tool 'ask-gemini' still running (60s elapsed)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Gemini Quota Error: {
+  "error": {
+    "code": 429,
+    "message": "GMCPT: --> Quota exceeded for Unknown Model",
+    "details": {
+      "model": "Unknown Model",
+      "reason": "rateLimitExceeded",
+      "statusText": "Too Many Requests -- > try using gemini-2.5-flash by asking"
+    }
+  }
+}
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Gemini Quota Error: {
+  "error": {
+    "code": 429,
+    "message": "GMCPT: --> Quota exceeded for Unknown Model",
+    "details": {
+      "model": "Unknown Model",
+      "reason": "rateLimitExceeded",
+      "statusText": "Too Many Requests -- > try using gemini-2.5-flash by asking"
+    }
+  }
+}
+[DEBUG] MCP server "gemini-cli": Tool 'ask-gemini' still running (90s elapsed)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Gemini Quota Error: {
+  "error": {
+    "code": 429,
+    "message": "GMCPT: --> Quota exceeded for Unknown Model",
+    "details": {
+      "model": "Unknown Model",
+      "reason": "rateLimitExceeded",
+      "statusText": "Too Many Requests -- > try using gemini-2.5-flash by asking"
+    }
+  }
+}
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Gemini Quota Error: {
+  "error": {
+    "code": 429,
+    "message": "GMCPT: --> Quota exceeded for Unknown Model",
+    "details": {
+      "model": "Unknown Model",
+      "reason": "rateLimitExceeded",
+      "statusText": "Too Many Requests -- > try using gemini-2.5-flash by asking"
+    }
+  }
+}
+[DEBUG] MCP server "gemini-cli": Tool 'ask-gemini' still running (120s elapsed)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] [122.6s] Process finished with exit code: 0
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] Response: 2377 chars
+[DEBUG] MCP server "gemini-cli": Tool 'ask-gemini' completed successfully in 2m 2s
+[DEBUG] Executing hooks for PostToolUse:mcp__gemini-cli__ask-gemini
+[DEBUG] Getting matching hook commands for PostToolUse with query: mcp__gemini-cli__ask-gemini
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "mcp__gemini-cli__ask-gemini" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: WebSearch
+[DEBUG] Executing hooks for PreToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467925721
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 184 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467925721 to /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebSearch"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467933039
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467933039 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebSearch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Bash tool invoked with command: ls -la .mcp.json 2>/dev/null || echo ".mcp.json not found in current project"
+[DEBUG] Bash tool description: Check for project-level MCP config
+[DEBUG] Bash tool invoked with command: ls -la .claude/settings.local.json 2>/dev/null || echo ".claude/settings.local.json not found in current project"
+[DEBUG] Bash tool description: Check for project settings file
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467962598
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 222 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467962598 to /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/**)"]
+[DEBUG] Bash tool invoked with command: ls -la ~/.claude.json 2>/dev/null || echo "~/.claude.json not found"
+[DEBUG] Bash tool description: Check for user-level Claude config
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467964948
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 268 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json.tmp.47683.1760467964948 to /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/socialaize-fullstack/automation-imp/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/.claude/**)"]
+[DEBUG] Bash tool invoked with command: ls -la ~/.claude/settings.local.json 2>/dev/null || echo "~/.claude/settings.local.json not found"
+[DEBUG] Bash tool description: Check for user settings file
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[ERROR] MaxFileReadTokenExceededError: MaxFileReadTokenExceededError: File content (47279 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content.
+    at c7B (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1681:1716)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:950)
+    at async NL (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:2330)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3278:1322
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/.claude/**)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: find ~/.claude -type f -name "*.json" 2>/dev/null | head -20
+[DEBUG] Bash tool description: Find all JSON files in .claude directory
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467971152
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467971152 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Executing hooks for PreToolUse:Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:Read
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[ERROR] MaxFileReadTokenExceededError: MaxFileReadTokenExceededError: File content (47279 tokens) exceeds maximum allowed tokens (25000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content.
+    at c7B (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1681:1716)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1690:950)
+    at async WS5 (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:66145)
+    at async q2Q (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2492:62271)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: jq '.mcpServers | keys' ~/.claude.json 2>/dev/null | head -50
+[DEBUG] Bash tool description: List MCP server names from config
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Executing hooks for PreToolUse:Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Permission suggestions for Bash: []
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467986545
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467986545 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Bash tool invoked with command: jq '.mcpServers | to_entries | .[0:3] | from_entries' ~/.claude.json 2>/dev/null
+[DEBUG] Bash tool description: Show first 3 MCP server configs as example
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Executing hooks for PostToolUse:Bash
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760467989773
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760467989773 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Executing hooks for PreToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Executing hooks for PostToolUse:WebFetch
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Slash commands included in SlashCommand tool: /start, /cleanup-functions-workspace, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /capture, /cleanup-fullstack-workspace, /learn, /complete, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760468022189
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760468022189 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for Stop
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760468022235
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 171662 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760468022235 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760468022263
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 172043 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760468022263 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760469790997
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 172914 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760469790997 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760471591446
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 173452 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760471591446 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760473390855
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 173452 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760473390855 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760475191341
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 174383 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760475191341 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760476991037
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 174383 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760476991037 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760478792954
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 175526 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760478792954 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760480591870
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 175526 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760480591870 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760482390778
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 176466 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760482390778 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760386727638-kx7ipq.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message a9fc28da-3083-4159-8afa-f591dba84f15
+[DEBUG] FileHistory: Added snapshot for a9fc28da-3083-4159-8afa-f591dba84f15, tracking 0 files
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760482391913
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 176466 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760482391913 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.47683.1760482392265
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 176476 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.47683.1760482392265 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

@@ -1,0 +1,612 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] [LSP MANAGER] initializeLspServerManager() called
+[DEBUG] [LSP MANAGER] Created manager instance, state=pending
+[DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+[DEBUG] [LSP SERVER MANAGER] initialize() called
+[DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+[DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Applying permission update: Adding 163 allow rule(s) to destination 'localSettings': ["Bash(~/.claude/scripts/templates.sh:*)","Bash(while IFS='||' read -r id name desc)","Bash(do echo \"ID: [$id]\")","Bash(tree:*)","Bash(~/.claude/scripts/load-template.sh:*)","Bash(~/.claude/commands/frontend-analyze.md )","Bash(~/.claude/commands/frontend-fix.md )","Bash(~/.claude/commands/frontend-implement.md )","Bash(~/.claude/commands/frontend-improve.md )","Bash(~/.claude/commands/frontend-initiate.md )","Bash(~/.claude/commands/frontend-new.md )","Bash(~/.claude/commands/frontend-plan.md )","Bash(~/.claude/commands/frontend-quick-task.md )","Bash(~/.claude/commands/frontend-validate.md )","Bash(~/.claude/.archives/commands/frontend-deprecated-2025-10-23/)","SlashCommand(/strat:*)","Bash(~/.claude/scripts/list-tools.sh:*)","Bash(mkdir:*)","Bash(mv:*)","WebSearch","WebFetch(domain:www.vellum.ai)","SlashCommand(/plan:*)","Bash(awk:*)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Read(//Users/natedamstra/socialaize-worktrees/fullstack/**)","Read(//Users/natedamstra/socialaize-worktrees/**)","Read(//Users/natedamstra/socialaize-config/**)","Bash(readlink:*)","Bash(cat:*)","Bash(git -C ~/socialaize worktree list:*)","Read(//Users/natedamstra/socialaize/**)","Bash(ln:*)","Bash(git -C ~/socialaize-worktrees/fullstack/frontend branch --show-current)","Bash(~/.local/bin/socialaize-worktree/worktree-switch.sh:*)","Bash(git checkout:*)","Bash(git restore:*)","Bash(git add:*)","Bash(git commit:*)","Bash(then echo \"✅ CONFIRMED: Both point to exact same location\")","Bash(else echo \"❌ Different targets\")","Bash(fi)","WebFetch(domain:github.com)","Bash(git clone:*)","Read(//Users/natedamstra/claude-code-hooks-mastery/.claude/**)","Read(//Users/natedamstra/claude-code-hooks-mastery/**)","Read(//Users/natedamstra/**)","Bash(env)","Bash(source ~/.zshrc)","Bash(python3:*)","Bash(xargs:*)","Skill(cc-mastery)","Skill(cc-subagent-architect)","Skill(cc-slash-command-builder)","Bash(for file in /Users/natedamstra/.claude/agents/*.md)","Bash(head:*)","Bash(done)","Bash(/tmp/fix-docs-skill.sh:*)","Bash(/tmp/optimize-models.sh)","Read(//private/tmp/**)","Bash(echo:*)","Bash(test:*)","WebFetch(domain:mikhail.io)","Bash(bash ~/.claude/scripts/tts-manage.sh:*)","Read(///**)","Bash(for:*)","Skill(docs)","Bash(brew install:*)","Bash(curl:*)","Bash(unzip:*)","Bash(bash:*)","Skill(cc-skill-builder)","Bash(~/.claude/scripts/prompts-manager.sh:*)","Skill(docs-v2)","Bash(sed:*)","SlashCommand(/docs-v2:*)","Skill(codebase-documentation-v2)","Skill(codebase-documentation)","Bash(git -C /Users/natedamstra/socialaize log --oneline --no-merges -20)","Bash(git -C /Users/natedamstra/socialaize branch:*)","Bash(git -C /Users/natedamstra/socialaize config:*)","Skill(planner)","Bash(~/.claude/scripts/mcp-act.sh validate:*)","Bash(~/.claude/scripts/mcp-act.sh:*)","Bash(if [ -f ./.mcp.json ])","Bash(then echo \"Project config exists: ./.mcp.json\")","Bash(elif [ -f ./.claude/.mcp.json ])","Bash(then echo \"Project config exists: ./.claude/.mcp.json\")","Bash(else echo \"No project config found\")","Bash(claude mcp remove:*)","Bash(git init:*)","Bash(export TAVILY_API_KEY=\"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\")","mcp__context7__resolve-library-id","mcp__context7__get-library-docs","mcp__tavily__tavily_search","mcp__tavily__tavily_extract","mcp__tavily__tavily_map","mcp__tavily__tavily_crawl","Bash(export PERPLEXITY_API_KEY=\"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\")","mcp__perplexity-mcp__search","Bash(launchctl getenv:*)","Bash(launchctl setenv:*)","Bash(time grep:*)","Bash(time rg:*)","mcp__perplexity-mcp__reason","mcp__perplexity-mcp__deep_research","Bash(time find:*)","Bash(time fd:*)","Skill(writing-plans)","Skill(executing-plans)","Bash(/Users/natedamstra/.claude/status_lines/test_integration.sh)","Bash(rm:*)","Bash(rmdir:*)","Bash(wc:*)","Skill(doc-research)","Bash(DEBUG=1 bash:*)","mcp__sequential-thinking__sequentialthinking","mcp__tailwind-css__search_tailwind_docs","mcp__tailwind-css__get_tailwind_utilities","mcp__tailwind-css__get_tailwind_colors","Skill(use-workflows)","Bash(yq eval:*)","Skill(use-workflows-v2)","Bash(\"deliverables\": [)","Bash({\"filename\": \"a.json\", \"description\": \"File A\", \"output_dir\": \"phase1-discovery\", \"validation_checks\": [\"exists\"]},)","Bash({\"filename\": \"b.json\", \"description\": \"File B\", \"output_dir\": \"phase1-discovery\", \"validation_checks\": [\"exists\"]})","Bash(])","Bash(}'\n\ncat > /tmp/delivsum.txt << \"\"EOF\"\"\n## Deliverables Summary\n\nThis phase produces:\n{{#deliverables}}\n- `.temp/{{output_dir}}/{{filename}}` - {{description}}\n{{/deliverables}}\nEOF\n\nsource lib/template-renderer.sh\nrender_template /tmp/delivsum.txt \"\"$phase_data\"\"\n')","Bash(1)","Bash(TRASH/README.md)","Bash(do echo '=== $(basename $workflow) ===')","Bash(yq:*)","Bash(do echo '=== $f ===')","Bash(/tmp/new-feature-test.md)","Bash(/tmp/debugging-test.md)","Bash(/tmp/refactoring-test.md)","Bash(/tmp/improving-test.md)","mcp__gemini-cli__ask-gemini","Bash(source lib/subagent-matcher.sh)","Bash(build_subagent_data \"code-researcher\" \"investigation-workflow\" \"test-feature\" \"frontend\" 1 \"subagents/registry.yaml\")","Bash(do echo \"=== $wf discovery subagents ===\")","Bash(source ~/.claude/skills/use-workflows-v2/lib/template-renderer.sh)","Bash(./validate-workflow.sh:*)","Bash(./list-workflows.sh)","Bash(./generate-workflow-instructions.sh:*)","Bash(./fetch-phase-details.sh:*)","Bash(phases-v5/codebase-investigation.yaml )","Bash(code-researcher:*)","Bash(test-feature )","Bash(frontend )","Bash(investigation-workflow )","Bash(.temp )","Bash(2 )","Bash(codebase-investigation)","Bash(while read phase)","Bash(while read workflow)","Bash(/Users/natedamstra/.claude/skills/use-workflows-v2/phases/requirements.yaml )","Bash(requirements-specialist )","Bash(default )","Bash(plan-writing-workflow )","Bash(.claude/plans )","Bash(requirements)","Bash(npx playwright install:*)","Bash(lsof:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/.claude/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1763081745993-mk87fx.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/dad927c8-042b-42c2-83da-1841e5fc6bf7-agent-dad927c8-042b-42c2-83da-1841e5fc6bf7.json.tmp.57423.1763081745996
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/dad927c8-042b-42c2-83da-1841e5fc6bf7-agent-dad927c8-042b-42c2-83da-1841e5fc6bf7.json.tmp.57423.1763081745996 to /Users/natedamstra/.claude/todos/dad927c8-042b-42c2-83da-1841e5fc6bf7-agent-dad927c8-042b-42c2-83da-1841e5fc6bf7.json
+[DEBUG] File /Users/natedamstra/.claude/todos/dad927c8-042b-42c2-83da-1841e5fc6bf7-agent-dad927c8-042b-42c2-83da-1841e5fc6bf7.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081746037
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081746037 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 36 unique skills (managed: 0, user: 36, project: 0, duplicates removed: 0)
+[DEBUG] getSkillsIfEnabled returning: 36 skill dir commands, 0 plugin skills
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081746724
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081746724 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081746761
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081746761 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Shell snapshot created successfully (132781 bytes)
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "tavily": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081747358
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081747358 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081747508
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081747508 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081747549
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081747549 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081747596
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63984 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081747596 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081748870
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63979 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081748870 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 2616ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[ERROR] MCP server "tavily" Server stderr: [57954] Using automatically selected callback port: 44464
+[ERROR] MCP server "tavily" Server stderr: [57954] [57954] Connecting to remote server: https://mcp.tavily.com/mcp/?tavilyApiKey=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
+[ERROR] MCP server "tavily" Server stderr: [57954] Using transport strategy: http-first
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 2726ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.27"}}
+[ERROR] MCP server "tavily" Server stderr: [57954] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "tavily" Server stderr: [57954] Local STDIO server running
+[57954] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[57954] Press Ctrl+C to exit
+[ERROR] MCP server "tavily" Server stderr: [57954] [Local→Remote] initialize
+[ERROR] MCP server "tavily" Server stderr: [57954] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.30)",
+      "version": "2.0.37"
+    }
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [57954] [Remote→Local] 0
+[DEBUG] MCP server "tavily": Successfully connected to stdio server in 3347ms
+[DEBUG] MCP server "tavily": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"tavily-mcp","version":"1.17.0"}}
+[ERROR] MCP server "tavily" Server stderr: [57954] [Local→Remote] notifications/initialized
+[57954] [Local→Remote] tools/list
+[57954] [Local→Remote] prompts/list
+[57954] [Local→Remote] resources/list
+[ERROR] MCP server "tavily" Server stderr: [57954] [Remote→Local] 2
+[ERROR] MCP server "tavily" Server stderr: [57954] [Remote→Local] 3
+[ERROR] MCP server "tavily" Server stderr: [57954] [Remote→Local] 1
+[DEBUG] MCP server "astro-docs": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "sequential-thinking": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "tailwind-css": Starting connection with timeout of 30000ms
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] MCP server "sequential-thinking" Server stderr: Sequential Thinking MCP Server running on stdio
+[DEBUG] MCP server "sequential-thinking": Successfully connected to stdio server in 1794ms
+[DEBUG] MCP server "sequential-thinking": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"sequential-thinking-server","version":"0.2.0"}}
+[ERROR] MCP server "astro-docs" Server stderr: [58116] Using automatically selected callback port: 40770
+[ERROR] MCP server "astro-docs" Server stderr: [58116] [58116] Connecting to remote server: https://mcp.docs.astro.build/mcp
+[ERROR] MCP server "astro-docs" Server stderr: [58116] Using transport strategy: http-first
+[ERROR] MCP server "astro-docs" Server stderr: [58116] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "astro-docs" Server stderr: [58116] Local STDIO server running
+[58116] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[58116] Press Ctrl+C to exit
+[ERROR] MCP server "astro-docs" Server stderr: [58116] [Local→Remote] initialize
+[ERROR] MCP server "astro-docs" Server stderr: [58116] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.30)",
+      "version": "2.0.37"
+    }
+  }
+}
+[ERROR] MCP server "astro-docs" Server stderr: [58116] [Remote→Local] 0
+[DEBUG] MCP server "astro-docs": Successfully connected to stdio server in 2360ms
+[DEBUG] MCP server "astro-docs": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Astro Docs server","version":"1.0.0"}}
+[ERROR] MCP server "astro-docs" Server stderr: [58116] [Local→Remote] notifications/initialized
+[58116] [Local→Remote] tools/list
+[ERROR] MCP server "tailwind-css" Server stderr: TailwindCSS MCP server running on stdio
+[DEBUG] MCP server "tailwind-css": Successfully connected to stdio server in 2446ms
+[DEBUG] MCP server "tailwind-css": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"tailwindcss-server","version":"0.1.0"}}
+[ERROR] MCP server "astro-docs" Server stderr: [58116] [Remote→Local] 1
+[DEBUG] MCP server "shadcn": Starting connection with timeout of 30000ms
+[ERROR] MCP server "shadcn" Server stderr: [58202] Using automatically selected callback port: 17483
+[ERROR] MCP server "shadcn" Server stderr: [58202] [58202] Connecting to remote server: https://www.shadcn.io/api/mcp
+[ERROR] MCP server "shadcn" Server stderr: [58202] Using transport strategy: http-first
+[ERROR] MCP server "shadcn" Server stderr: [58202] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "shadcn" Server stderr: [58202] Local STDIO server running
+[58202] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[58202] Press Ctrl+C to exit
+[ERROR] MCP server "shadcn" Server stderr: [58202] [Local→Remote] initialize
+[ERROR] MCP server "shadcn" Server stderr: [58202] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.30)",
+      "version": "2.0.37"
+    }
+  }
+}
+[ERROR] MCP server "shadcn" Server stderr: [58202] [Remote→Local] 0
+[DEBUG] MCP server "shadcn": Successfully connected to stdio server in 2437ms
+[DEBUG] MCP server "shadcn": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-typescript server on vercel","version":"0.1.0"}}
+[ERROR] MCP server "shadcn" Server stderr: [58202] [Local→Remote] notifications/initialized
+[58202] [Local→Remote] tools/list
+[ERROR] MCP server "shadcn" Server stderr: [58202] [Remote→Local] 1
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for d3748229-e438-4f12-a027-14167270a195, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pnpm add:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.57423.1763081800254
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 7307 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.57423.1763081800254 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(pnpm add:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] No hook environment files found
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "brew list:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "brew upgrade:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pnpm --version:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.57423.1763081849858
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 7339 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.57423.1763081849858 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(pnpm --version:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081855340
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63979 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081855340 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763081855386
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63979 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763081855386 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message a1eb432e-c258-4cf5-92c9-6b0d0f6de66d
+[DEBUG] FileHistory: Added snapshot for a1eb432e-c258-4cf5-92c9-6b0d0f6de66d, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "node:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+[DEBUG] LSP Diagnostics: Checking registry - 0 pending
+[DEBUG] LSP Diagnostics: Returning 0 diagnostic set(s) for delivery
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, debug-tailwind-css, dispatching-parallel-agents, executing-plans, External Research, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer, planner
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /sources, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /ui-plan, /tools, /plan, /prompts, /question, /tts, /docs, /frontend, /orchestrate, /start, /wt, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /meta, /sources, /wt-full, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /wf:refactoring, /wf:debugging, /wf:introspect, /wf:quick-plan, /wf:investigation, /wf:improving, /wf:new-feature, /wf:how-to-guide, /wf:plan-writing, /wf:quick-investigation, /vue:use, /vue:component, /vue:state, /vue:composable, /vue:use, /vue:component, /vue:state, /vue:composable, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763082153566
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63979 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763082153566 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763082153607
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63979 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763082153607 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13289:24) {
+  [cause]: Error: getaddrinfo ENOTFOUND mcp.tavily.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'mcp.tavily.com'
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: Failed to reconnect SSE stream: fetch failed
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13349:83
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13289:24) {
+  [cause]: Error: getaddrinfo ENOTFOUND mcp.tavily.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'mcp.tavily.com'
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [57954] Error from remote server: Error: Failed to reconnect SSE stream: fetch failed
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13349:83
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[57954] Error from remote server: Error: Maximum reconnection attempts (2) exceeded.
+    at StreamableHTTPClientTransport._scheduleReconnection (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13342:78)
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-RGTAVJIZ.js:13350:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[ERROR] AtA: AtA: Failed to install new version of claude:  npm error code ENOTEMPTY
+npm error syscall rename
+npm error path /Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code
+npm error dest /Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/.claude-code-Z4QSh5Xx
+npm error errno -66
+npm error ENOTEMPTY: directory not empty, rename '/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code' -> '/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/.claude-code-Z4QSh5Xx'
+npm error A complete log of this run can be found in: /Users/natedamstra/.npm/_logs/2025-11-15T00_16_56_488Z-debug-0.log
+    at KzA (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2226:389)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.current (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2228:8970)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1763081745993-mk87fx.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tavily": Sending SIGINT to MCP server process
+[DEBUG] MCP server "sequential-thinking": Sending SIGINT to MCP server process
+[DEBUG] MCP server "astro-docs": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tailwind-css": Sending SIGINT to MCP server process
+[DEBUG] MCP server "shadcn": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message c7f6725b-c8a8-4d17-aeb2-c2d9e66d80e3
+[DEBUG] FileHistory: Added snapshot for c7f6725b-c8a8-4d17-aeb2-c2d9e66d80e3, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763166242102
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 65060 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763166242102 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tavily": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "sequential-thinking": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "astro-docs": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tailwind-css": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "shadcn": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] MCP server "context7": MCP server process exited cleanly
+[DEBUG] MCP server "tavily": MCP server process exited cleanly
+[DEBUG] MCP server "sequential-thinking": MCP server process exited cleanly
+[DEBUG] MCP server "shadcn": MCP server process exited cleanly
+[DEBUG] MCP server "astro-docs": MCP server process exited cleanly
+[DEBUG] MCP server "tailwind-css": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.57423.1763166242366
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 65484 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.57423.1763166242366 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

@@ -1,0 +1,106 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/socialaize-worktrees/feature-feat-ui-foundation/.claude/settings.local.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45969.1761239694634
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 365992 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45969.1761239694634 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 6320ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] MCP server "tailwind-css": Starting connection with timeout of 60000ms
+[ERROR] MCP server "tailwind-css" Server stderr: TailwindCSS MCP server running on stdio
+[DEBUG] MCP server "tailwind-css": Successfully connected to stdio server in 5856ms
+[DEBUG] MCP server "tailwind-css": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"tailwindcss-server","version":"0.1.0"}}
+[DEBUG] MCP server "shadcn-vue": Starting connection with timeout of 60000ms
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Starting Shadcn UI MCP Server...
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Framework set to 'vue' via command line argument
+INFO: Framework set to 'vue' via command line argument
+INFO: MCP Server configured for VUE framework
+INFO: Repository: unovue/shadcn-vue
+INFO: File extension: .vue
+INFO: Description: Vue components from shadcn-vue
+INFO: To switch frameworks: set FRAMEWORK=react|svelte|react-native or use --framework react|svelte|react-native
+INFO: Framework set to 'vue' via command line argument
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: GitHub API key updated successfully
+[ERROR] MCP server "shadcn-vue" Server stderr: GitHub API key updated successfully
+INFO: GitHub API configured with token
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Setting up request handlers...
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Handlers setup complete
+INFO: Transport initialized: stdio
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Server connected via stdio
+INFO: Server started successfully - Mode: stdio
+[DEBUG] MCP server "shadcn-vue": Successfully connected to stdio server in 6194ms
+[DEBUG] MCP server "shadcn-vue": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"shadcn-ui-mcp-server","version":"1.1.4"}}
+[DEBUG] MCP server "astro-docs": Starting connection with timeout of 60000ms
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Using automatically selected callback port: 40770
+[ERROR] MCP server "astro-docs" Server stderr: [46467] [46467] Connecting to remote server: https://mcp.docs.astro.build/mcp
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Using transport strategy: http-first
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Local STDIO server running
+[46467] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[46467] Press Ctrl+C to exit
+[ERROR] MCP server "astro-docs" Server stderr: [46467] [Local→Remote] initialize
+[ERROR] MCP server "astro-docs" Server stderr: [46467] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.25"
+    }
+  }
+}
+[ERROR] MCP server "astro-docs" Server stderr: [46467] [Remote→Local] 0
+[DEBUG] MCP server "astro-docs": Successfully connected to stdio server in 5845ms
+[DEBUG] MCP server "astro-docs": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Astro Docs server","version":"1.0.0"}}
+[DEBUG] MCP server "appwrite-docs": Starting connection with timeout of 60000ms
+[ERROR] MCP server "astro-docs" Server stderr: [46467] [Local→Remote] notifications/initialized
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Error from remote server: StreamableHTTPError: Streamable HTTP error: Failed to open SSE stream: See Other
+    at StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13301:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 303
+}
+[ERROR] MCP server "astro-docs" Server stderr: [46467] Error from remote server: StreamableHTTPError: Streamable HTTP error: Failed to open SSE stream: See Other
+    at StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13301:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 303
+}
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] Using automatically selected callback port: 44583
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] [46567] Connecting to remote server: https://mcp-for-docs.appwrite.io
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] Using transport strategy: http-first
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] Local STDIO server running
+[46567] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[46567] Press Ctrl+C to exit
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] [Local→Remote] initialize
+[46567] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.25"
+    }
+  }
+}
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] [Remote→Local] 0
+[DEBUG] MCP server "appwrite-docs": Successfully connected to stdio server in 6282ms
+[DEBUG] MCP server "appwrite-docs": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"@appwrite.io/mcp-for-docs","version":"1.0.0"}}
+[DEBUG] MCP server "firecrawl": Starting connection with timeout of 60000ms
+[ERROR] MCP server "appwrite-docs" Server stderr: [46567] [Local→Remote] notifications/initialized
+[DEBUG] MCP server "firecrawl": Successfully connected to stdio server in 5687ms
+[DEBUG] MCP server "firecrawl": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"firecrawl-fastmcp","version":"3.0.0"}}

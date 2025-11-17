@@ -1,0 +1,115 @@
+name: assumption-generation
+purpose: "Generate 6-9 testable assumptions based on context type and optional research findings"
+
+subagents:
+  always: []
+  conditional: {}
+
+subagent_configs: {}
+
+gap_checks:
+  criteria:
+    - "6-9 assumptions generated (not fewer, not more)"
+    - "Each assumption is specific, testable, and falsifiable"
+    - "Assumptions appropriate for context type"
+    - "Validation questions formulated for code-qa"
+    - "Confidence levels assigned based on available evidence"
+  on_failure:
+    - "Regenerate with more specificity"
+    - "Refine assumptions to be more testable"
+    - "Continue with current assumptions"
+    - "Abort workflow"
+
+provides:
+  - assumptions_list
+  - validation_questions
+  - confidence_levels
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. **Read inputs:**
+     - `context.json` - problem context and context type
+     - `codebase-findings.json` - optional research findings
+
+  2. **Generate 6-9 assumptions based on context type:**
+
+     **For CONVERSATIONAL context:**
+     - Assumptions about what the agent believed during prior work
+     - Implicit mental models that guided decisions
+     - Gaps in understanding that may have led to errors
+     - Unstated requirements or constraints
+     - Examples:
+       * "I assumed no OAuth integration exists"
+       * "I believed state should be managed with Pinia"
+       * "I thought all components use scoped styles"
+       * "I assumed the database uses PostgreSQL"
+
+     **For IMPLEMENTATION context:**
+     - Assumptions about current implementation correctness
+     - Beliefs about what exists or doesn't exist
+     - Assumptions about patterns being followed
+     - Gaps in implementation coverage
+     - Examples:
+       * "Feature X is not implemented anywhere"
+       * "Pattern Y is consistently applied across components"
+       * "No existing solution exists for problem Z"
+       * "Component A needs to be built from scratch"
+
+  3. **Optionally use external-research skill** if:
+     - Assumptions require knowledge of framework best practices
+     - Need to verify industry standards or patterns
+     - Want to compare implementation against official docs
+     - Use Skill tool to invoke external-research skill
+
+  4. **For each assumption, create:**
+     - Clear assumption statement (one sentence)
+     - Rationale (why this assumption was made)
+     - Validation question (specific, answerable with codebase evidence)
+     - Confidence level (low/medium/high based on available evidence)
+
+  5. **Output to `assumptions.json`:**
+     ```json
+     {
+       "context_type": "conversational" | "implementation",
+       "problem_area": "Feature/component being examined",
+       "total_assumptions": 6-9,
+       "assumptions": [
+         {
+           "id": 1,
+           "assumption": "No OAuth integration exists in the codebase",
+           "rationale": "During prior work, I didn't find OAuth-related code",
+           "validation_question": "Does OAuth integration exist? If so, where is it implemented and what providers are supported?",
+           "confidence_level": "low",
+           "requires_external_docs": false
+         },
+         {
+           "id": 2,
+           "assumption": "All Vue components use Composition API with script setup",
+           "rationale": "Observed pattern in components I reviewed",
+           "validation_question": "Are there any Vue components using Options API or without script setup?",
+           "confidence_level": "medium",
+           "requires_external_docs": false
+         }
+       ],
+       "external_research_performed": true | false,
+       "research_sources": ["Framework docs URL", "Best practices article"]
+     }
+     ```
+
+  **Assumption Quality Guidelines:**
+  - **Specific**: "OAuth uses Google provider" NOT "Auth is configured"
+  - **Testable**: Can be confirmed/refuted with codebase evidence
+  - **Falsifiable**: Clear criteria for what would disprove it
+  - **Relevant**: Directly relates to problem area
+  - **Non-trivial**: Worth validating (not obvious truths)
+
+  **Confidence Level Guidelines:**
+  - **Low**: Pure assumption, no supporting evidence
+  - **Medium**: Some evidence observed, but incomplete
+  - **High**: Strong evidence, but want definitive confirmation
+
+metadata:
+  estimated_time: "5-10 minutes"
+  complexity: "moderate"
+  requires_user_input: false

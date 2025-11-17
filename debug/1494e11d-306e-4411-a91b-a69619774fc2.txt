@@ -1,0 +1,68 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.22031.1761853460470
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 452285 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.22031.1761853460470 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 1874ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[DEBUG] MCP server "shadcn": Starting connection with timeout of 30000ms
+[ERROR] MCP server "shadcn" Server stderr: [22089] Using automatically selected callback port: 17483
+[ERROR] MCP server "shadcn" Server stderr: [22089] [22089] Connecting to remote server: https://www.shadcn.io/api/mcp
+[ERROR] MCP server "shadcn" Server stderr: [22089] Using transport strategy: http-first
+[ERROR] MCP server "shadcn" Server stderr: [22089] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "shadcn" Server stderr: [22089] Local STDIO server running
+[22089] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[22089] Press Ctrl+C to exit
+[ERROR] MCP server "shadcn" Server stderr: [22089] [Local→Remote] initialize
+[ERROR] MCP server "shadcn" Server stderr: [22089] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.29"
+    }
+  }
+}
+[ERROR] MCP server "shadcn" Server stderr: [22089] [Remote→Local] 0
+[DEBUG] MCP server "shadcn": Successfully connected to stdio server in 2561ms
+[DEBUG] MCP server "shadcn": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"mcp-typescript server on vercel","version":"0.1.0"}}
+[DEBUG] MCP server "tavily": Starting connection with timeout of 30000ms
+[ERROR] MCP server "shadcn" Server stderr: [22089] [Local→Remote] notifications/initialized
+[ERROR] MCP server "tavily" Server stderr: [22117] Using automatically selected callback port: 44464
+[ERROR] MCP server "tavily" Server stderr: [22117] [22117] Connecting to remote server: https://mcp.tavily.com/mcp/?tavilyApiKey=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
+[ERROR] MCP server "tavily" Server stderr: [22117] Using transport strategy: http-first
+[ERROR] MCP server "tavily" Server stderr: [22117] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "tavily" Server stderr: [22117] Local STDIO server running
+[22117] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[22117] Press Ctrl+C to exit
+[ERROR] MCP server "tavily" Server stderr: [22117] [Local→Remote] initialize
+[ERROR] MCP server "tavily" Server stderr: [22117] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.29"
+    }
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [22117] [Remote→Local] 0
+[DEBUG] MCP server "tavily": Successfully connected to stdio server in 2151ms
+[DEBUG] MCP server "tavily": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"tavily-mcp","version":"1.17.0"}}

@@ -1,0 +1,164 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/socialaize-worktrees/feature-fix-ai-chat/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 9 allow rule(s) to destination 'localSettings': ["Bash(git log:*)","Bash(sort:*)","Read(//Users/natedamstra/**)","Bash(cat:*)","Bash(claude mcp:*)","mcp__gemini-cli__ask-gemini","Bash(npm run typecheck:*)","Bash(npm run build:*)","Bash(find:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760564811465-rmfaql.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef-agent-5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef.json.tmp.45958.1760564811468
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef-agent-5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef.json.tmp.45958.1760564811468 to /Users/natedamstra/.claude/todos/5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef-agent-5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef.json
+[DEBUG] File /Users/natedamstra/.claude/todos/5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef-agent-5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/socialaize-worktrees/feature-fix-ai-chat/.claude/skills
+[DEBUG] Loaded 0 skills total (managed: 0, user: 0, project: 0)
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Summarizing last 0 of 198 messages (~0 tokens)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564811819
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564811819 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564811849
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564811849 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] AxiosError: AxiosError: Request failed with status code 401
+    at AO (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:24:1136)
+    at IncomingMessage.<anonymous> (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:29:9845)
+    at IncomingMessage.emit (node:events:530:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at H81.request (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:31:2129)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async UMA (file:///Users/natedamstra/.nvm/versions/node/v22.11.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:280:34283)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564811965
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564811965 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Failed to fetch Grove notice config: AxiosError: Request failed with status code 401
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564812221
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564812221 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Executing hooks for SessionStart:startup
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564812312
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276680 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564812312 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564812338
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276680 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564812338 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called, ENABLE_PLUGINS=true
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564812390
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564812390 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564812650
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564812650 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Summarizing last 2 of 159 messages (~135361 tokens)
+[DEBUG] Summarizing last 2 of 103 messages (~117978 tokens)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564816347
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564816347 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Summarizing last 0 of 196 messages (~0 tokens)
+[DEBUG] Summarizing last 0 of 81 messages (~0 tokens)
+[DEBUG] Executing hooks for SessionStart:resume
+[DEBUG] Getting matching hook commands for SessionStart with query: resume
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "resume" (0 before deduplication)
+[DEBUG] Found 0 hook commands to execute
+[DEBUG] FileHistory: Copied backup 7b693b6fb2272967@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 29330b7cef5a1ae8@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 5b929b46d6bad9ff@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 7b693b6fb2272967@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 29330b7cef5a1ae8@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 5b929b46d6bad9ff@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup ca6aaa8143bfcde3@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 5b929b46d6bad9ff@v3 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup ca6aaa8143bfcde3@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 15cd816b7dd15fa3@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 7b252f0a504c12c3@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 5b929b46d6bad9ff@v4 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 15cd816b7dd15fa3@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 7b252f0a504c12c3@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup d11c800c0646f4bc@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup d11c800c0646f4bc@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup ca6aaa8143bfcde3@v3 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 8eabcbdc12e7bb58@v1 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup ca6aaa8143bfcde3@v4 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] FileHistory: Copied backup 8eabcbdc12e7bb58@v2 from session 36896e8c-9cfe-4e94-a4fd-1bc26840df30 to 5e3b970f-7f71-4cc9-9e3a-e7f4a84a19ef
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564818425
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276785 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564818425 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564818465
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276680 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564818465 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.45958.1760564818499
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 276680 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.45958.1760564818499 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

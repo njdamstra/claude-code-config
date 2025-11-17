@@ -1,0 +1,59 @@
+{
+  "name": "@claude-skills/debug-tailwind-css",
+  "version": "1.0.0",
+  "description": "Comprehensive debugging toolkit for Tailwind CSS + Vue 3 layouts",
+  "main": "index.js",
+  "scripts": {
+    "analyze:box-model": "node tools/box-model-extractor.js",
+    "analyze:chain": "node tools/dimension-chain-analyzer.js",
+    "analyze:layouts": "bash tools/flex-grid-analyzer.sh",
+    "analyze:z-index": "bash tools/z-index-hierarchy.sh",
+    "analyze:spacing": "bash tools/spacing-analyzer.sh",
+    "analyze:deps": "node tools/component-analyzer.js",
+    "analyze:hierarchy": "node tools/parent-child-analyzer.js",
+    "audit:classes": "bash tools/tailwind-class-audit.sh",
+    "calc:natural-height": "node tools/natural-height-calculator.js",
+    "calc:specificity": "node tools/specificity-calculator.js",
+    "check:ssr": "bash tools/ssr-safety-checker.sh",
+    "compare:dimensions": "node tools/dimension-compare.js",
+    "debug:component": "bash tools/component-debugger.sh",
+    "detect:conflicts": "bash tools/tailwind-class-conflict-detector.sh",
+    "detect:overflow": "node tools/detect-overflow.js",
+    "detect:overflow-h": "node tools/detect-overflow.js --direction=horizontal",
+    "detect:overflow-v": "node tools/detect-overflow.js --direction=vertical",
+    "detect:duplicates": "bash tools/duplicate-detector.sh",
+    "explain:size": "node tools/size-calculator.js",
+    "extract:styles": "node tools/computed-styles.js",
+    "extract:classes": "bash tools/extract-classes.sh",
+    "parse:vue": "node tools/vue-parser.js",
+    "screenshot:dark-mode": "node tools/dark-mode-screenshot.js",
+    "test:breakpoints": "bash tools/breakpoint-tester.sh",
+    "test:visual": "npx playwright test",
+    "trace:position": "node tools/position-tracer.js",
+    "validate:dark-mode": "bash tools/dark-mode-validator.sh",
+    "validate:layout": "bash tools/layout-validator.sh",
+    "check:visibility": "node tools/visibility-detector.js",
+    "check:console": "node tools/console-error-detector.js"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "debugging",
+    "vue",
+    "layout",
+    "claude-skill"
+  ],
+  "author": "Claude Code",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "@vue/compiler-sfc": "^3.4.0",
+    "chalk": "^4.1.2",
+    "glob": "^10.3.0",
+    "puppeteer": "^22.0.0",
+    "yargs": "^17.7.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.0"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "data": [
+    {
+      "title": "Hierarchical Settings Configuration",
+      "content": "Claude Code uses a hierarchical settings configuration, prioritizing settings in the following order (highest to lowest): Enterprise Policies, Command Line Arguments, Local Project Settings (`.claude/settings.local.json`), Shared Project Settings (`.claude/settings.json`), and User Settings (`~/.claude/settings.json`). This allows for flexible configuration with overrides at different levels.",
+      "category": "best_practice",
+      "tags": [
+        "#configuration",
+        "#settings",
+        "#hierarchy"
+      ],
+      "topic": "configuration"
+    },
+    {
+      "title": "MCP Server Scopes for Tool Sharing",
+      "content": "MCP servers can be configured with different scopes: Local (private to the current project), Project (shared with the team via `.mcp.json`), and User (available across all projects). This allows for controlled sharing of custom tools and integrations.",
+      "category": "best_practice",
+      "tags": [
+        "#mcp",
+        "#tools",
+        "#sharing",
+        "#scope"
+      ],
+      "topic": "tools"
+    },
+    {
+      "title": "Granular Tool Permissions",
+      "content": "Claude Code allows for granular tool permissions using patterns. For example, you can allow `Bash` tool in general, but disallow specific commands like `rm *` using `Bash(rm *)`. This provides a flexible way to control the tools Claude Code can use.",
+      "category": "best_practice",
+      "tags": [
+        "#permissions",
+        "#security",
+        "#tools"
+      ],
+      "topic": "security"
+    },
+    {
+      "title": "Hooks for Automated Workflows",
+      "content": "Hooks can be configured to run commands before or after tool execution.  For example, a `PostToolUse` hook can be configured to run `prettier` on `.py` files after they are edited using the `Edit(*.py)` matcher.  Environment variables like `TOOL_ARG_file_path` provide context to the hook.",
+      "category": "pattern",
+      "tags": [
+        "#hooks",
+        "#automation",
+        "#workflows"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "CLAUDE.md for Project Context",
+      "content": "The `CLAUDE.md` file serves as persistent context for projects, allowing Claude Code to understand the project's technology stack, coding conventions, important commands, and recent changes.  This improves the quality of Claude's responses and actions.",
+      "category": "best_practice",
+      "tags": [
+        "#context",
+        "#project",
+        "#documentation"
+      ],
+      "topic": "documentation"
+    },
+    {
+      "title": "Dynamic Commands with Shell Expansion",
+      "content": "Custom slash commands can include dynamic content using shell expansion. For example, a command can display the current branch using `$(git branch --show-current)`. This allows for creating commands that adapt to the current project state.",
+      "category": "pattern",
+      "tags": [
+        "#commands",
+        "#slashcommands",
+        "#dynamic"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "MCP Server Tool Naming Convention",
+      "content": "When configuring permissions for MCP server tools, you must use the full MCP function name: `mcp__{server-name}__{function-name}`. Wildcard patterns like `mcp__perplexity__*` do not work, and each function must be listed individually.",
+      "category": "gotcha",
+      "tags": [
+        "#mcp",
+        "#permissions",
+        "#tools"
+      ],
+      "topic": "security"
+    },
+    {
+      "title": "Environment Variables for Configuration",
+      "content": "Settings can be overridden using environment variables. For example, `ANTHROPIC_API_KEY` can be used to set the API key, and `CLAUDE_CODE_MAX_OUTPUT_TOKENS` can be used to control the maximum output tokens. This allows for easy configuration in different environments.",
+      "category": "best_practice",
+      "tags": [
+        "#configuration",
+        "#environmentvariables",
+        "#settings"
+      ],
+      "topic": "configuration"
+    },
+    {
+      "title": "GitHub Actions Integration for Automated Workflows",
+      "content": "Claude Code can be integrated into CI/CD pipelines using GitHub Actions. This allows for automating tasks such as code review, bug fixing, and documentation updates. The API key should be stored as a GitHub secret.",
+      "category": "best_practice",
+      "tags": [
+        "#githubactions",
+        "#cicd",
+        "#automation"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Vim Mode for Enhanced Editing",
+      "content": "Claude Code supports Vim mode for advanced editing capabilities within the interactive session. This allows users familiar with Vim keybindings to efficiently edit code and text.",
+      "category": "best_practice",
+      "tags": [
+        "#vim",
+        "#editing",
+        "#interactivemode"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Enterprise Deployment Options",
+      "content": "Claude Code supports enterprise deployment via Direct Provider Access (AWS Bedrock, Google Vertex AI), Corporate Proxy, and LLM Gateway.  These options allow for integration with existing infrastructure and centralized management.",
+      "category": "best_practice",
+      "tags": [
+        "#enterprise",
+        "#deployment",
+        "#security"
+      ],
+      "topic": "deployment"
+    }
+  ],
+  "expires": 1759796333.883041,
+  "created": 1759709933.883061
+}

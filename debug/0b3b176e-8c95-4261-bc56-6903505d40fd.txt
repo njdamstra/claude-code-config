@@ -1,0 +1,1450 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 10accdca-a807-4053-95f6-cdee6ea263ac, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761768746627
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456950 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761768746627 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761768746738
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456427 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761768746738 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 7d4ed103-d6ed-47a9-baa0-5944c4f1d050
+[DEBUG] FileHistory: Added snapshot for 7d4ed103-d6ed-47a9-baa0-5944c4f1d050, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761768799454
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761768799454 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761768799486
+[DEBUG] Temp file written successfully, size: 301 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761768799486 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: WebFetch
+[DEBUG] Getting matching hook commands for PreToolUse with query: WebFetch
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761769466636
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2072 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761769466636 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["WebFetch(domain:github.com)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for PostToolUse with query: WebFetch
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "WebFetch" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761769482991
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761769482991 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761769483023
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 303 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761769483023 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "git clone:*"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761769658735
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2099 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761769658735 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(git clone:*)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761769671139
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761769671139 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761769671176
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761769671176 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761769678803
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456427 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761769678803 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761769679091
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456427 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761769679091 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761769679217
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761769679217 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771226563
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771226563 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Applying permission update: Setting mode to 'plan'
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 7a01fe1c-5ace-4738-b025-cccb83866429
+[DEBUG] FileHistory: Added snapshot for 7a01fe1c-5ace-4738-b025-cccb83866429, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771274143
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771274143 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771274176
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 663 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771274176 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/claude-code-hooks-mastery/.claude/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761771404379
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2171 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761771404379 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/claude-code-hooks-mastery/.claude/**)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771416197
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456434 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771416197 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771416282
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456434 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771416282 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771416372
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771416372 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771470427
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456434 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771470427 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771470510
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456434 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771470510 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761771470633
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761771470633 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/claude-code-hooks-mastery/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761771476511
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2235 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761771476511 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/claude-code-hooks-mastery/**)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771624017
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771624017 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771624046
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 669 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771624046 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: AskUserQuestion
+[DEBUG] Getting matching hook commands for PreToolUse with query: AskUserQuestion
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: AskUserQuestion
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "AskUserQuestion" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771837841
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771837841 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771838041
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771838041 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: ExitPlanMode
+[DEBUG] Getting matching hook commands for PreToolUse with query: ExitPlanMode
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: ExitPlanMode
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "ExitPlanMode" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771935059
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761771935059 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771935088
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1062 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761771935088 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addDirectories",
+    "directories": [
+      "/Users/natedamstra/.claude"
+    ],
+    "destination": "session"
+  },
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Adding 1 directory with destination 'session': ["/Users/natedamstra/.claude"]
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772409815
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772409815 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772409845
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1064 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772409845 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addDirectories",
+    "directories": [
+      "/Users/natedamstra/claude-code-hooks-mastery/.claude/hooks"
+    ],
+    "destination": "session"
+  },
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Adding 1 directory with destination 'session': ["/Users/natedamstra/claude-code-hooks-mastery/.claude/hooks"]
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772437722
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772437722 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772437759
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1066 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772437759 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772450791
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772450791 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772450820
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1068 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772450820 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772464505
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772464505 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772464533
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1070 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772464533 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/settings.json
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/settings.json.tmp.31830.1761772500462
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2299 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/settings.json.tmp.31830.1761772500462 to /Users/natedamstra/.claude/settings.json
+[DEBUG] File /Users/natedamstra/.claude/settings.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 12 rule(s): ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 45 rule(s): ["Bash(~/.claude/scripts/templates.sh:*)","Bash(while IFS='||' read -r id name desc)","Bash(do echo \"ID: [$id]\")","Bash(tree:*)","Bash(~/.claude/scripts/load-template.sh:*)","Bash(~/.claude/commands/frontend-analyze.md )","Bash(~/.claude/commands/frontend-fix.md )","Bash(~/.claude/commands/frontend-implement.md )","Bash(~/.claude/commands/frontend-improve.md )","Bash(~/.claude/commands/frontend-initiate.md )","Bash(~/.claude/commands/frontend-new.md )","Bash(~/.claude/commands/frontend-plan.md )","Bash(~/.claude/commands/frontend-quick-task.md )","Bash(~/.claude/commands/frontend-validate.md )","Bash(~/.claude/.archives/commands/frontend-deprecated-2025-10-23/)","SlashCommand(/strat:*)","Bash(~/.claude/scripts/list-tools.sh:*)","Bash(mkdir:*)","Bash(mv:*)","WebSearch","WebFetch(domain:www.vellum.ai)","SlashCommand(/plan:*)","Bash(awk:*)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Read(//Users/natedamstra/socialaize-worktrees/fullstack/**)","Read(//Users/natedamstra/socialaize-worktrees/**)","Read(//Users/natedamstra/socialaize-config/**)","Bash(readlink:*)","Bash(cat:*)","Bash(git -C ~/socialaize worktree list:*)","Read(//Users/natedamstra/socialaize/**)","Bash(ln:*)","Bash(git -C ~/socialaize-worktrees/fullstack/frontend branch --show-current)","Bash(~/.local/bin/socialaize-worktree/worktree-switch.sh:*)","Bash(git checkout:*)","Bash(git restore:*)","Bash(git add:*)","Bash(git commit:*)","Bash(then echo \"✅ CONFIRMED: Both point to exact same location\")","Bash(else echo \"❌ Different targets\")","Bash(fi)","WebFetch(domain:github.com)","Bash(git clone:*)","Read(//Users/natedamstra/claude-code-hooks-mastery/.claude/**)","Read(//Users/natedamstra/claude-code-hooks-mastery/**)"]
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm stdout: 2.0.28
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772517619
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772517619 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772517651
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1072 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772517651 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/.env
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.env.tmp.31830.1761772518324
+[DEBUG] Temp file written successfully, size: 860 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/.env.tmp.31830.1761772518324 to /Users/natedamstra/.claude/.env
+[DEBUG] File /Users/natedamstra/.claude/.env written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at co2.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7667)
+    at jq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Vw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at Qo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42806)
+    at T9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38347)
+    at zc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38275)
+    at Lw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38129)
+    at AU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35208)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at co2.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7667)
+    at jq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Vw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at Qo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42806)
+    at T9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38347)
+    at zc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38275)
+    at Lw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38129)
+    at AU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35208)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772527178
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772527178 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772527208
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1074 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772527208 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772546550
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772546550 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772546579
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1076 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772546579 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772571482
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761772571482 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772571514
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761772571514 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761772592671
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761772592671 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761772593056
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456539 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761772593056 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761772593153
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761772593153 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message ae682830-8665-4254-a860-5d93bb5fd11a
+[DEBUG] FileHistory: Added snapshot for ae682830-8665-4254-a860-5d93bb5fd11a, tracking 2 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773344307
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773344307 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773344337
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 624 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773344337 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761773397342
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2273 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761773397342 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/**)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "env"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761773864231
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2292 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761773864231 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(env)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773888913
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773888913 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773888947
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 761 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773888947 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.env.tmp.31830.1761773889445
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2416 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.env.tmp.31830.1761773889445 to /Users/natedamstra/.claude/.env
+[DEBUG] File /Users/natedamstra/.claude/.env written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773901408
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761773901408 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773901436
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 763 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761773901436 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "source ~/.zshrc"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761774141745
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2323 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.31830.1761774141745 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Bash(source ~/.zshrc)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761774155857
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761774155857 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761774155893
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 765 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761774155893 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761774182480
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json.tmp.31830.1761774182480 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-dbf3c9b3-8158-4d32-ac5c-110bb0abc059.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761774182511
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json.tmp.31830.1761774182511 to /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json
+[DEBUG] File /Users/natedamstra/.claude/todos/0b3b176e-8c95-4261-bc56-6903505d40fd-agent-0b3b176e-8c95-4261-bc56-6903505d40fd.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /recall, /ui-document, /checkpoint, /ultratask, /plan, /strat, /ui-validate, /start, /frontend, /orchestrate, /wt, /tools, /ui-provider-refactor, /capture, /templates, /ui-new, /learn, /ui-refactor, /complete, /ui-review, /debug-test, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /frontend, /plan, /strat, /ui-validate, /recall, /orchestrate, /start, /wt, /tools
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774198521
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774198521 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774198721
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456943 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774198721 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774198812
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774198812 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761764422846-r1dh1k.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "shadcn": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message dad2cff5-cd2d-4503-a9ae-0faf4c10f822
+[DEBUG] FileHistory: Added snapshot for dad2cff5-cd2d-4503-a9ae-0faf4c10f822, tracking 2 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774362158
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456908 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774362158 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774362307
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 456875 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774362307 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "shadcn": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": Cleanup timeout reached, stopping process monitoring
+[DEBUG] MCP server "shadcn": Cleanup timeout reached, stopping process monitoring
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.31830.1761774362783
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 457298 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.31830.1761774362783 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

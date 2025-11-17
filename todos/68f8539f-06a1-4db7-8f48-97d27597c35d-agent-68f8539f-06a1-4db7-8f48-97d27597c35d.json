@@ -1,0 +1,127 @@
+[
+  {
+    "content": "Read and verify current StarBalance.vue implementation",
+    "status": "completed",
+    "activeForm": "Reading and verifying current StarBalance.vue implementation"
+  },
+  {
+    "content": "Remove starLocalActions import from StarBalance.vue (line 88)",
+    "status": "completed",
+    "activeForm": "Removing starLocalActions import from StarBalance.vue"
+  },
+  {
+    "content": "Replace initialization logic (lines 174-199) - remove cache, use userProfile prop only",
+    "status": "completed",
+    "activeForm": "Replacing initialization logic with prop-only version"
+  },
+  {
+    "content": "Remove starLocalActions from handleProfileUpdate (lines 437-444)",
+    "status": "completed",
+    "activeForm": "Removing starLocalActions from handleProfileUpdate"
+  },
+  {
+    "content": "Remove starLocalActions from handleBalanceUpdate (lines 446-456)",
+    "status": "completed",
+    "activeForm": "Removing starLocalActions from handleBalanceUpdate"
+  },
+  {
+    "content": "Remove starLocalActions from handleStarsSpent (lines 502-515)",
+    "status": "completed",
+    "activeForm": "Removing starLocalActions from handleStarsSpent"
+  },
+  {
+    "content": "Remove starLocalActions from handleStarsGained (lines 517-531)",
+    "status": "completed",
+    "activeForm": "Removing starLocalActions from handleStarsGained"
+  },
+  {
+    "content": "Update refreshUserProfile fetch URL to /api/payments/balance.json",
+    "status": "completed",
+    "activeForm": "Updating refreshUserProfile fetch URL"
+  },
+  {
+    "content": "Update refreshUserProfile response path from userProfile.starBalance to balance.starBalance",
+    "status": "completed",
+    "activeForm": "Updating refreshUserProfile response path"
+  },
+  {
+    "content": "Verify emitUserProfileUpdated remains in refreshUserProfile",
+    "status": "completed",
+    "activeForm": "Verifying emitUserProfileUpdated event emission"
+  },
+  {
+    "content": "Update polling comments to reference new endpoint (lines 558-571)",
+    "status": "completed",
+    "activeForm": "Updating polling comments"
+  },
+  {
+    "content": "Add deprecation notice to starLocal.ts",
+    "status": "completed",
+    "activeForm": "Adding deprecation notice to starLocal.ts"
+  },
+  {
+    "content": "Verify RequestModal.vue event listener compatibility (lines 442-488)",
+    "status": "completed",
+    "activeForm": "Verifying RequestModal.vue event listener compatibility"
+  },
+  {
+    "content": "Verify useCheckout.ts event emission still works (lines 319-352, 513-544)",
+    "status": "completed",
+    "activeForm": "Verifying useCheckout.ts event emission"
+  },
+  {
+    "content": "Run TypeScript build to check for compilation errors",
+    "status": "completed",
+    "activeForm": "Running TypeScript build"
+  },
+  {
+    "content": "Test: Initial load shows balance immediately with no zero-flash",
+    "status": "pending",
+    "activeForm": "Testing initial load behavior"
+  },
+  {
+    "content": "Test: Purchase stars and verify balance updates correctly",
+    "status": "pending",
+    "activeForm": "Testing star purchase flow"
+  },
+  {
+    "content": "Test: Spend stars and verify balance decreases without reverting",
+    "status": "pending",
+    "activeForm": "Testing star spending flow"
+  },
+  {
+    "content": "Test: Gain stars and verify balance increases correctly",
+    "status": "pending",
+    "activeForm": "Testing star gain flow"
+  },
+  {
+    "content": "Test: Polling updates balance after 45 seconds",
+    "status": "pending",
+    "activeForm": "Testing polling mechanism"
+  },
+  {
+    "content": "Test: RequestModal and StarBalance sync via events",
+    "status": "pending",
+    "activeForm": "Testing cross-component event synchronization"
+  },
+  {
+    "content": "Test: Page refresh loads balance immediately from userProfile prop",
+    "status": "pending",
+    "activeForm": "Testing page refresh behavior"
+  },
+  {
+    "content": "Test: Animations play correctly after balance changes",
+    "status": "pending",
+    "activeForm": "Testing balance change animations"
+  },
+  {
+    "content": "Test: Delta ticker displays for balance increases/decreases",
+    "status": "pending",
+    "activeForm": "Testing delta ticker display"
+  },
+  {
+    "content": "Monitor for 'going back down' behavior in production",
+    "status": "pending",
+    "activeForm": "Monitoring for balance reversion issues"
+  }
+]

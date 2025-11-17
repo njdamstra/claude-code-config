@@ -1,0 +1,222 @@
+# How-To: {{TOPIC_NAME}}
+
+> **Target Audience:** {{AUDIENCE_LEVEL}}
+> **Estimated Time:** ~{{ESTIMATED_TIME}} minutes
+> **Last Updated:** {{GENERATION_DATE}}
+
+## Overview
+
+{{BRIEF_DESCRIPTION}}
+
+**What you'll learn:**
+{{#each LEARNING_OBJECTIVES}}
+- {{this}}
+{{/each}}
+
+---
+
+## Prerequisites
+
+### Required Knowledge
+{{#each PREREQUISITE_KNOWLEDGE}}
+- {{this}}
+{{/each}}
+
+### Required Dependencies
+{{#each PREREQUISITE_DEPENDENCIES}}
+- {{this}}
+{{/each}}
+
+{{#if OPTIONAL_DEPENDENCIES}}
+### Optional
+{{#each OPTIONAL_DEPENDENCIES}}
+- {{this}}
+{{/each}}
+{{/if}}
+
+---
+
+## Step-by-Step Instructions
+
+{{#each TUTORIAL_STEPS}}
+### Step {{this.number}}: {{this.title}}
+
+**Goal:** {{this.goal}}
+
+**Implementation:**
+
+```{{this.language}}
+{{this.code}}
+```
+
+**Explanation:**
+{{this.explanation}}
+
+**Key Points:**
+{{#each this.key_points}}
+- {{this}}
+{{/each}}
+
+{{#if this.common_mistakes}}
+**Common Mistakes:**
+{{#each this.common_mistakes}}
+- ❌ {{this}}
+{{/each}}
+{{/if}}
+
+---
+
+{{/each}}
+
+## Complete Working Example
+
+Here's the full implementation combining all steps:
+
+```{{COMPLETE_EXAMPLE_LANGUAGE}}
+{{COMPLETE_EXAMPLE_CODE}}
+```
+
+**Usage:**
+
+```{{USAGE_LANGUAGE}}
+{{USAGE_EXAMPLE}}
+```
+
+**Expected Output:**
+```
+{{EXPECTED_OUTPUT}}
+```
+
+---
+
+## Common Issues & Solutions
+
+{{#each COMMON_ISSUES}}
+### Issue {{@index}}: {{this.title}}
+
+**Symptoms:**
+{{#each this.symptoms}}
+- {{this}}
+{{/each}}
+
+**Solution:**
+{{this.solution}}
+
+{{#if this.code_fix}}
+**Code Fix:**
+```{{this.language}}
+{{this.code_fix}}
+```
+{{/if}}
+
+---
+
+{{/each}}
+
+{{#if ANTIPATTERNS}}
+## What NOT to Do
+
+{{#each ANTIPATTERNS}}
+### ❌ Antipattern: {{this.title}}
+
+**Bad Code:**
+```{{this.language}}
+{{this.bad_code}}
+```
+
+**Why This is Wrong:**
+{{this.why_bad}}
+
+**Correct Approach:**
+```{{this.language}}
+{{this.good_code}}
+```
+
+**Lesson:** {{this.lesson}}
+
+---
+
+{{/each}}
+{{/if}}
+
+## Tips & Best Practices
+
+{{#each TIPS}}
+- **{{this.category}}:** {{this.tip}}
+{{/each}}
+
+{{#if SSR_CONSIDERATIONS}}
+### SSR Considerations
+
+{{#each SSR_CONSIDERATIONS}}
+- {{this}}
+{{/each}}
+{{/if}}
+
+{{#if DECISION_TREES}}
+---
+
+## Decision Trees
+
+{{#each DECISION_TREES}}
+### {{this.title}}
+
+{{this.tree_diagram}}
+
+{{/each}}
+{{/if}}
+
+{{#if TESTING_EXAMPLES}}
+---
+
+## Testing This Feature
+
+{{#each TESTING_EXAMPLES}}
+### {{this.title}}
+
+```{{this.language}}
+{{this.code}}
+```
+
+**What this tests:** {{this.description}}
+
+{{/each}}
+{{/if}}
+
+---
+
+## Next Steps
+
+Now that you've completed this how-to, you can:
+{{#each NEXT_STEPS}}
+- {{this}}
+{{/each}}
+
+---
+
+## Related Topics
+
+{{#each RELATED_TOPICS}}
+- [{{this.title}}]({{this.link}})
+{{/each}}
+
+---
+
+## Additional Resources
+
+### Internal Documentation
+{{#each INTERNAL_RESOURCES}}
+- [{{this.title}}]({{this.link}})
+{{/each}}
+
+### External Resources
+{{#each EXTERNAL_RESOURCES}}
+- [{{this.title}}]({{this.link}}) - {{this.description}}
+{{/each}}
+
+---
+
+**Generated:** {{GENERATION_DATE}}
+**Workflow:** how-to-guide-workflow v1.0
+
+*Note: Examples in this guide were generated for pedagogical clarity and demonstrate best-practice usage. They may differ from production codebase implementations.*

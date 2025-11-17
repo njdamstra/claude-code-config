@@ -1,0 +1,229 @@
+# Phase: Example Generation (v5)
+# Generate clean, pedagogically correct examples (DO NOT just copy existing code)
+
+name: example-generation
+purpose: "Generate clean, correct tutorial examples based on API understanding - not by copying potentially flawed codebase usage"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - tutorial-example-generator
+  conditional: {}
+
+subagent_configs:
+  tutorial-example-generator:
+    task_agent_type: "code-researcher"  # Repurposed for generation
+    model: "sonnet"
+    thoroughness: "high"
+
+    responsibility: |
+      Generate clean, pedagogically sound examples for the tutorial.
+
+      CRITICAL DISTINCTION:
+      - Existing codebase usage is REFERENCE ONLY (may be flawed/incomplete)
+      - DO NOT copy existing examples directly
+      - GENERATE new examples that demonstrate correct, best-practice usage
+
+    instructions: |
+      **PHILOSOPHY:**
+      You are creating teaching materials, not documenting existing code.
+      Existing code may have bugs, antipatterns, or incomplete implementations.
+      Your job is to create IDEAL examples that teach proper usage.
+
+      **PROCESS:**
+
+      1. Study API surface from codebase-context.json:
+         - Function signatures with exact types
+         - Parameter requirements and defaults
+         - Return value structure
+         - Lifecycle requirements
+
+      2. Review existing usage patterns (REFERENCE, not gospel):
+         - Note what works well (quality: "good")
+         - Identify common mistakes (quality: "poor", "antipattern")
+         - Understand real-world context
+
+      3. Read scope-answers.json to understand tutorial goals:
+         - Audience level (adjust complexity)
+         - Depth (quick-start vs comprehensive)
+         - What to cover (edge cases, antipatterns, etc.)
+         - Parameter coverage (all vs common)
+
+      4. Generate progressive tutorial steps (typically 3-7 steps):
+
+         **Step 1 - Minimal Working Example:**
+         - Simplest possible usage
+         - Only required parameters
+         - Complete (imports, setup, usage)
+         - One clear concept
+
+         **Step 2 - Common Usage:**
+         - Add 1-2 most common options
+         - Still simple and focused
+         - Build on step 1
+
+         **Step 3-5 - Progressive Complexity:**
+         - Each step adds ONE new concept
+         - Examples build on previous steps
+         - Cover scope-requested scenarios
+
+         **Final Step - Complete Working Example:**
+         - Production-realistic (but still readable)
+         - Combines concepts from previous steps
+         - Include error handling if scope requests
+         - Add comments explaining key points
+
+      5. For EACH example:
+         ✅ Include ALL imports (no magic globals)
+         ✅ Include setup code (refs, reactive state, etc.)
+         ✅ Show complete usage context
+         ✅ Add TypeScript types where beneficial
+         ✅ Follow Vue 3 Composition API best practices
+         ✅ Include null checks and guards where needed
+         ✅ Use proper lifecycle hooks (onMounted, onUnmounted)
+         ✅ Ensure SSR-safe patterns (check isMounted)
+
+         ❌ Don't copy flawed codebase examples
+         ❌ Don't skip imports or setup
+         ❌ Don't include unrelated complexity
+         ❌ Don't use deprecated patterns
+         ❌ Don't assume prior knowledge not in prerequisites
+
+      6. Generate antipattern examples if scope requests:
+         - Show what NOT to do
+         - Explain WHY it's wrong
+         - Show correct alternative
+         - Use actual antipatterns from codebase-context if available
+
+      7. Create variations showing:
+         - Different parameter combinations
+         - Different use cases
+         - Edge case handling (if scope requests)
+         - Composition with other features
+
+      **EXAMPLE QUALITY STANDARDS:**
+
+      - **Minimal:** Only code needed to demonstrate concept (no cruft)
+      - **Complete:** Runnable without missing pieces (imports, setup, cleanup)
+      - **Correct:** Follows API correctly, uses best practices
+      - **Pedagogical:** Teaches one concept per step, progressive learning
+      - **Production-aware:** Shows real-world patterns (error handling, types, guards)
+
+    scope_specific:
+      frontend: |
+        **Generate Vue 3 examples following these patterns:**
+
+        - Use `<script setup lang="ts">` syntax
+        - Import from correct locations (@/composables/, @/components/, etc.)
+        - Use proper reactive state (ref, reactive, computed)
+        - Include lifecycle hooks where needed (onMounted, onUnmounted, watchEffect)
+        - Add TypeScript types for clarity
+        - Use Tailwind CSS classes for styling (if UI examples)
+        - Ensure SSR-safe patterns:
+          ```typescript
+          const mounted = useMounted()  // VueUse
+          watchEffect(() => {
+            if (!mounted.value) return
+            // Browser-only code here
+          })
+          ```
+        - Include null/undefined checks for refs
+        - Show proper cleanup in onUnmounted
+
+        **Example structure:**
+        ```vue
+        <script setup lang="ts">
+        import { ref, onMounted } from 'vue'
+        import { useFeature } from '@/composables/useFeature'
+
+        const element = ref<HTMLElement>()
+        const { method, state } = useFeature()
+
+        onMounted(() => {
+          if (!element.value) return
+          method(element.value, { /* options */ })
+        })
+        </script>
+
+        <template>
+          <div ref="element">
+            {{ state }}
+          </div>
+        </template>
+        ```
+
+      backend: |
+        **Generate backend examples following these patterns:**
+
+        - Appwrite function structure
+        - Proper error handling (try/catch)
+        - Input validation with Zod
+        - Response formatting
+        - Permission checks
+        - Database query patterns
+
+      both: |
+        **Generate full-stack examples showing:**
+
+        - Frontend component making API call
+        - API route handling request
+        - Backend function processing
+        - Error handling at each layer
+        - Type safety across boundaries
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files:
+          - "codebase-context.json"
+          - "scope-answers.json"
+        description: "API surface, usage reference, and user scope preferences"
+
+    outputs:
+      - file: tutorial-examples.json
+        schema: output_templates/tutorial-examples.json
+        required: true
+        description: "Generated examples with code, explanations, and learning objectives"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "3-7 progressive tutorial steps generated"
+    - "Each step has complete code example (imports + setup + usage)"
+    - "Examples are syntactically correct (valid TypeScript/Vue)"
+    - "Examples demonstrate API usage accurately per codebase-context"
+    - "Learning objectives defined for each step"
+    - "Examples build progressively (each builds on previous)"
+    - "If scope requests antipatterns, antipattern examples included"
+    - "If scope requests complete example, production-realistic example included"
+    - "All examples are GENERATED (not copied from codebase)"
+
+  on_failure:
+    - "Revise examples for completeness"
+    - "Simplify examples if too complex"
+    - "Add missing imports/setup"
+    - "Abort workflow - cannot create tutorial without examples"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - generated_examples       # Progressive tutorial steps with code
+  - antipattern_examples     # What NOT to do (if requested)
+  - complete_working_example # Production-realistic final example
+  - learning_objectives      # What each step teaches
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "10-25 minutes"
+  complexity: "moderate-to-high"
+  requires_user_input: false

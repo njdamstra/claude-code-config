@@ -1,0 +1,116 @@
+name: code-researcher-conditional
+purpose: "Conditionally spawn code-researcher subagent for codebase exploration based on user decision"
+
+subagents:
+  always: []
+  conditional: {}
+
+subagent_configs:
+  code-researcher:
+    task_agent_type: "code-researcher"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Explore codebase to discover existing patterns, implementations, and relevant files for the problem area
+
+    instructions: |
+      1. Read `context.json` to understand the problem area and what to search for
+
+      2. Perform comprehensive codebase exploration:
+         - Search for existing implementations of similar features
+         - Identify relevant patterns and conventions
+         - Map dependencies and related components
+         - Find reusable code and utilities
+
+      3. Focus exploration based on context type:
+         - **Conversational**: Find evidence related to assumptions made in conversation
+         - **Implementation**: Validate current implementation approach and discover gaps
+
+      4. Document findings in `codebase-findings.json`:
+         ```json
+         {
+           "exploration_summary": "Overview of what was found",
+           "existing_implementations": [
+             {
+               "description": "What exists",
+               "files": ["path/to/file.ts"],
+               "relevance": "How this relates to problem area"
+             }
+           ],
+           "patterns_discovered": [
+             {
+               "pattern": "Pattern name",
+               "description": "How it's used",
+               "examples": ["file:line references"]
+             }
+           ],
+           "gaps_identified": [
+             "Missing component X",
+             "No validation for Y"
+           ],
+           "relevant_files": ["path/to/relevant/file.ts"]
+         }
+         ```
+
+      5. Provide evidence-based findings with file:line citations
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: [context.json]
+        description: "Problem context and research scope"
+
+    outputs:
+      - file: codebase-findings.json
+        required: true
+        description: "Codebase exploration results with patterns and existing implementations"
+
+gap_checks:
+  criteria:
+    - "If research requested: findings documented with file citations"
+    - "If research skipped: empty placeholder created"
+    - "Exploration scope matches problem area"
+  on_failure:
+    - "Re-explore with refined scope"
+    - "Continue with available findings"
+    - "Abort workflow"
+
+provides:
+  - existing_implementations
+  - discovered_patterns
+  - relevant_files
+  - identified_gaps
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. **Read `context.json`** to check `research_requested` field
+
+  2. **If research_requested == true:**
+     - Spawn code-researcher subagent using Task tool
+     - Wait for completion and verify `codebase-findings.json` exists
+     - Review findings for completeness
+
+  3. **If research_requested == false:**
+     - Create empty placeholder `codebase-findings.json`:
+       ```json
+       {
+         "research_skipped": true,
+         "note": "User opted to skip pre-codebase research",
+         "exploration_summary": "No research performed",
+         "existing_implementations": [],
+         "patterns_discovered": [],
+         "gaps_identified": [],
+         "relevant_files": []
+       }
+       ```
+
+  **Key considerations:**
+  - Code-researcher should use "medium" thoroughness for balanced exploration
+  - Findings should include file:line citations for traceability
+  - Empty placeholder allows downstream phases to handle both scenarios
+
+metadata:
+  estimated_time: "0-10 minutes"
+  complexity: "moderate"
+  requires_user_input: false

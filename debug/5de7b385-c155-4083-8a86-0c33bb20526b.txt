@@ -1,0 +1,405 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Applying permission update: Adding 131 allow rule(s) to destination 'localSettings': ["Bash(npx:*)","mcp__duckduckgo__duckduckgo_web_search","mcp__gemini-cli__ask-gemini","mcp__firecrawl__firecrawl_crawl","mcp__firecrawl__firecrawl_scrape","mcp__github-docs__search_generic_code","mcp__github-docs__fetch_generic_url_content","mcp__firecrawl__firecrawl_search","Bash(cat:*)","WebSearch","Bash(npm run typecheck:*)","Bash(grep:*)","Bash(npm run build:*)","Read(//Users/natedamstra/.claude/commands/**)","Bash(~/.local/bin/socialaize-worktree/worktree-feature.sh:*)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-feature-1/**)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Bash(git worktree:*)","Read(//private/tmp/socialaize-worktree.lock/**)","Read(//Users/natedamstra/test-onboarding/**)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-feature-2/**)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-backend/**)","Bash(test:*)","Bash(git branch:*)","Bash(~/.local/bin/socialaize-worktree/list-worktrees.sh:*)","Bash(~/.local/bin/socialaize-worktree/worktree-status.sh:*)","Bash(~/.local/bin/socialaize-worktree/cleanup-worktree.sh:*)","Read(//Users/natedamstra/socialaize-worktrees/**)","Bash(~/.local/bin/socialaize-worktree/worktree-functions.sh AI_API EmailHandler)","Read(//Users/natedamstra/socialaize-functions-workspace/AI_API/**)","Bash(curl -X POST https://mcp-for-docs.appwrite.io )","Bash(claude mcp add:*)","Bash(claude mcp:*)","mcp__firecrawl__firecrawl_map","Read(//Users/natedamstra/.claude/**)","SlashCommand(/worktree-status:*)","SlashCommand(/debug-test:*)","WebFetch(domain:platform.openai.com)","mcp__github-docs__fetch_generic_documentation","mcp__playwright__browser_navigate","mcp__playwright__browser_wait_for","WebFetch(domain:github.com)","mcp__github-docs__match_common_libs_owner_repo_mapping","Bash(find:*)","Bash(awk:*)","Bash(chmod:*)","Bash(for file in src/components/vue/ui/AiConductorGraphic.vue src/components/vue/ui/AiConductorGraphicV2.vue src/components/vue/ui/CompletionAnimation.vue src/components/vue/ui/TypewriterText.vue)","Bash(do echo \"=== $file ===\" grep -E \"import.*from.*(''''@composables/|''''@vueuse/|@vueuse/motion)\" \"$file\")","Bash(git add:*)","Bash(git commit:*)","Bash(tree:*)","Bash(gh repo create:*)","Bash(git push:*)","Read(//Users/natedamstra/NATE_SECOND_BRAIN/**)","Read(//Users/natedamstra/Library/Logs/Claude/**)","Read(//Users/natedamstra/Library/Application Support/Claude/**)","Read(//Users/natedamstra/Library/Logs/**)","Read(//Users/natedamstra/Library/**)","Read(//Users/natedamstra/**)","Bash(python3:*)","WebFetch(domain:support.claude.com)","mcp__playwright__browser_click","mcp__playwright__browser_evaluate","Bash(pnpm astro check:*)","mcp__playwright__browser_take_screenshot","mcp__playwright__browser_console_messages","WebFetch(domain:www.anthropic.com)","WebFetch(domain:aider.chat)","Bash(mkdir:*)","Bash(node:*)","Bash(git pull:*)","Bash(rm:*)","Bash(git fetch:*)","Bash(git remote:*)","Bash(git stash push:*)","Bash(mv:*)","Bash(git checkout:*)","Bash(git rm:*)","Bash(xargs -I {} sh -c 'if grep -q \"\"\"\"aria-\"\"\"\" \"\"\"\"{}\"\"\"\"; then echo \"\"\"\"{}\"\"\"\"; fi')","Bash(for dir in ai analytics base buttons cards common dashboard debug display filters global graphs guards inputs manage menus modals navigation providers social-hub static ui views welcome-flow widgets)","Bash(do echo \"=== $dir ===\")","Bash(done)","Bash(for dir in ai analytics base buttons cards dashboard display graphs guards inputs menus modals social-hub ui views)","Bash(~/.local/bin/socialaize-worktree/worktree-init.sh:*)","Bash(~/.local/bin/socialaize-worktree/setup-claude-config.sh:*)","WebFetch(domain:ui.shadcn.com)","WebFetch(domain:registry.directory)","WebFetch(domain:tweakcn.com)","Bash(xargs:*)","Bash(for dir in /Users/natedamstra/socialaize/src/components/vue/*/)","WebFetch(domain:simonswiss.com)","WebFetch(domain:www.kevinzunigacuellar.com)","WebFetch(domain:namoku.dev)","Skill(cc-subagent-architect)","Bash(~/.claude/scripts/mcp-act.sh:*)","mcp__tailwind-css__get_tailwind_config_guide","Bash(gh pr create:*)","Bash(git ls-tree:*)","WebFetch(domain:www.joshwcomeau.com)","WebFetch(domain:codelucky.com)","WebFetch(domain:www.lummi.ai)","WebFetch(domain:oritop.co)","WebFetch(domain:www.interaction-design.org)","WebFetch(domain:moderncss.dev)","WebFetch(domain:www.smashingmagazine.com)","WebFetch(domain:web.dev)","WebFetch(domain:dev.to)","WebFetch(domain:www.uxpin.com)","WebFetch(domain:inclusive-components.design)","WebFetch(domain:blog.logrocket.com)","Bash(gh pr list:*)","Bash(gh pr view:*)","Bash(gh pr checkout:*)","Bash(gh pr diff:*)","Bash(git diff:*)","Read(//tmp/**)","Bash(sed:*)","SlashCommand(/plan:*)","Bash(pnpm install:*)","Bash(pnpm run build)","Bash(pnpm add:*)","SlashCommand(/ui-new:*)","Bash(pnpm run typecheck:*)","Skill(docs)","Skill(brainstorming)","Bash(gemini \"@/Users/natedamstra/socialaize-config/.claude/brains/onboarding-flow/.temp/platform-configuration.md\" \"@/Users/natedamstra/socialaize-config/.claude/brains/onboarding-flow/.temp/oauth-composables-clarification.md\" \"Extract concise summaries from both documents for integration into main documentation.\n\nFROM platform-configuration.md EXTRACT:\n- 2-3 paragraph executive summary\n- Key files and their purposes (list 4 most important files)\n- Top 5 most important helper functions with brief descriptions\n- Integration points with onboarding flow\n- Developer decision tree (when to use what)\n\nFROM oauth-composables-clarification.md EXTRACT:\n- 2-3 paragraph executive summary\n- Three-layer architecture explanation (concise)\n- Responsibility split table (which layer does what)\n- Cache refresh pattern explanation\n- Decision tree: when to use which composable\n\nFormat output as markdown with two main sections. Keep each summary 200-300 words. Focus on actionable information for developers.\")","Bash(gemini \"@/Users/natedamstra/socialaize-worktrees/onboarding-flow/.temp-platform-config.md\" \"@/Users/natedamstra/socialaize-worktrees/onboarding-flow/.temp-oauth-composables.md\" \"Extract concise summaries from both documents for integration into main documentation.\n\nFROM platform-configuration.md (.temp-platform-config.md) EXTRACT:\n- 2-3 paragraph executive summary\n- Key files and their purposes (list 4 most important files)\n- Top 5 most important helper functions with brief descriptions\n- Integration points with onboarding flow\n- Developer decision tree (when to use what)\n\nFROM oauth-composables-clarification.md (.temp-oauth-composables.md) EXTRACT:\n- 2-3 paragraph executive summary\n- Three-layer architecture explanation (concise)\n- Responsibility split table (which layer does what)\n- Cache refresh pattern explanation\n- Decision tree: when to use which composable\n\nFormat output as markdown with two main sections. Keep each summary 200-300 words. Focus on actionable information for developers.\")","Skill(writing-plans)","Skill(executing-plans)","Bash(timeout 10 npm run dev:*)","Skill(planner)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761947915110-tknm95.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/5de7b385-c155-4083-8a86-0c33bb20526b-agent-5de7b385-c155-4083-8a86-0c33bb20526b.json.tmp.43888.1761947915113
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/5de7b385-c155-4083-8a86-0c33bb20526b-agent-5de7b385-c155-4083-8a86-0c33bb20526b.json.tmp.43888.1761947915113 to /Users/natedamstra/.claude/todos/5de7b385-c155-4083-8a86-0c33bb20526b-agent-5de7b385-c155-4083-8a86-0c33bb20526b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/5de7b385-c155-4083-8a86-0c33bb20526b-agent-5de7b385-c155-4083-8a86-0c33bb20526b.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947915153
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63568 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947915153 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 33 unique skills (managed: 0, user: 33, project: 0, duplicates removed: 0)
+[DEBUG] getSkillsIfEnabled returning: 33 skill dir commands, 0 plugin skills
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947915480
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947915480 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947915511
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947915511 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947915540
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947915540 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947915673
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947915673 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/insight-extractor.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/insight-extractor.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/doc-searcher.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/doc-searcher.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/web-researcher-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/web-researcher-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/knowledge-organizer.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/socialaize-worktrees/onboarding-flow/.claude/agents/knowledge-organizer.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/plan-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] MCP server "tavily": Starting connection with timeout of 60000ms
+[DEBUG] MCP server "context7": Starting connection with timeout of 60000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947916453
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947916453 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "startup" (1 before deduplication)
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Hooks: Checking initial response for async: {"hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": "Session started at: 2025-10-31 14:58:36\nSession source: startup\nGit branch: feat-onboarding-flow\nUncommitted changes: 47 files\n\n--- Recent GitHub Issues ---\n20\tOPEN\tChat processing failed: Error in step 'process_conversation': Object of type FunctionTool is not JSON serializable\tBackend, AI Assistant\t2025-08-02T00:42:08Z\n17\tOPEN\tAI chat for larger screen sizes displays behind the side menu\tFrontend, AI Assistant\t2025-08-01T05:42:56Z\n12\tOPEN\tFB Can't send message in convo\tBackend, Facebook, Social Hub, Social Hub Convo\t2025-07-31T19:25:59Z\n11\tOPEN\tFB Can't reply to comment on your post\tBackend, Facebook, Social Hub, Social Hub Activity\t2025-07-31T19:23:02Z\n10\tOPEN\tThreads Document of og comment being replied to from an a randon post isn't created\tBackend, Threads, Social Hub, Social Hub Activity\t2025-07-31T19:12:46Z"}}
+[DEBUG] Hooks: Parsed initial response: {"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"Session started at: 2025-10-31 14:58:36\nSession source: startup\nGit branch: feat-onboarding-flow\nUncommitted changes: 47 files\n\n--- Recent GitHub Issues ---\n20\tOPEN\tChat processing failed: Error in step 'process_conversation': Object of type FunctionTool is not JSON serializable\tBackend, AI Assistant\t2025-08-02T00:42:08Z\n17\tOPEN\tAI chat for larger screen sizes displays behind the side menu\tFrontend, AI Assistant\t2025-08-01T05:42:56Z\n12\tOPEN\tFB Can't send message in convo\tBackend, Facebook, Social Hub, Social Hub Convo\t2025-07-31T19:25:59Z\n11\tOPEN\tFB Can't reply to comment on your post\tBackend, Facebook, Social Hub, Social Hub Activity\t2025-07-31T19:23:02Z\n10\tOPEN\tThreads Document of og comment being replied to from an a randon post isn't created\tBackend, Threads, Social Hub, Social Hub Activity\t2025-07-31T19:12:46Z"}}
+[DEBUG] Hooks: Initial response is not async, continuing normal processing
+[DEBUG] Successfully parsed and validated hook JSON output
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947917807
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62694 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947917807 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947917832
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62694 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947917832 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947917907
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62694 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947917907 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947917933
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947917933 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Stream started - received first chunk
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 8892ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[ERROR] MCP server "context7" Server stderr: Context7 Documentation MCP Server running on stdio
+[DEBUG] MCP server "context7": Successfully connected to stdio server in 9015ms
+[DEBUG] MCP server "context7": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Context7","version":"1.0.26"}}
+[ERROR] MCP server "tavily" Server stderr: [44347] Using automatically selected callback port: 44464
+[ERROR] MCP server "tavily" Server stderr: [44347] [44347] Connecting to remote server: https://mcp.tavily.com/mcp/?tavilyApiKey=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
+[ERROR] MCP server "tavily" Server stderr: [44347] Using transport strategy: http-first
+[ERROR] MCP server "tavily" Server stderr: [44347] Connected to remote server using StreamableHTTPClientTransport
+[ERROR] MCP server "tavily" Server stderr: [44347] Local STDIO server running
+[44347] Proxy established successfully between local STDIO and remote StreamableHTTPClientTransport
+[44347] Press Ctrl+C to exit
+[ERROR] MCP server "tavily" Server stderr: [44347] [Local→Remote] initialize
+[ERROR] MCP server "tavily" Server stderr: [44347] {
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "roots": {}
+    },
+    "clientInfo": {
+      "name": "claude-code (via mcp-remote 0.1.29)",
+      "version": "2.0.30"
+    }
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [44347] [Remote→Local] 0
+[DEBUG] MCP server "tavily": Successfully connected to stdio server in 9762ms
+[DEBUG] MCP server "tavily": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":true,"serverVersion":{"name":"tavily-mcp","version":"1.17.0"}}
+[ERROR] MCP server "tavily" Server stderr: [44347] [Local→Remote] notifications/initialized
+[44347] [Local→Remote] tools/list
+[44347] [Local→Remote] prompts/list
+[ERROR] MCP server "tavily" Server stderr: [44347] [Local→Remote] resources/list
+[ERROR] MCP server "tavily" Server stderr: [44347] [Remote→Local] 3
+[ERROR] MCP server "tavily" Server stderr: [44347] [Remote→Local] 1
+[ERROR] MCP server "tavily" Server stderr: [44347] [Remote→Local] 2
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761947934373
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761947934373 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, brainstorming, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Skill Builder, CC Slash Command Builder, CC Subagent Architect, codebase-documentation, Codebase Researcher, dispatching-parallel-agents, docs-deprecated, executing-plans, Nanostore Builder, planner, Playwright Browser Automation, root-cause-tracing, Socialaize Appwrite Integration, subagent-driven-development, systematic-debugging, test-driven-development, TypeScript Fixer
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /tools, /wt, /orchestrate, /start, /prompts, /question, /tts, /docs, /frontend, /plan, /strat, /ui-validate, /recall, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-plan, /wt-full, /meta, /capture, /templates, /ui-new, /learn, /plans, /ui-refactor, /complete, /ui-review, /debug-test, /ui-provider-refactor, /sp:write-plan, /sp:brainstorm, /sp:execute-plan, /sp:brainstorm, /sp:write-plan, /sp:execute-plan, /deep-web-research, /ultratask, /web-search
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761949720457
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761949720457 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761951521009
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761951521009 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[ERROR] wnA: wnA: Another process is currently installing an update
+    at TDA (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1865:1764)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2857:32587
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[ERROR] wnA: wnA: Another process is currently installing an update
+    at TDA (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1865:1764)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2857:32587
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1761952820760
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 62799 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1761952820760 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at async StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13289:24) {
+  [cause]: Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20) {
+    errno: -54,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: Failed to reconnect SSE stream: fetch failed
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13349:83
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13289:24) {
+  [cause]: Error: getaddrinfo ENOTFOUND mcp.tavily.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'mcp.tavily.com'
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: Failed to reconnect SSE stream: fetch failed
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13349:83
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async StreamableHTTPClientTransport._startOrAuthSse (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13289:24) {
+  [cause]: Error: getaddrinfo ENOTFOUND mcp.tavily.com
+      at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26) {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'mcp.tavily.com'
+  }
+}
+[ERROR] MCP server "tavily" Server stderr: [44347] Error from remote server: Error: Failed to reconnect SSE stream: fetch failed
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13349:83
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[44347] Error from remote server: Error: Maximum reconnection attempts (2) exceeded.
+    at StreamableHTTPClientTransport._scheduleReconnection (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13342:78)
+    at file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13350:14
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'userSettings' with 12 rule(s): ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Edit","Bash(chmod:*)","Bash(touch:*)"]
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 131 rule(s): ["Bash(npx:*)","mcp__duckduckgo__duckduckgo_web_search","mcp__gemini-cli__ask-gemini","mcp__firecrawl__firecrawl_crawl","mcp__firecrawl__firecrawl_scrape","mcp__github-docs__search_generic_code","mcp__github-docs__fetch_generic_url_content","mcp__firecrawl__firecrawl_search","Bash(cat:*)","WebSearch","Bash(npm run typecheck:*)","Bash(grep:*)","Bash(npm run build:*)","Read(//Users/natedamstra/.claude/commands/**)","Bash(~/.local/bin/socialaize-worktree/worktree-feature.sh:*)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-feature-1/**)","Read(//Users/natedamstra/.local/bin/socialaize-worktree/**)","Bash(git worktree:*)","Read(//private/tmp/socialaize-worktree.lock/**)","Read(//Users/natedamstra/test-onboarding/**)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-feature-2/**)","Read(//Users/natedamstra/socialaize-worktrees/feature-test-backend/**)","Bash(test:*)","Bash(git branch:*)","Bash(~/.local/bin/socialaize-worktree/list-worktrees.sh:*)","Bash(~/.local/bin/socialaize-worktree/worktree-status.sh:*)","Bash(~/.local/bin/socialaize-worktree/cleanup-worktree.sh:*)","Read(//Users/natedamstra/socialaize-worktrees/**)","Bash(~/.local/bin/socialaize-worktree/worktree-functions.sh AI_API EmailHandler)","Read(//Users/natedamstra/socialaize-functions-workspace/AI_API/**)","Bash(curl -X POST https://mcp-for-docs.appwrite.io )","Bash(claude mcp add:*)","Bash(claude mcp:*)","mcp__firecrawl__firecrawl_map","Read(//Users/natedamstra/.claude/**)","SlashCommand(/worktree-status:*)","SlashCommand(/debug-test:*)","WebFetch(domain:platform.openai.com)","mcp__github-docs__fetch_generic_documentation","mcp__playwright__browser_navigate","mcp__playwright__browser_wait_for","WebFetch(domain:github.com)","mcp__github-docs__match_common_libs_owner_repo_mapping","Bash(find:*)","Bash(awk:*)","Bash(chmod:*)","Bash(for file in src/components/vue/ui/AiConductorGraphic.vue src/components/vue/ui/AiConductorGraphicV2.vue src/components/vue/ui/CompletionAnimation.vue src/components/vue/ui/TypewriterText.vue)","Bash(do echo \"=== $file ===\" grep -E \"import.*from.*(''''@composables/|''''@vueuse/|@vueuse/motion)\" \"$file\")","Bash(git add:*)","Bash(git commit:*)","Bash(tree:*)","Bash(gh repo create:*)","Bash(git push:*)","Read(//Users/natedamstra/NATE_SECOND_BRAIN/**)","Read(//Users/natedamstra/Library/Logs/Claude/**)","Read(//Users/natedamstra/Library/Application Support/Claude/**)","Read(//Users/natedamstra/Library/Logs/**)","Read(//Users/natedamstra/Library/**)","Read(//Users/natedamstra/**)","Bash(python3:*)","WebFetch(domain:support.claude.com)","mcp__playwright__browser_click","mcp__playwright__browser_evaluate","Bash(pnpm astro check:*)","mcp__playwright__browser_take_screenshot","mcp__playwright__browser_console_messages","WebFetch(domain:www.anthropic.com)","WebFetch(domain:aider.chat)","Bash(mkdir:*)","Bash(node:*)","Bash(git pull:*)","Bash(rm:*)","Bash(git fetch:*)","Bash(git remote:*)","Bash(git stash push:*)","Bash(mv:*)","Bash(git checkout:*)","Bash(git rm:*)","Bash(xargs -I {} sh -c 'if grep -q \"\"\"\"aria-\"\"\"\" \"\"\"\"{}\"\"\"\"; then echo \"\"\"\"{}\"\"\"\"; fi')","Bash(for dir in ai analytics base buttons cards common dashboard debug display filters global graphs guards inputs manage menus modals navigation providers social-hub static ui views welcome-flow widgets)","Bash(do echo \"=== $dir ===\")","Bash(done)","Bash(for dir in ai analytics base buttons cards dashboard display graphs guards inputs menus modals social-hub ui views)","Bash(~/.local/bin/socialaize-worktree/worktree-init.sh:*)","Bash(~/.local/bin/socialaize-worktree/setup-claude-config.sh:*)","WebFetch(domain:ui.shadcn.com)","WebFetch(domain:registry.directory)","WebFetch(domain:tweakcn.com)","Bash(xargs:*)","Bash(for dir in /Users/natedamstra/socialaize/src/components/vue/*/)","WebFetch(domain:simonswiss.com)","WebFetch(domain:www.kevinzunigacuellar.com)","WebFetch(domain:namoku.dev)","Skill(cc-subagent-architect)","Bash(~/.claude/scripts/mcp-act.sh:*)","mcp__tailwind-css__get_tailwind_config_guide","Bash(gh pr create:*)","Bash(git ls-tree:*)","WebFetch(domain:www.joshwcomeau.com)","WebFetch(domain:codelucky.com)","WebFetch(domain:www.lummi.ai)","WebFetch(domain:oritop.co)","WebFetch(domain:www.interaction-design.org)","WebFetch(domain:moderncss.dev)","WebFetch(domain:www.smashingmagazine.com)","WebFetch(domain:web.dev)","WebFetch(domain:dev.to)","WebFetch(domain:www.uxpin.com)","WebFetch(domain:inclusive-components.design)","WebFetch(domain:blog.logrocket.com)","Bash(gh pr list:*)","Bash(gh pr view:*)","Bash(gh pr checkout:*)","Bash(gh pr diff:*)","Bash(git diff:*)","Read(//tmp/**)","Bash(sed:*)","SlashCommand(/plan:*)","Bash(pnpm install:*)","Bash(pnpm run build)","Bash(pnpm add:*)","SlashCommand(/ui-new:*)","Bash(pnpm run typecheck:*)","Skill(docs)","Skill(brainstorming)","Bash(gemini \"@/Users/natedamstra/socialaize-config/.claude/brains/onboarding-flow/.temp/platform-configuration.md\" \"@/Users/natedamstra/socialaize-config/.claude/brains/onboarding-flow/.temp/oauth-composables-clarification.md\" \"Extract concise summaries from both documents for integration into main documentation.\n\nFROM platform-configuration.md EXTRACT:\n- 2-3 paragraph executive summary\n- Key files and their purposes (list 4 most important files)\n- Top 5 most important helper functions with brief descriptions\n- Integration points with onboarding flow\n- Developer decision tree (when to use what)\n\nFROM oauth-composables-clarification.md EXTRACT:\n- 2-3 paragraph executive summary\n- Three-layer architecture explanation (concise)\n- Responsibility split table (which layer does what)\n- Cache refresh pattern explanation\n- Decision tree: when to use which composable\n\nFormat output as markdown with two main sections. Keep each summary 200-300 words. Focus on actionable information for developers.\")","Bash(gemini \"@/Users/natedamstra/socialaize-worktrees/onboarding-flow/.temp-platform-config.md\" \"@/Users/natedamstra/socialaize-worktrees/onboarding-flow/.temp-oauth-composables.md\" \"Extract concise summaries from both documents for integration into main documentation.\n\nFROM platform-configuration.md (.temp-platform-config.md) EXTRACT:\n- 2-3 paragraph executive summary\n- Key files and their purposes (list 4 most important files)\n- Top 5 most important helper functions with brief descriptions\n- Integration points with onboarding flow\n- Developer decision tree (when to use what)\n\nFROM oauth-composables-clarification.md (.temp-oauth-composables.md) EXTRACT:\n- 2-3 paragraph executive summary\n- Three-layer architecture explanation (concise)\n- Responsibility split table (which layer does what)\n- Cache refresh pattern explanation\n- Decision tree: when to use which composable\n\nFormat output as markdown with two main sections. Keep each summary 200-300 words. Focus on actionable information for developers.\")","Skill(writing-plans)","Skill(executing-plans)","Bash(timeout 10 npm run dev:*)","Skill(planner)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761947915110-tknm95.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tavily": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Added snapshot for 7e73d014-83af-49bd-9c34-4de782c85cfc, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tavily": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "gemini-cli": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 60000ms
+[DEBUG] MCP server "context7": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] MCP server "tavily": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.43888.1762214596598
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 63544 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.43888.1762214596598 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

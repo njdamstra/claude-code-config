@@ -1,0 +1,92 @@
+[
+  {
+    "content": "Update /onboarding/index.astro to use OnboardingFlow.vue instead of OnboardingStart.vue",
+    "status": "completed",
+    "activeForm": "Updating /onboarding/index.astro to use OnboardingFlow.vue"
+  },
+  {
+    "content": "Modify /onboarding/[step].astro to redirect to main flow",
+    "status": "completed",
+    "activeForm": "Modifying /onboarding/[step].astro to redirect to main flow"
+  },
+  {
+    "content": "Align step names: profile-setup → goals, social-accounts → first-account",
+    "status": "completed",
+    "activeForm": "Aligning step names throughout system"
+  },
+  {
+    "content": "Fix prop mismatch: OnboardingGoals expects config, receives onboardingConfig",
+    "status": "completed",
+    "activeForm": "Fixing prop mismatch in OnboardingGoals"
+  },
+  {
+    "content": "Update OnboardingFlow to pass config prop correctly to step components",
+    "status": "completed",
+    "activeForm": "Updating OnboardingFlow config prop passing"
+  },
+  {
+    "content": "Add fallback handling in OnboardingGoals for missing config",
+    "status": "completed",
+    "activeForm": "Adding fallback handling for missing config"
+  },
+  {
+    "content": "Structure config object with validation rules, UI preferences, feature flags",
+    "status": "completed",
+    "activeForm": "Structuring config object with proper data"
+  },
+  {
+    "content": "Implement graceful degradation when config is missing",
+    "status": "completed",
+    "activeForm": "Implementing graceful config degradation"
+  },
+  {
+    "content": "Create useNewOnboarding.ts composable with SSR-safe navigation",
+    "status": "pending",
+    "activeForm": "Creating useNewOnboarding.ts with SSR navigation"
+  },
+  {
+    "content": "Add step validation and navigation logic to useNewOnboarding",
+    "status": "pending",
+    "activeForm": "Adding step validation and navigation logic"
+  },
+  {
+    "content": "Implement data persistence and SSR compatibility in useNewOnboarding",
+    "status": "pending",
+    "activeForm": "Implementing data persistence and SSR compatibility"
+  },
+  {
+    "content": "Connect useNewOnboarding to onboardingStore as intermediary layer",
+    "status": "pending",
+    "activeForm": "Connecting useNewOnboarding to onboardingStore"
+  },
+  {
+    "content": "Remove useOnboardingHelpers.ts, useOnboardingIntegration.ts, useOnboardingRouter.ts",
+    "status": "pending",
+    "activeForm": "Removing old onboarding composables"
+  },
+  {
+    "content": "Merge onboardingStorage.ts + onboardingUtils.ts → onboarding.ts",
+    "status": "pending",
+    "activeForm": "Merging utilities into single onboarding.ts"
+  },
+  {
+    "content": "Move all onboarding types to onboardingStore.ts and remove types/onboarding.ts",
+    "status": "pending",
+    "activeForm": "Consolidating types into onboardingStore.ts"
+  },
+  {
+    "content": "Delete OnboardingStep.vue and OnboardingStart.vue components",
+    "status": "pending",
+    "activeForm": "Deleting conflicting onboarding components"
+  },
+  {
+    "content": "Test complete 8-step flow end-to-end for data persistence",
+    "status": "pending",
+    "activeForm": "Testing complete 8-step flow end-to-end"
+  },
+  {
+    "content": "Verify no missing prop warnings and proper navigation flow",
+    "status": "in_progress",
+    "activeForm": "Verifying no prop warnings and navigation"
+  }
+]

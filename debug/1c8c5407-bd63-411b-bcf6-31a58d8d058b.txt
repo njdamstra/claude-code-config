@@ -1,0 +1,1583 @@
+[DEBUG] Watching for changes in setting files /Users/natedamstra/.claude/settings.json, /Users/natedamstra/.claude/.claude/settings.local.json...
+[DEBUG] Applying permission update: Adding 33 allow rule(s) to destination 'localSettings': ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] >>>>> getSkillsIfEnabled() CALLED <<<<<
+[DEBUG] ENABLE_SKILLS value: true, type: boolean
+[DEBUG] ENABLE_SKILLS check passed, loading skills...
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/natedamstra/.claude/skills, project=/Users/natedamstra/.claude/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/natedamstra/.zshrc
+[DEBUG] Snapshots directory: /Users/natedamstra/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1760742857392-yd5nso.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760742857398
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760742857398 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742857480
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363819 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742857480 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Loaded 6 skills total (managed: 0, user: 6, project: 0)
+[DEBUG] getSkillsIfEnabled returning: 6 skill dir commands, 0 plugin skills
+[DEBUG] Summarizing all 2 messages (~1738 tokens)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742857965
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363819 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742857965 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742858009
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363819 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742858009 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuMVKBVJAiiaW1SiPC"}
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742858124
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363819 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742858124 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742858173
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742858173 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuNoCWmX1cdiGF7CZm"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuNoCWmX1cdiGF7CZm"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 5 of 174 messages (~129723 tokens)
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg)
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/nanostore-state-architect.md has invalid model 'haiku-4.5'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/taskmaster.md has invalid model 'claude-opus'. Valid options: sonnet, opus, haiku, sonnet[1m], opusplan, inherit
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/minimal-change-analyzer-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/problem-decomposer-orchestrator-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/service-documentation-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/python-pipeline-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/code-review-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/code-review-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/typescript-master-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Agent file /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md is missing required 'name' in frontmatter
+[DEBUG] Failed to parse agent from /Users/natedamstra/.claude/agents/memory/astro-vue-architect-memory.md: Missing required "name" field in frontmatter
+[DEBUG] Total plugin agents loaded: 0
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuPj1S2ecfrR7QMh4W"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuQEX4pUv4h4FudkHE"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuQEX4pUv4h4FudkHE"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 3 of 26 messages (~93819 tokens)
+[DEBUG] Stream started - received first chunk
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuRPiYWXdizbULrpki"}
+[DEBUG] MCP server "gemini-cli": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "chrome-devtools": Starting connection with timeout of 30000ms
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742859155
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742859155 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742859510
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742859510 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742859554
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364328 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742859554 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] performStartupChecks called
+[DEBUG] Starting background plugin installations
+[DEBUG] performBackgroundPluginInstallations called
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742859652
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742859652 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Setting installation status: 0 marketplaces, 0 installable plugins, 0 uninstallable plugins
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuS97fbkbE5DQWmYV1"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuS97fbkbE5DQWmYV1"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 80 messages (~94933 tokens)
+[DEBUG] Shell snapshot created successfully (132756 bytes)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760742859898
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364433 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760742859898 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuVcU5drAgv82fJRMF"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuWQ6ikh9GxrFYdW9H"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuWQ6ikh9GxrFYdW9H"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 5 of 84 messages (~99334 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuXWKZ7S85hdhGAMcd"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuYFie64bK2CjMBYyT"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuYFie64bK2CjMBYyT"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 85 messages (~85209 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuYzNHnfxAUA5soQgQ"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuZgntJf8rr5cjCU53"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuZgntJf8rr5cjCU53"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 2 of 24 messages (~96909 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuarEdNXDE3LpBoy4r"}
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcubvyfT2pfTSckSWxf"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcubvyfT2pfTSckSWxf"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 86 messages (~94159 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcucmaL4qx6DyKqduxC"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcudXDvERZtFUZTbfjL"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcudXDvERZtFUZTbfjL"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 4 of 90 messages (~83053 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcueJbpUeZeQVdg6c4G"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcufBC3coqYThjMTnVA"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcufBC3coqYThjMTnVA"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Summarizing last 2 of 51 messages (~100106 tokens)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcugBi1MnzSkWV4FsmS"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuggEJSEHQB91Tx3gX"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDcuggEJSEHQB91Tx3gX"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] init gemini-mcp-tool
+[ERROR] MCP server "gemini-cli" Server stderr: [GMCPT] gemini-mcp-tool listening on stdio
+[DEBUG] MCP server "gemini-cli": Successfully connected to stdio server in 3580ms
+[DEBUG] MCP server "gemini-cli": Connection established with capabilities: {"hasTools":true,"hasPrompts":true,"hasResources":false,"serverVersion":{"name":"gemini-cli-mcp","version":"1.1.3"}}
+[ERROR] MCP server "chrome-devtools" Server stderr: chrome-devtools-mcp exposes content of the browser instance to the MCP clients allowing them to inspect,
+debug, and modify any data in the browser or DevTools.
+Avoid sharing sensitive or personal information that you do not want to share with MCP clients.
+[DEBUG] MCP server "chrome-devtools": Successfully connected to stdio server in 5257ms
+[DEBUG] MCP server "chrome-devtools": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"chrome_devtools","title":"Chrome DevTools MCP server","version":"0.8.1"}}
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 33 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 33 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)"]
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/.claude/settings.local.json.tmp.54555.1760743921017
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1366 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/.claude/settings.local.json.tmp.54555.1760743921017 to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/.claude/.claude/settings.local.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Added snapshot for c787ef65-a6df-4683-bd8c-f237580fda3e, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/output-style</command-name>
+            <command-message>output-style</command-messag...
+[DEBUG] UserCommandMessage rendering: "output-style" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760743921350
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 364147 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760743921350 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760743921390
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362916 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760743921390 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 37 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 38 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 38 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 40 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message da02f040-87e4-479e-a9b3-d123e94c393f
+[DEBUG] FileHistory: Added snapshot for da02f040-87e4-479e-a9b3-d123e94c393f, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfCCxKRFPd4DnvbRS3F"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfCF3KxGZZtyBFrBQTT"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfCF3KxGZZtyBFrBQTT"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Skill
+[DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Permission suggestions for Skill: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Skill",
+        "ruleContent": "cc-mastery"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Metadata string for CC Mastery:
+[DEBUG] <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 3 messages for CC Mastery
+[DEBUG] Message 1: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-mastery\n\n# CC Mastery\n\n## Quick Start\n\nClaude Code is a powerful CLI for AI-assisted development with
+[DEBUG] Message 3: [ATTACHMENT]
+[DEBUG] SkillTool returning 3 newMessages for skill cc-mastery
+[DEBUG] newMessage 1: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>...
+[DEBUG] newMessage 2: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-mastery\n\n# CC Mastery\n\n## Quick Start\n\nClaude Code i...
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</comma...
+[DEBUG] UserCommandMessage rendering: "The "CC Mastery" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Getting matching hook commands for PostToolUse with query: Skill
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</comma...
+[DEBUG] UserCommandMessage rendering: "The "CC Mastery" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760744804839
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362942 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760744804839 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760744804895
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362942 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760744804895 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760744804935
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362977 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760744804935 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 7b3b8684-22e2-4f3b-9c2a-40e21a2bf893
+[DEBUG] FileHistory: Added snapshot for 7b3b8684-22e2-4f3b-9c2a-40e21a2bf893, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfXsLukifsNK64wY59P"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfXunWPnsRgzXKkZ5X1"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfXunWPnsRgzXKkZ5X1"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/output-styles/cc-expert.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744973500
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 10122 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744973500 to /Users/natedamstra/.claude/output-styles/cc-expert.md
+[DEBUG] File /Users/natedamstra/.claude/output-styles/cc-expert.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744981724
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 10987 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744981724 to /Users/natedamstra/.claude/output-styles/cc-expert.md
+[DEBUG] File /Users/natedamstra/.claude/output-styles/cc-expert.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744991087
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 11167 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/output-styles/cc-expert.md.tmp.54555.1760744991087 to /Users/natedamstra/.claude/output-styles/cc-expert.md
+[DEBUG] File /Users/natedamstra/.claude/output-styles/cc-expert.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745000404
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363125 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745000404 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745000453
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363125 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745000453 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745000492
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363142 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745000492 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 40 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 40 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")"]
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 6b71fcf1-1955-4e96-b962-664eac306f6f
+[DEBUG] FileHistory: Added snapshot for 6b71fcf1-1955-4e96-b962-664eac306f6f, tracking 1 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfr2P8bvSKMAcULLyiH"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfr5HWNe68DQWcuAbP3"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfr5HWNe68DQWcuAbP3"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] No hook environment files found
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrMc2U3JcJpMCJmrLo"}
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrMgVYZw61UC2Sd6Cf"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrNW6z7kh9pYABsFCq"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrNW6z7kh9pYABsFCq"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrQe67GAieQPBuJWnP"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfrQe67GAieQPBuJWnP"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[ERROR] Error: Error: EISDIR: illegal operation on a directory, read
+    at Module.readFileSync (node:fs:441:20)
+    at Object.readFileSync (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:9:299)
+    at zTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3521:967)
+    at Object.call (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3353:946)
+    at call.next (<anonymous>)
+    at AU8 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:65280)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AUQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:62334)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:61503
+    at async Bf1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:725:1714)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[ERROR] Failed to save config with lock: Error: Lock file is already being held
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745194590
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363097 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745194590 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[ERROR] Failed to save config with lock: Error: Lock file is already being held
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745194643
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363097 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745194643 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] Failed to save config with lock: Error: Lock file is already being held
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745194695
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363151 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745194695 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message f825d3c7-e212-4967-979a-2c94fee4b8a2
+[DEBUG] FileHistory: Added snapshot for f825d3c7-e212-4967-979a-2c94fee4b8a2, tracking 1 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfyTvUcKc7kXD83wk8B"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfyWqMBe98xegCUcfbE"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDfyWqMBe98xegCUcfbE"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745282976
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363151 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745282976 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745283030
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363151 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745283030 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745283064
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362929 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745283064 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 40 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")"]
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 1bd08710-1eb9-43e4-ae90-44d89649aaca
+[DEBUG] FileHistory: Added snapshot for 1bd08710-1eb9-43e4-ae90-44d89649aaca, tracking 1 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDg8r9TKJ79BCNsiYcnd"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDg8tzrTLutdRzv2jFNN"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDg8tzrTLutdRzv2jFNN"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/settings.json
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/settings.json.tmp.54555.1760745418400
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1056 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/settings.json.tmp.54555.1760745418400 to /Users/natedamstra/.claude/settings.json
+[DEBUG] File /Users/natedamstra/.claude/settings.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 40 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")"]
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745422840
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362929 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745422840 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745422884
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362929 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745422884 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760745422919
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 362973 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760745422919 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 41 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")","Bash(find ~/.claude/skills -name \"SKILL.md\" -exec wc -l {} +)"]
+[DEBUG] Detected change to /Users/natedamstra/.claude/.claude/settings.local.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 42 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")","Bash(find ~/.claude/skills -name \"SKILL.md\" -exec wc -l {} +)","Bash(ls -1 ~/.claude/agents/{cc-maintainer,codebase-researcher,refactor-specialist,bug-investigator,code-reviewer,security-reviewer}.md)"]
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 011a88ef-fa49-4216-ba5e-b45102975be4
+[DEBUG] FileHistory: Added snapshot for 011a88ef-fa49-4216-ba5e-b45102975be4, tracking 2 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoS6RyQCtXTUooTAfDJ"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoS9eT7UErXsqUwusvd"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoS9eT7UErXsqUwusvd"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Task
+[DEBUG] Getting matching hook commands for PreToolUse with query: Task
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoSoXkzkYPduraBCfkb"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoSpPMM2kfYyh4HnoSi"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDoSpPMM2kfYyh4HnoSi"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Task
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md.tmp.54555.1760751218785
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 7385 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md.tmp.54555.1760751218785 to /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md.tmp.54555.1760751219145
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 9206 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md.tmp.54555.1760751219145 to /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md.tmp.54555.1760751219530
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 8961 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md.tmp.54555.1760751219530 to /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md.tmp.54555.1760751219988
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 9382 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md.tmp.54555.1760751219988 to /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md.tmp.54555.1760751220601
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 10335 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md.tmp.54555.1760751220601 to /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md.tmp.54555.1760751221188
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 12389 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md.tmp.54555.1760751221188 to /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760751233283
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363432 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760751233283 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760751233349
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363432 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760751233349 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760751233379
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 363706 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760751233379 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 42 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")","Bash(find ~/.claude/skills -name \"SKILL.md\" -exec wc -l {} +)","Bash(ls -1 ~/.claude/agents/{cc-maintainer,codebase-researcher,refactor-specialist,bug-investigator,code-reviewer,security-reviewer}.md)"]
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message b53cf4c3-ca99-498e-a358-854418b82f9a
+[DEBUG] FileHistory: Added snapshot for b53cf4c3-ca99-498e-a358-854418b82f9a, tracking 8 files
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[ERROR] Error streaming, falling back to non-streaming mode: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDpzB5HYAxgLowLGMvxa"}
+[ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDpzECZGnCJwbaXfgYpY"}
+[ERROR] Error: Error: 401 {"type":"error","error":{"type":"authentication_error","message":"OAuth authentication is currently not supported."},"request_id":"req_011CUDpzECZGnCJwbaXfgYpY"}
+    at E4.generate (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:203:83082)
+    at Jy.makeStatusError (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:2117)
+    at Jy.makeRequest (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:357:5330)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async BTQ.Ao1.model (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18707)
+    at async Ao1 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:2650:39781)
+    at async BTQ (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:18875)
+    at async file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12822
+    at async ba0 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:4494)
+    at async Nm (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:3310:12793)
+[ERROR] SyntaxError: SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:62:719
+    at Q (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:8:15093)
+    at zn2 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1057:20629)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752370742
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1184 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752370742 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md.tmp.54555.1760752394085
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 9862 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md.tmp.54555.1760752394085 to /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-mastery/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752394784
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1185 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752394784 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md.tmp.54555.1760752407839
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 11296 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md.tmp.54555.1760752407839 to /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-slash-command-builder/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752408852
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1186 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752408852 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md.tmp.54555.1760752432579
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 12460 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md.tmp.54555.1760752432579 to /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-subagent-architect/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752434318
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1187 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752434318 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md.tmp.54555.1760752457951
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 12506 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md.tmp.54555.1760752457951 to /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-hook-designer/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752459255
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1188 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752459255 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md.tmp.54555.1760752485969
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 15331 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md.tmp.54555.1760752485969 to /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-mcp-integration/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752487183
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1189 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752487183 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md.tmp.54555.1760752513828
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 17463 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md.tmp.54555.1760752513828 to /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/cc-output-style-creator/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752515552
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json.tmp.54555.1760752515552 to /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json
+[DEBUG] File /Users/natedamstra/.claude/todos/1c8c5407-bd63-411b-bcf6-31a58d8d058b-agent-1c8c5407-bd63-411b-bcf6-31a58d8d058b.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 3 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760752529929
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 358027 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760752529929 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760752529986
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 358027 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760752529986 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.54555.1760752530023
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 365790 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.54555.1760752530023 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Detected change to /Users/natedamstra/.claude/settings.json
+[DEBUG] Replacing all allow rules for destination 'localSettings' with 42 rule(s): ["Bash(claude mcp list:*)","Bash(claude mcp add --scope user chrome-devtools npx -y chrome-devtools-mcp)","Bash(claude mcp add:*)","WebSearch","WebFetch(domain:github.com)","Bash(chmod:*)","Bash(claude mcp remove:*)","Bash(pip3 install:*)","Bash(python3:*)","Bash(~/.claude/tools/chrome-daemon.sh start:*)","Bash(~/.claude/tools/chrome-daemon.sh:*)","Bash(export ANTHROPIC_API_KEY='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')","Bash(cat:*)","Read(//Users/natedamstra/.gemini/**)","mcp__gemini-cli__ask-gemini","Bash(npx:*)","Bash(nvm install:*)","Read(//Users/natedamstra/**)","Bash(echo:*)","Bash(nvm list:*)","Bash(nvm alias:*)","Bash(lsof:*)","Bash(pgrep:*)","Bash(curl:*)","Bash(wc:*)","Bash(npm doctor:*)","Bash(npm install:*)","Bash(npm:*)","mcp__chrome-devtools__navigate_page","mcp__chrome-devtools__take_screenshot","Read(//var/folders/mz/5hpg9g8501s0v7gh8_ns8_f00000gn/T/chrome-devtools-mcp-VTyPXG/**)","mcp__chrome-devtools__list_pages","Bash(rm:*)","Bash(for dir in codebase-researcher vue-component-builder nanostore-builder appwrite-integration typescript-fixer astro-routing)","Bash(do echo \"=== $dir ===\")","Bash(ls -1 \"$dir/\")","Bash(done)","Bash(find /Users/natedamstra/.claude/skills/{codebase-researcher,vue-component-builder,nanostore-builder,appwrite-integration,typescript-fixer,astro-routing} -type f)","Bash(for skill in ~/.claude/skills/*/)","Bash(ls \"$skill\")","Bash(find ~/.claude/skills -name \"SKILL.md\" -exec wc -l {} +)","Bash(ls -1 ~/.claude/agents/{cc-maintainer,codebase-researcher,refactor-specialist,bug-investigator,code-reviewer,security-reviewer}.md)"]
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)
+[DEBUG] npm view failed with code 1
+[DEBUG] npm stderr: (empty)

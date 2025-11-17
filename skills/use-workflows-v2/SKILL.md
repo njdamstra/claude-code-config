@@ -31,6 +31,7 @@ bash ~/.claude/skills/use-workflows-v2/fetch-phase.sh <workflow> <phase-number-o
 | `refactoring-plan` | 20-60 min | Code improvement with safety validation |
 | `improving-plan` | 20-60 min | Performance optimization |
 | `plan-writing-workflow` | 30-60 min | Structured plan documentation |
+| `how-to-guide-workflow` | 20-40 min | Generate step-by-step tutorial guides with pedagogically correct examples |
 | `quick-investigation` | 10-15 min | Fast investigation (no subagents) |
 | `quick-plan` | 5-15 min | Fast planning (no subagents) |
 
@@ -55,6 +56,10 @@ bash fetch-phase.sh debugging-plan 1 hydration-bug --both
 # Quick investigation (no scope needed)
 bash generate-workflow.sh quick-investigation button-issue
 bash fetch-phase.sh quick-investigation 1 button-issue
+
+# Generate how-to guide for a composable
+bash generate-workflow.sh how-to-guide-workflow use-animation --frontend
+bash fetch-phase.sh how-to-guide-workflow 1 use-animation --frontend
 ```
 
 ## Phase Numbers

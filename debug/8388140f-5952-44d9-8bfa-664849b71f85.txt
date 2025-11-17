@@ -1,0 +1,492 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 43bd9965-88bb-4bf1-a6b0-35acb4ffb212, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.26712.1761248848836
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 375191 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.26712.1761248848836 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[ERROR] MCP server "shadcn-vue-smithery" Server stderr: [27341] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 376c9ab0-e0c1-4e7e-afdd-77638143336c
+[DEBUG] FileHistory: Added snapshot for 376c9ab0-e0c1-4e7e-afdd-77638143336c, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Glob
+[DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Permission suggestions for Glob: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Read",
+        "ruleContent": "//Users/natedamstra/**"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/test-code/ui-design/.claude/settings.local.json.tmp.26712.1761249013407
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1443 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/test-code/ui-design/.claude/settings.local.json.tmp.26712.1761249013407 to /Users/natedamstra/test-code/ui-design/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/test-code/ui-design/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Read(//Users/natedamstra/**)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] executePreToolHooks called for tool: Read
+[DEBUG] Getting matching hook commands for PreToolUse with query: Read
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Read
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Skill
+[DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Permission suggestions for Skill: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Skill",
+        "ruleContent": "cc-subagent-architect"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Persisting permission update: addRules to source 'localSettings'
+[DEBUG] Persisting 1 allow rule(s) to localSettings
+[DEBUG] Writing to temp file: /Users/natedamstra/test-code/ui-design/.claude/settings.local.json.tmp.26712.1761249082346
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1481 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/test-code/ui-design/.claude/settings.local.json.tmp.26712.1761249082346 to /Users/natedamstra/test-code/ui-design/.claude/settings.local.json
+[DEBUG] File /Users/natedamstra/test-code/ui-design/.claude/settings.local.json written atomically
+[DEBUG] Applying permission update: Adding 1 allow rule(s) to destination 'localSettings': ["Skill(cc-subagent-architect)"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Metadata string for CC Subagent Architect:
+[DEBUG] <command-message>The "CC Subagent Architect" skill is running</command-message>
+<command-name>CC Subagent Architect</command-name>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 2 messages for CC Subagent Architect
+[DEBUG] Message 1: <command-message>The "CC Subagent Architect" skill is running</command-message>
+<command-name>CC Subagent Architect</command-name>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-subagent-architect\n\n# CC Subagent Architect\n\n## Quick Start\n\nA subagent is a specialized AI agent conf
+[DEBUG] SkillTool returning 2 newMessages for skill cc-subagent-architect
+[DEBUG] newMessage 1: <command-message>The "CC Subagent Architect" skill is running</command-message>
+<command-name>CC Subagent Architect</command-name>...
+[DEBUG] newMessage 2: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-subagent-architect\n\n# CC Subagent Architect\n\n## Quick ...
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Subagent Architect" skill is running</command-message>
+<command-name>CC Sub...
+[DEBUG] UserCommandMessage rendering: "The "CC Subagent Architect" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Getting matching hook commands for PostToolUse with query: Skill
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Subagent Architect" skill is running</command-message>
+<command-name>CC Sub...
+[DEBUG] UserCommandMessage rendering: "The "CC Subagent Architect" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249089179
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249089179 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249089199
+[DEBUG] Temp file written successfully, size: 753 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249089199 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249102677
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249102677 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249102698
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1170 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249102698 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] Permission suggestions for Edit: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  },
+  {
+    "type": "addDirectories",
+    "directories": [
+      "/Users/natedamstra/.claude/agents"
+    ],
+    "destination": "session"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+[DEBUG] Applying permission update: Adding 1 directory with destination 'session': ["/Users/natedamstra/.claude/agents"]
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/agents/ui-validator.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/agents/ui-validator.md.tmp.26712.1761249231456
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 12876 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/agents/ui-validator.md.tmp.26712.1761249231456 to /Users/natedamstra/.claude/agents/ui-validator.md
+[DEBUG] File /Users/natedamstra/.claude/agents/ui-validator.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[ERROR] MCP server "shadcn-vue-smithery" Server stderr: [27341] Error from remote server: Error: SSE stream disconnected: TypeError: terminated
+    at processStream (file:///Users/natedamstra/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-AKJME7CQ.js:13386:80)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249240334
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249240334 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249240372
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1172 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249240372 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/agents/ui-documenter.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/agents/ui-documenter.md.tmp.26712.1761249245064
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 9458 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/agents/ui-documenter.md.tmp.26712.1761249245064 to /Users/natedamstra/.claude/agents/ui-documenter.md
+[DEBUG] File /Users/natedamstra/.claude/agents/ui-documenter.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249250056
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249250056 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249250092
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1174 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249250092 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/agents/ui-analyzer.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/agents/ui-analyzer.md.tmp.26712.1761249255958
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 11343 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/agents/ui-analyzer.md.tmp.26712.1761249255958 to /Users/natedamstra/.claude/agents/ui-analyzer.md
+[DEBUG] File /Users/natedamstra/.claude/agents/ui-analyzer.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249261646
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249261646 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249261716
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1176 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249261716 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Edit
+[DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Edit" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/agents/ui-builder.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/agents/ui-builder.md.tmp.26712.1761249267212
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 14849 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/agents/ui-builder.md.tmp.26712.1761249267212 to /Users/natedamstra/.claude/agents/ui-builder.md
+[DEBUG] File /Users/natedamstra/.claude/agents/ui-builder.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Edit" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249272804
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json.tmp.26712.1761249272804 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-673d5179-5c13-418b-b9e9-04ea4b624678.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249272847
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json.tmp.26712.1761249272847 to /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json
+[DEBUG] File /Users/natedamstra/.claude/todos/8388140f-5952-44d9-8bfa-664849b71f85-agent-8388140f-5952-44d9-8bfa-664849b71f85.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, Astro + Vue Architect, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, Socialaize Appwrite Integration, TypeScript Fixer, Vue 3 Component Builder, Vue Composable Builder, VueUse Expert, Zod Schema Architect
+[DEBUG] Slash commands included in SlashCommand tool: /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor, /tools, /worktree-remove-function, /orchestrate, /start, /frontend-improve, /frontend-new, /frontend-fix, /orchestrate-lite, /frontend-analyze, /list-worktrees, /worktree-actions, /worktree-add-function, /worktree-init, /ui-validate-tokens, /ui-polish, /recall, /frontend-implement, /worktree-switch, /worktree-feature, /ui-document, /checkpoint, /ultratask, /mcps, /reindex, /skilled, /ui-screenshot, /ui-visual-regression, /cleanup-worktree, /ui-compose, /ui-plan, /frontend-add, /ui-create, /capture, /frontend-initiate, /frontend-quick-task, /ui-batch-update, /frontend-validate, /learn, /complete, /frontend-plan, /ui-review, /debug-test, /ui-variants, /worktree-status, /ui-provider-refactor
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.26712.1761249284545
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 372731 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.26712.1761249284545 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1761248012809-4wkje3.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "shadcn-vue": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tailwind-css": Sending SIGINT to MCP server process
+[DEBUG] MCP server "firecrawl": Sending SIGINT to MCP server process
+[DEBUG] MCP server "playwright": Sending SIGINT to MCP server process
+[DEBUG] MCP server "shadcn-vue-smithery": Sending SIGINT to MCP server process
+[DEBUG] FileHistory: Making snapshot for message 20c078b5-481c-4177-bf2e-122aa7517365
+[DEBUG] FileHistory: Added snapshot for 20c078b5-481c-4177-bf2e-122aa7517365, tracking 4 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.26712.1761249419790
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 372814 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.26712.1761249419790 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "shadcn-vue": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tailwind-css": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "firecrawl": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "playwright": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "shadcn-vue-smithery": SIGINT failed, sending SIGTERM to MCP server process
+[ERROR] MCP server "shadcn-vue-smithery" Server stderr: [27341] 
+Shutting down...
+[ERROR] MCP server "shadcn-vue" Server stderr: INFO: Shutting down server...
+INFO: All transports shutdown
+[DEBUG] MCP server "gemini-cli": MCP server process exited cleanly
+[DEBUG] MCP server "shadcn-vue": MCP server process exited cleanly
+[DEBUG] MCP server "tailwind-css": MCP server process exited cleanly
+[DEBUG] MCP server "firecrawl": MCP server process exited cleanly
+[DEBUG] MCP server "playwright": MCP server process exited cleanly
+[DEBUG] MCP server "shadcn-vue-smithery": MCP server process exited cleanly
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.26712.1761249419903
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 373244 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.26712.1761249419903 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "title": "Hierarchical Settings Configuration",
+      "content": "Claude Code uses a hierarchical settings configuration, prioritizing settings from Enterprise Policies (highest) to Command Line Arguments, Local Project Settings (`.claude/settings.local.json`), Shared Project Settings (`.claude/settings.json`), and User Settings (`~/.claude/settings.json`) (lowest). This allows for flexible configuration at different levels.",
+      "category": "best_practice",
+      "tags": [
+        "#configuration",
+        "#settings",
+        "#hierarchy"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "MCP Server Scopes for Tool Sharing",
+      "content": "MCP servers can be scoped to `Local` (private to current project), `Project` (shared with team via `.mcp.json`), or `User` (available across all projects). This allows for controlled sharing of custom tools and integrations.",
+      "category": "best_practice",
+      "tags": [
+        "#mcp",
+        "#tools",
+        "#sharing"
+      ],
+      "topic": "architecture"
+    },
+    {
+      "title": "Granular Tool Permissions",
+      "content": "Claude Code allows granular permission control for tools, including allowing, prompting for confirmation, or denying tools based on patterns or context.  For example, `Bash` can be allowed generally, while `Bash(rm *)` is denied.  This is configured in the settings file.",
+      "category": "best_practice",
+      "tags": [
+        "#security",
+        "#permissions",
+        "#tools"
+      ],
+      "topic": "security"
+    },
+    {
+      "title": "MCP Server Permissions Require Full Function Names",
+      "content": "When configuring permissions for MCP servers, you must use the full function name in the format `mcp__{server-name}__{function-name}`. Wildcard patterns like `mcp__perplexity__*` do not work, and each function must be listed individually.",
+      "category": "gotcha",
+      "tags": [
+        "#mcp",
+        "#permissions",
+        "#security"
+      ],
+      "topic": "security"
+    },
+    {
+      "title": "Hooks for Automated Code Formatting",
+      "content": "Hooks can be used to automate code formatting after file edits. For example, a `PostToolUse` hook can be configured to run `black` on Python files after they are edited by Claude Code.  Example: `{\"PostToolUse\": [{\"matcher\": \"Edit(*.py)\", \"hooks\": [{\"type\": \"command\", \"command\": \"black ${TOOL_ARG_file_path}\"}]}]}`",
+      "category": "pattern",
+      "tags": [
+        "#hooks",
+        "#automation",
+        "#codeformatting"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Using CLAUDE.md for Project Context",
+      "content": "The `CLAUDE.md` file serves as persistent context for projects, allowing Claude Code to understand project-specific details, coding conventions, and recent changes.  This improves the quality of AI assistance.",
+      "category": "best_practice",
+      "tags": [
+        "#context",
+        "#memory",
+        "#documentation"
+      ],
+      "topic": "memory"
+    },
+    {
+      "title": "GitHub Actions Integration for Automated Code Review",
+      "content": "Claude Code can be integrated into CI/CD pipelines using GitHub Actions for automated code review.  This involves installing the Claude GitHub app, adding the API key as a secret, and creating a workflow file that triggers Claude Code to review pull requests or commits.",
+      "category": "pattern",
+      "tags": [
+        "#githubactions",
+        "#cicd",
+        "#codereview"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Dynamic Commands with Shell Expansion",
+      "content": "Custom slash commands can include dynamic content by using shell expansion within the command definition. For example, a command can display the current branch, latest commit, and modified files using `$(git branch --show-current)`, `$(git log -1 --oneline)`, and `$(git diff --name-only)` respectively.",
+      "category": "pattern",
+      "tags": [
+        "#slashcommands",
+        "#customcommands",
+        "#shell"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Environment Variables for Configuration",
+      "content": "Settings can be overridden via environment variables, such as `ANTHROPIC_API_KEY` for the API key, `CLAUDE_MODEL` for the model, and `CLAUDE_CODE_MAX_OUTPUT_TOKENS` for the maximum output tokens. This allows for dynamic configuration and easier integration with CI/CD systems.",
+      "category": "best_practice",
+      "tags": [
+        "#configuration",
+        "#environmentvariables",
+        "#settings"
+      ],
+      "topic": "workflows"
+    },
+    {
+      "title": "Tool Permission Patterns for Security",
+      "content": "Tool permissions can be configured using patterns to restrict access to sensitive operations. For example, `Bash(rm -rf *)` can be denied to prevent accidental or malicious deletion of files.  `Edit(/etc/*)` can be denied to prevent editing system configuration files.",
+      "category": "best_practice",
+      "tags": [
+        "#security",
+        "#permissions",
+        "#tools"
+      ],
+      "topic": "security"
+    },
+    {
+      "title": "Hooks Communicate Through Exit Codes",
+      "content": "Hooks communicate their status through exit codes: `0` for success (continue), `1` for failure (abort operation), and `2` for warning (continue with notification). This allows hooks to control the execution flow of Claude Code.",
+      "category": "technical_decision",
+      "tags": [
+        "#hooks",
+        "#exitcodes",
+        "#automation"
+      ],
+      "topic": "workflows"
+    }
+  ],
+  "expires": 1759797077.9387362,
+  "created": 1759710677.938756
+}

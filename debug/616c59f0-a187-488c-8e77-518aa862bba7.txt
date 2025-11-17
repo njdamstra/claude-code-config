@@ -1,0 +1,47 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for 767fceb7-85e7-4f2f-b006-936d32a952b0, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+[DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)
+[DEBUG] Cleaned up session snapshot: /Users/natedamstra/.claude/shell-snapshots/snapshot-zsh-1762896065062-evgzry.sh
+[DEBUG] MCP server "gemini-cli": Sending SIGINT to MCP server process
+[DEBUG] MCP server "context7": Sending SIGINT to MCP server process
+[DEBUG] MCP server "tavily": Sending SIGINT to MCP server process
+[DEBUG] MCP server "sequential-thinking": Sending SIGINT to MCP server process
+[DEBUG] MCP server "astro-docs": Sending SIGINT to MCP server process
+[DEBUG] LSP server manager shut down successfully
+[DEBUG] FileHistory: Making snapshot for message 5ec0e84c-3a2d-46e0-b97a-1fac35ad0565
+[DEBUG] FileHistory: Added snapshot for 5ec0e84c-3a2d-46e0-b97a-1fac35ad0565, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/exit</command-name>
+            <command-message>exit</command-message>
+            <...
+[DEBUG] UserCommandMessage rendering: "exit" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] MCP server "gemini-cli": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "context7": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "tavily": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "sequential-thinking": SIGINT failed, sending SIGTERM to MCP server process
+[DEBUG] MCP server "astro-docs": SIGINT failed, sending SIGTERM to MCP server process
+[ERROR] MCP server "tavily" Server stderr: [33475] 
+Shutting down...
+[DEBUG] MCP server "gemini-cli": Cleanup timeout reached, stopping process monitoring
+[DEBUG] MCP server "context7": Cleanup timeout reached, stopping process monitoring
+[DEBUG] MCP server "tavily": Cleanup timeout reached, stopping process monitoring
+[DEBUG] MCP server "sequential-thinking": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] MCP server "astro-docs": SIGTERM failed, sending SIGKILL to MCP server process
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.32874.1762906043256
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 64844 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.32874.1762906043256 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically

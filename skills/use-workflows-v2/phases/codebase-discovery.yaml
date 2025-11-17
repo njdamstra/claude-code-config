@@ -1,0 +1,143 @@
+# Phase: Codebase Discovery (v5)
+# Comprehensive discovery to understand API, patterns, and usage context for tutorial generation
+
+name: codebase-discovery
+purpose: "Comprehensive discovery of target feature/component/composable to document API surface, usage patterns, and identify antipatterns"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always:
+    - codebase-discovery-agent
+  conditional: {}
+
+subagent_configs:
+  codebase-discovery-agent:
+    task_agent_type: "code-researcher"
+    model: "sonnet"
+    thoroughness: "medium"
+
+    responsibility: |
+      Comprehensive discovery of target feature to understand API surface, existing usage,
+      patterns, and antipatterns. This provides context for generating clean tutorial examples.
+
+    instructions: |
+      1. Find target feature ({{TOPIC_NAME}})
+      2. Document API surface:
+         - For composables: function signature, parameters, return values, types
+         - For components: props (with types), emits, slots, exposed methods
+         - For utilities: function signatures, parameter types, return types
+      3. Search for existing usage (REFERENCE ONLY - may contain flawed patterns):
+         - Where and how it's used across codebase
+         - Common usage patterns
+         - Edge case handling
+         - Antipatterns and incorrect usage
+      4. Categorize usage quality:
+         - Good: follows best practices, complete, correct
+         - Fair: works but missing null checks, error handling, or best practices
+         - Poor: incomplete, incorrect API usage, missing setup
+         - Antipattern: actively demonstrates what NOT to do
+      5. Identify dependencies and prerequisites:
+         - Required imports
+         - Prerequisites (Vue lifecycle, reactive state, etc.)
+         - Optional dependencies
+      6. Estimate complexity (simple/moderate/complex):
+         - API surface size
+         - Pattern variety
+         - Integration complexity
+      7. Note file locations and key implementation details
+
+      **CRITICAL:** Mark usage quality honestly. Tutorial will GENERATE new examples,
+      not copy existing ones. Poor/antipattern examples will be documented separately.
+
+    scope_specific:
+      frontend: |
+        **Search locations:**
+        - src/components/ (Vue components)
+        - src/composables/ (Vue composables - likely target)
+        - src/stores/ (Nanostore state)
+        - src/utils/ (Utility functions)
+        - src/pages/ (Astro pages using components)
+
+        **Document for composables:**
+        - Full function signature with TypeScript types
+        - Parameter object structure
+        - Return value structure (ref, reactive, plain)
+        - Lifecycle requirements (onMounted, onUnmounted)
+        - SSR safety considerations
+
+        **Document for components:**
+        - Props with types and defaults
+        - Emits with payload types
+        - Slots with props
+        - Exposed methods via defineExpose
+        - Composition patterns
+
+      backend: |
+        **Search locations:**
+        - functions/ (Appwrite functions)
+        - src/pages/api/ (Astro API routes)
+        - src/lib/ (Shared backend utilities)
+
+        **Document:**
+        - API endpoint signatures
+        - Request/response schemas
+        - Authentication patterns
+        - Database integration patterns
+        - Error handling approaches
+
+      both: |
+        **Trace full-stack usage:**
+        - Frontend components → API calls → Backend functions
+        - State management → Data fetching → Database queries
+        - End-to-end data flow
+        - Authentication across stack
+
+    inputs_to_read: []  # First phase, no inputs
+
+    outputs:
+      - file: codebase-context.json
+        schema: output_templates/codebase-context.json
+        required: true
+        description: "Comprehensive context including API surface, usage patterns (good and bad), and complexity estimate"
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "Target feature/component/composable located and documented"
+    - "API surface fully documented (signatures, types, parameters, return values)"
+    - "At least 1 usage example found (even if poor quality - for reference)"
+    - "Dependencies and prerequisites identified"
+    - "Complexity estimate provided"
+    - "Existing usage quality assessed (good/fair/poor/antipattern)"
+
+  on_failure:
+    - "Retry discovery with broader search terms"
+    - "Continue with incomplete context (document gaps)"
+    - "Abort workflow - cannot generate tutorial without target understanding"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - api_surface           # Function signatures, component props, etc.
+  - usage_reference       # How it's currently used (quality-rated)
+  - patterns              # Common usage patterns
+  - antipatterns          # What NOT to do
+  - dependencies          # Required imports and prerequisites
+  - complexity_estimate   # Simple, moderate, or complex
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "8-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

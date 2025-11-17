@@ -1,0 +1,166 @@
+name: assumption-validation
+purpose: "Validate all assumptions against codebase using code-qa subagent with exhaustive search"
+
+subagents:
+  always: [code-qa]
+  conditional: {}
+
+subagent_configs:
+  code-qa:
+    task_agent_type: "code-qa"
+    model: "sonnet"
+    thoroughness: "very thorough"
+
+    responsibility: |
+      Validate each assumption by searching the codebase for evidence that confirms or refutes it
+
+    instructions: |
+      1. Read `assumptions.json` to understand what needs validation
+
+      2. For each assumption, perform exhaustive codebase search:
+         - Use Grep, Glob, Read tools to find relevant code
+         - Search for patterns, implementations, configurations
+         - Trace imports and dependencies
+         - Examine file contents for evidence
+         - Check multiple naming conventions and locations
+
+      3. Provide DEFINITIVE answers with evidence:
+         - ✅ CONFIRMED: Assumption is correct (with proof)
+         - ❌ REFUTED: Assumption is incorrect (with counterexamples)
+         - ⚠️ PARTIAL: Assumption is partially true (with specifics)
+         - ❓ UNKNOWN: Cannot determine from codebase (explain why)
+
+      4. For each assumption, provide:
+         - Validation status (confirmed/refuted/partial/unknown)
+         - Codebase evidence with file:line citations
+         - Explanation of findings
+         - References to specific files examined
+
+      5. Output to `validation-results.json`:
+         ```json
+         {
+           "context_type": "conversational" | "implementation",
+           "problem_area": "Feature being examined",
+           "total_assumptions": 6-9,
+           "validated_count": 6-9,
+           "validation_results": [
+             {
+               "id": 1,
+               "assumption": "No OAuth integration exists",
+               "status": "refuted",
+               "evidence": "OAuth integration found in src/auth/oauth.ts using Google and GitHub providers",
+               "files_referenced": [
+                 "src/auth/oauth.ts:15-45",
+                 "src/config/auth.config.ts:8-12"
+               ],
+               "explanation": "Comprehensive OAuth implementation exists with multiple providers, session management, and token refresh",
+               "confidence": "definitive"
+             },
+             {
+               "id": 2,
+               "assumption": "All Vue components use Composition API",
+               "status": "confirmed",
+               "evidence": "Scanned 47 Vue components - all use <script setup lang='ts'> with Composition API",
+               "files_referenced": [
+                 "src/components/**/*.vue (47 files scanned)"
+               ],
+               "explanation": "No Options API usage found. Codebase consistently uses Composition API with script setup",
+               "confidence": "definitive"
+             },
+             {
+               "id": 3,
+               "assumption": "State management uses Pinia",
+               "status": "partial",
+               "evidence": "Found both Pinia (src/stores/) and Nanostores (src/lib/stores/) being used",
+               "files_referenced": [
+                 "src/stores/user.store.ts:1-30",
+                 "src/lib/stores/settings.ts:1-20"
+               ],
+               "explanation": "Mixed state management - Pinia for Vue-specific state, Nanostores for framework-agnostic state",
+               "confidence": "definitive"
+             }
+           ],
+           "summary": {
+             "confirmed": 3,
+             "refuted": 2,
+             "partial": 2,
+             "unknown": 0,
+             "key_findings": [
+               "OAuth integration is more comprehensive than assumed",
+               "Composition API consistently used across all components",
+               "State management is hybrid (Pinia + Nanostores)"
+             ],
+             "recommendations": [
+               "Update mental model: OAuth is fully implemented",
+               "Document state management strategy (when to use Pinia vs Nanostores)"
+             ]
+           }
+         }
+         ```
+
+      6. Be thorough and definitive - avoid ambiguous answers
+
+    inputs_to_read:
+      - from_workflow: true
+        expected_files: [assumptions.json]
+        description: "Assumptions to validate with validation questions"
+
+    outputs:
+      - file: validation-results.json
+        required: true
+        description: "Validation results with evidence and file citations"
+
+gap_checks:
+  criteria:
+    - "All assumptions have validation results"
+    - "Each result includes file:line citations"
+    - "Status is definitive (confirmed/refuted/partial/unknown)"
+    - "Evidence is specific and traceable"
+    - "Summary includes key findings and recommendations"
+  on_failure:
+    - "Re-validate with more thorough search"
+    - "Request user input for ambiguous cases"
+    - "Continue with current validation"
+    - "Abort workflow"
+
+provides:
+  - validation_results
+  - evidence_citations
+  - key_findings
+  - recommendations
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. **Spawn code-qa subagent** using Task tool with:
+     - `subagent_type: "code-qa"`
+     - `thoroughness: "very thorough"` for exhaustive search
+     - Provide `assumptions.json` as input
+
+  2. **Wait for subagent completion** and verify `validation-results.json` exists
+
+  3. **Review validation results** for:
+     - Completeness (all assumptions validated)
+     - Evidence quality (specific file:line citations)
+     - Definitiveness (clear confirmed/refuted/partial/unknown status)
+
+  4. **If validation incomplete or ambiguous:**
+     - Identify which assumptions need re-validation
+     - Provide additional guidance to code-qa
+     - Re-run validation with refined scope
+
+  5. **Generate summary** in validation-results.json:
+     - Count confirmed/refuted/partial/unknown
+     - Extract key findings that change understanding
+     - Provide recommendations for correcting assumptions
+
+  **Key considerations:**
+  - code-qa should use "very thorough" search depth for maximum accuracy
+  - All claims must be backed by file:line evidence
+  - Partial results are valid when assumption is nuanced
+  - Unknown status acceptable only when evidence is truly absent
+
+metadata:
+  estimated_time: "5-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

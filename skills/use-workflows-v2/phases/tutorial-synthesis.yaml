@@ -1,0 +1,192 @@
+# Phase: Tutorial Synthesis (v5)
+# Main agent consolidates findings into comprehensive how-to guide
+
+name: tutorial-synthesis
+purpose: "Synthesize codebase context, generated examples, and external research into a complete, well-structured how-to guide"
+
+# ==============================================================================
+# SUBAGENT CONFIGURATION
+# ==============================================================================
+
+subagents:
+  always: []  # Main agent handles synthesis
+  conditional: {}
+
+subagent_configs: {}  # No subagents - main agent consolidation
+
+# ==============================================================================
+# EXECUTION NOTES
+# ==============================================================================
+
+execution_notes: |
+  **Main agent tasks:**
+
+  1. Read all input files:
+     - `codebase-context.json` (API surface, dependencies, patterns)
+     - `scope-answers.json` (user preferences for tutorial)
+     - `tutorial-examples.json` (generated examples)
+     - `best-practices.md` (external research findings)
+
+  2. Synthesize comprehensive how-to guide following template structure:
+
+     **Overview Section:**
+     - Extract topic name from scope
+     - Target audience from scope-answers
+     - Estimated time (calculate from step count)
+     - What the user will learn (from learning objectives in examples)
+
+     **Prerequisites Section:**
+     - Extract from codebase-context.json dependencies
+     - Required knowledge based on scope-answers.audience
+     - Required dependencies (imports, libraries)
+     - Link to any prerequisite guides
+
+     **Step-by-Step Instructions:**
+     - Use tutorial-examples.json progressive steps
+     - For each step:
+       * Step title and number
+       * Learning objective / goal
+       * Complete code example (imports + setup + usage)
+       * Explanation of what the code does
+       * Key points to remember
+       * Common mistakes (if applicable from antipatterns)
+
+     **Complete Working Example:**
+     - Use complete_working_example from tutorial-examples.json
+     - Show full file structure if needed
+     - Include usage example
+     - Show expected output
+
+     **Common Issues & Solutions:**
+     - Extract from antipattern_examples if scope requested
+     - Add issues from codebase-context.json antipatterns
+     - Integrate with best-practices.md gotchas
+     - Format: Issue → Symptoms → Solution → Code fix
+
+     **Tips & Best Practices:**
+     - Combine from:
+       * best-practices.md research
+       * codebase-context.json good patterns
+       * scope-answers specific requests (SSR, testing, etc.)
+
+     **Decision Trees (if scope requests):**
+     - When to use this pattern vs alternatives
+     - Parameter selection guidance
+     - Use case selection
+
+     **Next Steps:**
+     - Related features to explore
+     - Advanced usage patterns
+     - Links to deeper documentation
+
+     **Additional Resources:**
+     - Internal: Links to related codebase documentation
+     - External: Sources from best-practices.md
+
+  3. Apply scope-based adaptations:
+
+     - If scope-answers.depth == "quick-start":
+       * Shorter explanations
+       * Minimal examples
+       * Skip advanced topics
+
+     - If scope-answers.depth == "comprehensive":
+       * Detailed explanations
+       * Include all examples
+       * Cover edge cases thoroughly
+
+     - If scope-answers.depth == "reference":
+       * Exhaustive API documentation
+       * All parameter combinations
+       * Complete error handling
+
+     - If scope-answers.include_antipatterns:
+       * Add "Common Mistakes" subsections
+       * Show what NOT to do with explanations
+
+     - If scope-answers.testing_examples:
+       * Add "Testing This Feature" section
+       * Show test examples for each step or final
+
+     - If scope-answers.ssr_considerations:
+       * Add "SSR Considerations" warnings
+       * Show SSR-safe patterns
+
+  4. Quality checks before output:
+     ✅ All code examples are complete (no placeholders)
+     ✅ Examples are consistent in style
+     ✅ Prerequisites match dependencies
+     ✅ Learning objectives align with steps
+     ✅ External sources are cited
+     ✅ Internal file paths are relative and correct
+     ✅ Markdown formatting is valid
+
+  5. Add meta-information:
+     - Generation date
+     - Workflow version
+     - Attribution note about generated examples
+     - Last updated timestamp
+
+  6. Write to `how-to-guide.md`
+
+  **Template Variables:**
+
+  - {{TOPIC_NAME}} - from scope
+  - {{AUDIENCE_LEVEL}} - from scope-answers
+  - {{TIME_ESTIMATE}} - calculated
+  - {{LEARNING_OBJECTIVES}} - from examples
+  - {{PREREQUISITE_KNOWLEDGE}} - from context + scope
+  - {{PREREQUISITE_DEPENDENCIES}} - from context
+  - {{TUTORIAL_STEPS}} - from examples (array)
+  - {{COMPLETE_EXAMPLE}} - from examples
+  - {{COMMON_ISSUES}} - from antipatterns + context
+  - {{TIPS_AND_BEST_PRACTICES}} - from research + context
+  - {{DECISION_TREES}} - if requested
+  - {{NEXT_STEPS}} - related topics
+  - {{RESOURCES}} - internal + external
+
+  **Attribution:**
+  Include at bottom: "Examples in this guide were generated for pedagogical
+  clarity and may differ from production codebase usage."
+
+# ==============================================================================
+# VALIDATION
+# ==============================================================================
+
+gap_checks:
+  criteria:
+    - "how-to-guide.md created and non-empty"
+    - "All tutorial steps included with complete code examples"
+    - "Prerequisites section complete with dependencies"
+    - "Common issues section has at least 2-3 entries"
+    - "Tips & best practices section populated"
+    - "Complete working example provided"
+    - "If scope requested antipatterns, they are included"
+    - "If scope requested decision trees, they are included"
+    - "If scope requested testing examples, they are included"
+    - "Markdown is valid (no broken syntax)"
+    - "All code blocks have language specified"
+    - "External sources are cited"
+
+  on_failure:
+    - "Revise tutorial content to fix gaps"
+    - "Mark incomplete sections with TODO comments"
+    - "Abort workflow - incomplete tutorial not acceptable"
+
+# ==============================================================================
+# INTERFACE CONTRACT
+# ==============================================================================
+
+provides:
+  - comprehensive_tutorial  # Complete how-to guide
+  - structured_learning     # Progressive step-by-step format
+  - production_ready_docs   # Ready to publish
+
+# ==============================================================================
+# METADATA
+# ==============================================================================
+
+metadata:
+  estimated_time: "5-15 minutes"
+  complexity: "moderate"
+  requires_user_input: false

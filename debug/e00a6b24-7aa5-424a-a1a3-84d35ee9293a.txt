@@ -1,0 +1,1014 @@
+[DEBUG] Getting matching hook commands for SessionStart with query: clear
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "clear" (0 before deduplication)
+[DEBUG] FileHistory: Added snapshot for ca5a9de4-c6fd-42f7-8c8d-077777c10476, tracking 0 files
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-name>/clear</command-name>
+            <command-message>clear</command-message>
+           ...
+[DEBUG] UserCommandMessage rendering: "clear" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079418672
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324587 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079418672 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079418702
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324285 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079418702 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 04ef4912-af0c-42f6-a041-187c42bd2d9c
+[DEBUG] FileHistory: Added snapshot for 04ef4912-af0c-42f6-a041-187c42bd2d9c, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Skill
+[DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Permission suggestions for Skill: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Skill",
+        "ruleContent": "cc-mastery"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+[DEBUG] Getting matching hook commands for Notification with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Metadata string for CC Mastery:
+[DEBUG] <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>
+[DEBUG] command-message tags in metadata: 1
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] processPromptSlashCommand creating 3 messages for CC Mastery
+[DEBUG] Message 1: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>
+[DEBUG] Message 2 [META]: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-mastery\n\n# CC Mastery\n\n## Quick Start\n\nClaude Code is a powerful CLI for AI-assisted development with
+[DEBUG] Message 3: [ATTACHMENT]
+[DEBUG] SkillTool returning 3 newMessages for skill cc-mastery
+[DEBUG] newMessage 1: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</command-name>...
+[DEBUG] newMessage 2: [{"type":"text","text":"Base directory for this skill: /Users/natedamstra/.claude/skills/cc-mastery\n\n# CC Mastery\n\n## Quick Start\n\nClaude Code i...
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</comma...
+[DEBUG] UserCommandMessage rendering: "The "CC Mastery" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Getting matching hook commands for PostToolUse with query: Skill
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+[DEBUG] Rendering user message with 1 content blocks
+[DEBUG] Block 0: <command-message>The "CC Mastery" skill is running</command-message>
+<command-name>CC Mastery</comma...
+[DEBUG] UserCommandMessage rendering: "The "CC Mastery" skill is running" (args: "none")
+[DEBUG] isSkillFormat: true, prefix: ""
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079621753
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079621753 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079621776
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079621776 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079621797
+[DEBUG] Temp file written successfully, size: 2116 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079621797 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079632035
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079632035 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079632056
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079632056 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079632098
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2118 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079632098 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079945540
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324526 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079945540 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at pp._createMessage (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:207:4515)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079945598
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324526 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079945598 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079945636
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324626 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079945636 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 4f48317e-ea43-4fa0-9ecf-5b4c9824bb44
+[DEBUG] FileHistory: Added snapshot for 4f48317e-ea43-4fa0-9ecf-5b4c9824bb44, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079968619
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761079968619 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079968643
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761079968643 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079968664
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 415 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761079968664 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079994168
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324626 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079994168 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Streaming aborted by user: Request was aborted.
+[ERROR] Error in non-streaming fallback: Request was aborted.
+[ERROR] Error: Error: Request was aborted.
+    at pp._createMessage (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:207:4515)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:520:9)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079994213
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324626 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079994213 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761079994245
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324676 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761079994245 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] FileHistory: Making snapshot for message 9268ee5e-7c69-4c95-8b55-79165dfdd90b
+[DEBUG] FileHistory: Added snapshot for 9268ee5e-7c69-4c95-8b55-79165dfdd90b, tracking 0 files
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080052129
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080052129 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080052150
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080052150 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080052172
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1873 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080052172 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/SKILL.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/SKILL.md.tmp.53680.1761080091072
+[DEBUG] Temp file written successfully, size: 6265 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/SKILL.md.tmp.53680.1761080091072 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/SKILL.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/SKILL.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080099147
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080099147 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080099168
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080099168 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080099188
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1875 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080099188 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/appwrite-system.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/appwrite-system.md.tmp.53680.1761080150644
+[DEBUG] Temp file written successfully, size: 10061 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/appwrite-system.md.tmp.53680.1761080150644 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/appwrite-system.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/appwrite-system.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080159734
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080159734 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080159755
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080159755 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080159776
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1877 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080159776 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/basestore-pattern.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/basestore-pattern.md.tmp.53680.1761080226097
+[DEBUG] Temp file written successfully, size: 15465 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/basestore-pattern.md.tmp.53680.1761080226097 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/basestore-pattern.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/basestore-pattern.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080236628
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080236628 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080236649
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080236649 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080236671
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1879 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080236671 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/client-integration.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/client-integration.md.tmp.53680.1761080292141
+[DEBUG] Temp file written successfully, size: 12752 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/client-integration.md.tmp.53680.1761080292141 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/client-integration.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/client-integration.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080300417
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080300417 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080300439
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080300439 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080300461
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1121 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080300461 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/server-integration.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/server-integration.md.tmp.53680.1761080359333
+[DEBUG] Temp file written successfully, size: 14779 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/server-integration.md.tmp.53680.1761080359333 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/server-integration.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/server-integration.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/permissions.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/permissions.md.tmp.53680.1761080415012
+[DEBUG] Temp file written successfully, size: 11051 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/permissions.md.tmp.53680.1761080415012 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/permissions.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/permissions.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/databases.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/databases.md.tmp.53680.1761080470558
+[DEBUG] Temp file written successfully, size: 11394 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/databases.md.tmp.53680.1761080470558 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/databases.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/databases.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/services.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/services.md.tmp.53680.1761080524771
+[DEBUG] Temp file written successfully, size: 11060 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/services.md.tmp.53680.1761080524771 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/services.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/services.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/patterns-utilities.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/patterns-utilities.md.tmp.53680.1761080591107
+[DEBUG] Temp file written successfully, size: 14020 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/patterns-utilities.md.tmp.53680.1761080591107 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/patterns-utilities.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/patterns-utilities.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/best-practices.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/best-practices.md.tmp.53680.1761080654481
+[DEBUG] Temp file written successfully, size: 13006 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/best-practices.md.tmp.53680.1761080654481 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/best-practices.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/best-practices.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/troubleshooting.md
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/troubleshooting.md.tmp.53680.1761080725151
+[DEBUG] Temp file written successfully, size: 13742 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/troubleshooting.md.tmp.53680.1761080725151 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/troubleshooting.md
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/troubleshooting.md written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080734050
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080734050 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080734073
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080734073 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080734093
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1123 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080734093 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/store-creation.ts
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/store-creation.ts.tmp.53680.1761080750077
+[DEBUG] Temp file written successfully, size: 3210 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/store-creation.ts.tmp.53680.1761080750077 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/store-creation.ts
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/store-creation.ts written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/vue-component.vue
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/vue-component.vue.tmp.53680.1761080775767
+[DEBUG] Temp file written successfully, size: 6170 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/vue-component.vue.tmp.53680.1761080775767 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/vue-component.vue
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/vue-component.vue written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at YtQ.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7725)
+    at Pw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+    at GU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35216)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: vue
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at YtQ.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7725)
+    at Pw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+    at GU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35216)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/ssr-page.astro
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/ssr-page.astro.tmp.53680.1761080797745
+[DEBUG] Temp file written successfully, size: 5150 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/ssr-page.astro.tmp.53680.1761080797745 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/ssr-page.astro
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/ssr-page.astro written atomically
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: astro
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at YtQ.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7725)
+    at Pw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+    at GU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35216)
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: astro
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:190
+    at Object.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:25927)
+    at YtQ.useMemo (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:11:7725)
+    at Pw (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1419:81)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+    at GU (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:35216)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Write
+[DEBUG] Getting matching hook commands for PreToolUse with query: Write
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+[DEBUG] FileHistory: Tracked file modification for /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/api-route.ts
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/api-route.ts.tmp.53680.1761080827784
+[DEBUG] Temp file written successfully, size: 9482 bytes
+[DEBUG] Renaming /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/api-route.ts.tmp.53680.1761080827784 to /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/api-route.ts
+[DEBUG] File /Users/natedamstra/.claude/skills/soc-appwrite-integration/examples/api-route.ts written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: Write
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 2 unique hooks for query "Write" (2 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080836510
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080836510 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080836533
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080836533 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080836555
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 1125 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080836555 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: TodoWrite
+[DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080850172
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json.tmp.53680.1761080850172 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-309d5a16-3b12-4d92-9d08-4316ff9fd6cb.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080850193
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json.tmp.53680.1761080850193 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-bf3375f9-4edc-4bf8-baac-58407a78ffb6.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080850214
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json.tmp.53680.1761080850214 to /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json
+[DEBUG] File /Users/natedamstra/.claude/todos/e00a6b24-7aa5-424a-a1a3-84d35ee9293a-agent-e00a6b24-7aa5-424a-a1a3-84d35ee9293a.json written atomically
+[DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] executePreToolHooks called for tool: Bash
+[DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+[DEBUG] Found 1 hook matchers in settings
+[DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+[DEBUG] Hook output does not start with {, treating as plain text
+[DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+[DEBUG] Found 2 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+[DEBUG] Hooks: getAsyncHookResponseAttachments called
+[DEBUG] Hooks: checkForNewResponses called
+[DEBUG] Hooks: Found 0 total hooks in registry
+[DEBUG] Hooks: checkForNewResponses returning 0 responses
+[DEBUG] Skills and commands included in Skill tool: Appwrite Integration, Astro Routing, CC Hook Designer, CC Mastery, CC MCP Integration, CC Output Style Creator, CC Slash Command Builder, CC Subagent Architect, Codebase Researcher, Nanostore Builder, TypeScript Fixer, Vue 3 Component Builder
+[DEBUG] Slash commands included in SlashCommand tool: /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status, /chrome-tools, /start, /frontend-improve, /frontend-new, /frontend-fix, /cleanup-functions-workspace, /frontend-analyze, /worktree-functions, /list-worktrees, /worktree-actions, /recall, /frontend-implement, /worktree-feature, /checkpoint, /ultratask, /reindex, /worktree-fullstack, /cleanup-worktree, /test-args, /frontend-add, /capture, /frontend-initiate, /frontend-quick-task, /frontend-validate, /cleanup-fullstack-workspace, /learn, /complete, /frontend-plan, /debug-test, /worktree-status
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[ERROR] Error: Error: Language not supported while highlighting code, falling back to markdown: 
+    at ZH (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4413)
+    at file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4141
+    at Array.map (<anonymous>)
+    at MV (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1175:4132)
+    at STB (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:1798:6323)
+    at Fq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:73:19414)
+    at mr (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:42814)
+    at b9 (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38355)
+    at Vc (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38283)
+    at wq (file:///Users/natedamstra/.nvm/versions/node/v22.20.0/lib/node_modules/@anthropic-ai/claude-code/cli.js:75:38137)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761080893375
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324688 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761080893375 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Getting matching hook commands for Stop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761080893426
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324688 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761080893426 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761080893443
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 324837 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761080893443 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761081809687
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 325369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761081809687 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] UserCommandMessage rendering: "agents" (args: "none")
+[DEBUG] isSkillFormat: false, prefix: "/"
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761081809766
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 325369 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761081809766 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] AutoUpdater: Detected installation type: npm-global
+[DEBUG] AutoUpdater: Using global update method
+[DEBUG] Writing to temp file: /Users/natedamstra/.claude.json.tmp.53680.1761083262463
+[DEBUG] Preserving file permissions: 100644
+[DEBUG] Temp file written successfully, size: 326688 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/natedamstra/.claude.json.tmp.53680.1761083262463 to /Users/natedamstra/.claude.json
+[DEBUG] File /Users/natedamstra/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: npm-global, using native: false
+[DEBUG] Getting matching hook commands for SessionEnd with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

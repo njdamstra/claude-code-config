@@ -10,23 +10,24 @@
 # MCP config with potential secrets
 .mcp.json
 
-# Session data
+# Session data (keep selective ones)
 history.jsonl
-session-env/
-shell-snapshots/
 .claude/data/sessions/
 
-# Logs (ephemeral runtime data)
+# Logs (ephemeral runtime data) - EXCLUDE
 logs/
 
-# Project tracking (ephemeral)
+# Project tracking (ephemeral) - EXCLUDE
 projects/
 statsig/
 
-# Ephemeral data
-debug/
+# IDE - EXCLUDE
+ide/
+.vscode/
+.idea/
+
+# Ephemeral data - EXCLUDE
 file-history/
-todos/
 
 # Temporary files
 .temp/
@@ -34,12 +35,12 @@ temp/
 *.tmp
 *.log
 
-# Cache
-cache/
-
-# IDE
-.vscode/
-.idea/
+# Keep these directories (negated ignores)
+!shell-snapshots/
+!session-env/
+!todos/
+!debug/
+!cache/
 
 # OS files
 .DS_Store
