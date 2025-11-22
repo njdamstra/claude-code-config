@@ -187,7 +187,7 @@ mcp-act help
 #   "GEMINI_API_KEY": "${GEMINI_API_KEY}"
 
 # 5. Set environment variable
-echo 'export GEMINI_API_KEY="AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4"' >> ~/.zshrc
+echo 'export GEMINI_API_KEY="your_gemini_api_key_here"' >> ~/.zshrc
 source ~/.zshrc
 
 # 6. Verify security
@@ -221,7 +221,7 @@ mcp-act audit
 
 Then set environment variable:
 ```bash
-export GEMINI_API_KEY="AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4"
+export GEMINI_API_KEY="your_gemini_api_key_here"
 ```
 
 ## 📈 Comparison: Original vs Improved

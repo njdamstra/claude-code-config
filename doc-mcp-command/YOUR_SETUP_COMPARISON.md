@@ -138,7 +138,7 @@ Based on your setup and the additional servers available:
 
 ```bash
 # Required for your current setup
-export GEMINI_API_KEY="AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4"
+export GEMINI_API_KEY="your_gemini_api_key_here"
 
 # Optional - for additional servers
 export FIRECRAWL_API_KEY="your-key"      # If using firecrawl
@@ -149,7 +149,7 @@ export GITHUB_TOKEN="your-token"         # If using github MCP
 Add to `~/.zshrc`:
 ```bash
 # Add this line:
-export GEMINI_API_KEY="AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4"
+export GEMINI_API_KEY="your_gemini_api_key_here"
 
 # Then reload:
 source ~/.zshrc

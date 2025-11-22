@@ -224,7 +224,7 @@ claude mcp list  # Verify connection
 
 ```bash
 claude mcp add --scope user gemini-cli npx gemini-mcp-tool \
-  --env GEMINI_API_KEY=AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4
+  --env GEMINI_API_KEY=${GEMINI_API_KEY}
 ```
 
 Result in `~/.claude.json`:

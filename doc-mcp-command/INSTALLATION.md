@@ -77,7 +77,7 @@ Your current `~/.claude.json` has a hardcoded API key. Fix it:
 
 ```bash
 # Add to ~/.zshrc
-echo 'export GEMINI_API_KEY="AIzaSyAWNiGGAljfd2RlB7HHot1YkqcvY7T8B_4"' >> ~/.zshrc
+echo 'export GEMINI_API_KEY="your_gemini_api_key_here"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
